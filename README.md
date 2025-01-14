@@ -1,5 +1,5 @@
 # Gig-Performer
-Scripts, rackspaces, panels, overlay templates and other Gig Performer customizations
+Scripts, rackspaces, panels, overlay templates and other [Gig Performer](https://gigperformer.com/) customizations. See GP forum links for descriptions and discussions. 
 
 
 ## Gig files
