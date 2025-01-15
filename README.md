@@ -16,3 +16,4 @@ Scripts, rackspaces, panels, overlay templates and other [Gig Performer](https:/
 
 ## Controller settings
 - [**.bin files for X-Touch Mini**](https://github.com/vangrieg/Gig-Performer/tree/dev/Controllers/Settings/X-Touch%20Mini)
+Scripts, rackspaces, overlay templates and other Gig Performer customizations
