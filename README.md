@@ -1,5 +1,4 @@
 # Gig-Performer
-<<<<<<< HEAD
 Scripts, rackspaces, panels, overlay templates and other [Gig Performer](https://gigperformer.com/) customizations. See GP forum links for descriptions and discussions. 
 
 
@@ -19,4 +18,3 @@ Scripts, rackspaces, panels, overlay templates and other [Gig Performer](https:/
 - [**.bin files for X-Touch Mini**](https://github.com/vangrieg/Gig-Performer/tree/dev/Controllers/Settings/X-Touch%20Mini)
 =======
 Scripts, rackspaces, overlay templates and other Gig Performer customizations
->>>>>>> 8d4e22a (Initial commit)
