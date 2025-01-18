@@ -234,7 +234,7 @@ End
     <PROCESSORSTATE_OUT handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.257080078125">123.VMjLgHG....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh.xXn8kL8HRLt.iHfzVczU1Wig1WxziHvHBHig1WyziHw3BLh.Ra0QWYeMFZeMSOh.iHu3C.</PROCESSORSTATE_OUT>
     <PROCESSOR id="4" bypass="0" bypassSmoothing="0" prop_str_nodeName="To Rackspaces"
                prop_dbl_x="0.32144775986671447754" prop_dbl_y="0.24975585937500000000"
-               prop_int_MaxInputPins="256" prop_int_MaxOutputPins="256" cmp="1">
+               cmp="1">
       <PLUGIN name="To Rackspaces" format="Internal" category="Global" manufacturer="Deskew Technologies, LLC"
               version="1.0" file="1010970" uid="f6d1a" isInstrument="0" fileTime="0"
               infoUpdateTime="0" numInputs="4" numOutputs="0" isShell="0" isEnabled="1"
@@ -243,7 +243,7 @@ End
     </PROCESSOR>
     <PROCESSOR id="5" bypass="0" bypassSmoothing="0" prop_str_nodeName="From Rackspaces"
                prop_dbl_x="0.05672607570886611938" prop_dbl_y="0.01464843750000000000"
-               prop_int_MaxInputPins="256" prop_int_MaxOutputPins="256" cmp="1">
+               cmp="1">
       <PLUGIN name="From Rackspaces" format="Internal" category="Global" manufacturer="Deskew Technologies, LLC"
               version="1.0" file="10104242" uid="9a2db2" isInstrument="0" fileTime="0"
               infoUpdateTime="0" numInputs="0" numOutputs="4" isShell="0" isEnabled="1"
@@ -371,7 +371,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.3228346407413483" backPlate="1" backPlateVisible="1"
+                widgetValue="0.2834645807743073" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -415,7 +415,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.3543307185173035" backPlate="1" backPlateVisible="1"
+                widgetValue="0.2529038190841675" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -528,7 +528,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.3385826647281647" backPlate="1" backPlateVisible="1"
+                widgetValue="0.3464567065238953" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -550,7 +550,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.3622047305107117" backPlate="1" backPlateVisible="1"
+                widgetValue="0.2700839936733246" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -665,7 +665,7 @@ End
                 overrideName="0" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="X-TOUCH MINI" reflectMIDIOn="1" midiThru="0" midiSource="X-TOUCH MINI : Controller 1, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="442" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.3228346407413483" backPlate="1"
+                nodeId="0" paramIndex="-1" widgetValue="0.3149606287479401" backPlate="1"
                 backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
                 followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -687,7 +687,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.4430379746835443"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="1" midiSource="X-TOUCH MINI : Controller 20, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="5306" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="1.0" backPlate="11" backPlateVisible="1"
+                nodeId="0" paramIndex="-1" widgetValue="0.0" backPlate="11" backPlateVisible="1"
                 invertMIDI="0" displayRange="0" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -756,7 +756,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.4430379746835443"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="1" midiSource="X-TOUCH MINI : Controller 23, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="6074" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.0" backPlate="11" backPlateVisible="1"
+                nodeId="0" paramIndex="-1" widgetValue="1.0" backPlate="11" backPlateVisible="1"
                 invertMIDI="0" displayRange="0" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -801,9 +801,9 @@ End
                 overrideName="0" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="X-TOUCH MINI" reflectMIDIOn="1" midiThru="0" midiSource="X-TOUCH MINI : Controller 3, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="954" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.1811023652553558" backPlate="1"
-                backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
-                followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
+                nodeId="0" paramIndex="-1" widgetValue="0.0" backPlate="1" backPlateVisible="1"
+                invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
+                relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
                 widgetDirectedOSCType="0" widgetDirectedMinIntValue="0" widgetDirectedMaxIntValue="127"
                 widgetDirectedMinDoubleValue="0.0" widgetDirectedMaxDoubleValue="1.0"
@@ -914,7 +914,7 @@ End
                 overrideName="0" captionVisible="1" captionHeight="0.4320987654320987"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="X-TOUCH MINI : Note OFF D#1, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="10122" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.0" backPlate="7" backPlateVisible="1"
+                nodeId="0" paramIndex="-1" widgetValue="1.0" backPlate="7" backPlateVisible="1"
                 invertMIDI="0" displayRange="0" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -1741,7 +1741,7 @@ End
                 overrideName="0" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="X-TOUCH MINI" reflectMIDIOn="1" midiThru="0" midiSource="X-TOUCH MINI : Controller 6, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="1722" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.3700787127017975" backPlate="1"
+                nodeId="0" paramIndex="-1" widgetValue="0.3004530966281891" backPlate="1"
                 backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
                 followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -3505,7 +3505,7 @@ End
                 overrideName="0" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="X-TOUCH MINI" reflectMIDIOn="1" midiThru="0" midiSource="X-TOUCH MINI : Controller 13, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="3514" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.661407470703125" backPlate="1"
+                nodeId="0" paramIndex="-1" widgetValue="0.677154541015625" backPlate="1"
                 backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
                 followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -3800,7 +3800,7 @@ End
                 widgetIgnoresMouse="0" overrideName="0" captionVisible="1" captionHeight="0.4897959183673469"
                 reflectMIDI="X-TOUCH MINI" reflectMIDIOn="1" midiThru="1" midiSource="X-TOUCH MINI : Controller 24, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="6330" rigId="0" textColor="ffffffff"
-                nodeId="9" paramIndex="24" widgetValue="0.0" backPlate="7" backPlateVisible="1"
+                nodeId="9" paramIndex="24" widgetValue="1.0" backPlate="7" backPlateVisible="1"
                 invertMIDI="0" displayRange="0" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -3823,7 +3823,7 @@ End
                 widgetIgnoresMouse="0" overrideName="0" captionVisible="1" captionHeight="0.1317829457364341"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="X-TOUCH MINI : Controller 17, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="4538" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.661407470703125" backPlate="11"
+                nodeId="0" paramIndex="-1" widgetValue="0.6771653294563293" backPlate="11"
                 backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
                 followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -4024,7 +4024,7 @@ End
 //////////////        GLOBAL RACKSPACE CONTROLS REFERENCE      //////////////////
 // FX SELECT BUTTONS (VOX ALTERNATIVES AFTER &quot;/&quot;)
 // -------------------------------------------------------------------------------------------------------------------------------- //
-// LAYER A ROW 1 FX BUTTON | 0  Oct/Detune     | 1  Fltr/De-ess | 2  Comp        | 3  Fuzz/Gate   | 4  Boost/EQ   | 5  OD/Sat     | //
+// LAYER A ROW 1 FX BUTTON | 0  Detune/Oct/Dbl | 1  Fltr/De-ess | 2  Comp        | 3  Fuzz/Gate   | 4  Boost/EQ   | 5  OD/Sat     | //
 // -------------------------------------------------------------------------------------------------------------------------------- //
 // LAYER A ROW 2 FX BUTTON | 6  Phaser/Flanger | 7  Chorus Pre  | 8  Dly Pre/Rack| 9  Chorus Post | 10 Delay Post | 11 Reverb     | //
 // -------------------------------------------------------------------------------------------------------------------------------- //
@@ -4053,9 +4053,9 @@ End
 
 // FX/VOX MODE KNOBS
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
-// LAYER A FX KNOB TURN       | 0  Drive         | 1  Tone         | 2  Mix         | 3  Level       | 4  Decay/Fdbk  | 5  Time1/Attack| 6  Time2/Releas| 7  Rate        | //
+// LAYER A FX KNOB TURN       | 0  Drive/Thrld   | 1  Tone         | 2  Mix         | 3  Depth/Range | 4  Decay/Fdbk  | 5  Time1/Attack| 6  Time2/Releas| 7  Rate        | //
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
-// LAYER B FX KNOB TURN       | 8  Input         | 9  Mod1         | 10 Mod2        | 11 Mod3        | 12 Depth       | 13 Low cut     | 14 Hi cut      | 15 Size        | //
+// LAYER B FX KNOB TURN       | 8  Input         | 9  Mod1         | 10 Mod2        | 11 Mod3        | 12 Level       | 13 Low cut     | 14 Hi cut      | 15 Size        | //
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
 // LAYER A FX KNOB PUSH       | 16 OnOff         | 17 Mode1        | 18 Mode2       | 19 Mode3       | 20 Stereo      | 21 Host Sync   | 22             | 23             | //
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
@@ -4133,9 +4133,7 @@ Var
     holdfx: Boolean [24] // hold fx select widget changes temporarily to avoid feedback loop conditions
     holdctrls: Boolean [32] // hold control widget changes temporarily to avoid feedback loop conditions
     holdremote: Boolean  [32] //hold changes via osc temporarily to avoid feedback loop
-    //holdremotefx: Boolean [24]
     wtime: Double [32] // time a parameter was last modified
-    //wtimefx: Double [24]
     timeout: Double = 50 // time to reset hold 
     
     hellotimeout: Ramp //handshake timer
@@ -4159,26 +4157,15 @@ Var
     
     Var SA: PluginBlock // this is the &quot;System Actions&quot; plugin handle, to set it up so a LED on X-Touch Mini can blink with tempo beats
     beatflash: Widget // a widget the blinking button on X-Touch should be mapped to
+    
+    prevmode: Integer
+    wstimeout: Ramp
 
 Initialization //global rackspace initialization 
     Var i: Integer
-    /*For i = 0; i &lt; Size (fxcontrols); i = i + 1 Do //initialize hold arrays
-        holdfx[i] = false
-    End
-    For i = 0; i &lt; Size (rcontrols); i = i + 1 Do //initialize hold arrays
-        holdctrls [i] = false
-    End*/
-    //Print (&quot;holdfx size &quot; + Size (holdfx) + &quot;, holdctrls size &quot; + Size (holdctrls) + &quot;, ctrls size &quot; + Size (ctrls) + &quot;, rt size &quot; + Size (rt))
-    //Print (&quot;init - set mode 0&quot;)
-    //SetWidgetValue (m0, 0.0) //set mode to amp
-    //SetWidgetValue (m1, 0.0)
-    //SetWidgetValue (m2, 0.0)
     SetWidgetValue (m3, 3.0)
-    //mode = 3 //set mode to vox
-    //radioselect = true //set fx buttons to radio mode
     SetEnvVariable (&quot;mode&quot;, IntToString(mode)) //save mode to environment variable
     //Print (&quot;init - set fx 0&quot;)
-    //fxselected = -1 //set no fx selected
     SetEnvVariable (&quot;fxselected&quot;, IntToString(fxselected)) //save fx selected to environment variable
     SetParameter (SA, 23, 1.0) // set system &quot;beat mode&quot; to &quot;always&quot; so that tempo led flash works
 End
@@ -4225,7 +4212,6 @@ Function reset_fxcontrols () // turning off all fx buttons with mode change
             holdfx [i] = false
         End
         SetWidgetValue (fxcontrols [i], 0.0)
-        //SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeControlChangeMessageEx(XMCCs[i], 0.0, XChan))
         //Print (&quot;global reset_fxcontrols: reset &quot; + i + &quot;, hold &quot; + holdfx[i])
     End
     SetEnvVariable (&quot;fxselected&quot;, IntToString(-1))
@@ -4303,7 +4289,6 @@ Function update_knob_modes ()
         v: Double
         kv: Double
         ki: Integer
-        //w: Widget
         s: Boolean
         ks: Boolean
         k: Integer
@@ -4314,10 +4299,8 @@ Function update_knob_modes ()
         offset = 8
     End
     For i = 0; i &lt; Size (XKCCs); i = i + 1 Do
-        //w = rcontrols [i + 16]
         bi = i + 16 + offset
         k = i + offset
-        //ki = i + offset
         v = GetWidgetValue (rcontrols [bi])
         kv = GetWidgetValue (rcontrols [k])
         s = GetWidgetHideState (rcontrols [bi])
@@ -4355,9 +4338,7 @@ Function update_xtouch ()
         update_knob_modes()
     End
 End
-/*
-Var SA: PluginBlock
-*/
+
 On WidgetValueChanged (v: Double) From beatflash
     If MidiOutDeviceExists (&quot;iRig BlueBoard Bluetooth&quot;) == true Then
         If InSetlistMode () == True Then
@@ -4371,22 +4352,6 @@ On WidgetValueChanged (v: Double) From beatflash
         End
     End
 End
-
-
-/*
-On ControlChangeEvent (c: ControlChangeMessage) From XTIN 
-    Print (&quot;cc received, mode &quot; + mode)
-    If c.GetCCValue () == 0 Then
-        update_xtouch()
-    End
-End
-*/
-/*
-On NoteOffEvent (n: NoteMessage) From XTIN
-    Print (&quot;note received, mode &quot; + mode + &quot;, fxselected &quot; + fxselected)
-    update_xtouch()
-End
-*/
 
 On OSCMessageReceived (m: OSCMessage) Matching &quot;/xtmode&quot;
     Var xtm: Integer = OSC_GetArgAsInteger (m, 0)
@@ -4428,23 +4393,18 @@ End
 On SystemEvent Matching GigLoaded
     reset_fxcontrols ()
     SetWidgetValue (m3, 1.0) //set mode to Vox
-    //radioselect = true //set fx buttons to radio mode
-    //mode = 3 //set mode to vox
     OSC_SendIntegerSpecific (&quot;/hello&quot;, Size(rcontrols) - 1, oscip, oscport) //send hello message to check osc support
     TriggerOneShotRamp (hellotimeout, 200, 10) //set timeout for handshake
-    //update_xtouch()
     TriggerOneShotRamp (XTTimeout, 500, 10) //update xtouch after a timeout
 End
 
 //processes response to &quot;hello&quot; call from rackspace, sets mode based on that
 On OSCMessageReceived (m: OSCMessage) Matching &quot;/ping&quot; //
-    //OSC_SendIntegerSpecific (&quot;/hello&quot;, Size(rcontrols) - 1, oscip, oscport)
     StopOneShotRamp (hellotimeout) //stop handshake timeout
     osc_enabled = true //enable osc comms with rackspace
     chmodeallowed = true //allow mode change, rackspace has support
     holdwvc = false //allow widget value change
     SetWidgetValue (modecontrols [OSC_GetArgAsInteger (m, 0)], 1.0) //set mode based on response
-    //update_xtouch()
     TriggerOneShotRamp (XTTimeout, 200, 10) // update xtouch after a timeout
 End
 
@@ -4477,12 +4437,8 @@ On GeneratorEndCycle (time: Integer) From hellotimeout
     //Print (&quot;Handshake timeout&quot;)
     
     chmodeallowed = false //disallow mode change
-    //update_xtouch()
     TriggerOneShotRamp (XTTimeout, 200, 10) //update xtouch after a timeout
 End
-
-Var prevmode: Integer
-Var wstimeout: Ramp
 
 /* GLOBAL RACKSPACE 
 &lt;--- UPDATE THIS FOR ACTUAL MODE SELECT BUTTONS ---&gt; */
@@ -4529,7 +4485,6 @@ On WidgetValueChanged (w: widget, index: integer, newValue: double) from m0, m1,
         reset_fxcontrols () //reset fx buttons to off
         //Print(&quot;global wvc mode select: mode change from &quot; + prev + &quot; to &quot; + mode + &quot; radioselect &quot; + radioselect + &quot; fxselected &quot; + fxselected)
     End
-    //update_xtouch()
     TriggerOneShotRamp (XTTimeout, 200, 10) //update xtouch after a timeout
 End
 
@@ -4594,7 +4549,6 @@ On WidgetValueChanged (w: widget, i: integer, v: double) from fx0, fx1, fx2, fx3
                 osc_out (Size (rcontrols) + i, v)
             End
     End
-    //update_xtouch()
     TriggerOneShotRamp (XTTimeout, 200, 10)
 End
 
@@ -4636,7 +4590,6 @@ On OSCMessageReceived (m: OSCMessage) Matching &quot;/ws&quot; //bulk update of 
             ctrl_disable (rcontrols, i)
         End
     End
-    //update_xtouch()
     TriggerOneShotRamp (XTTimeout, 200, 10)
 End
 
@@ -4665,16 +4618,12 @@ On WidgetValueChanged (w: Widget, i: integer, v: double) from k0, k1, k2, k3, k4
     If mode == 0 Or mode == 1 Or (mode == 2 And fxselected &gt; -1) And holdwvc == false Then //if mode is amp, eq or fx and fx is selected
         //Print (&quot;global wvc rcontrols: w&quot; + i + &quot; value changed, hold &quot; + holdctrls[i] + &quot;, mode &quot; + mode + &quot;, fxselected &quot; + fxselected + &quot;, holdwvc &quot; + holdwvc)
         //Print (&quot;addressing array holdctrls, size &quot; + Size(holdctrls) + &quot;, i &quot; + i)
-        //holdctrls [i] = true //hold control widget change
-        //osc_out (i, v) //send osc message to set control widget value
         sync_remote (i, v)
     Elsif mode == 3 And fxselected &gt; -1 And holdwvc == false Then //if mode is vox and fx is selected
         //Print (&quot;global wvc rcontrols: w&quot; + i + &quot; value changed, hold &quot; + holdctrls[i] + &quot;, mode &quot; + mode + &quot;, fxselected &quot; + fxselected + &quot;, holdwvc &quot; + holdwvc)
         //Print (&quot;addressing array rt, size &quot; + Size (rt) + &quot;, i &quot; + i)
         If IndexOf (rt, i) &gt; -1 Then //if control widget is in rt
             //Print (&quot;addressing array holdctrls, size &quot; + Size (holdctrls) + &quot;, i &quot; + i)
-            /*holdctrls [i] = true
-            SetWidgetValue (ctrls [IndexOf (rt, i)], v) //set control widget value*/
             sync_local (IndexOf(rt, i), v)
             //Print (&quot;calling sync_local for index &quot; + IndexOf(rt, i) + &quot;, value &quot; + v)
         End
@@ -4699,18 +4648,6 @@ On OSCMessageReceived (m: OSCMessage) Matching &quot;/ws1&quot; //update one con
         fxindex: Integer //index for fx widget
     //Print (&quot;global oscmr /ws1: request for w&quot; + index + &quot;, value &quot; + value + &quot;, mode &quot; + mode)
     Select
-        /*index &lt; Size (rcontrols)/ 2 Do //if index is less than half of control widgets, it's a knob, set control widget value
-            Select
-                holdctrls [index] == false Do
-                    SetWidgetValue (rcontrols [index], value)
-                holdctrls [index] == true Do 
-                    holdctrls [index] = false
-                //Print (&quot;global oscmr /ws1: setting hold on w&quot; + index + &quot; next osc send&quot;)
-            End
-        index &gt;= Size (rcontrols)/2 And index &lt; Size (rcontrols) Do //if index is more than half of control widgets, it's a button, set control widget value
-            holdctrls [index] = true
-            SetWidgetValue (rcontrols [index], value)
-            holdctrls [index] = false*/
         index &gt; Size (rcontrols) - 1 And mode &lt; 2 Do //if index is more than control widgets, it's an fx button, set fx widget value
             //Print (&quot;addressing array holdfx, size &quot; + Size(holdfx) + &quot;, index &quot; + index)
             fxindex = index - Size (rcontrols)
@@ -4776,17 +4713,6 @@ Var j: Integer
         rt = Vox5_rt //get control widgets for this device
         j = rt [i] //get control widget index
         sync_rcontrols (j, v)
-        /*Select 
-            holdctrls [j] == false And j &lt; Size (rcontrols)/2 Do //if control widget is not held and is a knob
-                SetWidgetValue (rcontrols [j], v) //set control widget value
-            holdctrls [j] == true And j &lt; Size (rcontrols)/2 Do //if control widget is held and is a knob
-                holdctrls [j] = false //release hold
-            //Print (&quot;global oscmr /ws1: setting hold on w&quot; + j + &quot; next osc send&quot;)
-            j &gt;= Size (rcontrols)/2 And j &lt; Size (rcontrols) Do //if control widget is a button
-                holdctrls [j] = true
-                SetWidgetValue (rcontrols [j], v) //set control widget value
-                holdctrls [j] = false
-        End*/
     End
 End
 
@@ -4797,17 +4723,6 @@ Var j: Integer
         rt = Vox9_rt //get control widgets for this device
         j = rt [i] //get control widget index
         sync_rcontrols (j, v)
-        /*Select 
-            holdctrls [j] == false And j &lt; Size (rcontrols)/2 Do
-                SetWidgetValue (rcontrols [j], v)
-            holdctrls [j] == true And j &lt; Size (rcontrols)/2 Do 
-                holdctrls [j] = false
-            //Print (&quot;global oscmr /ws1: setting hold on w&quot; + j + &quot; next osc send&quot;)
-            j &gt;= Size (rcontrols)/2 And j &lt; Size (rcontrols) Do
-                holdctrls [j] = true
-                SetWidgetValue (rcontrols [j], v)
-                holdctrls [j] = false
-        End*/
     End
 End
 
@@ -4819,17 +4734,6 @@ Var j: Integer
         rt = Vox10_rt
         j = rt [i]
         sync_rcontrols (j, v)
-        /*Select 
-            holdctrls [j] == false And j &lt; Size (rcontrols)/2 Do
-                SetWidgetValue (rcontrols [j], v)
-            holdctrls [j] == true And j &lt; Size (rcontrols)/2 Do 
-                holdctrls [j] = false
-            //Print (&quot;global oscmr /ws1: setting hold on w&quot; + j + &quot; next osc send&quot;)
-            j &gt;= Size (rcontrols)/2 And j &lt; Size (rcontrols) Do
-                holdctrls [j] = true
-                SetWidgetValue (rcontrols [j], v)
-                holdctrls [j] = false
-        End*/
     End
 End
 
@@ -4970,7 +4874,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.25"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="112" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.3228346407413483" backPlate="1" backPlateVisible="1"
+                widgetValue="0.3149606287479401" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -4992,7 +4896,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.25"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="112" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.3700787127017975" backPlate="1" backPlateVisible="1"
+                widgetValue="0.3004530966281891" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -5058,7 +4962,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.3622047305107117" backPlate="1" backPlateVisible="1"
+                widgetValue="0.1653543263673782" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -5171,7 +5075,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.3779527544975281" backPlate="1" backPlateVisible="1"
+                widgetValue="0.3858267962932587" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -5193,7 +5097,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.4015747904777527" backPlate="1" backPlateVisible="1"
+                widgetValue="0.4881890118122101" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -5282,7 +5186,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.4320987654320987"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.0" backPlate="7" backPlateVisible="1" invertMIDI="0"
+                widgetValue="1.0" backPlate="7" backPlateVisible="1" invertMIDI="0"
                 displayRange="0" ignoresVariations="0" followHardware="0" relativeMode="0"
                 enableDirectedOSC="0" directedOSCAddressPattern="" directedOSCIPAddress=""
                 directedOSCPort="9001" directedOSCTargetName="" widgetDirectedOSCType="0"
@@ -5526,7 +5430,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.07407407407407407"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="20608" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.661407470703125" backPlate="11" backPlateVisible="1"
+                widgetValue="0.677154541015625" backPlate="11" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
