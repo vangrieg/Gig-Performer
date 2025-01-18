@@ -124,9 +124,8 @@ Var
     
     initmode: Integer = 0 // initial mode of this rack, 0 for amp, 1 for eq, 2 for fx
 
+    Include "includes/osc"
 
-    oscip: String = "127.0.0.1" 
-    oscport: Integer = 9010 //OSC_GetGPListeningPort () //set 9010 for debugging, else function
     osc_enabled: Boolean = false //flag to enable/disable OSC communication
     
     maxrt: Integer = 31 // maximum index of rack controls on global rackspace, to offset fx in amp/eq mode

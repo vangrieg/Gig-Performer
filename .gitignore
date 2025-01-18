@@ -6,8 +6,5 @@ Song\ Lyrics-Chords
 !*.gig
 !*.gpscript
 !Scripts/Templates/\*.tmp
-*.pdf
-*.psd
-*.png
 .gitignore
 
