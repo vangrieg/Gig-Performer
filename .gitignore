@@ -1,4 +1,4 @@
-DS_Store
+**.DS_Store
 AudioSettings/Duet.gpaudiosettings
 CachedAudioFiles/
 Recordings/
@@ -7,6 +7,5 @@ Song\ Lyrics-Chords
 *.pdf
 *.psd
 *.png
+.gitignore
 
-Controllers/Overlays/Nanokontrol 2/.DS_Store
-.DS_Store
