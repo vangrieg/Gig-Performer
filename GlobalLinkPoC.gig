@@ -393,7 +393,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.3464567065238953" backPlate="1" backPlateVisible="1"
+                widgetValue="0.4173228442668915" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -506,7 +506,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.4015747904777527" backPlate="1" backPlateVisible="1"
+                widgetValue="0.4330708682537079" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -665,7 +665,7 @@ End
                 overrideName="0" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="X-TOUCH MINI" reflectMIDIOn="1" midiThru="0" midiSource="X-TOUCH MINI : Controller 1, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="442" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.3228346407413483" backPlate="1"
+                nodeId="0" paramIndex="-1" widgetValue="0.3307086527347565" backPlate="1"
                 backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
                 followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -687,7 +687,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.4430379746835443"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="1" midiSource="X-TOUCH MINI : Controller 20, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="5306" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="1.0" backPlate="11" backPlateVisible="1"
+                nodeId="0" paramIndex="-1" widgetValue="0.0" backPlate="11" backPlateVisible="1"
                 invertMIDI="0" displayRange="0" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -756,7 +756,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.4430379746835443"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="1" midiSource="X-TOUCH MINI : Controller 23, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="6074" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.0" backPlate="11" backPlateVisible="1"
+                nodeId="0" paramIndex="-1" widgetValue="1.0" backPlate="11" backPlateVisible="1"
                 invertMIDI="0" displayRange="0" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -1719,7 +1719,7 @@ End
                 overrideName="0" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="X-TOUCH MINI" reflectMIDIOn="1" midiThru="0" midiSource="X-TOUCH MINI : Controller 5, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="1466" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.3149606287479401" backPlate="1"
+                nodeId="0" paramIndex="-1" widgetValue="0.3307087123394012" backPlate="1"
                 backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
                 followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -1741,7 +1741,7 @@ End
                 overrideName="0" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="X-TOUCH MINI" reflectMIDIOn="1" midiThru="0" midiSource="X-TOUCH MINI : Controller 6, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="1722" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.2755905389785767" backPlate="1"
+                nodeId="0" paramIndex="-1" widgetValue="0.3004530966281891" backPlate="1"
                 backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
                 followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -3505,9 +3505,9 @@ End
                 overrideName="0" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="X-TOUCH MINI" reflectMIDIOn="1" midiThru="0" midiSource="X-TOUCH MINI : Controller 13, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="3514" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.6299212574958801" backPlate="1"
-                backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
-                followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
+                nodeId="0" paramIndex="-1" widgetValue="0.5" backPlate="1" backPlateVisible="1"
+                invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
+                relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
                 widgetDirectedOSCType="0" widgetDirectedMinIntValue="0" widgetDirectedMaxIntValue="127"
                 widgetDirectedMinDoubleValue="0.0" widgetDirectedMaxDoubleValue="1.0"
@@ -3823,9 +3823,9 @@ End
                 widgetIgnoresMouse="0" overrideName="0" captionVisible="1" captionHeight="0.1317829457364341"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="X-TOUCH MINI : Controller 17, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="4538" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.629913330078125" backPlate="11"
-                backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
-                followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
+                nodeId="0" paramIndex="-1" widgetValue="0.5" backPlate="11" backPlateVisible="1"
+                invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
+                relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
                 widgetDirectedOSCType="0" widgetDirectedMinIntValue="0" widgetDirectedMaxIntValue="127"
                 widgetDirectedMinDoubleValue="0.0" widgetDirectedMaxDoubleValue="1.0"
@@ -4022,7 +4022,7 @@ End
       <PARAM widgetId="641" value="0.5" onLoadValue="0.5"/>
       <PARAM widgetId="643" value="1.0" onLoadValue="1.0"/>
     </PRESET>
-    <SCRIPT_CONTENT>
+    <SCRIPT_CONTENT>Include &quot;$rig$&quot;
 
 //////////////        GLOBAL RACKSPACE CONTROLS REFERENCE      //////////////////
 // FX SELECT BUTTONS (VOX ALTERNATIVES AFTER &quot;/&quot;)
@@ -4099,8 +4099,7 @@ Var
     ////////////////////////////////////////////////////
     //               COMMON DECLARATIONS              //
     ////////////////////////////////////////////////////
-    oscip: String = &quot;127.0.0.1&quot;
-    oscport: Integer = 9010 //OSC_GetGPListeningPort () //set 9010 for debugging, else function
+    Include &quot;includes/osc&quot;
     ////////////////////////////////////////////////////
     
     ////////////////////////////////////////////////////
@@ -4870,7 +4869,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.25"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="112" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.3543307185173035" backPlate="1" backPlateVisible="1"
+                widgetValue="0.2831177115440369" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -5426,7 +5425,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.07407407407407407"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="20608" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.590545654296875" backPlate="11" backPlateVisible="1"
+                widgetValue="0.75592041015625" backPlate="11" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -5573,8 +5572,8 @@ Var
     initmode: Integer = 0 // initial mode of this rack, 0 for amp, 1 for eq, 2 for fx
 
 
-    oscip: String = &quot;127.0.0.1&quot; 
-    oscport: Integer = 9010 //OSC_GetGPListeningPort () //set 9010 for debugging, else function
+    Include &quot;includes/osc&quot;
+    
     osc_enabled: Boolean = false //flag to enable/disable OSC communication
     
     maxrt: Integer = 31 // maximum number of rack controlS on global rackspace, to offset fx in amp/eq mode
@@ -6075,7 +6074,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.5275590419769287" backPlate="1" backPlateVisible="1"
+                widgetValue="0.4803149700164795" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -6097,7 +6096,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.4645669162273407" backPlate="1" backPlateVisible="1"
+                widgetValue="0.4881889820098877" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -6188,7 +6187,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.5196850299835205" backPlate="1" backPlateVisible="1"
+                widgetValue="0.5196849703788757" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -6210,7 +6209,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.4094488322734833" backPlate="1" backPlateVisible="1"
+                widgetValue="0.3858267664909363" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -6232,7 +6231,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.4566929042339325" backPlate="1" backPlateVisible="1"
+                widgetValue="0.4881889820098877" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -6803,9 +6802,8 @@ Var
     ctrls: Widget Array //to hold controls of current device
     rt: Integer Array //to hold mapping of current device
 
-
-    oscip: String = &quot;127.0.0.1&quot; 
-    oscport: Integer = 9010 //OSC_GetGPListeningPort () //set 9010 for debugging, else function
+    Include &quot;includes/osc&quot;
+    
     osc_enabled: Boolean = false //flag to enable/disable OSC communication
     
     maxrt: Integer = 31 // maximum number of rack controlS on global rackspace, to offset fx in amp/eq mode
@@ -7205,7 +7203,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.25"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="112" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.3228346407413483" backPlate="1" backPlateVisible="1"
+                widgetValue="0.3307086527347565" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -7227,7 +7225,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.25"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="112" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.2755905389785767" backPlate="1" backPlateVisible="1"
+                widgetValue="0.3004530966281891" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -7472,7 +7470,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.25"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="112" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.3149606287479401" backPlate="1" backPlateVisible="1"
+                widgetValue="0.3307087123394012" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -7761,11 +7759,11 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.07407407407407407"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="20608" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.6299212574958801" backPlate="11" backPlateVisible="1"
-                invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
-                relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
-                directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
-                widgetDirectedOSCType="0" widgetDirectedMinIntValue="0" widgetDirectedMaxIntValue="127"
+                widgetValue="0.5" backPlate="11" backPlateVisible="1" invertMIDI="0"
+                displayRange="2" ignoresVariations="0" followHardware="0" relativeMode="0"
+                enableDirectedOSC="0" directedOSCAddressPattern="" directedOSCIPAddress=""
+                directedOSCPort="9001" directedOSCTargetName="" widgetDirectedOSCType="0"
+                widgetDirectedMinIntValue="0" widgetDirectedMaxIntValue="127"
                 widgetDirectedMinDoubleValue="0.0" widgetDirectedMaxDoubleValue="1.0"
                 widgetDirectedStringListValue="T2ZmCk9u" widgetHandle="allOut"
                 enableOSC="0" invertOSC="0" groupName="" widgetMoveBehavior="0"
@@ -7915,9 +7913,8 @@ Var
     
     initmode: Integer = 0 // initial mode of this rack, 0 for amp, 1 for eq, 2 for fx
 
-
-    oscip: String = &quot;127.0.0.1&quot; 
-    oscport: Integer = 9010 //OSC_GetGPListeningPort () //set 9010 for debugging, else function
+    Include &quot;includes/osc&quot;
+    
     osc_enabled: Boolean = false //flag to enable/disable OSC communication
     
     maxrt: Integer = 31 // maximum index of rack controls on global rackspace, to offset fx in amp/eq mode
