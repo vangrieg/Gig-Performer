@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<GIGRACK activeRackSpace="3" gbpm="83.04953765869141" gtimeNum="4" gtimeDen="4"
+<GIGRACK activeRackSpace="0" gbpm="91.94856262207031" gtimeNum="4" gtimeDen="4"
          gTranspose="0" version="5.0" scriptWindowPos="414 174 1417 842"
          globalStereoCount="2" globalPanelVisible="1">
-  <SCRIPT_CONTENT>Var xtmode: Integer = 0
-    oscip: String = &quot;127.0.0.1&quot;
-    oscport: Integer = 9010
+  <SCRIPT_CONTENT>Include &quot;$system$&quot;
+Include &quot;includes/osc&quot;
+
+Var xtmode: Integer = 0
+  
     XTOUCH: MidiInDeviceAlias
     SWITCH: MidiInDeviceAlias
     
@@ -665,7 +667,7 @@ End
                 overrideName="0" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="X-TOUCH MINI" reflectMIDIOn="1" midiThru="0" midiSource="X-TOUCH MINI : Controller 1, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="442" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.3307086527347565" backPlate="1"
+                nodeId="0" paramIndex="-1" widgetValue="0.2831177115440369" backPlate="1"
                 backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
                 followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -687,7 +689,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.4430379746835443"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="1" midiSource="X-TOUCH MINI : Controller 20, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="5306" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.0" backPlate="11" backPlateVisible="1"
+                nodeId="0" paramIndex="-1" widgetValue="1.0" backPlate="11" backPlateVisible="1"
                 invertMIDI="0" displayRange="0" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -756,7 +758,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.4430379746835443"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="1" midiSource="X-TOUCH MINI : Controller 23, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="6074" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="1.0" backPlate="11" backPlateVisible="1"
+                nodeId="0" paramIndex="-1" widgetValue="0.0" backPlate="11" backPlateVisible="1"
                 invertMIDI="0" displayRange="0" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -2520,7 +2522,7 @@ End
                 overrideName="0" captionVisible="1" captionHeight="0.4320987654320987"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="X-TOUCH MINI : Note OFF F-1, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="4490" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.0" backPlate="7" backPlateVisible="1"
+                nodeId="0" paramIndex="-1" widgetValue="1.0" backPlate="7" backPlateVisible="1"
                 invertMIDI="0" displayRange="0" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -2658,7 +2660,7 @@ End
                 overrideName="0" captionVisible="1" captionHeight="0.4320987654320987"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="X-TOUCH MINI : Note OFF G-1, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="5002" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.0" backPlate="7" backPlateVisible="1"
+                nodeId="0" paramIndex="-1" widgetValue="1.0" backPlate="7" backPlateVisible="1"
                 invertMIDI="0" displayRange="0" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -3505,9 +3507,9 @@ End
                 overrideName="0" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="X-TOUCH MINI" reflectMIDIOn="1" midiThru="0" midiSource="X-TOUCH MINI : Controller 13, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="3514" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.5" backPlate="1" backPlateVisible="1"
-                invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
-                relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
+                nodeId="0" paramIndex="-1" widgetValue="0.5905457139015198" backPlate="1"
+                backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
+                followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
                 widgetDirectedOSCType="0" widgetDirectedMinIntValue="0" widgetDirectedMaxIntValue="127"
                 widgetDirectedMinDoubleValue="0.0" widgetDirectedMaxDoubleValue="1.0"
@@ -3823,9 +3825,9 @@ End
                 widgetIgnoresMouse="0" overrideName="0" captionVisible="1" captionHeight="0.1317829457364341"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="X-TOUCH MINI : Controller 17, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="4538" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.5" backPlate="11" backPlateVisible="1"
-                invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
-                relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
+                nodeId="0" paramIndex="-1" widgetValue="0.590545654296875" backPlate="11"
+                backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
+                followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
                 widgetDirectedOSCType="0" widgetDirectedMinIntValue="0" widgetDirectedMaxIntValue="127"
                 widgetDirectedMinDoubleValue="0.0" widgetDirectedMaxDoubleValue="1.0"
@@ -4022,7 +4024,7 @@ End
       <PARAM widgetId="641" value="0.5" onLoadValue="0.5"/>
       <PARAM widgetId="643" value="1.0" onLoadValue="1.0"/>
     </PRESET>
-    <SCRIPT_CONTENT>Include &quot;$rig$&quot;
+    <SCRIPT_CONTENT>Include &quot;$system$&quot;
 
 //////////////        GLOBAL RACKSPACE CONTROLS REFERENCE      //////////////////
 // FX SELECT BUTTONS (VOX ALTERNATIVES AFTER &quot;/&quot;)
@@ -4092,409 +4094,13 @@ Var
     
     Vox_buttons: Widget Array = [od_on, chorus_on, delay_on]   // Vox FX on/off buttons
     Vox_rt: Integer Array = [5, 9, 10] // Vox devices available, mapped to global FX buttons, see see FX/VOX MODE KNOBS table for reference
-   
-    ctrls: Widget Array
-    rt: Integer Array
     
-    ////////////////////////////////////////////////////
-    //               COMMON DECLARATIONS              //
-    ////////////////////////////////////////////////////
-    Include &quot;includes/osc&quot;
-    ////////////////////////////////////////////////////
+//////////////////////////////////////////////////
+//              GLOBAL FUNCTIONS                //
+//          !!!!! DO NOT TOUCH !!!!!            //
+//////////////////////////////////////////////////
     
-    ////////////////////////////////////////////////////
-    //             CONTROL WIDGET DECLARATIONS        //
-    ////////////////////////////////////////////////////
-    m0, m1, m2, m3 : Widget // mode select radio buttons
-    modecontrols: Widget Array = [m0, m1, m2, m3] // mode select radio buttons array
-
-    k0, k1, k2, k3, k4, k5, k6, k7, 
-    k8, k9, k10, k11, k12, k13, k14, k15: Widget // control knobs
-    b0, b1, b2, b3, b4, b5, b6, b7, 
-    b8, b9, b10, b11, b12, b13, b14, b15: Widget //control buttons
-    rcontrols: Widget Array = [k0, k1, k2, k3, k4, k5, k6, k7, k8, k9, k10, k11, k12, k13, k14, k15, 
-                               b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15] // all control widgets array
-
-    fx0, fx1, fx2, fx3, fx4, fx5, 
-    fx6, fx7, fx8, fx9, fx10, fx11, 
-    fx12, fx13, fx14, fx15, fx16, fx17, 
-    fx18, fx19, fx20, fx21, fx22, fx23: Widget //fx select widgets
-    fxcontrols: Widget Array = [fx0, fx1, fx2, fx3, fx4, fx5, 
-                                fx6, fx7, fx8, fx9, fx10, fx11, 
-                                fx12, fx13, fx14, fx15, fx16, fx17, 
-                                fx18, fx19, fx20, fx21, fx22, fx23] //fx select widgets array
-    
-    rackOutput: Widget // the fader to control rackspace output if rackspace has such a control
-    rack_out_index: Integer = 12
-    
-    mode: Integer = 3 // mode selected, 0 - amp, 1 - eq, 2 - fx, 3 - vox
-
-    radioselect: Boolean = true // whether FX buttons work as radio buttons (for FX and Vox modes)
-    fxselected: Integer = -1 // current fx selected (for FX and Vox modes)
-    
-    holdfx: Boolean [24] // hold fx select widget changes temporarily to avoid feedback loop conditions
-    holdctrls: Boolean [32] // hold control widget changes temporarily to avoid feedback loop conditions
-    holdremote: Boolean  [32] //hold changes via osc temporarily to avoid feedback loop
-    wtime: Double [32] // time a parameter was last modified
-    timeout: Double = 50 // time to reset hold 
-    
-    hellotimeout: Ramp //handshake timer
-    
-    osc_enabled: Boolean = false //true when remote rackspace supports this script
-    chmodeallowed: Boolean = false //true when mode change is allowed
-    holdwvc: Boolean = true //hold widget value change, while waiting for response from rackspace
-        
-    /////////////////////////////////////////////////////
-    XTLayer: Integer = 0 // Layer A on xtouch mini
-    XTTimeout: Ramp //timeout to update xtouch leds
-    //XTIN: MidiInBlock //
-    //XTOUT: MidiOutBlock
-    XMNotes: Integer Array = [0, 1, 8, 9] // notes to control xtouch mode leds
-    XFXNotes: Integer Array =  [2, 3, 4, 5, 6, 7,
-                                10, 11, 12, 13, 14, 15] // notes to control xtouch fx leds
-    XKCCs: Integer Array = [1, 2, 3, 4, 5, 6, 7, 8] // ccs of xtouch knobs
-    XChan: Integer = 1 // xtouch control channel
-    
-    xtmode: Integer = 0 // xtouch mode
-    
-    Var SA: PluginBlock // this is the &quot;System Actions&quot; plugin handle, to set it up so a LED on X-Touch Mini can blink with tempo beats
-    beatflash: Widget // a widget the blinking button on X-Touch should be mapped to
-    
-    prevmode: Integer
-    wstimeout: Ramp
-
-Initialization //global rackspace initialization 
-    Var i: Integer
-    SetWidgetValue (m3, 3.0)
-    SetEnvVariable (&quot;mode&quot;, IntToString(mode)) //save mode to environment variable
-    //Print (&quot;init - set fx 0&quot;)
-    SetEnvVariable (&quot;fxselected&quot;, IntToString(fxselected)) //save fx selected to environment variable
-    SetParameter (SA, 23, 1.0) // set system &quot;beat mode&quot; to &quot;always&quot; so that tempo led flash works
-End
-
-Function osc_out (v1: Integer, v2: Double) // sending 2 argument osc, integer plus double, for setting widget value on a remote rackspace
-    Var m: OSCMessage
-        addr: String
-    Select // choose proper address based on mode
-        mode == 0 Do
-            addr = &quot;/amp&quot;
-        mode == 1 Do
-            addr = &quot;/eq&quot;
-        mode == 2 Do
-            addr = &quot;/fx&quot; + fxselected
-    End
-    If osc_enabled == true Then // if remote rackspace supports this script, send osc message
-        OSC_SetAddress (m, addr)
-        OSC_AppendIntArg (m, v1)
-        OSC_AppendDoubleArg (m, v2)
-        OSC_SendSpecific (m, oscip, oscport)
-    End
-    //Print (&quot;global osc_out: &quot; + addr + &quot; &quot; + OSC_GetArgAsInteger (m, 0) + &quot; &quot; + OSC_GetArgAsDouble (m, 1))
-    //Print(&quot;osc address &quot; + addr)
-End
-
-Function osc_cmd (addr: String) 
-    If osc_enabled == true Then // if remote rackspace supports this script, send osc message
-        OSC_SendCommandSpecific (addr, oscip, oscport)
-    End
-End
-
-Function reset_fxcontrols () // turning off all fx buttons with mode change
-    Var i: integer
-    //Print (&quot;global reset_fxcontrols: resetting widgets to 0&quot;) 
-    For i = 0; i &lt; Size (holdfx); i = i + 1 Do 
-        holdfx[i] = true
-    End
-    
-    //Print (&quot;hold &quot; + hold)
-    For i = 0; i &lt; Size (fxcontrols); i = i + 1 Do //reset all fx buttons to off
-        If GetWidgetValue (fxcontrols [i]) == 1.0 Then
-            holdfx [i] = true
-        Else 
-            holdfx [i] = false
-        End
-        SetWidgetValue (fxcontrols [i], 0.0)
-        //Print (&quot;global reset_fxcontrols: reset &quot; + i + &quot;, hold &quot; + holdfx[i])
-    End
-    SetEnvVariable (&quot;fxselected&quot;, IntToString(-1))
-    SetEnvVariable (&quot;mode&quot;, IntToString(mode))
-End
-
-Function reset_fxcontrols_r (i: Integer) // set all fx select buttons to off except one chosen, for radio mode
-    Var j: Integer
-    //Print (&quot;global reset_fxcontrols_r: setting widgets to &quot; + i) 
-    For j = 0; j &lt; Size (holdfx); j = j + 1 Do 
-        holdfx[j] = true
-    End
-    
-    For j = 0; j &lt; Size (fxcontrols); j = j + 1 Do
-        If GetWidgetValue (fxcontrols [j]) == 1.0 Then
-            holdfx [j] = true
-        Else 
-            holdfx [j] = false
-        End
-        If j == i Then //set the chosen one to on
-            SetWidgetValue (fxcontrols [j], 1.0)
-            //Print (&quot;global reset_fxcontrols_r: Set &quot; + j + &quot; to 1.0, hold &quot; + holdfx[j])
-        Else
-            SetWidgetValue (fxcontrols [j], 0.0)
-            //Print (&quot;global reset_fxcontrols_r: Set &quot; + j + &quot; to 0.0, hold &quot; + holdfx[j])
-        End
-        
-    End
-    fxselected = i //set the chosen fx
-    SetEnvVariable (&quot;fxselected&quot;, IntToString(i)) //save chosen fx to environment variable
-    SetEnvVariable (&quot;mode&quot;, IntToString(mode)) //save mode to environment variable
-    //Print (&quot;global reset_fxcontrols_r: fx selected &quot; + fxselected)
-End
-
-Function send_mode_led ()
-    Var i: Integer
-    If xtmode == 0 Then
-        For i = 0; i &lt; Size (XMNotes); i = i + 1 Do
-            If mode == i Then
-                SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeNoteMessageEx(XMNotes[i], 1, XChan))
-            Else
-                SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeNoteMessageEx(XMNotes[i], 0, XChan))
-            End
-        End
-    End
-End
-
-Function send_fx_led ()
-    Var i: Integer
-        v: Double
-        k: Integer
-        offset: Integer
-    If xtmode == 0 Then
-        offset = 0
-    Else 
-        offset = 12
-    End
-    For i = 0; i &lt; Size(XFXNotes); i = i + 1 Do
-        k = i + offset
-        v = GetWidgetValue (fxcontrols[k])
-        Select
-            v == 0.0 And GetWidgetHideState (fxcontrols [k]) == true Do
-                SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeNoteMessageEx(XFXNotes[i], 0, XChan))
-            v == 0.0 And GetWidgetHideState (fxcontrols [k]) == false Do
-                SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeNoteMessageEx(XFXNotes[i], 2, XChan))
-            v == 1.0 And GetWidgetHideState (fxcontrols [k]) == false Do
-                SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeNoteMessageEx(XFXNotes[i], 1, XChan))
-        End
-    End
-End
-
-Function update_knob_modes ()
-    Var i: Integer
-        bi: Integer
-        v: Double
-        kv: Double
-        ki: Integer
-        s: Boolean
-        ks: Boolean
-        k: Integer
-        offset: Integer
-    If xtmode == 0 Then
-        offset = 0
-    Else 
-        offset = 8
-    End
-    For i = 0; i &lt; Size (XKCCs); i = i + 1 Do
-        bi = i + 16 + offset
-        k = i + offset
-        v = GetWidgetValue (rcontrols [bi])
-        kv = GetWidgetValue (rcontrols [k])
-        s = GetWidgetHideState (rcontrols [bi])
-        ks = GetWidgetHideState (rcontrols [k])
-        //Print (&quot;rcontrol index i &quot; + k + &quot;, button index bi &quot; + bi + &quot;, hidden &quot; + ks + &quot;, value &quot; + kv + &quot;, button hidden &quot; + s + &quot;, button value &quot; + v)
-        //Print (&quot;mode cc &quot; + XKCCs[i] + &quot;, offset for value cc &quot; + offset) 
-        Select
-            v == 0.0 And s == false And ks == false Do // btn off and visible, knob visible
-                SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeControlChangeMessageEx (XKCCs[i], 0, XChan))
-                SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeControlChangeMessageEx (XKCCs[i] + offset, ParamToMidi(kv), 11))
-            v == 1.0 And s == false And ks == false Do // btn on and visible, knob visible
-                SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeControlChangeMessageEx (XKCCs[i], 2, XChan))
-                SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeControlChangeMessageEx (XKCCs[i] + offset, ParamToMidi(kv), 11))
-            s == true And ks == false Do //btn hidden but knob visible
-                SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeControlChangeMessageEx (XKCCs[i], 0, XChan))
-                SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeControlChangeMessageEx (XKCCs[i] + offset, ParamToMidi(kv), 11))
-            ks == true And s == false And v == 1.0 Do // knob hidden btn visible and on - &quot;fan mode&quot;
-                SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeControlChangeMessageEx (XKCCs[i] + offset, 100, 11))
-                SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeControlChangeMessageEx (XKCCs[i], 3, XChan))
-            ks == true And s == false And v == 0.0 Do // knob hidden btn visible and off - blink
-                SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeControlChangeMessageEx (XKCCs[i] + 8, 28, XChan))
-            ks == true And s == true Do // both hidden
-                SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeControlChangeMessageEx (XKCCs[i] + offset, 0, 11))
-                SendNowToMidiOutDevice (&quot;X-TOUCH MINI&quot;, MakeControlChangeMessageEx (XKCCs[i], 0, XChan))
-        End
-    End
-End
-
-Function update_xtouch ()
-    If MidiOutDeviceExists (&quot;X-TOUCH MINI&quot;) == true Then
-        If xtmode == 0 Then
-            send_mode_led()
-        End
-        send_fx_led()
-        update_knob_modes()
-    End
-End
-
-On WidgetValueChanged (v: Double) From beatflash
-    If MidiOutDeviceExists (&quot;iRig BlueBoard Bluetooth&quot;) == true Then
-        If InSetlistMode () == True Then
-            If GetCurrentSongPartIndex () == 3 Then
-                SendNowToMidiOutDevice (&quot;iRig BlueBoard Bluetooth&quot;, MakeControlChangeMessageEx (23, ScaleInt(ParamToMidi (v), 0, 127, 127, 0), 1))
-            Else
-                SendNowToMidiOutDevice (&quot;iRig BlueBoard Bluetooth&quot;, MakeControlChangeMessageEx (23, ParamToMidi (v), 1))
-            End
-        Else
-            SendNowToMidiOutDevice (&quot;iRig BlueBoard Bluetooth&quot;, MakeControlChangeMessageEx (23, ParamToMidi (v), 1))
-        End
-    End
-End
-
-On OSCMessageReceived (m: OSCMessage) Matching &quot;/xtmode&quot;
-    Var xtm: Integer = OSC_GetArgAsInteger (m, 0)
-    If xtm &lt;&gt; xtmode Then
-        xtmode = xtm
-        TriggerOneShotRamp (XTTimeout, 100, 10)
-    End
-End
-
-On GeneratorEndCycle (t: Integer) From XTTimeout
-    update_xtouch ()
-    SetWidgetHideOnPresentation (rackOutput, GetWidgetHideState(rcontrols [rack_out_index]))
-End
-
-Function ctrl_update (warr: Widget Array, index: Integer, value: double) // update control widget value, set hold to avoid feedback loop
-    //Print (&quot;global ctrl_update: widget &quot; + index + &quot;, value &quot; + value + &quot;, hold &quot; + holdctrls[index] + &quot;, holdctrls size &quot; + Size (holdctrls))
-    holdctrls [index] = true
-    SetWidgetValue (warr [index], value)
-    holdctrls [index] = false
-    SetWidgetHideOnPresentation (warr[index], false) //show widget if it was hidden
-End
-
-Function ctrl_disable (warr: Widget Array, index: Integer) // disable control widget, set hold to avoid feedback loop
-    //Print (&quot;global ctrl_disable: disable widget &quot; + index + &quot;, hold &quot; + holdctrls[index]  + &quot;, holdctrls size &quot; + Size (holdctrls))
-    holdctrls [index] = true
-    SetWidgetValue (warr [index], 0.0) //set widget value to 0
-    holdctrls [index] = false
-    SetWidgetHideOnPresentation (warr[index], true) //hide widget
-End
-
-
-// Called when you switch to another rackspace, sends a message to current local rackspace to check osc support, sets timeout
-On Rackspace(oldRackspaceIndex : integer, newRackspaceIndex : integer)
-    SetWidgetValue (m3, 1.0)
-    TriggerOneShotRamp (hellotimeout, 200, 10) //start timeout for handshake
-End
-
-// Called when a gig file has finished loading, sends a message to current local rackspace to check osc support, sets timeout
-On SystemEvent Matching GigLoaded
-    reset_fxcontrols ()
-    SetWidgetValue (m3, 1.0) //set mode to Vox
-    OSC_SendIntegerSpecific (&quot;/hello&quot;, Size(rcontrols) - 1, oscip, oscport) //send hello message to check osc support
-    TriggerOneShotRamp (hellotimeout, 200, 10) //set timeout for handshake
-    TriggerOneShotRamp (XTTimeout, 500, 10) //update xtouch after a timeout
-End
-
-//processes response to &quot;hello&quot; call from rackspace, sets mode based on that
-On OSCMessageReceived (m: OSCMessage) Matching &quot;/ping&quot; //
-    StopOneShotRamp (hellotimeout) //stop handshake timeout
-    osc_enabled = true //enable osc comms with rackspace
-    chmodeallowed = true //allow mode change, rackspace has support
-    holdwvc = false //allow widget value change
-    SetWidgetValue (modecontrols [OSC_GetArgAsInteger (m, 0)], 1.0) //set mode based on response
-    TriggerOneShotRamp (XTTimeout, 200, 10) // update xtouch after a timeout
-End
-
-//if no response from rackspace is received, disable osc comms with it, set mode to 3 (controlling global rackspace widgets)
-On GeneratorEndCycle (time: Integer) From hellotimeout
-    Var i: Integer
-    osc_enabled = false
-    holdwvc = false
-    chmodeallowed = true //allow mode change temporarily
-    
-    SetWidgetValue (m3, 1.0) //set mode to vox
-    radioselect = true //set fx buttons to radio mode
-    mode = 3 //set mode to vox
-    fxselected = -1 //set no fx selected
-    For i = 0; i &lt; Size (fxcontrols); i = i + 1 Do // hide unused fx buttons
-        //Print (&quot;i &quot; + i + &quot;, checking in Vox_rt, size &quot; + Size (Vox_rt))
-            If IndexOf (Vox_rt, i) == -1 Then // if fx button is not in Vox_rt, hide it
-                SetWidgetHideOnPresentation (fxcontrols [i], true)
-            Else
-                SetWidgetHideOnPresentation (fxcontrols [i], false)
-        End
-    End
-    
-    //Print (&quot;iterating array rcontrols, size &quot; + Size(rcontrols))
-    For i = 0; i &lt; Size (rcontrols); i = i + 1 Do //disable all control widgets
-        //Print (&quot;i &quot; + i)
-        ctrl_disable (rcontrols, i)
-    End
-    Notify (&quot;Handshake timeout&quot;)
-    //Print (&quot;Handshake timeout&quot;)
-    
-    chmodeallowed = false //disallow mode change
-    TriggerOneShotRamp (XTTimeout, 200, 10) //update xtouch after a timeout
-End
-
-/* GLOBAL RACKSPACE 
-&lt;--- UPDATE THIS FOR ACTUAL MODE SELECT BUTTONS ---&gt; */
-On WidgetValueChanged (w: widget, index: integer, newValue: double) from m0, m1, m2, m3 //mode selection buttons
-    Var i: Integer
-    prevmode = mode //store previous mode
-    //Print (&quot;mode button press - &quot; + index + &quot; value &quot; + newValue + &quot;mode change allowed &quot; + chmodeallowed)
-    fxselected = -1 // -1 for nothing selected, default option
-    If newValue == 1.0 And chmodeallowed == true and holdwvc == false Then //if mode change is allowed and no widget value change is pending
-        
-        Select // depending on mode chosen, send query to relevant rackspace section to get available controls and map them to widgets
-            index == 0 Do
-                osc_cmd (&quot;/amp/q&quot;)
-                TriggerOneShotRamp (wstimeout, 200, 10)
-            index == 1 Do
-                osc_cmd (&quot;/eq/q&quot;)
-                TriggerOneShotRamp (wstimeout, 200, 10)
-            index == 2 Do
-                osc_cmd (&quot;/fx/q&quot;)
-                TriggerOneShotRamp (wstimeout, 200, 10)
-            index == 3 Do // for Vox mode, no osc, show and hide controls immediately
-                //Print (&quot;iterating array fxcontrols, size &quot; + Size(fxcontrols))
-                For i = 0; i &lt; Size (fxcontrols); i = i + 1 Do // hide unused fx buttons
-                    //Print (&quot;i &quot; + i + &quot;, checking in Vox_rt, size &quot; + Size (Vox_rt))
-                    If IndexOf (Vox_rt, i) == -1 Then // if fx button is not in Vox_rt, hide it
-                        SetWidgetHideOnPresentation (fxcontrols [i], true)
-                    Else
-                        SetWidgetHideOnPresentation (fxcontrols [i], false)
-                    End
-                End
-        End
-        If index == 2 Or index == 3 Then // for fx and vox modes, fx buttons act as radio buttons
-            Notify (&quot;Select FX&quot;)
-            radioselect = true //set fx buttons to radio mode
-            //Print (&quot;iterating array rcontrols to disable unneeded, size &quot; + Size(rcontrols))
-            For i = 0; i &lt; Size (rcontrols); i = i + 1 Do //disable all control widgets
-                //Print (&quot;i &quot; + i)
-                ctrl_disable (rcontrols, i)
-            End
-        Else // for amp and eq modes, fx buttons act as normal buttons
-            radioselect = false //set fx buttons to normal mode
-        End
-        mode = index //set new mode
-        reset_fxcontrols () //reset fx buttons to off
-        //Print(&quot;global wvc mode select: mode change from &quot; + prev + &quot; to &quot; + mode + &quot; radioselect &quot; + radioselect + &quot; fxselected &quot; + fxselected)
-    End
-    TriggerOneShotRamp (XTTimeout, 200, 10) //update xtouch after a timeout
-End
-
-
-
-On GeneratorEndCycle (t: Integer) From wstimeout
-    SetWidgetValue (modecontrols [prevmode], 1.0)
-End
+Include &quot;includes/gl/gl_global_declarations_functions&quot;
 
 /* GLOBAL RACKSPACE
 &lt;--- UPDATE THIS FOR ACTUAL FX BUTTONS ---&gt; */
@@ -4554,134 +4160,12 @@ On WidgetValueChanged (w: widget, i: integer, v: double) from fx0, fx1, fx2, fx3
     TriggerOneShotRamp (XTTimeout, 200, 10)
 End
 
-// GLOBAL RACKSPACE CALLBACK ON RECEIVING RESPONSE TO FX DEVICES AVAILABLE QUERY
-On OSCMessageReceived (m: OSCMessage) Matching &quot;/fx/d&quot; //response to fx devices available
-    Var i: Integer
-        rstring: String = OSC_GetArgAsString(m, 0) //get string with available devices
-        rarr: String Array = ParseCSVString (rstring) //parse string to array
-        rarrint: Integer Array
-    StopOneShotRamp (wstimeout)
-    //Print (&quot;response is &quot; + OSC_GetArgAsString (m, 0))
-    For i = 0; i &lt; Size (rarr); i = i + 1 Do //iterate through array
-        rarrint &lt;-- StringToInt (rarr[i])
-    End
-    For i = 0; i &lt; Size (fxcontrols); i = i + 1 Do //hide unused fx buttons
-        If IndexOf (rarrint, i) == -1 Then // if fx button is not in rarrint, hide it
-            SetWidgetHideOnPresentation (fxcontrols [i], true)
-        Else
-            SetWidgetHideOnPresentation (fxcontrols [i], false)
-        End
-    End
-End
+//////////////////////////////////////////////////
+//                 CALLBACKS                    //
+//          !!!!! DO NOT TOUCH !!!!!            //
+//////////////////////////////////////////////////
 
-// GLOBAL RACKSPACE CALLBACK ON RECEIVING WIDGET STATE UPDATE
-// BULK UPDATES CONTROL WIDGETS BASED ON THAT
-On OSCMessageReceived (m: OSCMessage) Matching &quot;/ws&quot; //bulk update of control widgets
-    Var i: Integer
-        rstring: String = OSC_GetArgAsString(m, 0) //get string with widget states
-        rarr: String Array = ParseCSVString (rstring) //parse string to array
-        rarrint: Integer Array
-    StopOneShotRamp (wstimeout)
-    For i = 0; i &lt; Size (rarr) - 1; i = i + 2 Do //iterate through array
-        //Print (&quot;widget &quot; + rarr[i] + &quot; value &quot; + rarr[i+1])
-        ctrl_update (rcontrols, StringToInt(rarr[i]), StringToDouble(rarr [i+1])) //update control widget value
-        rarrint &lt;-- StringToInt(rarr[i]) //add widget index to rarrint
-    End
-    For i = 0; i &lt; Size (rcontrols); i = i + 1 Do //disable unused control widgets
-        If IndexOf(rarrint, i) == -1 Then // if control widget is not in rarrint, disable it
-            ctrl_disable (rcontrols, i)
-        End
-    End
-    TriggerOneShotRamp (XTTimeout, 200, 10)
-End
-
-Function sync_local (i: Integer, v: Double)
-    //Print (&quot;sync_local called, array sizes are: wtime &quot; + Size (wtime) + &quot;, holdctrls &quot; + Size (holdctrls) + &quot;, rt &quot; + Size (rt) + &quot;, ctrls &quot; + Size (ctrls) + &quot;, index &quot; + i)
-    //Print (&quot;need to change widget &quot; + i + &quot; in ctrls&quot;)
-    If wtime[i] == 0 Or holdremote [i] == True Then
-        holdremote [i] = true
-        wtime [i] = TimeSinceStartup ()
-        SetWidgetValue (ctrls [i], v) //set control widget value
-    End
-End
-
-Function sync_remote (i: Integer, v: Double)
-    If GetWidgetHideState (rcontrols[i]) == False And (wtime [i] == 0 Or holdctrls [i] == True) Then
-        holdctrls [i] = true
-        wtime [i] = TimeSinceStartup ()
-        osc_out (i, v)
-    End
-End
-/* GLOBAL RACKSPACE CALLBACK
-SENDS OSC MESSAGE TO RACKSPACES WHEN CONTROL WIDGET VALUES ARE CHANGING
-&lt;--- UPDATE THIS FOR ACTUAL CONTROLS AVAILABLE kx FOR KNOBS, bx FOR THEIR PRESS ACTION ---&gt; */
-On WidgetValueChanged (w: Widget, i: integer, v: double) from k0, k1, k2, k3, k4, k5, k6, k7, k8, k9, k10, k11, k12, k13, k14, k15, b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15 //control widgets
-    
-    If mode == 0 Or mode == 1 Or (mode == 2 And fxselected &gt; -1) And holdwvc == false Then //if mode is amp, eq or fx and fx is selected
-        //Print (&quot;global wvc rcontrols: w&quot; + i + &quot; value changed, hold &quot; + holdctrls[i] + &quot;, mode &quot; + mode + &quot;, fxselected &quot; + fxselected + &quot;, holdwvc &quot; + holdwvc)
-        //Print (&quot;addressing array holdctrls, size &quot; + Size(holdctrls) + &quot;, i &quot; + i)
-        sync_remote (i, v)
-    Elsif mode == 3 And fxselected &gt; -1 And holdwvc == false Then //if mode is vox and fx is selected
-        //Print (&quot;global wvc rcontrols: w&quot; + i + &quot; value changed, hold &quot; + holdctrls[i] + &quot;, mode &quot; + mode + &quot;, fxselected &quot; + fxselected + &quot;, holdwvc &quot; + holdwvc)
-        //Print (&quot;addressing array rt, size &quot; + Size (rt) + &quot;, i &quot; + i)
-        If IndexOf (rt, i) &gt; -1 Then //if control widget is in rt
-            //Print (&quot;addressing array holdctrls, size &quot; + Size (holdctrls) + &quot;, i &quot; + i)
-            sync_local (IndexOf(rt, i), v)
-            //Print (&quot;calling sync_local for index &quot; + IndexOf(rt, i) + &quot;, value &quot; + v)
-        End
-    End
-    TriggerOneShotRamp (XTTimeout, 200, 10)
-    //update_xtouch()
-End
-
-Function sync_rcontrols (i: Integer, v: Double)
-    If wtime[i] == 0 Or holdremote[i] == false Then
-        holdremote[i] = true
-        wtime[i] = TimeSinceStartup ()
-        SetWidgetValue (rcontrols[i], v)
-    End
-End
-
-// GLOBAL RACKSPACE CALLBACK ON RECEIVING WIDGET STATE UPDATE
-// UPDATES ONE CONTROL WIDGET BASED ON THAT
-On OSCMessageReceived (m: OSCMessage) Matching &quot;/ws1&quot; //update one control widget when osc message comes in
-    Var index: Integer = OSC_GetArgAsInteger (m, 0) //index for control widget
-        value: Double = OSC_GetArgAsDouble (m, 1) //value to set
-        fxindex: Integer //index for fx widget
-    //Print (&quot;global oscmr /ws1: request for w&quot; + index + &quot;, value &quot; + value + &quot;, mode &quot; + mode)
-    Select
-        index &gt; Size (rcontrols) - 1 And mode &lt; 2 Do //if index is more than control widgets, it's an fx button, set fx widget value
-            //Print (&quot;addressing array holdfx, size &quot; + Size(holdfx) + &quot;, index &quot; + index)
-            fxindex = index - Size (rcontrols)
-            //Print (&quot;addressing array fxcontrols, size &quot; + Size (fxcontrols) + &quot;recalculated index &quot; + fxindex)
-            holdfx [fxindex] = true
-            SetWidgetValue (fxcontrols [fxindex], value)
-            holdfx [fxindex] = false
-        True Do
-            //Print (&quot;osc received, calling sync_rcontrols, setting control widget &quot; + index + &quot; to &quot; + value)
-            sync_rcontrols (index, value)
-    End
-End
-
-// GLOBAL RACKSPACE CALLBACK ON RECEIVING WIDGET STATE UPDATE
-// BULK UPDATES FX WIDGETS BASED ON THAT (FOR AMP AND EQ MODES) 
-On OSCMessageReceived (m: OSCMessage) Matching &quot;/fxws&quot; //bulk update of fx widgets
-    Var i: Integer
-        rstring: String = OSC_GetArgAsString(m, 0) //get string with widget states
-        rarr: String Array = ParseCSVString (rstring) //parse string to array
-        rarrint: Integer Array //array for widget indexes
-    For i = 0; i &lt; Size (rarr) - 1; i = i + 2 Do //iterate through array
-        //Print (&quot;widget &quot; + rarr[i] + &quot; value &quot; + rarr[i+1])
-        ctrl_update (fxcontrols, StringToInt(rarr[i]), StringToDouble(rarr [i+1])) //update fx widget value
-        rarrint &lt;-- StringToInt(rarr[i]) //add widget index to rarrint
-    End
-    For i = 0; i &lt; Size (fxcontrols); i = i + 1 Do //disable unused fx widgets
-        If IndexOf(rarrint, i) == -1 Then // if fx widget is not in rarrint, disable it
-            ctrl_disable (fxcontrols, i)
-        End
-    End
-End
-
+Include &quot;includes/gl/gl_global_callbacks&quot;
 
 
 //////////////////////////////////////////////////
@@ -4689,19 +4173,22 @@ End
 //  &lt;--- UPDATE FOR AVAILABLE EFFECTS ---&gt;      //
 //////////////////////////////////////////////////
 
+// VOX FX0 CALLBACK TO UPDATE GLOBAL RACKSPACE WIDGETS
 
-On TimerTick (ms: Double) 
-    Var i: Integer
-    For i = 0; i &lt; Size (wtime); i = i + 1 Do
-        If wtime[i] != 0 And TimeSinceStartup () &gt;= wtime[i] + timeout Then
-            wtime[i] = 0
-            holdctrls[i] = false
-            holdremote[i] = false
-        End
+/*
+// VOX FXx TEMPLATE
+// VOX FXx CALLBACK TO UPDATE GLOBAL RACKSPACE WIDGETS
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From &lt;Vox FXx widgets&gt;
+Var j: Integer 
+    If mode == 3 And fxselected == &lt;FX index&gt; And holdwvc == false  Then //if vox mode and fx&lt;FX index&gt; selected
+        rt = Vox&lt;FX index&gt;_rt //get control widgets for this device
+        j = rt [i]
+        sync_rcontrols (j, v)
     End
 End
+*/
 
-// VOX FX0 CALLBACK TO UPDATE GLOBAL RACKSPACE WIDGETS
+
 On WidgetValueChanged (w: Widget, i: Integer, v: Double) From od_drive, od_on //Vox FX0 widgets
 Var j: Integer 
     If mode == 3 And fxselected == 5 And holdwvc == false Then //if vox mode and fx0 selected
@@ -4732,18 +4219,36 @@ Var j: Integer
     End
 End
 
-/*
-// VOX FXx TEMPLATE
-// VOX FXx CALLBACK TO UPDATE GLOBAL RACKSPACE WIDGETS
-On WidgetValueChanged (w: Widget, i: Integer, v: Double) From &lt;Vox FXx widgets&gt;
-Var j: Integer 
-    If mode == 3 And fxselected == &lt;FX index&gt; And holdwvc == false  Then //if vox mode and fx&lt;FX index&gt; selected
-        rt = Vox&lt;FX index&gt;_rt //get control widgets for this device
-        j = rt [i]
-        sync_rcontrols (j, v)
+
+// Blink iRig Blueboard button D with tempo
+On WidgetValueChanged (v: Double) From beatflash
+    If MidiOutDeviceExists (FSOUT) == true Then
+        If InSetlistMode () == True Then
+            If GetCurrentSongPartIndex () == 3 Then
+                SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx (23, ScaleInt(ParamToMidi (v), 0, 127, 127, 0), 1))
+            Else
+                SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx (23, ParamToMidi (v), 1))
+            End
+        Else
+            SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx (23, ParamToMidi (v), 1))
+        End
     End
 End
-*/</SCRIPT_CONTENT>
+
+// Called when you switch to another rackspace, sends a message to current local rackspace to check osc support, sets timeout
+On Rackspace(oldRackspaceIndex : integer, newRackspaceIndex : integer)
+    SetWidgetValue (m3, 1.0)
+    TriggerOneShotRamp (hellotimeout, 200, 10) //start timeout for handshake
+End
+
+// Called when a gig file has finished loading, sends a message to current local rackspace to check osc support, sets timeout
+On SystemEvent Matching GigLoaded
+    reset_fxcontrols ()
+    SetWidgetValue (m3, 1.0) //set mode to Vox
+    OSC_SendIntegerSpecific (&quot;/hello&quot;, Size(rcontrols) - 1, oscip, oscport) //send hello message to check osc support
+    TriggerOneShotRamp (hellotimeout, 200, 10) //set timeout for handshake
+    TriggerOneShotRamp (XTTimeout, 500, 10) //update xtouch after a timeout
+End</SCRIPT_CONTENT>
   </GLOBALRACKSPACE>
   <RACKSPACE name="Rackspace" uid="05e3efbc5e8c4322ba163d2255c1dc11" bpm="120.0"
              timeNum="4" timeDen="4" resetTimeInfo="0" syncClock="0" maxDeactivationTime="2.5"
@@ -5425,7 +4930,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.07407407407407407"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="20608" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.75592041015625" backPlate="11" backPlateVisible="1"
+                widgetValue="0.5905457139015198" backPlate="11" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -6074,7 +5579,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.4803149700164795" backPlate="1" backPlateVisible="1"
+                widgetValue="0.5275590419769287" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -6187,7 +5692,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.5196849703788757" backPlate="1" backPlateVisible="1"
+                widgetValue="0.5196850299835205" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -7081,7 +6586,7 @@ End
   </RACKSPACE>
   <RACKSPACE name="Rackspace_3" uid="94cdf84336bf4a9eb626a1699e3400a5" bpm="120.0"
              timeNum="4" timeDen="4" resetTimeInfo="0" syncClock="0" maxDeactivationTime="2.5"
-             maxDeactivationTimeIn="0.0" scriptWindowPos="112 177 1248 1026"
+             maxDeactivationTimeIn="0.0" scriptWindowPos="159 488 1248 1026"
              usePatchPersist="0" zoomLevel="1.0" viewX="5" viewY="10" activePreset="0">
     <PROCESSORSTATE_IN handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.00732421875">73.VMjLg.D....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh7hO..</PROCESSORSTATE_IN>
     <PROCESSORSTATE_OUT handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.257080078125">123.VMjLgHG....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh.xXn8kL8HRLt.iHfzVczU1Wig1WxziHvHBHig1WyziHw3BLh.Ra0QWYeMFZeMSOh.iHu3C.</PROCESSORSTATE_OUT>
@@ -7203,7 +6708,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.25"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="112" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.3307086527347565" backPlate="1" backPlateVisible="1"
+                widgetValue="0.2831177115440369" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
