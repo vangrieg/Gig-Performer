@@ -7,4 +7,5 @@ Song\ Lyrics-Chords
 !*.gpscript
 !Scripts/\*.*
 .gitignore
+!Panels/\*
 
