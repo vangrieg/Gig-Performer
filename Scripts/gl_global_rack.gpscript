@@ -1,0 +1,225 @@
+Include "$system$"
+
+//////////////        GLOBAL RACKSPACE CONTROLS REFERENCE      //////////////////
+// FX SELECT BUTTONS (VOX ALTERNATIVES AFTER "/")
+// -------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER A ROW 1 FX BUTTON | 0  Detune/Oct/Dbl | 1  Fltr/De-ess | 2  Comp        | 3  Fuzz/Gate   | 4  Boost/EQ   | 5  OD/Sat     | //
+// -------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER A ROW 2 FX BUTTON | 6  Phaser/Flanger | 7  Chorus Pre  | 8  Dly Pre/Rack| 9  Chorus Post | 10 Delay Post | 11 Reverb     | //
+// -------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER B ROW 1 FX BUTTON | 12 Whammy         | 13 Wah         | 14 Comp 2      | 15 Drive       | 16 Drive 2    | 17 Distortion | //
+// -------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER B ROW 2 FX BUTTON | 18 Mod            | 19 Mod 2       | 20 Tremolo     | 21 Space       | 22 Delay 2    | 23 Reverb 2   | //
+// -------------------------------------------------------------------------------------------------------------------------------- //
+
+// AMP MODE KNOBS
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER A AMP KNOB TURN    | 0  Gain          | 1  Bass         | 2  Mid          | 3  Treble       | 4  Level       | 5  Master      | 6  Presence    | 7  Depth       | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER B AMP KNOB TURN    | 8  Input         | 9  Gate         | 10 Transpose    | 11 Doubler      | 12 Output      | 13 Low Cut     | 14 Hi Cut      | 15 Room        | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER A AMP KNOB PUSH    | 16 Gain Boost    | 17              | 18 Mid Boost    | 19 Bright       | 20             | 21             | 22             | 23 Depth OnOff | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER B AMP KNOB PUSH    | 24               | 25 Gate         | 26 Transpose    | 27 Doubler      | 28             | 29             | 30             | 31 Room OnOff  | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+
+// EQ MODE KNOBS
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER A EQ KNOB TURN     | 0  Band 1        | 1  Band 2       | 2  Band 3       | 3  Band 4       | 4  Band 5      | 5  Band 6      | 6  Band 7      | 7  Band 8      | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER B EQ KNOB TURN     | 8  Band 9        | 9  Band 10      | 10 Band 11      | 11 Band 12      | 12 Band 13     | 13 Band 14     | 14 Band 15     | 15 Band 16     | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+
+// FX/VOX MODE KNOBS
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER A FX KNOB TURN       | 0  Drive/Thrld   | 1  Tone         | 2  Mix         | 3  Depth/Range | 4  Decay/Fdbk  | 5  Time1/Attack| 6  Time2/Releas| 7  Rate        | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER B FX KNOB TURN       | 8  Input         | 9  Mod1         | 10 Mod2        | 11 Mod3        | 12 Level       | 13 Low cut     | 14 Hi cut      | 15 Size        | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER A FX KNOB PUSH       | 16 OnOff         | 17 Mode1        | 18 Mode2       | 19 Mode3       | 20 Stereo      | 21 Host Sync   | 22             | 23             | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER B FX KNOB PUSH       | 24               | 25 Mod1 OnOff   | 26 Mod2 OnOff  | 27 Mod3 OnOff  | 28             | 29             | 30             | 31             | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+    
+Var
+    //////////////////////////////////////////////////
+    //           VOX RACKSPACE DECLARATIONS         //
+    //  <--- UPDATE FOR EACH AVAILABLE DEVICE --->  //
+    //////////////////////////////////////////////////
+    od_on, od_drive, chorus_on, chorus_mix, chorus_rate, delay_on, delay_mod, delay_mix, delay_time: Widget //Vox FX widgets
+    
+    /* EFFECT DECLARATION TEMPLATE
+    //device <FX index>
+    Vox<FX index>_controls: Widget Array = [<FX widgets here>]
+    Vox<FX index>_rt: Integer Array = [<Mappings to global rack controls>]
+    */
+    
+    //effect 5
+    Vox5_controls: Widget Array = [od_drive, od_on] //  widgets for this effect
+    Vox5_rt: Integer Array = [0, 16] // control widgets to map these to, see FX/VOX MODE KNOBS table for reference
+    
+    //effect 9
+    Vox9_controls: Widget Array = [chorus_mix, chorus_rate, chorus_on]
+    Vox9_rt: Integer Array = [2, 7, 16]
+   
+    //effect 10
+    Vox10_controls: Widget Array = [delay_mod, delay_mix, delay_time, delay_on]
+    Vox10_rt: Integer Array = [9, 2, 5, 16]
+    
+    Vox_buttons: Widget Array = [od_on, chorus_on, delay_on]   // Vox FX on/off buttons
+    Vox_rt: Integer Array = [5, 9, 10] // Vox devices available, mapped to global FX buttons, see see FX/VOX MODE KNOBS table for reference
+    
+//////////////////////////////////////////////////
+//              GLOBAL FUNCTIONS                //
+//          !!!!! DO NOT TOUCH !!!!!            //
+//////////////////////////////////////////////////
+    
+Include "includes/gl/gl_global_declarations_functions"
+
+/* GLOBAL RACKSPACE
+<--- UPDATE THIS FOR ACTUAL FX BUTTONS ---> */
+On WidgetValueChanged (w: widget, i: integer, v: double) from fx0, fx1, fx2, fx3, fx4, fx5, fx6, fx7, fx8, fx9, fx10, fx11, fx12, fx13, fx14, fx15, fx16, fx17, fx18, fx19, fx20, fx21, fx22, fx23 //fx select buttons
+    Var j: Integer
+        k: Integer
+        addr: String 
+    
+    //Print ("global wvc fx: select fx " + i + ",radioselect " + radioselect + ", value " + v + ", mode " + mode)
+    Select 
+        radioselect == true And v == 1.0 And holdwvc == false Do //if radio mode is on and button is pressed
+            //Print ("addressing array via reset_fxcontrols_r, i " + i + ", size " + Size(fxcontrols))
+            reset_fxcontrols_r (i) //set all fx buttons to off except the one chosen
+            //Print ("global wvc fx: current fx selected " + fxselected + ", new fx requested " + i + ", osc query, mode " + mode)
+            Select // for fx and vox modes, need additional query for individual effect buttons to map them to widgets
+                mode == 2 Do //for fx mode, send query to relevant rackspace section to get available controls and map them to widgets
+                    osc_cmd ("/fx" + i + "/q")
+                mode == 3 Do //for vox mode, determine proper fx control widgets
+                    Select // get available widgets for relevant device
+                        i == 5 Do
+                            ctrls = Vox5_controls
+                            rt = Vox5_rt
+                        i == 9 Do
+                            ctrls = Vox9_controls
+                            rt = Vox9_rt
+                        i == 10 Do
+                            ctrls = Vox10_controls
+                            rt = Vox10_rt
+                        //i == <FX index> Do
+                            //ctrls = Vox<FX index>_controls
+                            //rt = Vox<FX index>_rt
+                    End 
+                    //Print ("ctrls size " + Size (ctrls) + ", rt size " + Size (rt))
+                    //Print ("iterating array rcontrols, hiding unused widgets, size " + Size(rcontrols))
+                    For j = 0; j < Size (rcontrols); j = j + 1 Do //hide unused widgets
+                        //Print ("rcontrol " + j + " rt size " + Size (rt))
+                        If IndexOf(rt, j) == -1 Then // if control widget is not in rt, hide it
+                            //Print ("" + j + " isn't in rt, disabling")
+                            ctrl_disable (rcontrols, j)
+                        Else //set the rest to proper values
+                            //Print ("" + j + " is in rt, setting value")
+                            k = IndexOf (rt, j) //get index of control widget in rt
+                            //Print ("" + j + " is #" + k + "in rt")
+                            ctrl_update (rcontrols, j, GetWidgetValue (ctrls [k])) //set control widget value
+                        End
+                    End
+            End
+        v == 0.0 And holdfx[i] == true and holdwvc == false Do //if radio mode is on and button is up, release hold
+            //Print ("global wvc fx: key " + i + " up, mode " + mode + ", hold true, releasing")
+            holdfx [i] = false
+        True Do
+            //Print ("global wvc fx: default: no special condition, sending osc, mode " + mode)
+            If mode != 3 Then // for fx mode, send osc message to set fx device
+                osc_out (Size (rcontrols) + i, v)
+            End
+    End
+    TriggerOneShotRamp (XTTimeout, 200, 10)
+End
+
+//////////////////////////////////////////////////
+//                 CALLBACKS                    //
+//          !!!!! DO NOT TOUCH !!!!!            //
+//////////////////////////////////////////////////
+
+Include "includes/gl/gl_global_callbacks"
+
+
+//////////////////////////////////////////////////
+//               VOX FUNCTIONS                  //
+//  <--- UPDATE FOR AVAILABLE EFFECTS --->      //
+//////////////////////////////////////////////////
+
+// VOX FX0 CALLBACK TO UPDATE GLOBAL RACKSPACE WIDGETS
+
+/*
+// VOX FXx TEMPLATE
+// VOX FXx CALLBACK TO UPDATE GLOBAL RACKSPACE WIDGETS
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From <Vox FXx widgets>
+Var j: Integer 
+    If mode == 3 And fxselected == <FX index> And holdwvc == false  Then //if vox mode and fx<FX index> selected
+        rt = Vox<FX index>_rt //get control widgets for this device
+        j = rt [i]
+        sync_rcontrols (j, v)
+    End
+End
+*/
+
+
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From od_drive, od_on //Vox FX0 widgets
+Var j: Integer 
+    If mode == 3 And fxselected == 5 And holdwvc == false Then //if vox mode and fx0 selected
+        rt = Vox5_rt //get control widgets for this device
+        j = rt [i] //get control widget index
+        sync_rcontrols (j, v)
+    End
+End
+
+// VOX FX1 CALLBACK TO UPDATE GLOBAL RACKSPACE WIDGETS
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From chorus_mix, chorus_rate, chorus_on
+Var j: Integer 
+    If mode == 3 And fxselected == 9 And holdwvc == false  Then  //if vox mode and fx1 selected
+        rt = Vox9_rt //get control widgets for this device
+        j = rt [i] //get control widget index
+        sync_rcontrols (j, v)
+    End
+End
+
+
+// VOX FX2 CALLBACK TO UPDATE GLOBAL RACKSPACE WIDGETS
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From delay_mod, delay_mix, delay_time, delay_on
+Var j: Integer 
+    If mode == 3 And fxselected == 10 And holdwvc == false  Then
+        rt = Vox10_rt
+        j = rt [i]
+        sync_rcontrols (j, v)
+    End
+End
+
+
+// Blink iRig Blueboard button D with tempo
+On WidgetValueChanged (v: Double) From beatflash
+    If MidiOutDeviceExists (FSOUT) == true Then
+        If InSetlistMode () == True Then
+            If GetCurrentSongPartIndex () == 3 Then
+                SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx (23, ScaleInt(ParamToMidi (v), 0, 127, 127, 0), 1))
+            Else
+                SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx (23, ParamToMidi (v), 1))
+            End
+        Else
+            SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx (23, ParamToMidi (v), 1))
+        End
+    End
+End
+
+// Called when you switch to another rackspace, sends a message to current local rackspace to check osc support, sets timeout
+On Rackspace(oldRackspaceIndex : integer, newRackspaceIndex : integer)
+    SetWidgetValue (m3, 1.0)
+    TriggerOneShotRamp (hellotimeout, 200, 10) //start timeout for handshake
+End
+
+// Called when a gig file has finished loading, sends a message to current local rackspace to check osc support, sets timeout
+On SystemEvent Matching GigLoaded
+    reset_fxcontrols ()
+    SetWidgetValue (m3, 1.0) //set mode to Vox
+    OSC_SendIntegerSpecific ("/hello", Size(rcontrols) - 1, oscip, oscport) //send hello message to check osc support
+    TriggerOneShotRamp (hellotimeout, 200, 10) //set timeout for handshake
+    TriggerOneShotRamp (XTTimeout, 500, 10) //update xtouch after a timeout
+End
