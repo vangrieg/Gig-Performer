@@ -22,9 +22,14 @@ Scripts, rackspaces, panels, overlay templates and other [Gig Performer](https:/
 
 ## Panels
 
-- [Global Link Panel]()
+- [Global Link Panel](https://github.com/vangrieg/Gig-Performer/blob/main/Panels/GlobalLink.gppanel)
 
 ## Scripts
+
+- [Includes for GlobalLink](https://github.com/vangrieg/Gig-Performer/tree/main/Scripts/includes)
+- [OSC settings](https://github.com/vangrieg/Gig-Performer/blob/main/Scripts/includes/osc.gpscript)
+- [System script](https://github.com/vangrieg/Gig-Performer/blob/main/Scripts/gl_global_rack.gpscript)
+- [AutoLoad](https://github.com/vangrieg/Gig-Performer/tree/main/Scripts/AutoLoad)
 
 ## Overlay templates for controllers
 

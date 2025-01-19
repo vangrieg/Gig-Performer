@@ -2,10 +2,9 @@
 AudioSettings/Duet.gpaudiosettings
 CachedAudioFiles/
 Recordings/
-Song\ Lyrics-Chords
+Song\ Lyrics-Chords/
 !*.gig
 !*.gpscript
 !Scripts/\*.*
-.gitignore
-!Panels/\*
+!Panels/\*.*
 
