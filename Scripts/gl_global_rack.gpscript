@@ -46,7 +46,7 @@ Var
     //           VOX RACKSPACE DECLARATIONS         //
     //  <--- UPDATE FOR EACH AVAILABLE DEVICE --->  //
     //////////////////////////////////////////////////
-    od_on, od_drive, chorus_on, chorus_mix, chorus_rate, delay_on, delay_mod, delay_mix, delay_time: Widget //Vox FX widgets
+    od_on, od_drive, chorus_on, od_level, chorus_mix, chorus_rate, delay_on, delay_mod, delay_mix, delay_time: Widget //Vox FX widgets
     
     /* EFFECT DECLARATION TEMPLATE
     //device <FX index>
@@ -55,8 +55,8 @@ Var
     */
     
     //effect 5
-    Vox5_controls: Widget Array = [od_drive, od_on] //  widgets for this effect
-    Vox5_rt: Integer Array = [0, 16] // control widgets to map these to, see FX/VOX MODE KNOBS table for reference
+    Vox5_controls: Widget Array = [od_drive, od_on, od_level] //  widgets for this effect
+    Vox5_rt: Integer Array = [0, 16, 12] // control widgets to map these to, see FX/VOX MODE KNOBS table for reference
     
     //effect 9
     Vox9_controls: Widget Array = [chorus_mix, chorus_rate, chorus_on]
@@ -74,7 +74,7 @@ Var
 //          !!!!! DO NOT TOUCH !!!!!            //
 //////////////////////////////////////////////////
     
-Include "includes/gl/gl_global_declarations_functions"
+Include "includes/gl/gr_vars_functions"
 
 /* GLOBAL RACKSPACE
 <--- UPDATE THIS FOR ACTUAL FX BUTTONS ---> */
@@ -139,7 +139,7 @@ End
 //          !!!!! DO NOT TOUCH !!!!!            //
 //////////////////////////////////////////////////
 
-Include "includes/gl/gl_global_callbacks"
+Include "includes/gl/gr_callbacks"
 
 
 //////////////////////////////////////////////////
@@ -163,7 +163,7 @@ End
 */
 
 
-On WidgetValueChanged (w: Widget, i: Integer, v: Double) From od_drive, od_on //Vox FX0 widgets
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From od_drive, od_on, od_level //Vox FX0 widgets
 Var j: Integer 
     If mode == 3 And fxselected == 5 And holdwvc == false Then //if vox mode and fx0 selected
         rt = Vox5_rt //get control widgets for this device

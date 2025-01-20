@@ -3,6 +3,7 @@ AudioSettings/Duet.gpaudiosettings
 CachedAudioFiles/
 Recordings/
 Song\ Lyrics-Chords/
+temp/
 !*.gig
 !*.gpscript
 !Scripts/\*.*

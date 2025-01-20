@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<GIGRACK activeRackSpace="0" gbpm="92.91086578369141" gtimeNum="4" gtimeDen="4"
+<GIGRACK activeRackSpace="0" gbpm="82.91167449951172" gtimeNum="4" gtimeDen="4"
          gTranspose="0" version="5.0" scriptWindowPos="414 174 1417 842"
          globalStereoCount="2" globalPanelVisible="1">
   <SCRIPT_CONTENT>Include &quot;$system$&quot;
@@ -370,7 +370,7 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.3622047305107117" backPlate="1" backPlateVisible="1"
+                widgetValue="0.3228346407413483" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -414,7 +414,7 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.2440944910049438" backPlate="1" backPlateVisible="1"
+                widgetValue="0.2529038190841675" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -436,7 +436,7 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.4320987654320987"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="1.0" backPlate="7" backPlateVisible="1" invertMIDI="0"
+                widgetValue="0.0" backPlate="7" backPlateVisible="1" invertMIDI="0"
                 displayRange="0" ignoresVariations="0" followHardware="0" relativeMode="0"
                 enableDirectedOSC="0" directedOSCAddressPattern="" directedOSCIPAddress=""
                 directedOSCPort="9001" directedOSCTargetName="" widgetDirectedOSCType="0"
@@ -505,7 +505,7 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.4409448802471161" backPlate="1" backPlateVisible="1"
+                widgetValue="0.4330708682537079" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -549,7 +549,7 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.3622047305107117" backPlate="1" backPlateVisible="1"
+                widgetValue="0.2700839936733246" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -634,21 +634,21 @@ End</SCRIPT_CONTENT>
           <FONTPROPERTIES FontName="&lt;Sans-Serif&gt;" FontHeight="12" Bold="0" Italic="0"
                           Underlined="0"/>
         </WIDGET>
-        <WIDGET type="2" style="4" id="642" x="0.6182965299684543" y="0.5185185185185185"
-                width="0.03259726603575184" height="0.7962962962962963" caption=""
+        <WIDGET type="0" style="0" id="786" x="0.821634363541121" y="0.2830769230769231"
+                width="0.04033525405971713" height="0.2092307692307692" caption="Level"
                 captionIncludesAttribute="0" hideTemporaryValueDisplay="0" hideInPresentationView="0"
-                widgetIgnoresMouse="0" overrideName="0" captionVisible="1" captionHeight="0.1317829457364341"
-                reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="X-TOUCH MINI : Controller 18, Channel 11"
-                midiDevice="X-TOUCH MINI" midiData="4794" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.5748031735420227" backPlate="11"
-                backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
-                followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
-                directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
+                widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
+                reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
+                midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
+                widgetValue="0.5039370059967041" backPlate="1" backPlateVisible="1"
+                invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
+                relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
+                directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
                 widgetDirectedOSCType="0" widgetDirectedMinIntValue="0" widgetDirectedMaxIntValue="127"
                 widgetDirectedMinDoubleValue="0.0" widgetDirectedMaxDoubleValue="1.0"
-                widgetDirectedStringListValue="T2ZmCk9u" widgetHandle="" enableOSC="0"
-                invertOSC="0" groupName="" widgetMoveBehavior="1" updateOnLoadGig="0"
-                updateOnActivateRackspace="0" setDefaultDoubleClickResetValue="0.0"
+                widgetDirectedStringListValue="T2ZmCk9u" widgetHandle="od_level"
+                enableOSC="1" invertOSC="0" groupName="" widgetMoveBehavior="0"
+                updateOnLoadGig="0" updateOnActivateRackspace="0" setDefaultDoubleClickResetValue="0.0"
                 globalParam="-1" globalAssignedParameterNumber="-1" bckgColor="ff3c3c3c"
                 outlineColor="ff808080" outlineRound="4" outlineThick="2">
           <GPSCALE color="ff4682b4" min="0.0" max="100.0" v="2">8008...........flYlYlYlYt+nYlYlYlYl7OzLyLyLyLS+ilYlYlYlY1+.........9OzLyLyLyLi+yYlYlYlYl4+nYlYlYlYl9OMyLyLyLyr+C........7+nYlYlYlYF+OzLyLyLyLy+SyLyLyLyL8+blYlYlYlY+O........3+ilYlYlYlY9+PyLyLyLyr+OMyLyLyLy7+yYlYlYlYl++..........PMyLyLyLy..jlYlYlYlY..clYlYlYlI.PzLyLyLyLC.D........A.0LyLyLyLS.PZlYlYlYlE.zYlYlYlYlA.QyLyLyLyb.P........H.TyLyLyLyLB.oYlYlYlYl.PmYlYlYlYJ.DMyLyLyLyB.A.......v.PMyLyLyLyL.jlYlYlYlYC.clYlYlYl4.PzLyLyLyLO.D........D.clYlYlYlAAPMyLyLyLyP.zLyLyLyLSD.oYlYlYlYFAP........R.zYlYlYlYlD.0LyLyLyLKAPzLyLyLyLS.jlYlYlYl4D.A.......PAPmYlYlYlYT.TyLyLyLyLE.QyLyLyLyTAPZlYlYlYlU.D.......fE.clYlYlYlYAPMyLyLyLyV.DMyLyLyLyE.oYlYlYlYdAP........X.zYlYlYlYFF.0LyLyLyLiAPzLyLyLyLY.jlYlYlYlYF.A.......nAPmYlYlYlYZ.TyLyLyLyrF.QyLyLyLyrAPZlYlYlYla.D........G.clYlYlYlwAPMyLyLyLyb.DMyLyLyLSG.oYlYlYlY1AP........d.zYlYlYlYlG.0LyLyLyL6APzLyLyLyLe.jlYlYlYl4G.A........BPyLyLyLyLf.zYlYlYlYFH.oYlYlYlYBBPMyLyLyLyf.D.......PH.MyLyLyLyDBPmYlYlYlYg.jlYlYlYlYH.0LyLyLyLGBP........h.zLyLyLyLiH.clYlYlYlIBPZlYlYlYlh.TyLyLyLyrH.A.......LBPzLyLyLyLi.zYlYlYlY1H.oYlYlYlYNBPMyLyLyLyi.D........I.QyLyLyLyPBPmYlYlYlYj.jlYlYlYlII.0LyLyLyLSBP........k.DMyLyLyLSI.clYlYlYlUBPZlYlYlYlk.TyLyLyLybI.A.......XBPzLyLyLyLl.zYlYlYlYlI.oYlYlYlYZBPMyLyLyLyl.D.......vI.QyLyLyLybBPmYlYlYlYm.jlYlYlYl4I.0LyLyLyLeBP........n.DMyLyLyLCJ.clYlYlYlgBPZlYlYlYln.TyLyLyLyLJ.A.......jBPzLyLyLyLo.zYlYlYlYVJ.oYlYlYlYlBPMyLyLyLyo.D.......fJ.QyLyLyLynBPmYlYlYlYp.jlYlYlYloJ.0LyLyLyLqBP........q.DMyLyLyLyJ.clYlYlYlsBPZlYlYlYlq.TyLyLyLy7J.A.......vBPzLyLyLyLr.zYlYlYlYFK.oYlYlYlYxBPMyLyLyLyr.D.......PK.QyLyLyLyzBPmYlYlYlYs.jlYlYlYlYK.0LyLyLyL2BP........t.DMyLyLyLiK.clYlYlYl4BPZlYlYlYlt.TyLyLyLyrK.A.......7BPzLyLyLyLu.zYlYlYlY1K.oYlYlYlY9BPMyLyLyLyu.D........L.oYlYlYlY.CPyLyLyLyLv.TyLyLyLyDL.clYlYlYlACP.......fv.jlYlYlYlIL.MyLyLyLyBCPMyLyLyLyv.zYlYlYlYNL.A.......DCPZlYlYlYFw.zLyLyLyLSL.0LyLyLyLECPmYlYlYlYw.D.......XL.oYlYlYlYFCPyLyLyLyrw.TyLyLyLybL.clYlYlYlGCP........x.jlYlYlYlgL.MyLyLyLyHCPMyLyLyLSx.zYlYlYlYlL.A.......JCPZlYlYlYlx.zLyLyLyLqL.0LyLyLyLKCPmYlYlYl4x.D.......vL.oYlYlYlYLCPzLyLyLyLy.TyLyLyLyzL.clYlYlYlMCP.......fy.jlYlYlYl4L.QyLyLyLyNCPMyLyLyLyy.zYlYlYlY9L.A.......PCPZlYlYlYFz.DMyLyLyLCM.0LyLyLyLQCPmYlYlYlYz.D.......HM.oYlYlYlYRCPzLyLyLyrz.TyLyLyLyLM.clYlYlYlSCP........0.jlYlYlYlQM.QyLyLyLyTCPMyLyLyLS0.zYlYlYlYVM.A.......VCPZlYlYlYl0.DMyLyLyLaM.0LyLyLyLWCPmYlYlYl40.D.......fM.oYlYlYlYXCPzLyLyLyL1.TyLyLyLyjM.clYlYlYlYCP.......f1.jlYlYlYloM.QyLyLyLyZCPMyLyLyLy1.zYlYlYlYtM.A.......bCPZlYlYlYF2.DMyLyLyLyM.0LyLyLyLcCPmYlYlYlY2.D.......3M.oYlYlYlYdCPzLyLyLyr2.TyLyLyLy7M.clYlYlYleCP........3.jlYlYlYlAN.QyLyLyLyfCPMyLyLyLS3.zYlYlYlYFN.A.......hCPZlYlYlYl3.DMyLyLyLKN.0LyLyLyLiCPmYlYlYl43.D.......PN.oYlYlYlYjCPzLyLyLyL4.TyLyLyLyTN.clYlYlYlkCP.......f4.jlYlYlYlYN.QyLyLyLylCPMyLyLyLy4.zYlYlYlYdN.A.......nCPZlYlYlYF5.DMyLyLyLiN.0LyLyLyLoCPmYlYlYlY5.D.......nN.oYlYlYlYpCPzLyLyLyr5.TyLyLyLyrN.clYlYlYlqCP........6.jlYlYlYlwN.QyLyLyLyrCPMyLyLyLS6.zYlYlYlY1N.A.......tCPZlYlYlYl6.DMyLyLyL6N.0LyLyLyLuCPmYlYlYl46.D........O.oYlYlYlYvCPzLyLyLyL7.TyLyLyLyDO.clYlYlYlwCP.......f7.jlYlYlYlIO.QyLyLyLyxCPMyLyLyLy7.zYlYlYlYNO.A.......zCPZlYlYlYF8.DMyLyLyLSO.0LyLyLyL0CPmYlYlYlY8.D.......XO.oYlYlYlY1CPzLyLyLyr8.TyLyLyLybO.clYlYlYl2CP........9.jlYlYlYlgO.QyLyLyLy3CPMyLyLyLS9.zYlYlYlYlO.A.......5CPZlYlYlYl9.DMyLyLyLqO.0LyLyLyL6CPmYlYlYl49.D.......vO.oYlYlYlY7CPzLyLyLyL+.TyLyLyLyzO.clYlYlYl8CP.......f+.jlYlYlYl4O.QyLyLyLy9CPMyLyLyLy+.zYlYlYlY9O.A........DPMyLyLyLC.AjlYlYlYlAP.clYlYlYl.DPyLyLyLyL.AD.......DP.0LyLyLyLADPZlYlYlYV.AzYlYlYlYFP.MyLyLyLyADP.......f.ATyLyLyLyHP.oYlYlYlYBDPmYlYlYlo.AzLyLyLyLKP.A.......CDPMyLyLyLy.AjlYlYlYlMP.clYlYlYlCDPyLyLyLy7.AD.......PP.0LyLyLyLDDPZlYlYlYFAAzYlYlYlYRP.MyLyLyLyDDP.......PAATyLyLyLyTP.oYlYlYlYEDPmYlYlYlYAAzLyLyLyLWP.A.......FDPMyLyLyLiAAjlYlYlYlYP.clYlYlYlFDPyLyLyLyrAAD.......bP.0LyLyLyLGDPZlYlYlY1AAzYlYlYlYdP.MyLyLyLyGDP........BATyLyLyLyfP.oYlYlYlYHDPmYlYlYlIBAzLyLyLyLiP.A.......IDPMyLyLyLSBAjlYlYlYlkP.clYlYlYlIDPyLyLyLybBAD.......nP.0LyLyLyLJDPZlYlYlYlBAzYlYlYlYpP.MyLyLyLyJDP.......vBATyLyLyLyrP.oYlYlYlYKDPmYlYlYl4BAzLyLyLyLuP.A.......LDPMyLyLyLCCAjlYlYlYlwP.clYlYlYlLDPzLyLyLyLCAD.......zP.0LyLyLyLMDPZlYlYlYVCAzYlYlYlY1P.QyLyLyLyMDP.......fCATyLyLyLy3P.oYlYlYlYNDPmYlYlYloCADMyLyLyL6P.A.......ODPMyLyLyLyCAjlYlYlYl8P.clYlYlYlODPzLyLyLy7CAD........Q.0LyLyLyLPDPZlYlYlYFDAzYlYlYlYBQ.QyLyLyLyPDP.......PDATyLyLyLyDQ.oYlYlYlYQDPmYlYlYlYDADMyLyLyLGQ.A.......RDPMyLyLyLiDAjlYlYlYlIQ.clYlYlYlRDPzLyLyLyrDAD.......LQ.0LyLyLyLSDPZlYlYlY1DAzYlYlYlYNQ.QyLyLyLySDP........EATyLyLyLyPQ.oYlYlYlYTDPmYlYlYlIEADMyLyLyLSQ.A.......UDPMyLyLyLSEAjlYlYlYlUQ.clYlYlYlUDPzLyLyLybEAD.......XQ.0LyLyLyLVDPZlYlYlYlEAzYlYlYlYZQ.QyLyLyLyVDP.......vEATyLyLyLybQ.oYlYlYlYWDPmYlYlYl4EADMyLyLyLeQ.A.......XDPMyLyLyLCFAjlYlYlYlgQ.clYlYlYlXDPzLyLyLyLFAD.......jQ.0LyLyLyLYDPZlYlYlYVFAzYlYlYlYlQ.QyLyLyLyYDP.......fFATyLyLyLynQ.oYlYlYlYZDPmYlYlYloFADMyLyLyLqQ.A.......aDPMyLyLyLyFAjlYlYlYlsQ.clYlYlYlaDPzLyLyLy7FAD.......vQ.0LyLyLyLbDPZlYlYlYFGAzYlYlYlYxQ.QyLyLyLybDP.......PGATyLyLyLyzQ.oYlYlYlYcDPmYlYlYlYGADMyLyLyL2Q.A.......dDPMyLyLyLiGAjlYlYlYl4Q.clYlYlYldDPzLyLyLyrGAD.......7Q.0LyLyLyLeDPZlYlYlY1GAzYlYlYlY9Q.QyLyLyLyeDP........HATyLyLyLy.R.oYlYlYlYfDPmYlYlYlIHADMyLyLyLCR.A.......gDPMyLyLyLSHAjlYlYlYlER.clYlYlYlgDPzLyLyLybHAD.......HR.0LyLyLyLhDPZlYlYlYlHAzYlYlYlYJR.QyLyLyLyhDP.......vHATyLyLyLyLR.oYlYlYlYiDPmYlYlYl4HADMyLyLyLOR.A.......jDPMyLyLyLCIAjlYlYlYlQR.clYlYlYljDPzLyLyLyLIAD.......TR.0LyLyLyLkDPZlYlYlYVIAzYlYlYlYVR.QyLyLyLykDP.......fIATyLyLyLyXR.oYlYlYlYlDPmYlYlYloIADMyLyLyLaR.A.......mDPMyLyLyLyIAjlYlYlYlcR.clYlYlYlmDPzLyLyLy7IAD.......fR.0LyLyLyLnDPZlYlYlYFJAzYlYlYlYhR.QyLyLyLynDP.......PJATyLyLyLyjR.oYlYlYlYoDPmYlYlYlYJADMyLyLyLmR.A.......pDPMyLyLyLiJAjlYlYlYloR.clYlYlYlpDPzLyLyLyrJAD.......rR.0LyLyLyLqDPZlYlYlY1JAzYlYlYlYtR.QyLyLyLyqDP........KATyLyLyLyvR.oYlYlYlYrDPmYlYlYlIKADMyLyLyLyR.A.......sDPMyLyLyLSKAjlYlYlYl0R.clYlYlYlsDPzLyLyLybKAD.......3R.0LyLyLyLtDPZlYlYlYlKAzYlYlYlY5R.QyLyLyLytDP.......vKATyLyLyLy7R.oYlYlYlYuDPmYlYlYl4KADMyLyLyL+R.A.......vDPMyLyLyLCLAjlYlYlYlAS.clYlYlYlvDPzLyLyLyLLAD.......DS.0LyLyLyLwDPZlYlYlYVLAzYlYlYlYFS.QyLyLyLywDP.......fLATyLyLyLyHS.oYlYlYlYxDPmYlYlYloLADMyLyLyLKS.A.......yDPMyLyLyLyLAjlYlYlYlMS.clYlYlYlyDPzLyLyLy7LAD.......PS.0LyLyLyLzDPZlYlYlYFMAzYlYlYlYRS.QyLyLyLyzDP.......PMATyLyLyLyTS.oYlYlYlY0DPmYlYlYlYMADMyLyLyLWS.A.......1DPMyLyLyLiMAjlYlYlYlYS.clYlYlYl1DPzLyLyLyrMAD.......bS.0LyLyLyL2DPZlYlYlY1MAzYlYlYlYdS.QyLyLyLy2DP........NATyLyLyLyfS.oYlYlYlY3DPmYlYlYlINADMyLyLyLiS.A.......4DPMyLyLyLSNAjlYlYlYlkS.clYlYlYl4DPzLyLyLybNAD.......nS.0LyLyLyL5DPZlYlYlYlNAzYlYlYlYpS.QyLyLyLy5DP.......vNATyLyLyLyrS.oYlYlYlY6DPmYlYlYl4NADMyLyLyLuS.A.......7DPMyLyLyLCOAjlYlYlYlwS.clYlYlYl7DPzLyLyLyLOAD.......zS.0LyLyLyL8DPZlYlYlYVOAzYlYlYlY1S.QyLyLyLy8DP.......fOATyLyLyLy3S.oYlYlYlY9DPmYlYlYloOADMyLyLyL6S.A.......+DPMyLyLyLyOAjlYlYlYl8S.clYlYlYl+DPzLyLyLy7OAD........T.clYlYlYF.EPMyLyLyLCPAzLyLyLyLAT.oYlYlYlY.EP.......HPAzYlYlYlYBT.0LyLyLyr.EPyLyLyLyLPAjlYlYlYlCT.A.......AEPmYlYlYlQPATyLyLyLyDT.MyLyLyLSAEPZlYlYlYVPAD.......FT.clYlYlYlAEPMyLyLyLaPAzLyLyLyLGT.oYlYlYl4AEP.......fPAzYlYlYlYHT.0LyLyLyLBEPyLyLyLyjPAjlYlYlYlIT.A......fBEPmYlYlYloPATyLyLyLyJT.MyLyLyLyBEPZlYlYlYtPAD.......LT.clYlYlYFCEPMyLyLyLyPAzLyLyLyLMT.oYlYlYlYCEP.......3PAzYlYlYlYNT.0LyLyLyrCEPyLyLyLy7PAjlYlYlYlOT.A.......DEPmYlYlYlAQATyLyLyLyPT.MyLyLyLSDEPZlYlYlYFQAD.......RT.clYlYlYlDEPMyLyLyLKQAzLyLyLyLST.oYlYlYl4DEP.......PQAzYlYlYlYTT.0LyLyLyLEEPyLyLyLyTQAjlYlYlYlUT.A......fEEPmYlYlYlYQATyLyLyLyVT.MyLyLyLyEEPZlYlYlYdQAD.......XT.clYlYlYFFEPMyLyLyLiQAzLyLyLyLYT.oYlYlYlYFEP.......nQAzYlYlYlYZT.0LyLyLyrFEPyLyLyLyrQAjlYlYlYlaT.A.......GEPmYlYlYlwQATyLyLyLybT.MyLyLyLSGEPZlYlYlY1QAD.......dT.clYlYlYlGEPMyLyLyL6QAzLyLyLyLeT.oYlYlYl4GEP........RAzYlYlYlYfT.0LyLyLyLHEPyLyLyLyDRAjlYlYlYlgT.A......fHEPmYlYlYlIRATyLyLyLyhT.MyLyLyLyHEPZlYlYlYNRAD.......jT.clYlYlYFIEPMyLyLyLSRAzLyLyLyLkT.oYlYlYlYIEP.......XRAzYlYlYlYlT.0LyLyLyrIEPyLyLyLybRAjlYlYlYlmT.A.......JEPmYlYlYlgRATyLyLyLynT.MyLyLyLSJEPZlYlYlYlRAD.......pT.clYlYlYlJEPMyLyLyLqRAzLyLyLyLqT.oYlYlYl4JEP.......vRAzYlYlYlYrT.0LyLyLyLKEPyLyLyLyzRAjlYlYlYlsT.A......fKEPmYlYlYl4RATyLyLyLytT.MyLyLyLyKEPZlYlYlY9RAD.......vT.clYlYlYFLEPMyLyLyLCSAzLyLyLyLwT.oYlYlYlYLEP.......HSAzYlYlYlYxT.0LyLyLyrLEPzLyLyLyLSAjlYlYlYlyT.A.......MEPmYlYlYlQSATyLyLyLyzT.QyLyLyLSMEPZlYlYlYVSAD.......1T.clYlYlYlMEPMyLyLyLaSADMyLyLyL2T.oYlYlYl4MEP.......fSAzYlYlYlY3T.0LyLyLyLNEPzLyLyLyjSAjlYlYlYl4T.A......fNEPmYlYlYloSATyLyLyLy5T.QyLyLyLyNEPZlYlYlYtSAD.......7T.clYlYlYFOEPMyLyLyLySADMyLyLyL8T.oYlYlYlYOEP.......3SAzYlYlYlY9T.0LyLyLyrOEPzLyLyLy7SAjlYlYlYl+T.A.......PEPmYlYlYlATATyLyLyLy.U.QyLyLyLSPEPZlYlYlYFTAD.......BU.clYlYlYlPEPMyLyLyLKTADMyLyLyLCU.oYlYlYl4PEP.......PTAzYlYlYlYDU.0LyLyLyLQEPzLyLyLyTTAjlYlYlYlEU.A......fQEPmYlYlYlYTATyLyLyLyFU.QyLyLyLyQEPZlYlYlYdTAD.......HU.clYlYlYFREPMyLyLyLiTADMyLyLyLIU.oYlYlYlYREP.......nTAzYlYlYlYJU.0LyLyLyrREPzLyLyLyrTAjlYlYlYlKU.A.......SEPmYlYlYlwTATyLyLyLyLU.QyLyLyLSSEPZlYlYlY1TAD.......NU.clYlYlYlSEPMyLyLyL6TADMyLyLyLOU.oYlYlYl4SEP........UAzYlYlYlYPU.0LyLyLyLTEPzLyLyLyDUAjlYlYlYlQU.A......fTEPmYlYlYlIUATyLyLyLyRU.QyLyLyLyTEPZlYlYlYNUAD.......TU.clYlYlYFUEPMyLyLyLSUADMyLyLyLUU.oYlYlYlYUEP.......XUAzYlYlYlYVU.0LyLyLyrUEPzLyLyLybUAjlYlYlYlWU.A.......VEPmYlYlYlgUATyLyLyLyXU.QyLyLyLSVEPZlYlYlYlUAD.......ZU.clYlYlYlVEPMyLyLyLqUADMyLyLyLaU.oYlYlYl4VEP.......vUAzYlYlYlYbU.0LyLyLyLWEPzLyLyLyzUAjlYlYlYlcU.A......fWEPmYlYlYl4UATyLyLyLydU.QyLyLyLyWEPZlYlYlY9UAD.......fU.clYlYlYFXEPMyLyLyLCVADMyLyLyLgU.oYlYlYlYXEP.......HVAzYlYlYlYhU.0LyLyLyrXEPzLyLyLyLVAjlYlYlYliU.A.......YEPmYlYlYlQVATyLyLyLyjU.QyLyLyLSYEPZlYlYlYVVAD.......lU.clYlYlYlYEPMyLyLyLaVADMyLyLyLmU.oYlYlYl4YEP.......fVAzYlYlYlYnU.0LyLyLyLZEPzLyLyLyjVAjlYlYlYloU.A......fZEPmYlYlYloVATyLyLyLypU.QyLyLyLyZEPZlYlYlYtVAD.......rU.clYlYlYFaEPMyLyLyLyVADMyLyLyLsU.oYlYlYlYaEP.......3VAzYlYlYlYtU.0LyLyLyraEPzLyLyLy7VAjlYlYlYluU.A.......bEPmYlYlYlAWATyLyLyLyvU.QyLyLyLSbEPZlYlYlYFWAD.......xU.clYlYlYlbEPMyLyLyLKWADMyLyLyLyU.oYlYlYl4bEP.......PWAzYlYlYlYzU.0LyLyLyLcEPzLyLyLyTWAjlYlYlYl0U.A......fcEPmYlYlYlYWATyLyLyLy1U.QyLyLyLycEPZlYlYlYdWAD.......3U.clYlYlYFdEPMyLyLyLiWADMyLyLyL4U.oYlYlYlYdEP.......nWAzYlYlYlY5U.0LyLyLyrdEPzLyLyLyrWAjlYlYlYl6U.A.......eEPmYlYlYlwWATyLyLyLy7U.QyLyLyLSeEPZlYlYlY1WAD.......9U.clYlYlYleEPMyLyLyL6WADMyLyLyL+U.oYlYlYl4eEP........XAzYlYlYlY.V.0LyLyLyLfEPzLyLyLyDXAjlYlYlYlAV.A......ffEPmYlYlYlIXATyLyLyLyBV.QyLyLyLyfEPZlYlYlYNXAD.......DV.clYlYlYFgEPMyLyLyLSXADMyLyLyLEV.oYlYlYlYgEP.......XXAzYlYlYlYFV.0LyLyLyrgEPzLyLyLybXAjlYlYlYlGV.A.......hEPmYlYlYlgXATyLyLyLyHV.QyLyLyLShEPZlYlYlYlXAD.......JV.clYlYlYlhEPMyLyLyLqXADMyLyLyLKV.oYlYlYl4hEP.......vXAzYlYlYlYLV.0LyLyLyLiEPzLyLyLyzXAjlYlYlYlMV.A......fiEPmYlYlYl4XATyLyLyLyNV.QyLyLyLyiEPZlYlYlY9XAD.......PV.A<UserCurves/>
@@ -664,7 +664,7 @@ End</SCRIPT_CONTENT>
                 overrideName="0" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="X-TOUCH MINI" reflectMIDIOn="1" midiThru="0" midiSource="X-TOUCH MINI : Controller 1, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="442" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.4025490880012512" backPlate="1"
+                nodeId="0" paramIndex="-1" widgetValue="0.2831177115440369" backPlate="1"
                 backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
                 followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -844,7 +844,7 @@ End</SCRIPT_CONTENT>
                 overrideName="0" captionVisible="1" captionHeight="0.4320987654320987"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="X-TOUCH MINI : Note OFF C1, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="9354" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="1.0" backPlate="7" backPlateVisible="1"
+                nodeId="0" paramIndex="-1" widgetValue="0.0" backPlate="7" backPlateVisible="1"
                 invertMIDI="0" displayRange="0" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -2381,7 +2381,7 @@ End</SCRIPT_CONTENT>
                 overrideName="0" captionVisible="1" captionHeight="0.4320987654320987"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="X-TOUCH MINI : Note OFF C#-1, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="3466" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="1.0" backPlate="7" backPlateVisible="1"
+                nodeId="0" paramIndex="-1" widgetValue="0.0" backPlate="7" backPlateVisible="1"
                 invertMIDI="0" displayRange="0" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -3504,14 +3504,14 @@ End</SCRIPT_CONTENT>
                 overrideName="0" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="X-TOUCH MINI" reflectMIDIOn="1" midiThru="0" midiSource="X-TOUCH MINI : Controller 13, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="3514" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.574798583984375" backPlate="1"
+                nodeId="0" paramIndex="-1" widgetValue="0.5905457139015198" backPlate="1"
                 backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
                 followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
                 widgetDirectedOSCType="0" widgetDirectedMinIntValue="0" widgetDirectedMaxIntValue="127"
                 widgetDirectedMinDoubleValue="0.0" widgetDirectedMaxDoubleValue="1.0"
                 widgetDirectedStringListValue="T2ZmCk9u" widgetHandle="k12" enableOSC="1"
-                invertOSC="0" groupName="L" widgetMoveBehavior="1" updateOnLoadGig="0"
+                invertOSC="0" groupName="" widgetMoveBehavior="1" updateOnLoadGig="0"
                 updateOnActivateRackspace="0" setDefaultDoubleClickResetValue="0.0"
                 globalParam="-1" globalAssignedParameterNumber="-1" bckgColor="ff3c3c3c"
                 outlineColor="ff808080" outlineRound="4" outlineThick="2">
@@ -3799,7 +3799,7 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="0" captionVisible="1" captionHeight="0.4897959183673469"
                 reflectMIDI="X-TOUCH MINI" reflectMIDIOn="1" midiThru="1" midiSource="X-TOUCH MINI : Controller 24, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="6330" rigId="0" textColor="ffffffff"
-                nodeId="9" paramIndex="24" widgetValue="0.0" backPlate="7" backPlateVisible="1"
+                nodeId="9" paramIndex="24" widgetValue="1.0" backPlate="7" backPlateVisible="1"
                 invertMIDI="0" displayRange="0" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -3822,14 +3822,14 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="0" captionVisible="1" captionHeight="0.1317829457364341"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="X-TOUCH MINI : Controller 17, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="4538" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.574798583984375" backPlate="11"
+                nodeId="0" paramIndex="-1" widgetValue="0.5905457139015198" backPlate="11"
                 backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
                 followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
                 widgetDirectedOSCType="0" widgetDirectedMinIntValue="0" widgetDirectedMaxIntValue="127"
                 widgetDirectedMinDoubleValue="0.0" widgetDirectedMaxDoubleValue="1.0"
                 widgetDirectedStringListValue="T2ZmCk9u" widgetHandle="rackOutput"
-                enableOSC="0" invertOSC="0" groupName="L" widgetMoveBehavior="1"
+                enableOSC="0" invertOSC="0" groupName="" widgetMoveBehavior="1"
                 updateOnLoadGig="0" updateOnActivateRackspace="0" setDefaultDoubleClickResetValue="0.0"
                 globalParam="-1" globalAssignedParameterNumber="-1" bckgColor="ff3c3c3c"
                 outlineColor="ff808080" outlineRound="4" outlineThick="2">
@@ -3839,7 +3839,7 @@ End</SCRIPT_CONTENT>
                           Underlined="0"/>
         </WIDGET>
         <WIDGET type="4" style="0" id="643" x="0.612776025236593" y="0.1327160493827161"
-                width="0.05415352260778129" height="0.09876543209876543" caption="Amp Output"
+                width="0.05415352260778129" height="0.09876543209876543" caption="Amp/FX Output"
                 captionIncludesAttribute="0" hideTemporaryValueDisplay="0" hideInPresentationView="0"
                 widgetIgnoresMouse="1" overrideName="1" captionVisible="0" captionHeight="0.375"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
@@ -3879,7 +3879,6 @@ End</SCRIPT_CONTENT>
       <PARAM widgetId="407" value="1.0" onLoadValue="1.0"/>
       <PARAM widgetId="408" value="1.0" onLoadValue="1.0"/>
       <PARAM widgetId="409" value="1.0" onLoadValue="1.0"/>
-      <PARAM widgetId="642" value="0.5748031735420227" onLoadValue="0.5748031735420227"/>
       <PARAM widgetId="1" value="0.2831177115440369" onLoadValue="0.2831177115440369"/>
       <PARAM widgetId="7" value="1.0" onLoadValue="1.0"/>
       <PARAM widgetId="8" value="0.0" onLoadValue="0.0"/>
@@ -4069,7 +4068,7 @@ Var
     //           VOX RACKSPACE DECLARATIONS         //
     //  &lt;--- UPDATE FOR EACH AVAILABLE DEVICE ---&gt;  //
     //////////////////////////////////////////////////
-    od_on, od_drive, chorus_on, chorus_mix, chorus_rate, delay_on, delay_mod, delay_mix, delay_time: Widget //Vox FX widgets
+    od_on, od_drive, chorus_on, od_level, chorus_mix, chorus_rate, delay_on, delay_mod, delay_mix, delay_time: Widget //Vox FX widgets
     
     /* EFFECT DECLARATION TEMPLATE
     //device &lt;FX index&gt;
@@ -4078,8 +4077,8 @@ Var
     */
     
     //effect 5
-    Vox5_controls: Widget Array = [od_drive, od_on] //  widgets for this effect
-    Vox5_rt: Integer Array = [0, 16] // control widgets to map these to, see FX/VOX MODE KNOBS table for reference
+    Vox5_controls: Widget Array = [od_drive, od_on, od_level] //  widgets for this effect
+    Vox5_rt: Integer Array = [0, 16, 12] // control widgets to map these to, see FX/VOX MODE KNOBS table for reference
     
     //effect 9
     Vox9_controls: Widget Array = [chorus_mix, chorus_rate, chorus_on]
@@ -4186,7 +4185,7 @@ End
 */
 
 
-On WidgetValueChanged (w: Widget, i: Integer, v: Double) From od_drive, od_on //Vox FX0 widgets
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From od_drive, od_on, od_level //Vox FX0 widgets
 Var j: Integer 
     If mode == 3 And fxselected == 5 And holdwvc == false Then //if vox mode and fx0 selected
         rt = Vox5_rt //get control widgets for this device
@@ -4371,7 +4370,7 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.25"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="112" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.4025490880012512" backPlate="1" backPlateVisible="1"
+                widgetValue="0.2831177115440369" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -4415,7 +4414,7 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.4881889820098877" backPlate="1" backPlateVisible="1"
+                widgetValue="0.3070866167545319" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -4437,7 +4436,7 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.5275590419769287" backPlate="1" backPlateVisible="1"
+                widgetValue="0.5275589823722839" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -4459,7 +4458,7 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.4881889820098877" backPlate="1" backPlateVisible="1"
+                widgetValue="0.1653543263673782" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -4481,7 +4480,7 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.4320987654320987"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="1.0" backPlate="7" backPlateVisible="1" invertMIDI="0"
+                widgetValue="0.0" backPlate="7" backPlateVisible="1" invertMIDI="0"
                 displayRange="0" ignoresVariations="0" followHardware="0" relativeMode="0"
                 enableDirectedOSC="0" directedOSCAddressPattern="" directedOSCIPAddress=""
                 directedOSCPort="9001" directedOSCTargetName="" widgetDirectedOSCType="0"
@@ -4550,7 +4549,7 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.5196850299835205" backPlate="1" backPlateVisible="1"
+                widgetValue="0.5196849703788757" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -4572,7 +4571,7 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.3858267664909363" backPlate="1" backPlateVisible="1"
+                widgetValue="0.3858267962932587" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -4594,7 +4593,7 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.4881889820098877" backPlate="1" backPlateVisible="1"
+                widgetValue="0.4881890118122101" backPlate="1" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
@@ -4660,7 +4659,7 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.4320987654320987"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="0" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="1.0" backPlate="7" backPlateVisible="1" invertMIDI="0"
+                widgetValue="0.0" backPlate="7" backPlateVisible="1" invertMIDI="0"
                 displayRange="0" ignoresVariations="0" followHardware="0" relativeMode="0"
                 enableDirectedOSC="0" directedOSCAddressPattern="" directedOSCIPAddress=""
                 directedOSCPort="9001" directedOSCTargetName="" widgetDirectedOSCType="0"
@@ -4927,7 +4926,7 @@ End</SCRIPT_CONTENT>
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.07407407407407407"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
                 midiData="20608" rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1"
-                widgetValue="0.574798583984375" backPlate="11" backPlateVisible="1"
+                widgetValue="0.5905457139015198" backPlate="11" backPlateVisible="1"
                 invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""

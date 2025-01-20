@@ -40,6 +40,7 @@
     holdfx: Boolean [24] // hold fx select widget changes temporarily to avoid feedback loop conditions
     holdctrls: Boolean [32] // hold control widget changes temporarily to avoid feedback loop conditions
     holdremote: Boolean  [32] //hold changes via osc temporarily to avoid feedback loop
+    holdfader: Boolean = false
     wtime: Double [32] // time a parameter was last modified
     timeout: Double = 50 // time to reset hold 
     
@@ -269,5 +270,34 @@ Function sync_rcontrols (i: Integer, v: Double)
         holdremote[i] = true
         wtime[i] = TimeSinceStartup ()
         SetWidgetValue (rcontrols[i], v)
+    End
+End
+
+
+Function sync_local (i: Integer, v: Double)
+    //Print ("sync_local called, array sizes are: wtime " + Size (wtime) + ", holdctrls " + Size (holdctrls) + ", rt " + Size (rt) + ", ctrls " + Size (ctrls) + ", index " + i)
+    //Print ("need to change widget " + i + " in ctrls")
+    If wtime[i] == 0 Or holdremote [i] == True Or holdfader == True Then
+        holdremote [i] = true
+        wtime [i] = TimeSinceStartup ()
+        SetWidgetValue (ctrls [i], v) //set control widget value
+    End
+End
+
+Function sync_remote (i: Integer, v: Double)
+    If GetWidgetHideState (rcontrols[i]) == False And (wtime [i] == 0 Or holdctrls [i] == True Or holdfader == True) Then
+        holdctrls [i] = true
+        wtime [i] = TimeSinceStartup ()
+        osc_out (i, v)
+    End
+End
+
+Function sync_fader (i: Integer, v: Double)
+    //Print ("sync_fader called, array sizes are: wtime " + Size (wtime) + ", holdctrls " + Size (holdctrls) + ", rt " + Size (rt) + ", ctrls " + Size (ctrls) + ", index " + i)
+    //Print ("need to move fader, holdfader " + holdfader)
+    If i == rack_out_index And (wtime[i] == 0 Or holdctrls[rack_out_index] == True Or holdremote[rack_out_index] == True) Then
+        holdctrls[rack_out_index] = true
+        wtime [i] = TimeSinceStartup ()
+        SetWidgetValue (rackOutput, v) //set control widget value
     End
 End
