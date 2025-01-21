@@ -1,0 +1,78 @@
+//DON'T TOUCH THIS
+    ctrls: Widget Array //to hold controls of current device
+    rt: Integer Array //to hold mapping of current device
+
+
+    Include "includes/osc"
+    
+    osc_enabled: Boolean = false //flag to enable/disable OSC communication
+    
+    maxrt: Integer = 31 // maximum index of rack controls on global rackspace, to offset fx in amp/eq mode
+
+    //////////////////////////////////////////////////
+    //                COMMON FUNCTIONS              //
+    //             <--- DO NOT TOUCH  --->          //
+    //////////////////////////////////////////////////
+// HELPER FUNCTION - SEND RESPONSE STRING FOR WIDGET STATES WHEN MODE IS CHANGED
+Function osc_out_ws (controls_a: Widget Array, rt_a: Integer Array)
+Var rs: String
+    i: Integer
+
+    For i = 0; i < Size (controls_a); i = i + 1 Do
+        If i == 0 Then
+            rs = rs + rt_a [i]
+        Else
+            rs = rs + "," + rt_a [i]
+        End
+        rs = rs + "," + GetWidgetValue (controls_a [i])
+    End
+    If osc_enabled == true Then
+        OSC_SendStringSpecific ("/ws", rs, oscip, oscport) //send current mode widget states to global rackspace
+    End
+End
+
+// HELPER FUNCTION - SEND RESPONSE STRING FOR FX WIDGET STATES (AMP/EQ MODES)
+Function osc_out_fxws (controls_a: Widget Array, rt_a: Integer Array)
+Var rs: String
+    i: Integer
+
+    For i = 0; i < Size (controls_a); i = i + 1 Do
+        If i == 0 Then
+            rs = rs + rt_a [i]
+        Else
+            rs = rs + "," + rt_a [i]
+        End
+        rs = rs + "," + GetWidgetValue (controls_a [i])
+    End
+    If osc_enabled == true Then
+        OSC_SendStringSpecific ("/fxws", rs, oscip, oscport) //for amp/eq modes, send FX on/off button states to global rackspace
+    End
+End
+
+// FX HELPER FUNCTION - SEND INDIVIDUAL WIDGET STATE TO GLOBAL RACKSPACE
+Function osc_out_ws1 (addr: String, v1: Integer, v2: Double) // sending 2 argument osc, integer plus double, to a specific address, when widget value changes
+    Var m: OSCMessage
+    If osc_enabled == true Then
+        OSC_SetAddress (m, addr)
+        OSC_AppendIntArg (m, v1)
+        OSC_AppendDoubleArg (m, v2)
+        OSC_SendSpecific (m, oscip, oscport)
+    End
+    //Print ("global osc_out: " + addr + " " + OSC_GetArgAsInteger (m, 0) + " " + OSC_GetArgAsDouble (m, 1))
+End
+
+
+// Called when global rackspace sends handshake message
+On OSCMessageReceived (m: OSCMessage) Matching "/hello" 
+    If maxrt == OSC_GetArgAsInteger (m, 0) Then //check if maxrt matches; if not, disable OSC communication, as controls are incompatible
+        osc_enabled = true
+        OSC_SendIntegerSpecific ("/ping", initmode, oscip, oscport)
+    Else
+        osc_enabled = false
+        Print ("Control mismatch, OSC disabled")
+    End
+End
+
+    //////////////////////////////////////////////////
+    //            END COMMON FUNCTIONS              //
+    //////////////////////////////////////////////////

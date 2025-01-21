@@ -1,0 +1,28 @@
+
+// RACKSPACE CALLBACK TO UPDATE WIDGET VALUES WHEN AMP CONTROL VALUES CHANGE IN GLOBAL RACKSPACE
+// DO NOT TOUCH
+On OSCMessageReceived (m: OSCMessage) Matching "/amp" // update amp widget values when changed in global rackspace
+    Var j: Integer
+        i: Integer = OSC_GetArgAsInteger (m, 0) // this identifies widget to update
+        v: Double = OSC_GetArgAsDouble (m, 1) // and the new value to set
+    //Print ("device is Amp, control is " + i + ", value is " + v + "max is " + maxrt)
+    If i > maxrt Then //check if control is in FX section
+        ctrls = FX_buttons //get FX buttons
+        rt = FX_rt //get FX rt
+        j = i - maxrt - 1
+    Else //else, get amp controls
+        ctrls = Amp_controls 
+        rt = Amp_rt
+        j = i
+    End
+    If IndexOf (rt, j) > -1 Then // if widget is available in this rack, update it
+        SetWidgetValue (ctrls [IndexOf (rt, j)], v)
+    End
+End
+
+// RESPONSE TO AMP WIDGET STATES QUERY
+// DO NOT TOUCH
+On OSCMessageReceived (m: OSCMessage) Matching "/amp/q" // response to AMP widget states query
+    osc_out_ws (Amp_controls, Amp_rt)
+    osc_out_fxws (FX_buttons, FX_rt)
+End

@@ -1,0 +1,16 @@
+
+// RACKSPACE CALLBACK ON RECEIVING "FX" CAPABILITY QUERY
+// SENDS LIST OF AVAILABLE DEVICES AS GLOBAL RACKSPACE SLOT NUMBERS IN A STRING
+On OSCMessageReceived (m: OSCMessage) Matching "/fx/q"
+    Var i: Integer
+        rm: OSCMessage
+        fxd: String //list of available FX devices to send to global rackspace
+    For i = 0; i < Size (FX_rt); i = i + 1 Do //iterate through available FX devices
+        If i == 0 Then //if first device
+            fxd = IntToString (FX_rt [i]) //add to list
+        Else //else, add to list with a comma in the beginning
+            fxd = fxd + "," + IntToString (FX_rt [i]) //add to list
+        End
+    End
+    OSC_SendStringSpecific ("/fx/d", fxd, oscip, oscport) 
+End
