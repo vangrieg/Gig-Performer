@@ -1,0 +1,15 @@
+
+// Blink iRig Blueboard button D with tempo
+On WidgetValueChanged (v: Double) From beatflash
+    If MidiOutDeviceExists (FSOUT) == true Then
+        If InSetlistMode () == True Then
+            If GetCurrentSongPartIndex () == 3 Then
+                SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx (23, ScaleInt(ParamToMidi (v), 0, 127, 127, 0), 1))
+            Else
+                SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx (23, ParamToMidi (v), 1))
+            End
+        Else
+            SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx (23, ParamToMidi (v), 1))
+        End
+    End
+End
