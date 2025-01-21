@@ -48,21 +48,21 @@ On WidgetValueChanged (w: Widget, i: integer, v: double) from k0, k1, k2, k3, k4
         //Print ("global wvc rcontrols: w" + i + " value changed, hold " + holdctrls[i] + ", mode " + mode + ", fxselected " + fxselected + ", holdwvc " + holdwvc)
         //Print ("addressing array holdctrls, size " + Size(holdctrls) + ", i " + i)
         sync_remote (i, v)
-        sync_fader (i, v)
+        //sync_fader (i, v)
     Elsif mode == 3 And fxselected > -1 And holdwvc == false Then //if mode is vox and fx is selected
         //Print ("global wvc rcontrols: w" + i + " value changed, hold " + holdctrls[i] + ", mode " + mode + ", fxselected " + fxselected + ", holdwvc " + holdwvc)
         //Print ("addressing array rt, size " + Size (rt) + ", i " + i)
         If IndexOf (rt, i) > -1 Then //if control widget is in rt
             //Print ("addressing array holdctrls, size " + Size (holdctrls) + ", i " + i)
             sync_local (IndexOf(rt, i), v)
-            sync_fader (i, v)
+            //sync_fader (i, v)
             //Print ("calling sync_local for index " + IndexOf(rt, i) + ", value " + v)
         End
     End
     TriggerOneShotRamp (XTTimeout, 200, 10)
     //update_xtouch()
 End
-
+/*
 On WidgetValueChanged (v: Double) From rackOutput
     If GetWidgetHideState (rcontrols [rack_out_index]) == false And (wtime [rack_out_index] == 0 Or holdfader == false) Then
         holdfader = True
@@ -71,7 +71,7 @@ On WidgetValueChanged (v: Double) From rackOutput
         SetWidgetValue (rcontrols[rack_out_index], v)
     End
 End
-
+*/
 // GLOBAL RACKSPACE CALLBACK ON RECEIVING WIDGET STATE UPDATE
 // UPDATES ONE CONTROL WIDGET BASED ON THAT
 On OSCMessageReceived (m: OSCMessage) Matching "/ws1" //update one control widget when osc message comes in
