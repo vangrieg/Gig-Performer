@@ -1,0 +1,240 @@
+// GLOBAL RACKSPACE CALLBACK ON RECEIVING RESPONSE TO FX DEVICES AVAILABLE QUERY
+On OSCMessageReceived (m: OSCMessage) Matching "/fx/d" //response to fx devices available
+    Var i: Integer
+        rstring: String = OSC_GetArgAsString(m, 0) //get string with available devices
+        rarr: String Array = ParseCSVString (rstring) //parse string to array
+        rarrint: Integer Array
+    StopOneShotRamp (wstimeout)
+    //Print ("response is " + OSC_GetArgAsString (m, 0))
+    For i = 0; i < Size (rarr); i = i + 1 Do //iterate through array
+        rarrint <-- StringToInt (rarr[i])
+    End
+    For i = 0; i < Size (fxcontrols); i = i + 1 Do //hide unused fx buttons
+        If IndexOf (rarrint, i) == -1 Then // if fx button is not in rarrint, hide it
+            SetWidgetHideOnPresentation (fxcontrols [i], true)
+        Else
+            SetWidgetHideOnPresentation (fxcontrols [i], false)
+        End
+    End
+End
+
+// GLOBAL RACKSPACE CALLBACK ON RECEIVING WIDGET STATE UPDATE
+// BULK UPDATES CONTROL WIDGETS BASED ON THAT
+On OSCMessageReceived (m: OSCMessage) Matching "/ws" //bulk update of control widgets
+    Var i: Integer
+        rstring: String = OSC_GetArgAsString(m, 0) //get string with widget states
+        rarr: String Array = ParseCSVString (rstring) //parse string to array
+        rarrint: Integer Array
+    StopOneShotRamp (wstimeout)
+    For i = 0; i < Size (rarr) - 1; i = i + 2 Do //iterate through array
+        //Print ("widget " + rarr[i] + " value " + rarr[i+1])
+        ctrl_update (rcontrols, StringToInt(rarr[i]), StringToDouble(rarr [i+1])) //update control widget value
+        rarrint <-- StringToInt(rarr[i]) //add widget index to rarrint
+    End
+    For i = 0; i < Size (rcontrols); i = i + 1 Do //disable unused control widgets
+        If IndexOf(rarrint, i) == -1 Then // if control widget is not in rarrint, disable it
+            ctrl_disable (rcontrols, i)
+        End
+    End
+    TriggerOneShotRamp (XTTimeout, 200, 10)
+End
+
+/* GLOBAL RACKSPACE CALLBACK
+SENDS OSC MESSAGE TO RACKSPACES WHEN CONTROL WIDGET VALUES ARE CHANGING
+<--- UPDATE THIS FOR ACTUAL CONTROLS AVAILABLE kx FOR KNOBS, bx FOR THEIR PRESS ACTION ---> */
+On WidgetValueChanged (w: Widget, i: integer, v: double) from k0, k1, k2, k3, k4, k5, k6, k7, k8, k9, k10, k11, k12, k13, k14, k15, b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15 //control widgets
+    
+    If mode == 0 Or mode == 1 Or (mode == 2 And fxselected > -1) And holdwvc == false Then //if mode is amp, eq or fx and fx is selected
+        //Print ("global wvc rcontrols: w" + i + " value changed, hold " + holdctrls[i] + ", mode " + mode + ", fxselected " + fxselected + ", holdwvc " + holdwvc)
+        //Print ("addressing array holdctrls, size " + Size(holdctrls) + ", i " + i)
+        sync_remote (i, v)
+        sync_fader (i, v)
+    Elsif mode == 3 And fxselected > -1 And holdwvc == false Then //if mode is vox and fx is selected
+        //Print ("global wvc rcontrols: w" + i + " value changed, hold " + holdctrls[i] + ", mode " + mode + ", fxselected " + fxselected + ", holdwvc " + holdwvc)
+        //Print ("addressing array rt, size " + Size (rt) + ", i " + i)
+        If IndexOf (rt, i) > -1 Then //if control widget is in rt
+            //Print ("addressing array holdctrls, size " + Size (holdctrls) + ", i " + i)
+            sync_local (IndexOf(rt, i), v)
+            sync_fader (i, v)
+            //Print ("calling sync_local for index " + IndexOf(rt, i) + ", value " + v)
+        End
+    End
+    TriggerOneShotRamp (XTTimeout, 200, 10)
+    //update_xtouch()
+End
+
+On WidgetValueChanged (v: Double) From rackOutput
+    //Print ("fader moved, hidden " + GetWidgetHideState (rackOutput) + ", holdctrls " + holdctrls [rack_out_index] + ", holdremote " + holdremote[rack_out_index] + ", holdlocal " + holdlocal [rack_out_index ] + ", holdfader " + holdfader)
+    If GetWidgetHideState (rackOutput) == false And holdctrls [rack_out_index] == false And holdremote[rack_out_index] == false And  holdlocal [rack_out_index ]== false Then
+        holdfader = True
+        //holdremote [rack_out_index] = True
+        wtime [rack_out_index] = TimeSinceStartup ()
+        SetWidgetValue (rcontrols[rack_out_index], v)
+        If mode < 3 Then
+            osc_out (rack_out_index, v)
+        Elsif Size (rt) > 0 Then
+            SetWidgetValue (ctrls [IndexOf(rt, rack_out_index)], v)
+        End
+    End
+End
+
+// GLOBAL RACKSPACE CALLBACK ON RECEIVING WIDGET STATE UPDATE
+// UPDATES ONE CONTROL WIDGET BASED ON THAT
+On OSCMessageReceived (m: OSCMessage) Matching "/ws1" //update one control widget when osc message comes in
+    Var index: Integer = OSC_GetArgAsInteger (m, 0) //index for control widget
+        value: Double = OSC_GetArgAsDouble (m, 1) //value to set
+        fxindex: Integer //index for fx widget
+    //Print ("global oscmr /ws1: request for w" + index + ", value " + value + ", mode " + mode)
+    Select
+        index > Size (rcontrols) - 1 And mode < 2 Do //if index is more than control widgets, it's an fx button, set fx widget value
+            //Print ("addressing array holdfx, size " + Size(holdfx) + ", index " + index)
+            fxindex = index - Size (rcontrols)
+            //Print ("addressing array fxcontrols, size " + Size (fxcontrols) + "recalculated index " + fxindex)
+            holdfx [fxindex] = true
+            SetWidgetValue (fxcontrols [fxindex], value)
+            holdfx [fxindex] = false
+        True Do
+            //Print ("osc received, calling sync_rcontrols, setting control widget " + index + " to " + value)
+            sync_rcontrols (index, value)
+    End
+End
+
+// GLOBAL RACKSPACE CALLBACK ON RECEIVING WIDGET STATE UPDATE
+// BULK UPDATES FX WIDGETS BASED ON THAT (FOR AMP AND EQ MODES) 
+On OSCMessageReceived (m: OSCMessage) Matching "/fxws" //bulk update of fx widgets
+    Var i: Integer
+        rstring: String = OSC_GetArgAsString(m, 0) //get string with widget states
+        rarr: String Array = ParseCSVString (rstring) //parse string to array
+        rarrint: Integer Array //array for widget indexes
+    For i = 0; i < Size (rarr) - 1; i = i + 2 Do //iterate through array
+        //Print ("widget " + rarr[i] + " value " + rarr[i+1])
+        ctrl_update (fxcontrols, StringToInt(rarr[i]), StringToDouble(rarr [i+1])) //update fx widget value
+        rarrint <-- StringToInt(rarr[i]) //add widget index to rarrint
+    End
+    For i = 0; i < Size (fxcontrols); i = i + 1 Do //disable unused fx widgets
+        If IndexOf(rarrint, i) == -1 Then // if fx widget is not in rarrint, disable it
+            ctrl_disable (fxcontrols, i)
+        End
+    End
+End
+
+On GeneratorEndCycle (t: Integer) From wstimeout
+    SetWidgetValue (modecontrols [prevmode], 1.0)
+End
+
+
+/* GLOBAL RACKSPACE 
+<--- UPDATE THIS FOR ACTUAL MODE SELECT BUTTONS ---> */
+On WidgetValueChanged (w: widget, index: integer, newValue: double) from m0, m1, m2, m3 //mode selection buttons
+    Var i: Integer
+    prevmode = mode //store previous mode
+    //Print ("mode button press - " + index + " value " + newValue + "mode change allowed " + chmodeallowed)
+    fxselected = -1 // -1 for nothing selected, default option
+    If newValue == 1.0 And chmodeallowed == true and holdwvc == false Then //if mode change is allowed and no widget value change is pending
+        
+        Select // depending on mode chosen, send query to relevant rackspace section to get available controls and map them to widgets
+            index == 0 Do
+                osc_cmd ("/amp/q")
+                TriggerOneShotRamp (wstimeout, 200, 10)
+            index == 1 Do
+                osc_cmd ("/eq/q")
+                TriggerOneShotRamp (wstimeout, 200, 10)
+            index == 2 Do
+                osc_cmd ("/fx/q")
+                TriggerOneShotRamp (wstimeout, 200, 10)
+            index == 3 Do // for Vox mode, no osc, show and hide controls immediately
+                //Print ("iterating array fxcontrols, size " + Size(fxcontrols))
+                For i = 0; i < Size (fxcontrols); i = i + 1 Do // hide unused fx buttons
+                    //Print ("i " + i + ", checking in Vox_rt, size " + Size (Vox_rt))
+                    If IndexOf (Vox_rt, i) == -1 Then // if fx button is not in Vox_rt, hide it
+                        SetWidgetHideOnPresentation (fxcontrols [i], true)
+                    Else
+                        SetWidgetHideOnPresentation (fxcontrols [i], false)
+                    End
+                End
+        End
+        If index == 2 Or index == 3 Then // for fx and vox modes, fx buttons act as radio buttons
+            Notify ("Select FX")
+            radioselect = true //set fx buttons to radio mode
+            //Print ("iterating array rcontrols to disable unneeded, size " + Size(rcontrols))
+            For i = 0; i < Size (rcontrols); i = i + 1 Do //disable all control widgets
+                //Print ("i " + i)
+                ctrl_disable (rcontrols, i)
+            End
+        Else // for amp and eq modes, fx buttons act as normal buttons
+            radioselect = false //set fx buttons to normal mode
+        End
+        mode = index //set new mode
+        reset_fxcontrols () //reset fx buttons to off
+        //Print("global wvc mode select: mode change from " + prev + " to " + mode + " radioselect " + radioselect + " fxselected " + fxselected)
+    End
+    TriggerOneShotRamp (XTTimeout, 200, 10) //update xtouch after a timeout
+End
+
+On OSCMessageReceived (m: OSCMessage) Matching "/xtmode"
+    Var xtm: Integer = OSC_GetArgAsInteger (m, 0)
+    If xtm <> xtmode Then
+        xtmode = xtm
+        TriggerOneShotRamp (XTTimeout, 100, 10)
+    End
+End
+
+//processes response to "hello" call from rackspace, sets mode based on that
+On OSCMessageReceived (m: OSCMessage) Matching "/ping" //
+    StopOneShotRamp (hellotimeout) //stop handshake timeout
+    osc_enabled = true //enable osc comms with rackspace
+    chmodeallowed = true //allow mode change, rackspace has support
+    holdwvc = false //allow widget value change
+    SetWidgetValue (modecontrols [OSC_GetArgAsInteger (m, 0)], 1.0) //set mode based on response
+    TriggerOneShotRamp (XTTimeout, 200, 10) // update xtouch after a timeout
+End
+
+//if no response from rackspace is received, disable osc comms with it, set mode to 3 (controlling global rackspace widgets)
+On GeneratorEndCycle (time: Integer) From hellotimeout
+    Var i: Integer
+    osc_enabled = false
+    holdwvc = false
+    chmodeallowed = true //allow mode change temporarily
+    
+    SetWidgetValue (m3, 1.0) //set mode to vox
+    radioselect = true //set fx buttons to radio mode
+    mode = 3 //set mode to vox
+    fxselected = -1 //set no fx selected
+    For i = 0; i < Size (fxcontrols); i = i + 1 Do // hide unused fx buttons
+        //Print ("i " + i + ", checking in Vox_rt, size " + Size (Vox_rt))
+            If IndexOf (Vox_rt, i) == -1 Then // if fx button is not in Vox_rt, hide it
+                SetWidgetHideOnPresentation (fxcontrols [i], true)
+            Else
+                SetWidgetHideOnPresentation (fxcontrols [i], false)
+        End
+    End
+    
+    //Print ("iterating array rcontrols, size " + Size(rcontrols))
+    For i = 0; i < Size (rcontrols); i = i + 1 Do //disable all control widgets
+        //Print ("i " + i)
+        ctrl_disable (rcontrols, i)
+    End
+    Notify ("Handshake timeout")
+    //Print ("Handshake timeout")
+    
+    chmodeallowed = false //disallow mode change
+    TriggerOneShotRamp (XTTimeout, 200, 10) //update xtouch after a timeout
+End
+
+On GeneratorEndCycle (t: Integer) From XTTimeout
+    update_xtouch ()
+    SetWidgetHideOnPresentation (rackOutput, GetWidgetHideState(rcontrols [rack_out_index]))
+End
+
+On TimerTick (ms: Double) 
+    Var i: Integer
+    For i = 0; i < Size (wtime); i = i + 1 Do
+        If wtime[i] != 0 And TimeSinceStartup () >= wtime[i] + timeout Then
+            wtime[i] = 0
+            holdctrls[i] = false
+            holdremote[i] = false
+            holdlocal[i] = false
+            holdfader = false
+        End
+    End
+End

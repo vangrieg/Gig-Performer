@@ -1,0 +1,10 @@
+**.DS_Store
+AudioSettings/Duet.gpaudiosettings
+CachedAudioFiles/
+Recordings/
+Song\ Lyrics-Chords/
+temp/
+!*.gig
+!*.gpscript
+!Scripts/\*.*
+!Panels/\*.*

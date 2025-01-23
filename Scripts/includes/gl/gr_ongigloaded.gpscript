@@ -1,0 +1,5 @@
+    reset_fxcontrols ()
+    SetWidgetValue (m3, 1.0) //set mode to Vox
+    OSC_SendIntegerSpecific ("/hello", Size(rcontrols) - 1, oscip, oscport) //send hello message to check osc support
+    TriggerOneShotRamp (hellotimeout, 200, 10) //set timeout for handshake
+    TriggerOneShotRamp (XTTimeout, 500, 10) //update xtouch after a timeout

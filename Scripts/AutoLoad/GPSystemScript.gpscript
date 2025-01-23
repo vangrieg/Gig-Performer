@@ -1,0 +1,3 @@
+Var
+    XTOUT: String = "X-TOUCH MINI"
+    FSOUT: String = "iRig BlueBoard Bluetooth"

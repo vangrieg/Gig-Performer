@@ -1,0 +1,13 @@
+Function set_sp_leds (index: Integer)
+    Var leds: Integer Array = [20, 21, 22, 23]
+        i: Integer
+    If MidiOutDeviceExists (FSOUT) Then
+        For i = 0; i < Size (leds); i = i + 1 Do
+            If i == index Then
+                SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx (leds [i], 127, 1))
+            Else
+                SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx (leds [i], 0, 1))
+            End
+        End
+    End
+End

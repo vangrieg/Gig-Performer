@@ -1,0 +1,8 @@
+    If InSetlistMode () == True Then
+        set_sp_leds (newSongpartIndex)
+    End
+    If songchanged == True Then
+        songchanged = False
+    Else
+        spchanged = True
+    End

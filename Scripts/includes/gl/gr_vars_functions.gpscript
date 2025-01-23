@@ -1,0 +1,316 @@
+    ////////////////////////////////////////////////////
+    //               COMMON DECLARATIONS              //
+    ////////////////////////////////////////////////////
+    Include "includes/osc"
+    ////////////////////////////////////////////////////
+    
+    ////////////////////////////////////////////////////
+    //             CONTROL WIDGET DECLARATIONS        //
+    ////////////////////////////////////////////////////
+    m0, m1, m2, m3 : Widget // mode select radio buttons
+    modecontrols: Widget Array = [m0, m1, m2, m3] // mode select radio buttons array
+
+    k0, k1, k2, k3, k4, k5, k6, k7, 
+    k8, k9, k10, k11, k12, k13, k14, k15: Widget // control knobs
+    b0, b1, b2, b3, b4, b5, b6, b7, 
+    b8, b9, b10, b11, b12, b13, b14, b15: Widget //control buttons
+    rcontrols: Widget Array = [k0, k1, k2, k3, k4, k5, k6, k7, k8, k9, k10, k11, k12, k13, k14, k15, 
+                               b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15] // all control widgets array
+
+    fx0, fx1, fx2, fx3, fx4, fx5, 
+    fx6, fx7, fx8, fx9, fx10, fx11, 
+    fx12, fx13, fx14, fx15, fx16, fx17, 
+    fx18, fx19, fx20, fx21, fx22, fx23: Widget //fx select widgets
+    fxcontrols: Widget Array = [fx0, fx1, fx2, fx3, fx4, fx5, 
+                                fx6, fx7, fx8, fx9, fx10, fx11, 
+                                fx12, fx13, fx14, fx15, fx16, fx17, 
+                                fx18, fx19, fx20, fx21, fx22, fx23] //fx select widgets array
+   
+    ctrls: Widget Array
+    rt: Integer Array
+    
+    rackOutput: Widget // the fader to control rackspace output if rackspace has such a control
+    rack_out_index: Integer = 12
+    
+    mode: Integer = 3 // mode selected, 0 - amp, 1 - eq, 2 - fx, 3 - vox
+
+    radioselect: Boolean = true // whether FX buttons work as radio buttons (for FX and Vox modes)
+    fxselected: Integer = -1 // current fx selected (for FX and Vox modes)
+    
+    holdfx: Boolean [24] // hold fx select widget changes temporarily to avoid feedback loop conditions
+    holdctrls: Boolean [32] // hold control widget changes temporarily to avoid feedback loop conditions
+    holdremote: Boolean  [32] //hold changes via osc temporarily to avoid feedback loop
+    holdlocal: Boolean [32] //hold changes from global rack widgets temporarily to avoid feedback loop
+    holdfader: Boolean = false
+    wtime: Double [32] // time a parameter was last modified
+    timeout: Double = 50 // time to reset hold 
+    
+    hellotimeout: Ramp //handshake timer
+    
+    osc_enabled: Boolean = false //true when remote rackspace supports this script
+    chmodeallowed: Boolean = false //true when mode change is allowed
+    holdwvc: Boolean = true //hold widget value change, while waiting for response from rackspace
+        
+    /////////////////////////////////////////////////////
+    XTLayer: Integer = 0 // Layer A on xtouch mini
+    XTTimeout: Ramp //timeout to update xtouch leds
+    //XTIN: MidiInBlock //
+    //XTOUT: MidiOutBlock
+    XMNotes: Integer Array = [0, 1, 8, 9] // notes to control xtouch mode leds
+    XFXNotes: Integer Array =  [2, 3, 4, 5, 6, 7,
+                                10, 11, 12, 13, 14, 15] // notes to control xtouch fx leds
+    XKCCs: Integer Array = [1, 2, 3, 4, 5, 6, 7, 8] // ccs of xtouch knobs
+    XChan: Integer = 1 // xtouch control channel
+    
+    xtmode: Integer = 0 // xtouch mode
+    
+    Var SA: PluginBlock // this is the "System Actions" plugin handle, to set it up so a LED on X-Touch Mini can blink with tempo beats
+    beatflash: Widget // a widget the blinking button on X-Touch should be mapped to
+    
+    prevmode: Integer
+    wstimeout: Ramp
+
+Initialization //global rackspace initialization 
+    Var i: Integer
+    SetWidgetValue (m3, 3.0)
+    SetEnvVariable ("mode", IntToString(mode)) //save mode to environment variable
+    //Print ("init - set fx 0")
+    SetEnvVariable ("fxselected", IntToString(fxselected)) //save fx selected to environment variable
+    SetParameter (SA, 23, 1.0) // set system "beat mode" to "always" so that tempo led flash works
+End
+
+Function osc_out (v1: Integer, v2: Double) // sending 2 argument osc, integer plus double, for setting widget value on a remote rackspace
+    Var m: OSCMessage
+        addr: String
+    Select // choose proper address based on mode
+        mode == 0 Do
+            addr = "/amp"
+        mode == 1 Do
+            addr = "/eq"
+        mode == 2 Do
+            addr = "/fx" + fxselected
+    End
+    If osc_enabled == true Then // if remote rackspace supports this script, send osc message
+        OSC_SetAddress (m, addr)
+        OSC_AppendIntArg (m, v1)
+        OSC_AppendDoubleArg (m, v2)
+        OSC_SendSpecific (m, oscip, oscport)
+    End
+    //Print ("global osc_out: " + addr + " " + OSC_GetArgAsInteger (m, 0) + " " + OSC_GetArgAsDouble (m, 1))
+    //Print("osc address " + addr)
+End
+
+Function osc_cmd (addr: String) 
+    If osc_enabled == true Then // if remote rackspace supports this script, send osc message
+        OSC_SendCommandSpecific (addr, oscip, oscport)
+    End
+End
+
+Function reset_fxcontrols () // turning off all fx buttons with mode change
+    Var i: integer
+    //Print ("global reset_fxcontrols: resetting widgets to 0") 
+    For i = 0; i < Size (holdfx); i = i + 1 Do 
+        holdfx[i] = true
+    End
+    
+    //Print ("hold " + hold)
+    For i = 0; i < Size (fxcontrols); i = i + 1 Do //reset all fx buttons to off
+        If GetWidgetValue (fxcontrols [i]) == 1.0 Then
+            holdfx [i] = true
+        Else 
+            holdfx [i] = false
+        End
+        SetWidgetValue (fxcontrols [i], 0.0)
+        //Print ("global reset_fxcontrols: reset " + i + ", hold " + holdfx[i])
+    End
+    SetEnvVariable ("fxselected", IntToString(-1))
+    SetEnvVariable ("mode", IntToString(mode))
+End
+
+Function reset_fxcontrols_r (i: Integer) // set all fx select buttons to off except one chosen, for radio mode
+    Var j: Integer
+    //Print ("global reset_fxcontrols_r: setting widgets to " + i) 
+    For j = 0; j < Size (holdfx); j = j + 1 Do 
+        holdfx[j] = true
+    End
+    
+    For j = 0; j < Size (fxcontrols); j = j + 1 Do
+        If GetWidgetValue (fxcontrols [j]) == 1.0 Then
+            holdfx [j] = true
+        Else 
+            holdfx [j] = false
+        End
+        If j == i Then //set the chosen one to on
+            SetWidgetValue (fxcontrols [j], 1.0)
+            //Print ("global reset_fxcontrols_r: Set " + j + " to 1.0, hold " + holdfx[j])
+        Else
+            SetWidgetValue (fxcontrols [j], 0.0)
+            //Print ("global reset_fxcontrols_r: Set " + j + " to 0.0, hold " + holdfx[j])
+        End
+        
+    End
+    fxselected = i //set the chosen fx
+    SetEnvVariable ("fxselected", IntToString(i)) //save chosen fx to environment variable
+    SetEnvVariable ("mode", IntToString(mode)) //save mode to environment variable
+    //Print ("global reset_fxcontrols_r: fx selected " + fxselected)
+End
+
+Function send_mode_led ()
+    Var i: Integer
+    If xtmode == 0 Then
+        For i = 0; i < Size (XMNotes); i = i + 1 Do
+            If mode == i Then
+                SendNowToMidiOutDevice (XTOUT, MakeNoteMessageEx(XMNotes[i], 1, XChan))
+            Else
+                SendNowToMidiOutDevice (XTOUT, MakeNoteMessageEx(XMNotes[i], 0, XChan))
+            End
+        End
+    End
+End
+
+Function send_fx_led ()
+    Var i: Integer
+        v: Double
+        k: Integer
+        offset: Integer
+    If xtmode == 0 Then
+        offset = 0
+    Else 
+        offset = 12
+    End
+    For i = 0; i < Size(XFXNotes); i = i + 1 Do
+        k = i + offset
+        v = GetWidgetValue (fxcontrols[k])
+        Select
+            v == 0.0 And GetWidgetHideState (fxcontrols [k]) == true Do
+                SendNowToMidiOutDevice (XTOUT, MakeNoteMessageEx(XFXNotes[i], 0, XChan))
+            v == 0.0 And GetWidgetHideState (fxcontrols [k]) == false Do
+                SendNowToMidiOutDevice (XTOUT, MakeNoteMessageEx(XFXNotes[i], 2, XChan))
+            v == 1.0 And GetWidgetHideState (fxcontrols [k]) == false Do
+                SendNowToMidiOutDevice (XTOUT, MakeNoteMessageEx(XFXNotes[i], 1, XChan))
+        End
+    End
+End
+
+Function update_knob_modes ()
+    Var i: Integer
+        bi: Integer
+        v: Double
+        kv: Double
+        ki: Integer
+        s: Boolean
+        ks: Boolean
+        k: Integer
+        offset: Integer
+    If xtmode == 0 Then
+        offset = 0
+    Else 
+        offset = 8
+    End
+    For i = 0; i < Size (XKCCs); i = i + 1 Do
+        bi = i + 16 + offset
+        k = i + offset
+        v = GetWidgetValue (rcontrols [bi])
+        kv = GetWidgetValue (rcontrols [k])
+        s = GetWidgetHideState (rcontrols [bi])
+        ks = GetWidgetHideState (rcontrols [k])
+        //Print ("rcontrol index i " + k + ", button index bi " + bi + ", hidden " + ks + ", value " + kv + ", button hidden " + s + ", button value " + v)
+        //Print ("mode cc " + XKCCs[i] + ", offset for value cc " + offset) 
+        Select
+            v == 0.0 And s == false And ks == false Do // btn off and visible, knob visible
+                SendNowToMidiOutDevice (XTOUT, MakeControlChangeMessageEx (XKCCs[i], 0, XChan))
+                SendNowToMidiOutDevice (XTOUT, MakeControlChangeMessageEx (XKCCs[i] + offset, ParamToMidi(kv), 11))
+            v == 1.0 And s == false And ks == false Do // btn on and visible, knob visible
+                SendNowToMidiOutDevice (XTOUT, MakeControlChangeMessageEx (XKCCs[i], 2, XChan))
+                SendNowToMidiOutDevice (XTOUT, MakeControlChangeMessageEx (XKCCs[i] + offset, ParamToMidi(kv), 11))
+            s == true And ks == false Do //btn hidden but knob visible
+                SendNowToMidiOutDevice (XTOUT, MakeControlChangeMessageEx (XKCCs[i], 0, XChan))
+                SendNowToMidiOutDevice (XTOUT, MakeControlChangeMessageEx (XKCCs[i] + offset, ParamToMidi(kv), 11))
+            ks == true And s == false And v == 1.0 Do // knob hidden btn visible and on - "fan mode"
+                SendNowToMidiOutDevice (XTOUT, MakeControlChangeMessageEx (XKCCs[i] + offset, 100, 11))
+                SendNowToMidiOutDevice (XTOUT, MakeControlChangeMessageEx (XKCCs[i], 3, XChan))
+            ks == true And s == false And v == 0.0 Do // knob hidden btn visible and off - blink
+                SendNowToMidiOutDevice (XTOUT, MakeControlChangeMessageEx (XKCCs[i] + 8, 28, XChan))
+            ks == true And s == true Do // both hidden
+                SendNowToMidiOutDevice (XTOUT, MakeControlChangeMessageEx (XKCCs[i] + offset, 0, 11))
+                SendNowToMidiOutDevice (XTOUT, MakeControlChangeMessageEx (XKCCs[i], 0, XChan))
+        End
+    End
+End
+
+Function update_xtouch ()
+    If MidiOutDeviceExists (XTOUT) == true Then
+        If xtmode == 0 Then
+            send_mode_led()
+        End
+        send_fx_led()
+        update_knob_modes()
+    End
+End
+
+Function ctrl_update (warr: Widget Array, index: Integer, value: double) // update control widget value, set hold to avoid feedback loop
+    //Print ("global ctrl_update: widget " + index + ", value " + value + ", hold " + holdctrls[index] + ", holdctrls size " + Size (holdctrls))
+    holdctrls [index] = true
+    SetWidgetValue (warr [index], value)
+    holdctrls [index] = false
+    SetWidgetHideOnPresentation (warr[index], false) //show widget if it was hidden
+    If index == rack_out_index Then
+        holdfader = true
+        SetWidgetValue (rackOutput, value)
+        holdfader = false
+    End
+End
+
+Function ctrl_disable (warr: Widget Array, index: Integer) // disable control widget, set hold to avoid feedback loop
+    //Print ("global ctrl_disable: disable widget " + index + ", hold " + holdctrls[index]  + ", holdctrls size " + Size (holdctrls))
+    holdctrls [index] = true
+    SetWidgetValue (warr [index], 0.0) //set widget value to 0
+    holdctrls [index] = false
+    SetWidgetHideOnPresentation (warr[index], true) //hide widget
+End
+
+
+
+Function sync_rcontrols (i: Integer, v: Double)
+    If (holdfader == False Or (holdfader == True And i <> rack_out_index)) And (wtime[i] == 0 Or (holdremote[i] == True And mode < 3) Or (holdlocal[i] == True And mode == 3)) Then
+        If mode < 3 Then
+            holdremote[i] = true
+        Else
+            holdlocal[i] = true
+        End
+        wtime[i] = TimeSinceStartup ()
+        SetWidgetValue (rcontrols[i], v)
+    End
+End
+
+
+Function sync_local (i: Integer, v: Double)
+    //Print ("sync_local called, array sizes are: wtime " + Size (wtime) + ", holdctrls " + Size (holdctrls) + ", rt " + Size (rt) + ", ctrls " + Size (ctrls) + ", index " + i)
+    //Print ("need to change widget " + i + " in ctrls")
+    If (holdfader == False Or (holdfader == True And i <> rack_out_index)) And (wtime[i] == 0 Or holdctrls [i] == True) Then
+        holdctrls [i] = true
+        wtime [i] = TimeSinceStartup ()
+        SetWidgetValue (ctrls [i], v) //set control widget value
+    End
+End
+
+Function sync_remote (i: Integer, v: Double)
+    If (holdfader == False Or (holdfader == True And i <> rack_out_index)) And (wtime [i] == 0 Or holdctrls [i] == True) Then
+        holdctrls [i] = true
+        wtime [i] = TimeSinceStartup ()
+        osc_out (i, v)
+    End
+End
+
+Function sync_fader (i: Integer, v: Double)
+    If GetWidgetHideState (rackOutput) == False And i == rack_out_index Then
+        //Print ("sync_fader called, array sizes are: wtime " + Size (wtime) + ", holdctrls " + Size (holdctrls) + ", rt " + Size (rt) + ", ctrls " + Size (ctrls) + ", index " + i)
+        //Print ("need to move fader, holdfader " + holdfader)
+        //If i == rack_out_index And holdfader == False Then
+            //holdfader = true
+            //wtime [i] = TimeSinceStartup ()
+            SetWidgetValue (rackOutput, v) //set control widget value
+            //osc_out (rack_out_index, v)
+        //End
+    End
+End
