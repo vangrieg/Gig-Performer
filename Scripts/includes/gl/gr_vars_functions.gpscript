@@ -272,7 +272,7 @@ End
 
 
 Function sync_rcontrols (i: Integer, v: Double)
-    If holdfader == False And (wtime[i] == 0 Or (holdremote[i] == True And mode < 3) Or (holdlocal[i] == True And mode == 3)) Then
+    If (holdfader == False Or (holdfader == True And i <> rack_out_index)) And (wtime[i] == 0 Or (holdremote[i] == True And mode < 3) Or (holdlocal[i] == True And mode == 3)) Then
         If mode < 3 Then
             holdremote[i] = true
         Else
@@ -287,7 +287,7 @@ End
 Function sync_local (i: Integer, v: Double)
     //Print ("sync_local called, array sizes are: wtime " + Size (wtime) + ", holdctrls " + Size (holdctrls) + ", rt " + Size (rt) + ", ctrls " + Size (ctrls) + ", index " + i)
     //Print ("need to change widget " + i + " in ctrls")
-    If holdfader == False And (wtime[i] == 0 Or holdctrls [i] == True) Then
+    If (holdfader == False Or (holdfader == True And i <> rack_out_index)) And (wtime[i] == 0 Or holdctrls [i] == True) Then
         holdctrls [i] = true
         wtime [i] = TimeSinceStartup ()
         SetWidgetValue (ctrls [i], v) //set control widget value
@@ -295,7 +295,7 @@ Function sync_local (i: Integer, v: Double)
 End
 
 Function sync_remote (i: Integer, v: Double)
-    If holdfader == False And (wtime [i] == 0 Or holdctrls [i] == True) Then
+    If (holdfader == False Or (holdfader == True And i <> rack_out_index)) And (wtime [i] == 0 Or holdctrls [i] == True) Then
         holdctrls [i] = true
         wtime [i] = TimeSinceStartup ()
         osc_out (i, v)
