@@ -10,7 +10,7 @@ Scripts, rackspaces, panels, overlay templates and other [Gig Performer](https:/
 
     *Description:*
 
-  - [GP forum link]()
+  - [GP forum link](https://community.gigperformer.com/t/20563)
 
   *Instructions:*
 

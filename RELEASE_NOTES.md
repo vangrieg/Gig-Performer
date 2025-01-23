@@ -7,18 +7,11 @@
 ### Initial Release
 
 - **GlobalLinkPoc.gig**: A template that controls rackspace widgets from global rackspace.
-  - [GP forum link]()
-
-- **SyncWidgets.gig**: A template that programmatically creates widget groups.
-  - [GP forum link](https://community.gigperformer.com/t/assignable-widget-groups-with-a-gig-file-and-examples/20754)
-
+- **SyncWidgets.gig**: A template that helps adapt the scripts to your rackspaces.
 - **Overlay templates for controllers**:
-  - [X-Touch Mini](Controllers/Overlays/X-Touch%20Mini)
-  - [Korg Nanokontrol 2](Controllers/Overlays/Nanokontrol%202)
-
-- **Controller settings**:
-  - [.bin files for X-Touch Mini](Controllers/Settings/X-Touch%20Mini) that work with the Global Link scripts.
-  - [.nktrl2_data file for Korg Nanokontrol 2](Controllers/Settings/Nanokontrol%202/nanokontrol2%20default.nktrl2_data). Download Kontrol Editor [here](https://www.korg.com/us/support/download/software/1/133/1355/).
+  - X-Touch Mini
+  - Korg Nanokontrol 2
+- **Controller settings**
 
 ### Instructions
 
