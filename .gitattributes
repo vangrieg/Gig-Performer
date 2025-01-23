@@ -4,3 +4,7 @@ refs/heads/* filter=lfs diff=lfs merge=lfs -text
 *.bin filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
 *.nktrl2_data filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+bin/controllers.zip filter=lfs diff=lfs merge=lfs -text
+bin/globallink.zip filter=lfs diff=lfs merge=lfs -text
+bin/globallink_scripts.zip filter=lfs diff=lfs merge=lfs -text
