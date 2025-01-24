@@ -68,7 +68,6 @@ There are editable Photoshop files, printable pdfs, and image files for referenc
 
 ### Release Notes
 
-
 - [v1.1](RELEASE_NOTES.md#version-11)
 - [v1.0](RELEASE_NOTES.md#version-10)
 
@@ -77,3 +76,4 @@ There are editable Photoshop files, printable pdfs, and image files for referenc
 - The overlay template for X-Touch Mini is based on [this template for Lightroom](https://drive.google.com/uc?export=download&id=1ETpBydF9yPbNrgkYw7VU5eQ0otGsZAkH).
 - The overlay template for Nanokontrol is based on [this template](https://community.gigperformer.com/t/nanokontrol-2-skin-template-for-you/13095) from GP forum.
 - The implementation of dynamic widget sync was inspired by [this script by schamass](https://community.gigperformer.com/t/move-multiple-faders-relatively-with-one-single-knob-dca-like/10757).
+- The Petrucci X rackspace is based on the [Gojira X by Ipkz](https://community.gigperformer.com/t/rackspace-ndsp-gojira-x-complete/17694).
