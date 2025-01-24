@@ -2,6 +2,16 @@
 <!-- markdownlint-disable MD033 -->
 # Release Notes
 
+## Version 1.1
+
+### Feature Update
+
+- **New Feature**
+  - Added new rackspace `NDSP Petrucci X`.
+
+- **Fixes**
+  - Replaced the Global Link panel with more up-to-date version
+
 ## Version 1.0
 
 ### Initial Release
