@@ -26,10 +26,10 @@ Scripts, rackspaces, panels, overlay templates and other [Gig Performer](https:/
 
 - [**SyncWidgets.gig**](bin/syncwidgets_gig.zip) is a template that programmatically creates widget groups. Check out the [GP forum link](https://community.gigperformer.com/t/assignable-widget-groups-with-a-gig-file-and-examples/20754) to see what this does.
 
-<!-- ## Rackspaces
+## Rackspaces
 
-- [NDSP Cory Wong X]() (coming soon)
-- [NDSP Petrucci X]() (coming soon)
+- [NDSP Petrucci X](bin/petrucci_x_rack.zip)
+<!-- - [NDSP Cory Wong X]() (coming soon)
 - [NDSP Tom Morello]() (coming soon)
 - [Global rackspace]() (coming soon) -->
 
