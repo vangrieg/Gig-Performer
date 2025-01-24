@@ -1,6 +1,17 @@
 <!-- markdownlint-disable MD007 -->
 <!-- markdownlint-disable MD033 -->
+<!-- markdownlint-disable MD024 -->
 # Release Notes
+
+## Version 1.2
+
+### Feature Update
+
+- **New Feature**
+  - Added new rackspace `NDSP Cory Wong X`
+
+- **Fixes**
+  - Several small fixes and updates
 
 ## Version 1.1
 

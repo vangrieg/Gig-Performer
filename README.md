@@ -29,8 +29,8 @@ Scripts, rackspaces, panels, overlay templates and other [Gig Performer](https:/
 ## Rackspaces
 
 - [NDSP Petrucci X](bin/petrucci_x_rack.zip)
-<!-- - [NDSP Cory Wong X]() (coming soon)
-- [NDSP Tom Morello]() (coming soon)
+- [NDSP Cory Wong X](bin/corywong_x_rack.zip)
+<!-- - [NDSP Tom Morello]() (coming soon)
 - [Global rackspace]() (coming soon) -->
 
 ## Panels
@@ -68,6 +68,7 @@ There are editable Photoshop files, printable pdfs, and image files for referenc
 
 ### Release Notes
 
+- [v1.2](RELEASE_NOTES.md#version-12)
 - [v1.1](RELEASE_NOTES.md#version-11)
 - [v1.0](RELEASE_NOTES.md#version-10)
 
@@ -77,3 +78,4 @@ There are editable Photoshop files, printable pdfs, and image files for referenc
 - The overlay template for Nanokontrol is based on [this template](https://community.gigperformer.com/t/nanokontrol-2-skin-template-for-you/13095) from GP forum.
 - The implementation of dynamic widget sync was inspired by [this script by schamass](https://community.gigperformer.com/t/move-multiple-faders-relatively-with-one-single-knob-dca-like/10757).
 - The Petrucci X rackspace is based on the [Gojira X by Ipkz](https://community.gigperformer.com/t/rackspace-ndsp-gojira-x-complete/17694).
+- The Cory Wong X rackspace is an update of [the original Cory Wong rackspace by schamass](https://community.gigperformer.com/t/gig-ndsp-archetype-cory-wong-complete/12737).
