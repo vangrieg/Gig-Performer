@@ -10,6 +10,8 @@
 
 ## Version 1.2
 
+### Feature Update
+
 - **New Feature**
   - Added new rackspace `NDSP Cory Wong X`
 
