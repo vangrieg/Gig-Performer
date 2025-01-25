@@ -30,8 +30,8 @@ Scripts, rackspaces, panels, overlay templates and other [Gig Performer](https:/
 
 - [NDSP Petrucci X](bin/petrucci_x_rack.zip)
 - [NDSP Cory Wong X](bin/corywong_x_rack.zip)
-<!-- - [NDSP Tom Morello]() (coming soon)
-- [Global rackspace]() (coming soon) -->
+- [NDSP Tom Morello](bin/morello_rack.zip)
+<!-- - [Global rackspace]() (coming soon) -->
 
 ## Panels
 
@@ -68,6 +68,7 @@ There are editable Photoshop files, printable pdfs, and image files for referenc
 
 ### Release Notes
 
+- [v1.3](RELEASE_NOTES.md#version-13)
 - [v1.2](RELEASE_NOTES.md#version-12)
 - [v1.1](RELEASE_NOTES.md#version-11)
 - [v1.0](RELEASE_NOTES.md#version-10)

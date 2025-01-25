@@ -3,9 +3,12 @@
 <!-- markdownlint-disable MD024 -->
 # Release Notes
 
-## Version 1.2
+## Version 1.3
 
-### Feature Update
+- **New Feature**
+  - Added new rackspace `NDSP Tom Morello`
+
+## Version 1.2
 
 - **New Feature**
   - Added new rackspace `NDSP Cory Wong X`
@@ -14,8 +17,6 @@
   - Several small fixes and updates
 
 ## Version 1.1
-
-### Feature Update
 
 - **New Feature**
   - Added new rackspace `NDSP Petrucci X`.
