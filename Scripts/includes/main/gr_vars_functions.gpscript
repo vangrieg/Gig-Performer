@@ -10,18 +10,16 @@ Var
     IsBankUp: boolean = false //bank up or bank down flag
     
 Function LEDControl (device: String, cc: Integer, state: Integer, channel: Integer)
-Var ccValue: Integer
-
-If MidiOutDeviceExists (FSOUT) Then
-
-    Select
-        state == 0 Do
-            ccValue = 0
-        state == 1 Do
-            ccValue = 127
+    Var ccValue: Integer
+    If MidiOutDeviceExists (FSOUT) Then
+        Select
+            state == 0 Do
+                ccValue = 0
+            state == 1 Do
+                ccValue = 127
+        End
+        SendNowToMidiOutDevice(device, MakeControlChangeMessageEx(cc, ccValue, channel))
     End
-    SendNowToMidiOutDevice(device, MakeControlChangeMessageEx(cc, ccValue, channel))
-End
 End
     
 Function blinkLED (device: String, ledon: boolean, cc: integer, channel: Integer)
