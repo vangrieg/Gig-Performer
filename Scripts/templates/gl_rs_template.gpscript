@@ -126,7 +126,7 @@ Include "includes/gl/rs_vars_functions"
     //  <--- UP UNTIL EQ FUNCTIONS IF NO AMP  --->  //
     //////////////////////////////////////////////////
 
-Incude "includes/gl/rs_amp"
+Include "includes/gl/rs_amp"
 
     //////////////////////////////////////////////////
     //                 MODIFY BELOW                 //
