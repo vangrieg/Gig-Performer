@@ -219,10 +219,11 @@ On OSCMessageReceived (d: Integer, m: OSCMessage) Matching "/fx<FX index 1>", "/
         d == 2 Do
             ctrls = FX<FX index 3>_controls
             rt = FX<FX index 3>_rt
-// repeat this for all effects
-//      d == 3 Do
-//          ctrls = FX<FX index 4>_controls
-//          rt = FX<FX index 4>_rt
+/* repeat this for all effects
+        d == <i> Do
+            ctrls = FX<FX index x>_controls
+            rt = FX<FX index x>_rt
+*/
     End
     If IndexOf (rt, i) > -1 Then // if widget is available in this rack, update it
         SetWidgetValue (ctrls [IndexOf (rt, i)], v)
@@ -244,9 +245,10 @@ On OSCMessageReceived (d: Integer, m: OSCMessage) Matching "/fx<FX index 1>/q", 
             osc_out_ws (FX<FX index 2>_controls, FX<FX index 2>_rt)
         d == 2 Do
             osc_out_ws (FX<FX index 3>_controls, FX<FX index 3>_rt)
-// repeat this for all effects if they exist
-//      d == 3 Do 
-//          osc_out_ws (FX<FX index 4>_controls, FX<FX index 4>_rt)
+/* repeat this for all effects if they exist
+        d == <i> Do 
+            osc_out_ws (FX<FX index x>_controls, FX<FX index x>_rt)
+*/
     End
 End
 
