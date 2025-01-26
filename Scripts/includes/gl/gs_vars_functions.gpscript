@@ -47,6 +47,7 @@ Function reset_xtouch () // turn all leds off
 End
 
 Initialization
+    SwitchToSetlistView ()
     reset_xtouch () // when loading, turn everything off
 End
 
