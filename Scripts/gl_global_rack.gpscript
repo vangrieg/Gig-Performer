@@ -76,8 +76,12 @@ Var
     
 Include "includes/gl/gr_vars_functions"
 
-/* GLOBAL RACKSPACE
-<--- UPDATE THIS FOR ACTUAL FX BUTTONS ---> */
+//////////////////////////////////////////////////
+//          CONTROL WIDGET CALLBACKS            //
+//        MODIFY USING TEMPLATE BELOW           //
+//            FOR ALL VOX EFFECTS               //
+//////////////////////////////////////////////////
+
 On WidgetValueChanged (w: widget, i: integer, v: double) from fx0, fx1, fx2, fx3, fx4, fx5, fx6, fx7, fx8, fx9, fx10, fx11, fx12, fx13, fx14, fx15, fx16, fx17, fx18, fx19, fx20, fx21, fx22, fx23 //fx select buttons
     Var j: Integer
         k: Integer
@@ -103,6 +107,7 @@ On WidgetValueChanged (w: widget, i: integer, v: double) from fx0, fx1, fx2, fx3
                         i == 10 Do
                             ctrls = Vox10_controls
                             rt = Vox10_rt
+                        //TEMPLATE FOR ADDITIONAL VOX EFFECTS
                         //i == <FX index> Do
                             //ctrls = Vox<FX index>_controls
                             //rt = Vox<FX index>_rt
@@ -194,32 +199,25 @@ Var j: Integer
 End
 
 
-// Blink iRig Blueboard button D with tempo
-On WidgetValueChanged (v: Double) From beatflash
-    If MidiOutDeviceExists (FSOUT) == true Then
-        If InSetlistMode () == True Then
-            If GetCurrentSongPartIndex () == 3 Then
-                SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx (23, ScaleInt(ParamToMidi (v), 0, 127, 127, 0), 1))
-            Else
-                SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx (23, ParamToMidi (v), 1))
-            End
-        Else
-            SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx (23, ParamToMidi (v), 1))
-        End
-    End
-End
+//////////////////////////////////////////////////
+//          SYSTEM EVENT CALLBACKS              //
+//            LEAVE THE INCLUDES                //
+//      ADD YOUR OWN ACTIONS IF NEEDED          //
+//////////////////////////////////////////////////
 
 // Called when you switch to another rackspace, sends a message to current local rackspace to check osc support, sets timeout
 On Rackspace(oldRackspaceIndex : integer, newRackspaceIndex : integer)
-    SetWidgetValue (m3, 1.0)
-    TriggerOneShotRamp (hellotimeout, 200, 10) //start timeout for handshake
+    Include "includes/gl/gr_onrackspace"
 End
 
 // Called when a gig file has finished loading, sends a message to current local rackspace to check osc support, sets timeout
 On SystemEvent Matching GigLoaded
-    reset_fxcontrols ()
-    SetWidgetValue (m3, 1.0) //set mode to Vox
-    OSC_SendIntegerSpecific ("/hello", Size(rcontrols) - 1, oscip, oscport) //send hello message to check osc support
-    TriggerOneShotRamp (hellotimeout, 200, 10) //set timeout for handshake
-    TriggerOneShotRamp (XTTimeout, 500, 10) //update xtouch after a timeout
+    Include "includes/gl/gr_ongigloaded"
 End
+
+//////////////////////////////////////////////////
+//          FLASHES LED ON THE FOOTSWITCH       //
+//              REMOVE IF NOT NEEDED            //
+//////////////////////////////////////////////////
+
+Include "includes/fs/gr_flashtempo"
