@@ -248,6 +248,21 @@ Function update_xtouch ()
     End
 End
 
+Function reset_xtouch () // turn all leds off 
+    Var i: Integer
+    If MidiOutDeviceExists (XTOUT) == True Then
+        For i = 1; i < 9; i = i + 1 Do // set all knob modes to single
+            SendNowToMidiOutDevice (XTOUT, MakeControlChangeMessageEx (i, 0, 1))
+        End
+        For i = 9; i < 17; i = i + 1 Do // set all knob leds off
+            SendNowToMidiOutDevice (XTOUT, MakeControlChangeMessageEx (i, 0, 1))
+        End
+        For i = 0; i < 16; i = i + 1 Do // turn off all buttons
+            SendNowToMidiOutDevice (XTOUT, MakeNoteMessageEx (i, 0, 1))
+        End
+    End
+End
+
 Function ctrl_update (warr: Widget Array, index: Integer, value: double) // update control widget value, set hold to avoid feedback loop
     //Print ("global ctrl_update: widget " + index + ", value " + value + ", hold " + holdctrls[index] + ", holdctrls size " + Size (holdctrls))
     holdctrls [index] = true

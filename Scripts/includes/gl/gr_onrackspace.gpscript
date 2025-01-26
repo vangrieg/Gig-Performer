@@ -1,2 +1,4 @@
+    reset_xtouch ()
+    reset_fxcontrols ()
     SetWidgetValue (m3, 1.0)
     TriggerOneShotRamp (hellotimeout, 200, 10) //start timeout for handshake
