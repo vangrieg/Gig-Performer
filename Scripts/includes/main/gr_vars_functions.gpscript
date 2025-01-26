@@ -1,0 +1,64 @@
+Var
+    LEDBlink: Ramp //led blink timer
+    
+    BlinkOn: boolean //LED blinking status flag
+    
+    LEDIsOn: boolean = false //led status flag
+    
+    BlinkTime: integer = 100 //led quick blinking speed
+    
+    IsBankUp: boolean = false //bank up or bank down flag
+    
+Function LEDControl (device: String, cc: Integer, state: Integer, channel: Integer)
+Var ccValue: Integer
+
+If MidiOutDeviceExists (FSOUT) Then
+
+    Select
+        state == 0 Do
+            ccValue = 0
+        state == 1 Do
+            ccValue = 127
+    End
+    SendNowToMidiOutDevice(device, MakeControlChangeMessageEx(cc, ccValue, channel))
+End
+End
+    
+Function blinkLED (device: String, ledon: boolean, cc: integer, channel: Integer)
+    If BlinkOn == true Then
+        TriggerOneShotRamp(LEDBlink, BlinkTime, 10)
+        If ledon == true Then
+            LEDControl (device, cc, 1, channel)
+        Else
+            LEDControl (device, cc, 0, channel)
+        End
+    End
+End
+
+Function LEDControlR (device: String, leds: Integer Array, index: Integer, channel: Integer)
+    Var i: Integer 
+    For i = 0; i < Size (leds); i = i + 1 Do
+        If i == index Then
+            LEDControl (device, leds[i], 1, channel)
+        Else
+            LEDControl (device, leds[i], 0, channel)
+        End
+    End
+    
+End
+
+On GeneratorEndCycle (timeX: Integer) from LEDBlink //turning LEDs off 
+    
+    If BlinkOn == true Then
+        LEDIsOn = !LEDIsOn
+        blinkLED (FSOUT, LEDIsOn, 20, FSChan)
+        TriggerOneShotRamp(LEDBlink, BlinkTime, 10)
+    Else
+        StopOneShotRamp(LEDBlink)
+        LEDIsOn = false
+        If GetWidgetValue (lprPlaying) == 1.0 Then 
+            LEDControl (FSOUT, CCA, 1, FSChan)
+        End
+    End
+
+End
