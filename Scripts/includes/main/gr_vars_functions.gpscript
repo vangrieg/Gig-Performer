@@ -45,6 +45,34 @@ Function LEDControlR (device: String, leds: Integer Array, index: Integer, chann
     
 End
 
+
+Function check_gp_preset (song_name: String, preset_list: String Array)
+Var i: Integer
+    counter: Integer = 0
+    //Print ("Size " + Size (preset_list) + ", String is " + song_name)
+    //Add as many declarations here as you need
+    If Size(preset_list) > 0 Then
+        For i = 0; i < Size (preset_list); i = i + 1 Do
+            If preset_list[i] == song_name And counter == 0 Then
+                counter = counter + 1
+            End
+        End
+    End
+    If counter == 0 Then
+        //Print ("check failed")
+        LoadGPPreset (SAFP, "No Track")
+        SetWidgetLabel (playerTrackLbl_1, "No player preset for this song")
+        SetWidgetHideOnPresentation (playerTrackLbl, true)
+        SetWidgetHideOnPresentation (playerTrackLbl_1, false)
+    Else 
+        //Print ("check passed")
+        LoadGPPreset( SAFP, song_name)
+        SetWidgetHideOnPresentation (playerTrackLbl_1, true)
+        SetWidgetHideOnPresentation (playerTrackLbl, false)
+    End
+End
+
+
 On GeneratorEndCycle (timeX: Integer) from LEDBlink //turning LEDs off 
     
     If BlinkOn == true Then
