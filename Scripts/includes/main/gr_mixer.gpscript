@@ -43,3 +43,15 @@ End
 On WidgetValueChanged(newValue : double) from MainOutResetBtn
     ResetWidgetValue(MainOutFader)
 End
+
+
+
+On ParameterValueChanged (i: Integer, v: Double) From SAFP
+    If i == 12 Then
+        If v > 0 Then
+            SendNowToMidiOutDevice (KOUT, MakeNoteMessageEx (NoteNameToNoteNumber ("A#-2"), 127, 1))
+        Else
+            SendNowToMidiOutDevice (KOUT, MakeNoteMessageEx (NoteNameToNoteNumber ("A#-2"), 0, 1))
+        End
+    End
+End

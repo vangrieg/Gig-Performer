@@ -1,6 +1,7 @@
 Var
     XTOUT: String = "X-TOUCH MINI"
     FSOUT: String = "iRig BlueBoard Bluetooth"
+    KOUT: String = "nanoKONTROL2 CTRL"
     
    
     CCA: Integer = 20 //Footswitch button A
