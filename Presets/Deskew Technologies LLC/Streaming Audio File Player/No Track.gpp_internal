@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GPP_PRESET MaxInputPins="256" MaxOutputPins="256">
+  <PROCESSORSTATE>211.VMjLgnL....OGA0TzIWYg0VZtclQowVYPwVX4Ulb9vCUxE1XqwTZyQGHtUWahUlbOYFSuEFYkQFUxE1Xq0iHvHBHvwVX4w1auAWOh.iHfDVcz8FbrEVdNUFdz0iHvHBHsUGck0iHvHBHn81bzMUdtMVOh.iHfLWYrU1XzUFYTIWXisVOhzRLh.xYr8lXgwlUuwVcsUVOh.iK1PyL4XSL1.CNz.SN3fSL1HBHl8Far81chAWa8HBLh7hO77xQPMEcxUVXsklamYTZrUFTrEVdkImO..</PROCESSORSTATE>
+  <PROCESSORLAYOUT>
+    <BUSINPUTS/>
+    <BUSOUTPUTS>
+      <PROCESSORBUS index="0" layout="L R"/>
+    </BUSOUTPUTS>
+  </PROCESSORLAYOUT>
+  <PLUGIN name="Streaming Audio File Player" descriptiveName="Streaming Audio Fie Player"
+          format="Internal" category="Media Player" manufacturer="Deskew Technologies, LLC"
+          version="1.0" file="424362" uid="6793b" isInstrument="0" fileTime="0"
+          infoUpdateTime="0" numInputs="0" numOutputs="1" isShell="0" isEnabled="1"
+          useDelayedLoading="0" explicitWidgetRefresh="0" b64UserKeywords=""/>
+</GPP_PRESET>
