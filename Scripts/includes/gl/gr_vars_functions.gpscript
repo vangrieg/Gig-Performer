@@ -43,7 +43,7 @@
     holdlocal: Boolean [32] //hold changes from global rack widgets temporarily to avoid feedback loop
     holdfader: Boolean = false
     wtime: Double [32] // time a parameter was last modified
-    timeout: Double = 50 // time to reset hold 
+    timeout: Double = 200 // time to reset hold 
     
     hellotimeout: Ramp //handshake timer
     
@@ -266,13 +266,15 @@ End
 Function ctrl_update (warr: Widget Array, index: Integer, value: double) // update control widget value, set hold to avoid feedback loop
     //Print ("global ctrl_update: widget " + index + ", value " + value + ", hold " + holdctrls[index] + ", holdctrls size " + Size (holdctrls))
     holdctrls [index] = true
+    holdremote [index] = true
+    wtime [index] = TimeSinceStartup ()
     SetWidgetValue (warr [index], value)
-    holdctrls [index] = false
+    //holdctrls [index] = false
     SetWidgetHideOnPresentation (warr[index], false) //show widget if it was hidden
     If index == rack_out_index Then
         holdfader = true
         SetWidgetValue (rackOutput, value)
-        holdfader = false
+        //holdfader = false
     End
 End
 
