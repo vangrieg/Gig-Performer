@@ -271,11 +271,6 @@ Function ctrl_update (warr: Widget Array, index: Integer, value: double) // upda
     SetWidgetValue (warr [index], value)
     //holdctrls [index] = false
     SetWidgetHideOnPresentation (warr[index], false) //show widget if it was hidden
-    If index == rack_out_index Then
-        holdfader = true
-        SetWidgetValue (rackOutput, value)
-        //holdfader = false
-    End
 End
 
 Function ctrl_disable (warr: Widget Array, index: Integer) // disable control widget, set hold to avoid feedback loop
