@@ -7,7 +7,7 @@ Var
     
     BlinkTime: integer = 100 //led quick blinking speed
     
-    IsBankUp: boolean = false //bank up or bank down flag
+    //IsBankUp: boolean = false //bank up or bank down flag
     
 Function LEDControl (device: String, cc: Integer, state: Integer, channel: Integer)
     Var ccValue: Integer

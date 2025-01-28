@@ -19,3 +19,7 @@ Var
     BankUpCCD: Integer = 118 //CC# for bank up button D
     
     BankUpChannel: Integer = 16 //MIDI channel for bank up
+    
+    ControlCC: Integer = 127 //CC# to send to notify racks for bank change
+    
+    IsBankUp: Boolean

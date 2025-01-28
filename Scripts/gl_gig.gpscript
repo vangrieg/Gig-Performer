@@ -13,9 +13,11 @@ On Songpart(oldSongpartIndex : integer, newSongpartIndex : integer)
     Include "includes/fs/gs_leds_onsongpart"
 End
 
-On Song (old: Integer, new: Integer)
+On Song (oldSongIndex: Integer, newSongIndex: Integer)
     // Foostwitch functionality, not needed for X-Touch
+    SetBPM (GetSongBPM(newSongIndex))
     songchanged = True
+    OSC_SendStringSpecific("/GP/Song", GetSongName(newSongIndex), "127.0.0.1", OSC_GetGPListeningPort())
 End
 
 On SystemEvent Matching GigLoaded
