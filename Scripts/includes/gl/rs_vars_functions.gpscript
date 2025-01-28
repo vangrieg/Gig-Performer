@@ -1,5 +1,5 @@
 //DON'T TOUCH THIS
-    ctrls: Widget Array //to hold controls of current device
+Var ctrls: Widget Array //to hold controls of current device
     rt: Integer Array //to hold mapping of current device
 
 
