@@ -66,8 +66,28 @@ Var
     //e.g.    chorus_mix, chorus_rate, chorus_sync, chorus_on,  
     <FX_FX index 3_ widgets>
     //e.g.    reverb_mod, reverb_mix, reverb_time, reverb_on 
+    
+// If an effect has ALTERNATIVE MODES (say, delay time can be free vs synced to MIDI and set note durations), here's a template for this
+/*
+    <FX_FX index n alternative widgets>
+*/
 
     : Widget
+
+// If you want to be able to sync widgets to plugin (e.g. to reflect changed presets), add this
+/*
+    <plugin sync widget>: Widget //button to sync widgets to plugin
+    
+    <plugin handle>: PluginBlock // this is the main plugin, add GPScript handle
+
+
+On WidgetValueChanged (v: Double) From <plugin sync widget>
+    If v > 0.6 Then
+        RefreshWidgetsMappedToPlugin( <plugin handle> )
+    End
+End
+*/
+
 
 // STEP 2 
 
@@ -100,10 +120,23 @@ Var
 // USE THE "FX/VOX MODE KNOBS" TABLE ABOVE TO MAP WIDGETS TO GLOBAL CONTROLS
 // USE FX index NUMBERS FROM THE "FX SELECT BUTTONS" TABLE ABOVE, AS IN DECLARATIONS
 // USE WIDGET LISTS FROM EACH EFFECT DECLARATION
+
+
 // EXAMPLE:     FX5_controls: Widget Array = [od_drive, od_on]
 /*
     FX<FX index n>_controls: Widget Array = [<FX index n widgets>] //individual effect 0 controls in this rack
     FX<FX index n>_rt: Integer Array = [<FX index n mappings>] //mapping to global rack controls, CHECK TABLE ABOVE FOR REFERENCE
+*/
+
+// for effects with ALTERNATIVE MODES, use this instead
+/*
+    FX_0_<FX index n>_controls: Widget Array = [<FX index n mode 0 widgets>]
+    FX_1_<FX index n>_controls: Widget Array = [<FX index n mode 1 widgets>]
+    FX<FX index n>_rt: Integer Array = [<FX index n mappings>]
+    
+    // keep the following 2 lines
+    FX<FX index n>_controls: Widget Array
+    FX<FX index n>_rt: Integer Array
 */
 
 // NOW CREATE AN ARRAY WITH WIDGETS THAT TURN EACH EFFECT ON 
@@ -116,6 +149,29 @@ Var
     FX_rt: Integer Array = [<and map them to FX buttons indexes>] //mapping to global FX buttons, CHECK TABLE ABOVE FOR REFERENCE    
     
     initmode: Integer = 0 // initial mode of this rack, 0 for amp, 1 for eq, 2 for fx
+
+/*  if and effect has ALTERNATIVE MODES, add this variable to capture 
+    FX<FX index>_mode: Integer
+*/
+
+/* for effects with ALTERNATIVE MODES, need this function, repeat for each such effect
+Function select_FX<FX index>_controls (dm: Integer)
+    Select
+        dm == 0 Do
+            FX<FX index>_controls = FX<FX index>_0_controls
+        dm == 1 Do
+            FX<FX index>_controls = FX<FX index>_1_controls
+    End
+End
+*/
+
+/* if there are effects with ALTERNATIVE MODES, also need this
+Initialization 
+    FX<FX index>_mode = ScaleRange (GetWidgetValue (<widget that selects mode>), 0, 1) //assuming it's a simple on/off toggle
+    select_FX<FX index>_controls (FX<FX index>_mode)
+End
+*/
+
 
 // LEAVE THIS UNTOUCHED
 Include "includes/gl/rs_vars_functions"
@@ -274,6 +330,42 @@ On WidgetValueChanged (w: Widget, i: Integer, v: Double) From <insert widgets he
         osc_out_ws1 ("/ws1", FX<FX index>_rt[i], v) //send widget value to global rackspace
     Elsif StringToInt(GetEnvVariable ("mode")) < 2 And w == <onoff widget> Then //if amp/eq mode is selected and fx<FX index> on/off button is pressed
         osc_out_ws1 ("/ws1", maxrt + <FX index> + 1, v) //send on off button state to global rackspace
+    End
+End
+*/
+
+/* if an effect has ALTERNATIVE MODES, this is an alternative template
+
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From <insert all effect widgets with mode 1 widgets here> //fXx widgets
+    If w == <mode select widget for this effect> Then
+        Select
+            v > 0.6 Do
+                hideandshow ("hide", <mode 0 alternative widgets>)
+                hideandshow ("show", <mode 1 alternative widgets>)
+                FX<FX index>_mode = 1
+            True Do
+                hideandshow ("show", <mode 0 alternative widgets>)
+                hideandshow ("hide", <mode 1 alternative widgets>)
+                FX<FX index>_mode = 0
+        End
+        select_FX<FX index>_controls (FX<FX index>_mode)
+        If StringToInt(GetEnvVariable ("mode")) == 2 And StringToInt(GetEnvVariable ("fxselected")) == <FX index> Then
+            osc_out_ws (FX<FX index>_controls, FX<FX index>_rt)
+        End
+    End
+    If StringToInt(GetEnvVariable ("mode")) == 2 And StringToInt(GetEnvVariable ("fxselected")) == <FX index> And FX<FX index>_mode == 0 Then //if fx mode is selected and fx10 is selected
+        osc_out_ws1 ("/ws1", FX<FX index>_rt[i], v) //send widget value to global rackspace
+    Elsif StringToInt(GetEnvVariable ("mode")) == 2 And StringToInt(GetEnvVariable ("fxselected")) == <FX index> And FX<FX index>_mode == 1 And i < <1st alt widget index in "From"> And i > <last alt widget index in "From" > Then
+        osc_out_ws1 ("/ws1", FX<FX index>_rt[i], v) //send widget value to global rackspace
+    Elsif StringToInt(GetEnvVariable ("mode")) < 2 And w == dlyp_on Then //if amp/eq mode is selected and fx10 on/off button is pressed
+        osc_out_ws1 ("/ws1", maxrt + <FX index> + 1, v) //send on off button state to global rackspace
+    End
+End
+
+//now add processing for the alternative widgets
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From <insert alternative mode 0 widgets>
+    If StringToInt(GetEnvVariable ("mode")) == 2 And StringToInt(GetEnvVariable ("fxselected")) == <FX index> And FX<FX index>_mode == 1 Then
+        osc_out_ws1 ("/ws1", FX<FX index>_rt[i + 2], v) 
     End
 End
 */
