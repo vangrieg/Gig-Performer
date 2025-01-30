@@ -177,7 +177,7 @@ On ControlChangeEvent (c: ControlChangeMessage) Matching 20, 21, 22, 23 From SWI
                     OSC_SendCommandSpecific ("/tapoff", oscip, oscport)
                 End
             True Do
-                InjectMidiEvent (XTOUT, c)
+                InjectMidiEvent (FSOUT, c)
         End
     End
 End
