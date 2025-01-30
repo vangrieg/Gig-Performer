@@ -387,13 +387,13 @@ On SystemEvent Matching GigLoaded
         now: Double = TimeSinceStartup()
         done: boolean = false
         indevexists: boolean = false
-    Notify ("Gig loaded")
+    //Notify ("Gig loaded")
     If MidiOutDeviceExists (FSOUT) Then
         SetEnvVariable ("SwitchConnected", "true")
-        Notify("Footswitch connected")
+        //Notify("Footswitch connected")
         If InSetlistMode() == true Then
             index = GetCurrentSongPartIndex()
-            Notify("In setlist mode")
+            //Notify("In setlist mode")
             While indevexists == false Do
                 If MidiInDeviceExists (FSOUT) == true Then
                     indevexists = true
@@ -402,7 +402,7 @@ On SystemEvent Matching GigLoaded
             End
             LEDControlR (FSOUT, FSLEDs, index, FSChan)
         Else
-            Notify("Not in setlist mode, switching")
+            //Notify("Not in setlist mode, switching")
             While TimeSinceStartup() < now + 10000 Or done == false Do
                 While InSetlistMode() == false Do
                     SwitchToSetlistView()
@@ -412,7 +412,7 @@ On SystemEvent Matching GigLoaded
         End
     Else
         SetEnvVariable ("SwitchConnected", "false")
-        Notify("Footswitch disconnected")
+        //Notify("Footswitch disconnected")
     End
     check_gp_preset (GetCurrentSongName(), GetGPPresetList (SAFP, 0))
     Include "includes/gl/gr_ongigloaded"
