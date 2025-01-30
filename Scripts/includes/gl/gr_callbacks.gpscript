@@ -154,7 +154,7 @@ On WidgetValueChanged (w: widget, index: integer, newValue: double) from m0, m1,
                 End
         End
         If index == 2 Or index == 3 Then // for fx and vox modes, fx buttons act as radio buttons
-            Notify ("Select FX")
+            //Notify ("Select FX")
             radioselect = true //set fx buttons to radio mode
             //Print ("iterating array rcontrols to disable unneeded, size " + Size(rcontrols))
             For i = 0; i < Size (rcontrols); i = i + 1 Do //disable all control widgets
@@ -214,7 +214,7 @@ On GeneratorEndCycle (time: Integer) From hellotimeout
         //Print ("i " + i)
         ctrl_disable (rcontrols, i)
     End
-    Notify ("Handshake timeout")
+    //Notify ("Handshake timeout")
     //Print ("Handshake timeout")
     
     chmodeallowed = false //disallow mode change
