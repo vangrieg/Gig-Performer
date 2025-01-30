@@ -277,7 +277,7 @@ Function ctrl_disable (warr: Widget Array, index: Integer) // disable control wi
     //Print ("global ctrl_disable: disable widget " + index + ", hold " + holdctrls[index]  + ", holdctrls size " + Size (holdctrls))
     holdctrls [index] = true
     SetWidgetValue (warr [index], 0.0) //set widget value to 0
-    holdctrls [index] = false
+    //holdctrls [index] = false
     SetWidgetHideOnPresentation (warr[index], true) //hide widget
 End
 
