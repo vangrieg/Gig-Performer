@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<GIGRACK activeRackSpace="0" gbpm="71.52947235107422" gtimeNum="4" gtimeDen="4"
+<GIGRACK activeRackSpace="3" gbpm="71.52947235107422" gtimeNum="4" gtimeDen="4"
          gTranspose="0" version="5.0" scriptWindowPos="414 174 1417 842"
          globalStereoCount="2" globalPanelVisible="1">
   <SCRIPT_CONTENT>Include &quot;$system$&quot;
@@ -35,54 +35,50 @@ End
                    bpm="120.0" timeNum="4" timeDen="4" resetTimeInfo="0" syncClock="0"
                    maxDeactivationTime="2.5" maxDeactivationTimeIn="0.0" scriptWindowPos="343 98 1470 1078"
                    usePatchPersist="0" zoomLevel="1.0" viewX="0" viewY="0" activePreset="0">
-    <PROCESSORSTATE_IN handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.00732421875">73.VMjLg.D....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh7hO..</PROCESSORSTATE_IN>
-    <PROCESSORSTATE_OUT handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.257080078125">123.VMjLgHG....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh.xXn8kL8HRLt.iHfzVczU1Wig1WxziHvHBHig1WyziHw3BLh.Ra0QWYeMFZeMSOh.iHu3C.</PROCESSORSTATE_OUT>
-    <PROCESSOR id="4" bypass="0" bypassSmoothing="0" prop_str_nodeName="To Rackspaces"
-               prop_dbl_x="0.32144775986671447754" prop_dbl_y="0.24975585937500000000"
-               cmp="1">
+    <PROCESSORSTATE_IN handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.00732421875">23.VMjLg3.....OPwTUGkjSSQUPTUzK9..</PROCESSORSTATE_IN>
+    <PROCESSORSTATE_OUT handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.257080078125">73.VMjLg.D....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh7hO..</PROCESSORSTATE_OUT>
+    <PROCESSOR id="4" bypass="0" prop_str_nodeName="To Rackspaces" prop_dbl_x="0.32144775986671447754"
+               prop_dbl_y="0.24975585937500000000" cmp="1">
       <PLUGIN name="To Rackspaces" format="Internal" category="Global" manufacturer="Deskew Technologies, LLC"
               version="1.0" file="1010970" uid="f6d1a" isInstrument="0" fileTime="0"
               infoUpdateTime="0" numInputs="4" numOutputs="0" isShell="0" isEnabled="1"
               useDelayedLoading="0" explicitWidgetRefresh="0" b64UserKeywords=""/>
       <PROCESSORSTATEZ>8.3o8......D.</PROCESSORSTATEZ>
     </PROCESSOR>
-    <PROCESSOR id="5" bypass="0" bypassSmoothing="0" prop_str_nodeName="From Rackspaces"
-               prop_dbl_x="0.05672607570886611938" prop_dbl_y="0.01464843750000000000"
-               cmp="1">
+    <PROCESSOR id="5" bypass="0" prop_str_nodeName="From Rackspaces" prop_dbl_x="0.05672607570886611938"
+               prop_dbl_y="0.01464843750000000000" cmp="1">
       <PLUGIN name="From Rackspaces" format="Internal" category="Global" manufacturer="Deskew Technologies, LLC"
               version="1.0" file="10104242" uid="9a2db2" isInstrument="0" fileTime="0"
               infoUpdateTime="0" numInputs="0" numOutputs="4" isShell="0" isEnabled="1"
               useDelayedLoading="0" explicitWidgetRefresh="0" b64UserKeywords=""/>
       <PROCESSORSTATEZ>8.3o8......D.</PROCESSORSTATEZ>
     </PROCESSOR>
-    <PROCESSOR id="6" bypass="0" bypassSmoothing="0" prop_str_nodeName="MIDI In (XTOUCH)"
-               prop_int_uiLastX="48" prop_int_uiLastY="320" prop_dbl_x="0.27587890625000000000"
-               prop_dbl_y="0.05737304687500000000" prop_int_MaxInputPins="256"
-               prop_int_MaxOutputPins="256" prop_bool_nodeGPScriptEnabled="1"
+    <PROCESSOR id="6" bypass="0" prop_str_nodeName="MIDI In (XTOUCH)" prop_int_uiLastX="48"
+               prop_int_uiLastY="320" prop_dbl_x="0.27587890625000000000" prop_dbl_y="0.05737304687500000000"
+               prop_int_MaxInputPins="256" prop_int_MaxOutputPins="256" prop_bool_nodeGPScriptEnabled="1"
                prop_str_nodeHandleName="XTIN" cmp="1">
-      <PLUGIN name="MIDI In (XTOUCH)" descriptiveName="X-TOUCH MINI" format="Internal"
+      <PLUGIN name="MIDI In" descriptiveName="X-TOUCH MINI" format="Internal"
               category="MIDI IN Processor" manufacturer="Deskew Technologies, LLC"
               version="1.0" file="424242" uid="67932" isInstrument="0" fileTime="0"
               infoUpdateTime="0" numInputs="0" numOutputs="0" isShell="0" isEnabled="1"
               useDelayedLoading="0" explicitWidgetRefresh="0" b64UserKeywords=""/>
-      <PROCESSORSTATEZ>6863.3ocabk0bhbrz89SY9lWUbKSWrGgsino6FDRrT.8hPuLAaZAg.I.swu9uTT41XesevLYRQ1YUUdx7b5Ibdj8+qe++y+4Oc8x5zcvjzvzjeD8vrsaWsIX3aGe4si+0OKYJUyV8mjcqXOPYtrxbi5h8Jhc02tpXsr9Wolxt5GotXth1dCwtXroxn9AOnj332rqxzZ5G8.UppMqR0F5G9.Ut9a+Nprso9wOfS2.Soe9i9OtcvtiqNuiC+oYe5+Sm8kte11Cur6vJLWmbb2Kga17823.tfIGebwSe8sE7m+eYOe0lcKd73Wz90+09quMOb6uJge234hs.xlXxhlRTesxjMwTEzTawTUzTG0JqQ1DS0QSgpuVCxlXpIZpk9wkxgVJaTND8eCXaVIWEik4jUrUQxVwXUNcEa037UrUWRXwXCNiEaMkTlMZKw4rXKPRZwnkSZwFkKQkXSU3bVrQYRrXpFmwhMJQRDSTZzVL0jSW1VYJI5HlB3jUrQoPnXpLmphMJEZIlnLHhy8x03DUrQYPrXpAmnhMJERXSUnLnsXJfSTwFkAcDSk4DUrQYPnXpJmnhMJEZIlnLHRJwZvIpXixfXorqDmnhMJERDSTFzVLUlSTwFkAcDSU4DUrQYPnXpNmnhMJEZIlnLHpLCRHPShMFZRLIPShMFZRLwPShIAZRrwPShIAZRrwPShIAZhsUmQlDSLvTE1jfKI1XXIwjfJI1XPIwDiIIlDHIwFiHIlD.I1VCFORLIvQhMFMRLwfQUYSBXjXiAiDSBXjXiAiDSLXjXR.iXaMYvHwj.FI1XvHwj.FI1XvHwDCFUiMIfQhMFLRLIfQhMFLplzeiQiT1D3HkQFORYS.jTFYDIkMARRYjwjT1XPo5hMAURYjgkDaABtjxHCLorwHSJaBzjxHiMorIfSJiL5jxl.OoLx3SJaL.UCYdBAgRYjgnT1DLJkQFjRYiQoT1DXJkQFmRYixEbbR8PexXkhUZzyIKlsY0x+2q3+kuyqyO+JYr+tkzzqtHZiJpD+IFzKxxehwGhpvehKkhpwehusE0f+TS4WVEDIJARXBj3DHAJPhTfDp.IVARvji9HqDMqJmjnIifEYknYknYknYknYknYknUVhVYIZkUagRzJKQSlNJprDsxRzJKQqrDsJRzpHQqhDsJpSLIZUjnUQhlL3RTEIZUjnUUhVUIZUknUUhVU0EDIZUknUUhVUIZxLEQ0jnUShVMIZ0jnUShVM08QIZ0jnUShVMIZ0knIs6ipKQqtDs5RzpKQqt55uDs5RzpKQqgDsFRzZHQS5DG0PhVCIZMjn0PUsIQqgDslRzZJQqoDslRzZJQSZRF0ThVSIZMUE25paU4cIU8cIUAdIUEdIUIdIUMdIUQdIUUdIUYdIUb+MXEUb0.KZjEMzhFaQCtnQWzvKJ7k.E.SfUimohqBiIPAxDnPYBTvLReA2iGW7v7UaWR8Au63p8G281hGH.+ca20a2GqNbb31MeoLd4i2+vuasE.7+juyy+xxc2oM8Oi5Yi+qP6+p6170+xX3lMCO9vp8Q61db+tMaVs+f1Mz5o3gUrlGmskuayaOuRaYxaGNN6we6QM4yW1u5vgG28aVm70gUeh839NYZCQb2G32PLjOayaT.nlf+1W82Mp+5iWsY0rC+9O7uYS+k6d+1c6W0Yyt4y17aJAoUFJ6k+ok3cePYU2suC6zWu5q46lseIqLztWNeDfBF88+4dRwo8Od+ud6Q3qFTF5ymk1YX2Ac90vIQ+JLNdbxjI+xElllLdve8y+g+zvwcRR+UWG8MgeCacCDRSv+3q5FNN8u9YyRk91grzAg8S99m8l989U+twc+U+Dv9uRFD1pWRL7z6cc9WHLM5xVgS+Mm4Iimzc3feMHqeqjw+0Os+7u+yW1718Ot8WuLa+rmWA47u173gi+vgRecVPPmWyq.+mshVlNuJWd6UDUKcdcsJ6+N0D8IcdkrN+oFhRjNuxUTvJIRN5PspvOaEwEcn3TzWqhHin6rbTmOsbhJTtyhOQVavOGL.iSzWxgxJ4SXqXsr7wJxGqJeThl.rHJC4DEgbhPPNQ.Hmn6iSz6wIx73D4cbhrNNQMGmnhiSDuwIh13DwZbhFMNQaFmHIiSjhwIJv3DkWbhhKNQnEmHvhSzUwI5o3DcTbh7INQ1DmnVhSTIwIhi3DQQbhXHNQCDmn8gSj7vIRc3DINbhxFNQQCmHjgSDvvI5V3D8JbhNENQdBmHKgSTivIpP3D0GbhnCNQrAmnwfSzVvIRJ3DoDbhDBNQ4.mnXfSDJvIBD3DgAbhd.NQG.mP+2Iz9cBaemvx2Ir6cBodmPl2Ib3cJt6NEmcmhptSQQ2oXl6TLxcJh3NEAbmh3sSw21o3Y6TzqcJZ0NEcZmhEsSwd1oHM6TjkcJNxNE2XmhSrSQE1on.6TLecJFuNESWmhfqSQr86OqhqBoIPA0DnvZBTfMAJzl.EbSfBuIPA3DnPbBTPNAJLm.EnSfB0IPA6DnvcBT.OAJjm.EzSfB6IPA9DnPeBTvOAei+Pn9J.nfuQfX6p3pvfBTfPAJTn.ELTfBGJPADEnPhBTPQAJrn.EXTfBMJPAGEnviBT.RAJDo.EjTfBSJPAJEnPkBTvRAJbof55lkp3pflBTXSAJvo.E5TfBdJPgOEn.nBTHTAJHp.EFUfBjJPgREnfoBT3TAJfp.ERUfBpJPgUEn.qBTnUAJ3pfl54CTCHnvqrJ7JqBuxpvqrJ7JqBuxpvqrJ7JqBuxFnGLQEWEdkUgWYU3UVEdkUgWYU3UVEdkUOOjdfHEdkUORjdlH8PQ5ohziEomKROXjBuxpvqrJ7JaY8nXp3pvqrJ7JqBuxpvqrJ7JqBuxpvqrJ7JqBuxVQOCnJtJ7JqBuxpvqrJ7JqBuxpvqrp4krJ7JqZhIaU8vmp3pvqrJ7JqBuxpvqrJ7JqBuxpvqrJ7JqBuxVSO0qJtJ7JqBuxpvqrJ7JqBuxpvqrJ7JqBuxpvqr00iaqhqBuxpvqrJ7JqBuxpvqrJ7JqBuxpvqrJ7JaC8b9p3pvqrJ7JqBuxpvqrJ7JqBuxpvqrJ7JqBux9MdU.8YMCCEECEdUYEdUYEdUYEdUYEdUYEdUYEdUYEdU4uwq99Y3O96+riaRTXujerX2lc6+qed2cUp0vNuxO+wyeKxv4Gzmm8IR+8m+38yLQaTpTCC8Ouewi2Verc8Mt6peQZ+k6lMt2ktKFZxdrn5l3nfKd7kOtdwjGBCadg69W6jbbY51KFdwt1ucpe210u3wu+Zs1+48WbwV7mxXbqtH87OPnI96UTt5n6Mlc9uXdOiiVerI9vkyd9sUuLJzr6X2Oty757af0edIu1oiIFeRZ0x7D7TlM3zCqMtlM8+.WYhazXx2O2eB9aUL7p4M19tw4Sj2upuIlVUj4o8KNut5R7cl0ald9e6FaFc8mvDPOeabnaHl.iLqo7C7e92Y+hqB4muIl0mM0rYEveoxO8cJ3Bcu4yjsolTXqKuh65wIlQme3J8XdH+7maRCFbNVu.9wfNOzg+n6JLo3hZ01LBM9PHmeSMo3GuE7C6m27TzgsgNbO+0aMo9bp9msM3w66Gg3Ow+GlaR8q4xq6X5+Uuy+6IH93O0BS7si7OgfeHfcf+XUH9XBrxDigpVG97yzxYOGywE2YhOm8eFz8RS2o0p+8gUTKd+6dSLrKk.NxtzrKxeWncKGd6n7874+CWZnaRcaw6uOXhwixiWx2O50xUr9vW1gkt4QS7tu27JFVEVu+525gs38+0l3Imu8m0tq4oyqo7Sia4vKEUVy2uF20jbdiZ1yYs3ymmLwO6udrrKe+6lVN7P81MlX7V0Kv5wq5yZwmeOahqM5bYU.rd+E88Kg72enT6Y99aqqLI9G+C22hOe2ZN4iT0AWw2uW2x42yqLam4j+NoYFrdr734V74+KFLQZ+Lrd+M0OeAxe+QYcveO7VArde3+5PK99wqlS9qWiu3JyYmvN36P9+348hE6MmNeNkL85qM3OevWs36OGLmNekZvphqMH7R4.H+8WUZB9OeQ3lmdDVOlUUf72eRc7n4DtS7FrdCdWBxe+Azx2Lm764eTCVO59B4926l09eyZQ8LefOJgQNehZW8NWe2smIDAMih36muaRQ3IWOt9ONxMyiD59vfAJAP8tGgRaGw2eA+XU4bH9q7egNQtH+Qk4SF+3AH9XoP2H99M32e8cv1dL9xUQtW8Q5CveOeU6QH9HnbuH99+WlTbW+DDebqtejareU2+EiOUEh+K9zdXDWe.9QPSSeF+xE4PPyQmLoHnY69l6w8hwQb8C3G2z5027AtoLIxgIcqRL9239lPrTOKhqu.+XPuoOiOlG4vE8I3GMtDhOVzcSDW+EXRwaxqg3iWklBm+9a0ODv3qu.wGOqlEw0mfer7389L967HGBZNwZRQPyf9lE3t9xHt9E7et4Zdk58MH7ywUQNrROpLie2Zfw2GnX38Qb8M32em8hKGv36OD4vSpSfer8wvAFLRt0Qb8eESpeOOIafAgm93I372eqXcEt+vLH9HR3yQL9.32ulque.2+XKb9eFSvlV0j5S+AOCw+b0WiIuDw3GfeDU+.DebC5U372CkjTi6+7EDe+fJYGhX7EvuuR7lJC39SGgyeeVUB7iO9W.wG2.eOhwepahwlRICMGvp9Ofye+LOapy82tdnowy9Ab9Jhwm.+XSkQCM8wM3Sv4uu.IugAC+yECMKvppfHF+pAO+yBH9d3upV372i00toIFuJ7HD+59CfJQL9F3GA02AwGupTEN+8WusfeDz9MH99SpE0gye7pzEb+4RP78viMZD4vd9OC9wqZ0f366Ts7hHmOmd6hKLq8k2MMNt+sI1g+R.laLBZF6LivwKCiI7yaLgqQPwNNChDXZE6937S2Uqg0ifdW4n6uuC9Q702g0ifZ8c77AQwNrUecX8XofyQ2uGEGS3uWFFtlljyQy71JI1M0OIQZXHMeQtit++I3GwmuCVOMIlim+ncrCuJuGVOBZL2Q0GS5DS32kg0SSRA4uG9M5xXG1pJtUHM+xCNp94KvOhuOpU3Zrn9IGOeS2XWlOoV.qGK025n5qzqhI7+cv5whxWg7GaUccrCMVBVONezQGU+UB7i2jCiBWiEUe334m5E6PNE8iBiQVAmbT8Yd+Xp+wTX83OkExebTjAwN+F49mf0i65UcT8qE7i8W9.VOdotgimOaXrC2da.qGgxLin56BWL0+oab3Z7QMZjICAPGE6nl1wgz7csGQ0+kA+TSYX8XoR2Q77eiicTSWX808qp2HBeX5jXp+UUX83VwvQlRdLgtowNpoYRHM+33QD9QUvO0TLIbsG9ZW1Hd9xrXG0zCVOBUeyHBe417Xp+2Kv5wXMCxeLqJhcTSKX837oKGQ3O0.+TSo1gqQnf6GwyudCT+iMcZC059x50iH7o4Sio9myf0iGkOC4ONp4swNpoArdrp5kQD9UCvO0TncXpG9qzgQ77wyhcDne6vS9wSsuOhv2VLOl5+dcmvT7pxWP9iiRsH1Qf1cBo4qCFQ3eMA+DnLrdDdrxHd96kwNBzEVuuSUi5P96aUuZUL0+tFrd7p3EP9iCPeGfU5+mKuLjleOZrYARu99Xp+d5kgz7msGyy2C9QPm6f0ifJcGaN3AMt+gXp++dX83U8diMY3s1Gg5eeQaYX8XQ4vwlF9Spv0wz7AwcoYhtb7Xl+.3Guz65FdBuTmM1z2eq3gmho4GlCqGuzcyXSIjJwFn92eoYKrd7RwLH+8G5QOGSyWbBVOdnsbLyOA7u1uoatJ7DtodOj+9Ms0aio4O5eUHMe7ZH+wQg2A0+9G5ov5wGpmg72Gz3Who4SdBVOtnWFy7e.+87k5e.q2OIQ9gwFb71mdMlleoArdDJ38wFTnk78P8uuqX2qCI9SeM1fXlsODSy2jccHM+cvXleE3G20uGVuuS57JiMDmyiwz7OGf0iPM0GaPjrh2f5eeuzJv5QRQWL1P2YeOllOpcuPZ98VSX9af+4dnpw8BOgjZRlXH4I9HlleZIrdDJ6xIFbRzoeB0+9U8Brd7B70SL3Z59ULMeU.rdb9+ASX9gfebppV8COg65ilXvNoubJll+ZP+PheP5DV+mRP8uGU5VX83j5ESLU7UhWGDSymsAVOlU2Ng4eB9262I9DVONo2BH+8iJ+pMlleqIrdDJ9NH+wipxwzrHWOHj3u9Hj+n7FUho46JFDR7O1Lg42B9wppGg0iCUuCxeeS8CUio4+dCVOB0ueBquUsXG1TsFrdbn32f72iTLndLMeXmggD+kOg7GGED7iMklLL7DNTaIH+wwyaDSyOtBVO1Jo7Dl+cyXGBp+JrdbTxZP9is2uH1gWEsv5wqmMmv7yMIz8yVvrl3oVXJ0e+FvON+42yhhsBZkZ14A8dG7i2eG3X703Tp++kgIz7ootv03PeIoL+evOd+9VGi+1IklOnL3Gme8NH93PaWlZp3AcF0Jgt+uww3yWkRyOrC7ii5sGhONz00or9BQIT8wmNF+teJMewTvON+aYH9XqtAolt9SpO.+X8SSGiu6Ro4OtJNglONdTHhztcTJqeA3GqutZDi+OIklOoJ3Gme1MJj3+jlZl5K5FmjP0e4i39C4oz7Ku.9wQYmCwGG5nHk0GocBUe9vHt+wzTZ9lYfeb96sP7wV42Bm+9K8eA9w52ii39KySo4ettSBMe9IH9XS+Eor9Kfer9t5Ht+ypTZ9n5feb98vwgD+s6fyeejRuLgp+6Ll6O8PJM+zdvONpd+wgqQT+GSY8c5lP3CSFy8udJkluZN3Gm+eJDero4F372WIcB7ijJVMl6usMkl+p+UID+fmf3iM81kx5GA9QRAuNl6+8ZJMeVCvONz+GP7QT68v4uemH65DB+wNl6OdLkle6.3GKeZ.wGa57VJqOUuDBeJZB2+7iTZ9tkfeRz+IgD+1OSo2OQ.3GwuFNg6udJkl+aP+DheR1jv0HneoTV+KvOhuMaB2+0lRyGdA3mdoBP7QP6xv4OJZ9fDB+64Ib+4poz7iuA9wp9CP7QP2Zor9ZCSH7wulv8uajRyWtB7SuzhIL+7KfyeTTSvOB5YR496lLZ9SmKg3G0Nk4u2Ji0uC7ifF8R49+QYz7olQID+owoL+9jLyTTTSvOVzcSJOeP6LZ90O.+XQwxTl++kYr9fiSn2T05Td9gtYz7s2C9oW5RJqOv0Ylcnnlfe7P+8Td9hdYz7uiljP7yBRY8CFjw5OB9wMs5o77GCyn4iaklP72Zkw5KLJyTAE0D7iA8xLd9jwYz7yeB9QiCxX8GRyX8MyRb3PIoY77KYYz70O.9oWZTFqOQQloKJpI3GGp3tLd9laxn4umjmP7C2jw5WbaFqeJ3GGJXeFO+yrLZ97nhDh+3mYr9FKfyeTTSvO1TubFOezxLZ98Sfeb66hLV+i6xX8YuA5O6q5Sx44mtOilueM3mdoW4r9HOlQu+p5feTTyQ477Uqyn4+SmlP7SKxY8S1jw5+B9QonVjyye8bFwOH41Dh+5i4r9J6fyGTTSvOJO1tbd9rWxH9Ck.+XW62xY8W1mw5KOC5O6AvJkyyucHi3WrA7SuztbVel2fyGTTSvONTRXAOe26YD+i74ID+3NEr9Melw5WC9wl58K34+9Ji3mzdQBwedRAquSI37AE0D7iMEmVvyGFjQ7Wrfero0pBV+mxYr93Kg9ydT8mJ34GqjQ7adF7if9uVv5CUCpOQQMA+Hn7GE77k0yH9OEqRH94kKX8iZlw5uC9QPslP7wccSNwO5x6RH96w2v5KElS5edG3GAEt5lPR+9nbh+TYvOdS2cCq+TbNqu+8INrnJ+lvSXjZmS7q1A9wK8yug0mpSNoeZ3CP+e+kxGf3iqpaNw+ZJ3Guzr8FV+pqx42e.3GOTOBw2en0oWNwOq6iIj9Amtg02peNo+5CfebSoJDerTcXNweqJ3GenMSY8ub476mXMz+2+i1dZ3I+htZbNwu6EvOp+Puor9XSxI8aa8Dz+22pe7zP58ajkS7+lA9Q.9alx5mkmyu+CvO9SsDhOVUcSNwO75MIj9Eqmx5qMMmz+8QvO92+fWf3iPMyxI9i0.+3T2uOk0eadN+9UdF5+6eTsP7w+RYrLm3WtG7i5ezXJqO2pbR+33sP+e+nJQ2FRuel6yI9mPNP5iz8VV+tGx42eC3G2JFda3Ie44j04D+zd6RH8Sxtk026obR+4m.+3e+AlA9QnxmyI9qM.+n9J2eKq+21b98C8Bz+2uU+L77gDrdIm32d.7i5ub3VVevWyI8qSdE5+6q5+BhOVndHm3+tD7i5yT4VV+vi476eB7iGkW.wGQMeOm3GOXeBoeSxLVewOxI8u2.9w2O80yBo2e0W4D+4lfejU0nYr9imx42u0An+u+pRwrv0nRaA4D+52.+n9OKlw5SZyI8y6bD5+6aZ7HDerpuRNw+dE3G0GZ2LV+xp476OC7iWEeChOxzudNwO28FyOOXFquYybhe9VveG+td8YL+7KxI94l2Y94sly7yCK32O26L+7Kmy7yaUP7ye+cle9f4L+73Bhe9kev7ySmy7ySJH942+AyO+14L+7NE76+6Cle9cyY94WVP7yG8IyOeyble9UED+7cex7y2Om4mecAwOO7Kle9myY948K32u3WL+7xyY94CJH94e9EyOu4bletqf3me0Iled7Ble9nBhe9CmX94Wsf4mOofe+kmX94tEL+7zBhe9jRL+77EL+77Bhe9qkX94yWv7yKJH94QAL+7GVv7ymVvuez.le91EL+7aKH94eEv7yOtf4mOuf3m2yx7yKsf4munf3mu1x7yqsf4mupfe+qVled3Rle9cED+7zxL+7NKY94OTP7y2C9uvOIW+kL+7GKH94wURH88lrj4m+TA+9cA+HT4zkL+7MED+7RfeT+uUKY94aKH948qx7yeZIyOeWAwO+opL+7WWx7yesfe+wUY94erj4muuf3mmWi4maWx7yOVP7yOVi4m2XIyO+sBhed65L+7nUL+7OJ32Occled2UL+7OKH94A0Y94CWw7yOUP7yG1f4mmsh4mWpf3m+bCle9rUL+baAwO+hFL+76Ww7yKWP7yKZx7yedEyOuZAwO+slL+7CqX940g8u+L6vp8Qus+8UG9i+9O+C7u9mvmT++Os+9+7+y4CHfH</PROCESSORSTATEZ>
+      <PROCESSORSTATEZ>6863.3ocabk0bhbrz89SY9lWUbKSWrGgsino6FDRrT.8hPuLAaZAg.I.swu9uTT41XesevLYRQ1YUUdx7b5Ibdj8+qW++y+4Oc8x5zcvjzvzjeD8vrsaWsIX3aGe4si+0OKYJUyV8mjcqXOPYtrxbi5h8Jhc02tpXsr9Wolxt5GotXth1dCwtXroxn9AOnj332rqxzZ5G8.UppMqR0F5G9.Ut9a+Nprso9wOfS2.Soe9i9OtcvtiqNuiC+oYe5+Sm8kte11Cur6vJLWmbb2Kga17823.tfIGebwSe8sE7m+eYOe0lcKd73Wz90+09quMOb6uJge234hs.xlXxhlRTesxjMwTEzTawTUzTG0JqQ1DS0QSgpuVCxlXpIZpk9wkxgVJaTND8eCXaVIWEik4jUrUQxVwXUNcEa037UrUWRXwXCNiEaMkTlMZKw4rXKPRZwnkSZwFkKQkXSU3bVrQYRrXpFmwhMJQRDSTZzVL0jSW1VYJI5HlB3jUrQoPnXpLmphMJEZIlnLHhy8x03DUrQYPrXpAmnhMJERXSUnLnsXJfSTwFkAcDSk4DUrQYPnXpJmnhMJEZIlnLHRJwZvIpXixfXorqDmnhMJERDSTFzVLUlSTwFkAcDSU4DUrQYPnXpNmnhMJEZIlnLHpLCRHPShMFZRLIPShMFZRLwPShIAZRrwPShIAZRrwPShIAZhsUmQlDSLvTE1jfKI1XXIwjfJI1XPIwDiIIlDHIwFiHIlD.I1VCFORLIvQhMFMRLwfQUYSBXjXiAiDSBXjXiAiDSLXjXR.iXaMYvHwj.FI1XvHwj.FI1XvHwDCFUiMIfQhMFLRLIfQhMFLplzeiQiT1D3HkQFORYS.jTFYDIkMARRYjwjT1XPo5hMAURYjgkDaABtjxHCLorwHSJaBzjxHiMorIfSJiL5jxl.OoLx3SJaL.UCYdBAgRYjgnT1DLJkQFjRYiQoT1DXJkQFmRYixEbbR8PexXkhUZzyIKlsY0x+2q3+kuyqyO+JYr+tkzzqtHZiJpD+IFzKxxehwGhpvehKkhpwehusE0f+TS4WVEDIJARXBj3DHAJPhTfDp.IVARvji9HqDMqJmjnIifEYknYknYknYknYknYknUVhVYIZkUagRzJKQSlNJprDsxRzJKQqrDsJRzpHQqhDsJpSLIZUjnUQhlL3RTEIZUjnUUhVUIZUknUUhVU0EDIZUknUUhVUIZxLEQ0jnUShVMIZ0jnUShVM08QIZ0jnUShVMIZ0knIs6ipKQqtDs5RzpKQqt55uDs5RzpKQqgDsFRzZHQS5DG0PhVCIZMjn0PUsIQqgDslRzZJQqoDslRzZJQSZRF0ThVSIZMUE25paU4cIU8cIUAdIUEdIUIdIUMdIUQdIUUdIUYdIUb+MXEUb0.KZjEMzhFaQCtnQWzvKJ7k.E.SfUimohqBiIPAxDnPYBTvLReA2iGW7v7UaWR8Au63p8G281hGH.+ca20a2GqNbb31MeoLd4i2+vuasE.7+juyy+xxc2oM8Oi5Yi+qP6+p6170+xX3lMCO9vp8Q61db+tMaVs+f1Mz5o3gUrlGmskuayaOuRaYxaGNN6we6QM4yW1u5vgG28aVm70gUeh839NYZCQb2G32PLjOayaT.nlf+1W82Mp+5iWsY0rC+9O7uYS+k6d+1c6W0Yyt4y17aJAoUFJ6k+ok3cePYU2suC6zWu5q46lseIqLztWNeDfBF88+4dRwo8Od+ud6wu+pPa9rzNC6NnyuFNI5WgwwiSlL4WtvzzjwC9qe9O7mFNtSR5u55nuI7CZqafHZB9GeU2vwo+0OaVpz2NjkNHrex2+r2zu2u52Mt6u5m.1+UxfvV8RhO+D8sqy+BgoQW1Jb5u4LOY7jtCG7qAY8akL9u9o8m+8e9xl2t+ws+5kY6m87JHk+0lGOb7GNT4qy5A57RdE3+rUjxz4E4xauhHZoyKqUY+2olHOoyKj04O0PDhz4EthBVIQwQGJUE9YqnsnC0lh9ZUDUDcmUi57gkSDgxcV6IxZC94fwWbh7RNTUIeBaEqkkOVQ9XU4iRzDbEQXHmHHjSzAxI5+3DYebhbONQkGmntiST0wIh43DQbbh1MNQyFmnUiSjnwIRy3DEYbhRLNQ.FmH7hSDbwI5r3D8UbhrJNQNEmHihSTOwIpl3DwRbhHINQaDmnIhSzBwIRf3DoObhhGNQoCmnvgSD1vIBZ3DcLbh9ENQ1BmHWgSjovIpS3DUIbhXDNQDBmH9fSzbvIZM3DIFbhzBNQQAmnjfSTPvIBG3DACbhNANQe.mnKfSjCvIx.3D1+Ng0uSH66DR9NgbuS3z6Dt7NgBuSQc2onr6TL0cJF5NEwbmhPtSwC2o3e6T7tcJ51NEMamhcsSwp1oXS6TjncJxyNEmYmhqrSQQ1onF6TThcJlvNECXmh3qSQ30oH55T7acJdse+YUbUHMAJnl.EVSfBrIPg1DnfaBT3MAJ.m.EhSfBxIPg4Dn.cBTnNAJXm.EtSfB3IPg7DnfdBTXOAJvm.E5SfB9I3a7GB0WA.E7MBDaWEWEFTfBDJPgBEnfgBT3PAJfn.ERTfBJJPgEEn.iBTnQAJ3n.EdTfBPJPgHEnfjBTXRAJPo.EpTfBVJPgKETW2rTEWEzTfBaJPANEnPmBTvSAJ7o.E.UfBgJPAQEnvnBTfTAJTp.ELUfBmJPATEnPpBTPUAJrp.EXUfBsJPAWEzTOefZ.AEdkUgWYU3UVEdkUgWYU3UVEdkUgWYU3U1.8fIp3pvqrJ7JqBuxpvqrJ7JqBuxpvqr54gzCDovqr5QhzyDoGJROUjdrH8bQ5AiT3UVEdkUgWYKqGESEWEdkUgWYU3UVEdkUgWYU3UVEdkUgWYU3U1J5Y.UwUgWYU3UVEdkUgWYU3UVEdkUMujUgWYUSLYqpG9TEWEdkUgWYU3UVEdkUgWYU3UVEdkUgWYU3U1Z5odUwUgWYU3UVEdkUgWYU3UVEdkUgWYU3UVEdkstdbaUbU3UVEdkUgWYU3UVEdkUgWYU3UVEdkUgWYanmyWEWEdkUgWYU3UVEdkUgWYU3UVEdkUgWYU3U1uwqBnOqYXnnXnvqJqvqJqvqJqvqJqvqJqvqJqvqJqvqJ+Md02OC+we+mcbShB6k7iE61ra+e8y6tqRsF14U94Od9aMFN+f97rOQ5u+7GuelIZiRkZXn+48Kd715isquwcW8KR6ub2rw8tzcwPS1iEU2DGEbwiu7w0Kl7PXXyKb2+ZmjiKS2dwvK109sS861t9EO98Wq09Ou+hK1h+TFia0Eom+ABMweuhxUGcuwry+Ey6Ybz5iMwGtb1yus5kQglcG69wclWmeCr9yK40NcLw3SRqVlmfmxrAmdXsw0ro+G3JSbiFS9949SveqhgWMuw12MNeh79U8MwzphLOsew40UWhuyrdyzy+a2Xynq+Dl.54aiCcCwDXjYMkef+y+N6WbUH+7Mwr9rolMq.9KU9ouSAWn6MelrM0jBac4UbWONwL57CWoGyC4m+bSZvfyw5EvOFz4gN7GcWgIEWTq1lQnwGB47apIE+3sfeX+7lmhNrMzg64udqI0mS0+rsAOde+HD+I9+vbSpeMWdcGS+u5c9eOAwG+oVXhucj+ID7CArC7GqBwGSfUlXLT05vmelVN64XNt3NS74r+yftWZ5NsV8uOrhZw6e2ahgcoDvQ1klcQ96Bsa4vaGkumO+e3RCcSpaKd+8ASLdTd7R99QuVth0G9xNrzMOZh288lWwvpv58W+VOrEu+u1DO47s+r1cMOcdMkeZbKGdonxZ9903tljyaTydNqEe97jI9Y+0ikc46e2zxgGp2twDi2pdAVOdUeVK976YSbsQmKqBf06unueIj+9CkZOy2eackIw+3e39V746VyIejpN3J9985VN+ddkY6Lm72IMyf0ikGO2hO+ewfIR6mg06uo94KP96OJqC96g2Jf06C+WGZw2Od0bxe8Z7EWYN6D1AeGx+GOuWrXu4z4yojoWesA+4C9pEe+4f4z4qTCVUbsAgWJG.4u+pRSv+4KB27ziv5wrpBj+9SpiGMmvch2f0av6RP96OfV9l4jeO+iZv5Q2WH2+d2r1+aVKpm4C7QILx4ST6p2456t8LgHnYTDe+7cSJBO45w0+wQtYdjP2GFLPI.p28HTZ6H99K3GqJmCwek+KzIxE4OpLex3GO.wGKE5Fw2uA+9quC11iwWtJx8pORe.964qZOBwGAk6Ew2++xjh65mf3ia08ibi8q59uX7opP7ewm1Ci35CvOBZZ5y3WtHGBZN5jIEAMa22bOtWLNhqe.+3lVu9lOvMkIQNLoaUhw+F22Dhk5YQb8E3GC5M8Y7w7HGtnOA+nwkP7whtah35u.SJdSdMDe7pzT372eq9g.Fe8EH93Y0rHt9D7ikGu2mwemG4PPyIVSJBZFz2r.20WFw0uf+yMWyqTuuAgeNtJxgU5QkY76VCL99.ECuOhquA+96rWb4.Fe+gHGdRcB7isOFNvfQxsNhq+qXR864IYCLH7zGOAm+9aEqqv8GlAwGQBeNhwG.+90b88C39Gagy+yXB1zplTe5O3YH9mq9ZL4kHF+.7in5Gf3iaPuBm+dnjjZb+muf36GTI6PDiu.98Uh2TY.2e5Hb96ypRfe7w+BH93F36QL9ScSL1TJYn4.V0+Ab96m4YSct+10CMMd1OfyWQL9D3GapLZnoOtAeBN+8EH4MLX3etXnYAVUEDw3WM34eV.w2C+U0Bm+drt1MMw3UgGg3W2e.TIhw2.+Hn9NH93Ukpv4u+5sE7if1uAw2eRsnNb9iWktf6OWBhuGdrQiHG1y+YvOdUqFDeempkWD474zaWbgYsu7toww8uMwN7WBvbiQPyXmYDNdYXLgediIbMBJ1wYPj.SqX2Gme5tZMrdDz6JGc+8cvOhu9NrdDTquimOHJ1gs5qCqGKEbN598n3XB+8xvv0zjbNZl2VIwto9IIRCCo4Kxcz8+OA+H97cv5oIwb77Gsic3U48v5QPi4Np9XRmXB+tLrdZRJH+8vuQWF6vVUwsBo4WdvQ0OeA9Q78QsBWiE0O434a5F6x7I0BX8Xo9VGUekdULg+uCVOVT9Jj+XqpqicnwRv5w4iN5n5uRfe7lbXT3Zrn5CGO+TuXGxoneTXLxJ3jipOy6GS8OlBqG+orP9iihLH142H2+DrdbWupipesfer+xGv5wK0Mb77YCic31aCX8HTlYDUeW3ho9OciCWiOpQiLYH.5nXG0zNNjluq8Hp9uL3mZJCqGKU5Nhm+abriZ5BquteU8FQ3CSmDS8upBqG2JFNxTxiIzMM1QMMSBo4GGOhvOpB9olhIgq8vW6xFwyWlE6nldv5Qn5aFQ3K2lGS8+dAVOFqYP9iYUQriZZAqGmOc4HB+oF3mZJ0NbMBEb+Hd90af5eroSanV2WVudDgOMeZL0+bFrd7n7YH+wQMuM1QMMf0iUUuLhvuZ.9olBsCS8vekNLhmOdVri.8aGdxOdp88QD91h4wT+2q6DlhWU9BxebTpEwNBztSHMecvHB+qI3m.kg0iviUFwyeuL1Qftv58cpZTGxeeq5Uqho920f0iWEu.xeb.56.rR++b4kgz76QiMKP502GS82SuLjl+r8Xd9dvOB5bGrdDTo6XyAOnw8ODS8+2CqGup2arICu09HT+6KZKCqGKJGN1zveREtNllOHtKMSzkiGy7G.+3kdW2vS3k5rwl99aEO7TLM+vbX83ktaFaJgTI1.0+9KMag0iWJlA4u+PO54XZ9hSv5wCskiY9If+09McyUgmvM06g72uosdaLM+Q+qBo4iWC4ONJ7Nn92+POEVO9P8Lj+9fF+RLMexSv5wE8xXl+C3umuT+CX89IIxOL1fi29zqwz7KMf0iPAuO1fBsjuGp+8cE6dcHwe5qwFDyr8gXZ9lrqCo4uCFy7q.+3t98v58cRmWYrg3bdLll+4.rdDpo9XChjU7FT+66kVAVORJ5hwF5N66wz7Qs6ERyu2ZByeC7O2CUMtW3IjTSxDCIOwGwz7SKg0iPYWNwfShN8Sn92upWf0iWfudhAWS2uho4qBf0iy+OXByOD7iSU0pe3IbWezDC1I8kSwz7WC5GR7CRmv5+TBp+8nR2BqGmTuXhohuR75fXZ9rMv5wr51IL+Sv+d+Nwmv5wI8V.4ueT4Wswz7aMg0iPw2A4OdTUNllE45AgD+0Gg7Gk2nRLMeWwfPh+wlIL+VvOVU8Hrdbn5cP96apenZLM+2av5Qn98SX8spE6vlp0f0iCE+Fj+djhA0io4C6LLj3u7Ij+3nfferozjggmvgZKA4ONddiXZ9wUv5wVIkmv7uaF6PP8Wg0iiRVCxer89EwN7pnEVOd8r4DletIgte1Bl0DO0BSo962.9w4O+dVTrUPqTyNOn26fe796.GiuFmR8+uLLglOM0EtFG5KIk4+C9w6225X72Noz7AkA+37q2AwGGZ6xTSEOnynVIz8+MNFe9pTZ9gcfebTu8P7wgttNk0WHJgpO9zw328So4KlB9w4eKCwGa0MH0z0eR8A3GqeZ5X7cWJM+wUwIz7wwiBQj1siRY8K.+X80UiX7+Ioz7IUA+37ytQgD+mzTyTeQ23jDp9KeD2eHOkle4EvONJ6bH93PGEor9HsSn5yGFw8OllRy2LC7iyeuEhO1J+V372eo+KvOV+dbD2eYdJM+y0cRn4yOAwGa5uHk0eA7i02UGw8eVkRyGUG7iyuGNNj3ucGb96iT5kIT8emwb+oGRo4m1C9wQ06ONbMh5+XJquS2DBeXxXt+0Soz7UyA+37+Sg3iMM2.m+9JoSfejTwpwb+ssoz7W8uJg3G7DDero2tTV+HvORJ30wb+uWSo4yZ.9wg9+.hOhZuGN+86DYWmP3O1wb+wioz7aG.+X4SCH9XSm2RY8o5kP3SQS39mejRy2sD7Sh9OIj329YJ89IB.+H90vIb+0Soz7eC5mP7SxlDtFA8Kkx5eA9Q7sYS39u1TZ9vK.+zKU.hOBZWFN+QQyGjP3eOOg6OWMkle7MvOV0e.hOB5VKk0WaXBgO90Dt+ciTZ9xUfe5kVLg4meAb9ihZB9QPOSJ2e2jQye5bID+n1oL+8VYr9cfeDznWJ2+OJilO0LJg3OMNk42mjYlhhZB9whtaR44CZmQyu9A3GKJVlx7+uLi0GbbB8lpVmxyOzMilu8dvO8RWRY8AtNyrCE0D7iG5umxyWzKil+czjDheVPJqevfLV+QvOtoUOkm+XXFMebqzDh+VqLVegQYlJnnlfeLnWlwymLNile9SvOZbPFq+PZFquYVhCGJIMimeIKilu9AvO8RixX8IJxLcQQMA+3PE2kwy2bSFM+8j7Dhe3lLV+hayX8SA+3PA6y34elkQymGUjP7G+Li02XAb9ihZB9wl5ky34iVlQyueB7iaeWjw5ebWFqO6MP+YeUeRNO+z8Yz78qA+zK8Jm0G4wL58WUG7ihZNJmmuZcFM+e5zDheZQNqexlLV+WvOJE0hbd9qmyH9AI2lP7WeLm0WYGb9fhZB9Q4w1kyym8RFwenD3G6Z+VNq+x9LVe4YP+YO.Vobd9sCYD+hMfe5k1ky5y7Fb9fhZB9wgRBK346dOi3ejOOg3G2of0u4yLV+ZvO1TueAO+2WYD+j1KRH9ySJX8cJAmOnnlfero3zBd9vfLh+hE7iMsVUv5+TNi0GeIze1ip+TAO+XkLheyyfeDz+0BVenZP8IJpI3GAk+nfmurdFw+oXUBwOubAqeTyLV+cvOBp0DhOtqaxI9QWdWBweO9FVeovbR+y6.+HnvU2DR52GkS7mJC9wa5taX8mhyY88uOwgEU42DdBiT6bhe0NvOdoe9Mr9TcxI8SCe.5+6uT9.DebUcyI9WSA+3kls2v5WcUN+9C.+3g5QH99CsN8xI9YceLgzO3zMr9V8yI8We.7iaJUg3ikpCyI9aUA+3CsYJq+kKme+Dqg9+9ez1SCO4WzUiyI9cu.9Q8G5Mk0GaRNoeaqmf9+9V8imFRueirbh+2LvOBveyTV+r7b98e.9wepkP7wppaxI9gWuIgzuX8TVeso4j9uOB9w+9G7BDeDpYVNwerF3Gm598or9ayy42uxyP+e+ipEhO9WJik4D+x8feT+iFSY84VkS5GGuE5+6GUI51P58ybeNw+DxARejt2x528PN+9a.+3VwvaCO4KOmrNm3m1aWBoeR1sr9dOkS5O+D3G+6OvLvOBU9bNwesA3G0W49aY8+1lyuenWf9+9s5mgmOjf0K4D+1CfeT+kC2x5C9ZNoecxqP+eeU+WP7wB0C4D+2kfeTelJ2x5GdLme+Sfe7n7BH9Hp464D+3A6SH8aRlw5K9QNo+8FvO99oudVH89q9Jm3O2D7irpFMi0e7TN+9sN.8+8WUJlEtFUZKHm3W+F3G0+YwLVeRaNoedmiP+eeSiGg3iU8UxI92q.+n9P6lw5WVMme+Yfe7p3aP7Ql90yI94t2X94AyX8MalS7y2B96320qOi4meQNwO27NyOu0bledXA+94dm4me4bledqBhe96uy7yGLm4mGWP7yu7Cled5bledRAwO+9OX942Nm4m2ofe+eev7yuaNyO+xBhe9nOY94aly7yupf3mu6Sle994L+7qKH94gew7y+bNyOueA+9E+h4mWdNyOePAwO+yuX94Mmy7ycED+7qNw7yiWv7yGUP7ye3DyO+pEL+7IE76u7DyO2sf4mmVP7ymTh4mmuf4mmWP7yesDyOe9BledQAwOOJf4m+vBle9zB98iFv7y2tf4meaAwO+q.le9wEL+74ED+7dVledoEL+7EED+70VledsEL+7UE76e0x7yCWx7yuqf3mmVl4m2YIyO+gBhe9dv+E9I45uj4m+XAwOOtRBou2jkL+7mJ32uK3GgJmtj4muof3mWB7i5+sZIyOeaAwOueUle9SKY946JH94OUk4m+5Rle9qE76OtJyO+ikL+78ED+77ZL+b6Rle9wBhe9wZL+7FKY94uUP7yaWm4mGsh4m+QA+9oqy7y6th4m+YAwOOnNyOe3Jle9oBhe9vFL+7rUL+7RED+7mav7ymsh4maKH94Wzf4me+Jled4BhedQSle9yqX94UKH94u0j4meXEyOuNr+8mYGVsO5s8uu5ve72+4ef+0+D9j5+8o82+m+ePGTHLE</PROCESSORSTATEZ>
     </PROCESSOR>
-    <PROCESSOR id="7" bypass="0" bypassSmoothing="0" prop_str_nodeName="MIDI Out (X-TOUCH MINI)"
+    <PROCESSOR id="7" bypass="0" prop_str_nodeName="MIDI Out (X-TOUCH MINI)"
                prop_int_uiLastX="427" prop_int_uiLastY="354" prop_dbl_x="0.33374023437500000000"
                prop_dbl_y="0.05688476562500000000" prop_int_MaxInputPins="256"
                prop_int_MaxOutputPins="256" prop_str_nodeHandleName="XTOUT"
                prop_bool_nodeGPScriptEnabled="1" cmp="1">
-      <PLUGIN name="MIDI Out (X-TOUCH MINI)" descriptiveName="X-TOUCH MINI"
-              format="Internal" category="MIDI OUT Processor" manufacturer="Deskew Technologies, LLC"
+      <PLUGIN name="MIDI Out" descriptiveName="X-TOUCH MINI" format="Internal"
+              category="MIDI OUT Processor" manufacturer="Deskew Technologies, LLC"
               version="1.0" file="434343" uid="6a0a7" isInstrument="0" fileTime="0"
               infoUpdateTime="0" numInputs="0" numOutputs="0" isShell="0" isEnabled="1"
               useDelayedLoading="0" explicitWidgetRefresh="0" b64UserKeywords=""/>
       <PROCESSORSTATEZ>857.3ocYW1taZiEDFN2A6sPVt.ZOy46SUZjZQcqhTIEsgs+E4lZkXsfAgMp8xuDJwuie8+l4XfmGCddGw2la+628WWc0MK+x+846t+gUeX0mtde0gpsymad+LyaLydsUF2ZG25F25G2FF2FG2lF2lG2VHMXsHuDRLgLSH0DxMgjSH6DROg7yR9Y4u2H+rjeVxOK4mk7yR9YI+rjeNxOG4mi+gk7yQ94H+bjeNxOG4mi7yS94I+7jed9IOxOO4mm7yS94I+7jeAxu.4Wf7KP9E3QCxu.4Wf7KP9EH+hjeQxuH4Wj7KR9E4YWxuH4Wj7KR9kH+RjeIxuD4Wh7KQ9k3vExuD4Wh7KS9kI+xjeYxuL4Wl7KS9k4zOxuL4Wg7qP9UH+JjeExuB4Wg7qP9U334I4yb.sgSnMbDsgynMbHsgSoMbLsgyoMbPsgMc5pD1zIKSlrMYx5jI6SlrPYxFkIqT3cJBuTQrS15wlx6UDdwhvaVDd0hLraY9yUss0at+31uWe3xYKp1+gMaVs6x0d+L4kS+25t59u19vOa5e74Kmsno89c80Cuue8mtyWa0gp1t865Ne0vrq6pa+wx4mZ9S4GqZ++yM6eb0tGNcv4lue5zEO7wg5ubodeUW2pmOb7t1G2sso8oKePMsc8GNtstseY0IqtuZ6IZyt9tgi+mlM0ud5hlez70i8e5W8GpVT20U8Tc2oyu8l8aN9TS65ye2T2WeX8llt9qWt90eZVtVFprWt6Vt1c49Z4Z+vUCCUwgpzPUdnpfOYEDPY3oySkNTBPBHI.k.VBfIflEzrp6IPyBZVPyBZVPyBZVPyBZNPyAZNPyAZNPyAZNPyAZNPyAZdPyCZdPyCZdPyCZdPyCZdPyCZAPK.ZAPK.ZA0CHfV.zBfV.zBfVDzhfVDzhfVDzhpmGAsHnEAsHnk.sDnk.sDnk.sDnkTO9CZIPKAZYPKCZYPKCZYPKCZYPKql1.sLnU.sBnU.sBnU.sBnU.sBnUTC25oa03sQMeaTC3F0DtQMhaTy3F0PtQMkaTi4FE2QwJJt5fEcxhNZQmsnCWzoK53EU9hnBXDqNOSwUkwHpPFQkxHpXFQkyHpfFQkzHpnFQk0HNjWKpzFQE2Huj27xq4s2dyaU+Y4au52bXA5BC</PROCESSORSTATEZ>
     </PROCESSOR>
-    <PROCESSOR id="8" bypass="0" bypassSmoothing="0" prop_str_nodeName="MIDI Monitor"
-               prop_int_uiLastX="201" prop_int_uiLastY="247" prop_dbl_x="0.27246093750000000000"
-               prop_dbl_y="0.08300781250000000000" prop_int_MaxInputPins="256"
-               prop_int_MaxOutputPins="256" cmp="1">
+    <PROCESSOR id="8" bypass="0" prop_str_nodeName="MIDI Monitor" prop_int_uiLastX="201"
+               prop_int_uiLastY="247" prop_dbl_x="0.27246093750000000000" prop_dbl_y="0.08300781250000000000"
+               prop_int_MaxInputPins="256" prop_int_MaxOutputPins="256" cmp="1">
       <PLUGIN name="MIDI Monitor" format="Internal" category="MIDI Utility"
               manufacturer="Deskew Technologies, LLC" version="1.0" file="424262"
               uid="6793c" isInstrument="0" fileTime="0" infoUpdateTime="0"
@@ -90,11 +86,10 @@ End
               explicitWidgetRefresh="0" b64UserKeywords=""/>
       <PROCESSORSTATEZ>52.3o8ByYiTTYFXfAaBvmPc2S+BNDGCwUEB1C+CO3HC10H7zOW7zYWC1VkLPI8siA..s2kB1B</PROCESSORSTATEZ>
     </PROCESSOR>
-    <PROCESSOR id="9" bypass="0" bypassSmoothing="0" prop_str_nodeName="System Actions"
-               prop_int_uiLastX="437" prop_int_uiLastY="241" prop_dbl_x="0.14721679687500000000"
-               prop_dbl_y="0.07958984375000000000" prop_int_MaxInputPins="256"
-               prop_int_MaxOutputPins="256" prop_str_nodeHandleName="SA" prop_bool_nodeGPScriptEnabled="1"
-               cmp="1">
+    <PROCESSOR id="9" bypass="0" prop_str_nodeName="System Actions" prop_int_uiLastX="437"
+               prop_int_uiLastY="241" prop_dbl_x="0.14721679687500000000" prop_dbl_y="0.07958984375000000000"
+               prop_int_MaxInputPins="256" prop_int_MaxOutputPins="256" prop_str_nodeHandleName="SA"
+               prop_bool_nodeGPScriptEnabled="1" cmp="1">
       <PLUGIN name="System Actions" format="Internal" category="System" manufacturer="Deskew Technologies, LLC"
               version="1.0" file="4245628" uid="40c87c" isInstrument="0" fileTime="0"
               infoUpdateTime="0" numInputs="0" numOutputs="1" isShell="0" isEnabled="1"
@@ -492,7 +487,7 @@ End
                 widgetIgnoresMouse="0" overrideName="1" captionVisible="1" captionHeight="0.4430379746835443"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="1" midiSource="X-TOUCH MINI : Controller 20, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="5306" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.0" backPlate="11" backPlateVisible="1"
+                nodeId="0" paramIndex="-1" widgetValue="1.0" backPlate="11" backPlateVisible="1"
                 invertMIDI="0" displayRange="0" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -2325,7 +2320,7 @@ End
                 overrideName="0" captionVisible="1" captionHeight="0.4320987654320987"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="X-TOUCH MINI : Note OFF F-1, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="4490" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="1.0" backPlate="7" backPlateVisible="1"
+                nodeId="0" paramIndex="-1" widgetValue="0.0" backPlate="7" backPlateVisible="1"
                 invertMIDI="0" displayRange="0" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -2463,7 +2458,7 @@ End
                 overrideName="0" captionVisible="1" captionHeight="0.4320987654320987"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="X-TOUCH MINI : Note OFF G-1, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="5002" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="1.0" backPlate="7" backPlateVisible="1"
+                nodeId="0" paramIndex="-1" widgetValue="0.0" backPlate="7" backPlateVisible="1"
                 invertMIDI="0" displayRange="0" ignoresVariations="0" followHardware="0"
                 relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -3310,9 +3305,9 @@ End
                 overrideName="0" captionVisible="1" captionHeight="0.330188679245283"
                 reflectMIDI="X-TOUCH MINI" reflectMIDIOn="1" midiThru="0" midiSource="X-TOUCH MINI : Controller 13, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="3514" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.5905457139015198" backPlate="1"
-                backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
-                followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
+                nodeId="0" paramIndex="-1" widgetValue="0.5" backPlate="1" backPlateVisible="1"
+                invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
+                relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern="/GVol/SetValue"
                 directedOSCIPAddress="127.0.0.1" directedOSCPort="8001" directedOSCTargetName=""
                 widgetDirectedOSCType="0" widgetDirectedMinIntValue="0" widgetDirectedMaxIntValue="127"
                 widgetDirectedMinDoubleValue="0.0" widgetDirectedMaxDoubleValue="1.0"
@@ -3628,9 +3623,9 @@ End
                 widgetIgnoresMouse="0" overrideName="0" captionVisible="1" captionHeight="0.1317829457364341"
                 reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="X-TOUCH MINI : Controller 17, Channel 11"
                 midiDevice="X-TOUCH MINI" midiData="4538" rigId="0" textColor="ffffffff"
-                nodeId="0" paramIndex="-1" widgetValue="0.5905457139015198" backPlate="11"
-                backPlateVisible="1" invertMIDI="0" displayRange="2" ignoresVariations="0"
-                followHardware="0" relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
+                nodeId="0" paramIndex="-1" widgetValue="0.5" backPlate="11" backPlateVisible="1"
+                invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
+                relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
                 directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
                 widgetDirectedOSCType="0" widgetDirectedMinIntValue="0" widgetDirectedMaxIntValue="127"
                 widgetDirectedMinDoubleValue="0.0" widgetDirectedMaxDoubleValue="1.0"
@@ -4052,10 +4047,10 @@ Include &quot;includes/fs/gr_flashtempo&quot;</SCRIPT_CONTENT>
   </GLOBALRACKSPACE>
   <RACKSPACE name="Rackspace" uid="05e3efbc5e8c4322ba163d2255c1dc11" bpm="120.0"
              timeNum="4" timeDen="4" resetTimeInfo="0" syncClock="0" maxDeactivationTime="2.5"
-             maxDeactivationTimeIn="0.0" scriptWindowPos="112 177 1248 1026"
+             maxDeactivationTimeIn="0.0" scriptWindowPos="1905 161 1248 826"
              usePatchPersist="0" zoomLevel="1.0" viewX="5" viewY="10" activePreset="0">
-    <PROCESSORSTATE_IN handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.00732421875">73.VMjLg.D....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh7hO..</PROCESSORSTATE_IN>
-    <PROCESSORSTATE_OUT handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.257080078125">123.VMjLgHG....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh.xXn8kL8HRLt.iHfzVczU1Wig1WxziHvHBHig1WyziHw3BLh.Ra0QWYeMFZeMSOh.iHu3C.</PROCESSORSTATE_OUT>
+    <PROCESSORSTATE_IN handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.00732421875">23.VMjLg3.....OPwTUGkjSSQUPTUzK9..</PROCESSORSTATE_IN>
+    <PROCESSORSTATE_OUT handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.257080078125">73.VMjLg.D....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh7hO..</PROCESSORSTATE_OUT>
     <RACKVIEW>
       <RACKUNIT size="11" style="0" color="ff4682b4" ver="5.0">
         <WIDGET type="5" style="0" id="96" x="0.820586694604505" y="0.5173116089613035"
@@ -5129,10 +5124,10 @@ End
              timeNum="4" timeDen="4" resetTimeInfo="0" syncClock="0" maxDeactivationTime="2.5"
              maxDeactivationTimeIn="0.0" scriptWindowPos="10 53 1313 827"
              usePatchPersist="0" zoomLevel="1.0" viewX="5" viewY="10" activePreset="0">
-    <PROCESSORSTATE_IN handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.00732421875">73.VMjLg.D....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh7hO..</PROCESSORSTATE_IN>
-    <PROCESSORSTATE_OUT handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.257080078125">123.VMjLgHG....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh.xXn8kL8HRLt.iHfzVczU1Wig1WxziHvHBHig1WyziHw3BLh.Ra0QWYeMFZeMSOh.iHu3C.</PROCESSORSTATE_OUT>
-    <PROCESSOR id="3" bypass="0" bypassSmoothing="0" prop_str_nodeName="MIDI In (OMNI)"
-               prop_int_MaxInputPins="256" prop_int_MaxOutputPins="256" prop_dbl_x="0.08813476562500000000"
+    <PROCESSORSTATE_IN handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.00732421875">23.VMjLg3.....OPwTUGkjSSQUPTUzK9..</PROCESSORSTATE_IN>
+    <PROCESSORSTATE_OUT handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.257080078125">73.VMjLg.D....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh7hO..</PROCESSORSTATE_OUT>
+    <PROCESSOR id="3" bypass="0" prop_str_nodeName="MIDI In (OMNI)" prop_int_MaxInputPins="256"
+               prop_int_MaxOutputPins="256" prop_dbl_x="0.08813476562500000000"
                prop_dbl_y="0.03027343750000000000" cmp="1">
       <PLUGIN name="MIDI In (OMNI)" descriptiveName="OMNI" format="Internal"
               category="MIDI IN Processor" manufacturer="Deskew Technologies, LLC"
@@ -5141,8 +5136,8 @@ End
               useDelayedLoading="0" explicitWidgetRefresh="0" b64UserKeywords=""/>
       <PROCESSORSTATEZ>6916.3ocabksbhjjrc9Tpa8prIFxfcy5tMKIyDDRrD.4hPuTFaZAg.I.sw2x7wdcQ3aU2S2OzTtSfmdDgeb+bxx57H6+2+s++5e8GtdYc5NXRZXZxOhdX11sq1DL7siu71w+7mkLkpYq9SxtUrGnLWVYtQcwdEwt5aWUrVV+qTSYW8iTWLWQaugXWL1TYT+fGTRb7a1UYZM8idfJU0lUoZC8CefJW+seGU11T+3GvoafozO+Q+G2NX2wU9spfl0ZTsjsYyFkqZC.my9jbVudPspkqV11rArUaq8yejte11Cur6vJbmXxwcuDtYy2K3v4CvuM83hm95aKXv+G1yWsY2hGO9Esa9us+5ayC29qR32MdtXKfrIlrnoD0WqLYSLUAM0VLUEM0QsxZjMwTczTn5q0frIlZhlZoebobnkxFkCQ+6.1lUxUwXYNYEaUjrULVkSWwVMNeEa0kDVL1fyXwVSIkYi1RbNK1BjjVLZ4jVrQ4RTI1TENmEaTlDKlpwYrXiRjDwDkFsESM4zksUlRhNho.NYEaTJDJlJyopXiRgVhIJCh3bubMNQEaTFDKlZvIpXiRgD1TEJCZKlB3DUrQYPGwTYNQEaTFDJlpxIpXiRgVhIJChjRrFbhJ1nLHVJ6JwIpXiRgDwDkAsESk4DUrQYPGwTUNQEaTFDJlpyIpXiRgVhIJChJyfDBzjXiglDSBzjXiglDSLzjXRflDaLzjXRflDaLzjXRflXa0YjIwDCLUgMI3RhMFVRLInRhMFTRLwXRhIARRrwHRhIAPhs0fwiDSBbjXiQiDSLXTU1j.FI1XvHwj.FI1XvHwDCFIlDvH1VSFLRLIfQhMFLRLIfQhMFLRLwfQ0XSBXjXiAiDSBXjXiAipI82XzHkMANRYjwiT1D.IkQFQRYSfjTFYLIkMFTptXSPkTFYXIwVffKoLx.SJaLxjxl.MoLxXSJaB3jxHiNorIvSJiL9jxFCP0PlmPPnTFYHJkMAiRYjAoT1XTJkMAlRYjwoT1nbAG1TOzWIdJSwJMX5jEy1rZ4+6U7+x2404mtkL1e2xU3hbQzFUTI9SLnWjk+DiODUg+DWJEUi+DeaKpA+olxurJHRTBjvDHwIPBTfDo.ITARrBjfIG8QVIZVUNIQSFAKxJQyJQyJQyJQyJQyJQqrDsxRzJq1BknUVhlLcTTYIZkknUVhVYIZUjnUQhVEIZUTmXRzpHQqhDMYvknJRzpHQqpDspRzpJQqpDsppKHRzpJQqpDspRzjYJhpIQqlDsZRzpIQqlDsZp6iRzpIQqlDsZRzpKQSZ2GUWhVcIZ0knUWhVc00eIZ0knUWhVCIZMjn0PhlzINpgDsFRzZHQqgpZShVCIZMkn0ThVSIZMkn0ThlzjLpoDslRzZpJt0U2px6Rp56RpB7RpJ7RpR7RpZ7Rph7Rpp7Rpx7Rp39avJp3pAVzHKZnEM1hFbQitngWT3KAJ.l.qFOSEWEFSfBjIPgxDnfYj9BtGOt3g4q1tj5Cd2wU6Ot6sEOP.961tq2tOVc33vsa9RY7xGu+ge2ZK.3+Iemm+gk6tSa5uG0yF+Gg1+U2s4q+gwvMaFd7gU6i1s839ca1rZ+Asan0SwCqXMONaKe2l2ddk1xj2Nbb1i+1iZxmure0gCOt62rN4qCq9D6w8cxzFh3tOvugXHe1l2n.PMA+su5uaD+5AlxkgqYkKWu5pZ+7GiWsY0rC+dH9Ma5nz89s61upylcyms42zDpjRinrW96Vh28Akec29Nrme8pulua19krFQ6d47gAJcz2+m6Wga.6e79e81ie+UgF9YocF1cPmeMbRzuBiiGmLYxubgooIiG7m+7u4OMbbmjze00QeS3GzV2.QzD729ptgiS+ye1rToucHKcPX+ju+Yuoeue0uab2e0OAr+qjAgs5kDe9I5aWm+EBSitrU3zeyYdx3IcGN3WCx52JY7e9S6O+q+3kMuc+ia+0Ky1O64UPJ+qMOd33ObnFXm0Mz4E+Jv+YqH4oyK2k2dEQbSmWfqx9uSMQFSmWRqyepgHXoyKgEErRhxjNTzJ7yVQCRGpRE80pHpM5NqK04CKGJG0+TeQGJJ0+TbQGpLk+WhvgbhLTNT8I+1gUrVV9XE4iUkOVS9Xc4iMjOJQqrDMdNGmHOjSjExIpA4DUfbh5ONQzGmH1iSz3wIZ63DMcbhTNNQBGmnbiSTrwIB03DAZbhvLNQOFmnCiSjewIxt3D4VbhJKNQcEmHphSDSwIZn3DsSbhlINQpDmHQhSTFwIJh3DkPbh.HNQ3Cmn2gSz4vIxa3DYMbhbFNQECmndgSDsvIhU3DQJbh1DNQSBmHEgSjfvIJO3DEGbhRCNQfAmHrfSzSvI5H3D8CbhrANQt.mnRfSTGvIhB3Dw.bhH.Ng6uS376Dp9NEEemhZuSwn2oXx6TD3cJh6NEecmhmtSwO2onk6TzwcJV3NE6amh0sSQ11oHY6TbqcJN0NEUZmhBsSQc1oXL6TLkcJBxNEwXmhPrSwC1o3+98mUwUgzDnfZBTXMAJvl.EZSfBtIPg2Dn.bBTHNAJHm.ElSfBzIPg5DnfcBT3NAJfm.ExSfB5IPg8Dn.eBTnOAJ3mfuwenNEJ.nfuQfX6p3pvfBTfPAJTn.ELTfBGJPADEnPhBTPQAJrn.EXTfBMJPAGEnviBT.RAJDo.EjTfBSJPAJEnPkBTvRAJbo.EvTfBYJPAMEnvlBTfSAJzo.E7TfBeJPAPEnPnBTPTAJLp.EHUfBkJPASEnvoBT.UAJjp.ETUfBqJPAVEnPqBTvUAM0yGnFPPgWYU3UVEdkUgWYU3UVEdkUgWYU3UVEdkMPOXhJtJ7JqBuxpvqrJ7JqBuxpvqrJ7JqddH8.QJ7JqdjH8LQ5ghzSEoGKROWjdvHEdkUgWYU3U1x5QwTwUgWYU3UVEdkUgWYU3UVEdkUgWYU3UVEdkshdFPUbU3UVEdkUgWYU3UVEdkUgWYUyKYU3UV0DS1p5gOUwUgWYU3UVEdkUgWYU3UVEdkUgWYU3UVEdksldpWUbU3UVEdkUgWYU3UVEdkUgWYU3UVEdkUgWYqqG2VEWEdkUgWYU3UVEdkUgWYU3UVEdkUgWYU3U1F547UwUgWYU3UVEdkUgWYU3UVEdkUgWYU3UVEdk8a7p.5yZFFJJFJ7pxeiW82Xk+sUEeCExUYExUYExUYExUYExU4uQt99o4+7W+QG2jnvdI+XwtM61+m+7t6pTqgcdke9im+VUhyOxOO6Sjl7O+w6mYr1nToFF5ed+hGus9X65ab2U+hz9K2MabuKcWLzj8XQ0MwQAW73Keb8hIODF17B28u1I43xzsWL7hcse6T+tsqewie+0Zs+y6u3hs3Okw3VcQ54efPS72qnb0Q2aL67ew7dFGs9XS7gKm87aqdYTnY2wtebm4042.q+7RdsSGSL9jzpk4I3oLavoGVabMa5+AtxD2nwjuet+D72pX3Uyar8ciymHueUeSLspHyS6Wbdc0k36Lq2L87+1M1L55OgYgd913P2PLAFYVS4G3+7uy9EWExOeSLqOapYyJf+Rke56TvE5dymIaSMovVWdE20iSLiN+vU5w7P94O2jFL3brdA7iAcdnC+Q2UXRwE0psYDZ7gPN+lZRwOdK3G1Ou4onCaCc3d9q2ZR84T8Oaavi22OBweh+OL2j5WykW2wz+qdm+2SP7wepEl3aG4eBA+P.6.+wpP7wDXkIFCUsN74mokydNliKtyDeN6+Ln6kltSqU+6CqnV7928lXXWJAbjcoYWj+tP6VN71Q464y+GtzP2j51h2eevDiGkGujuezqkqX8gurCKcyil3ceu4ULrJrd+0u0Caw6+qMwSNe6OqcWySmWS4mF2xgWJprlueMtqI47F0rmyZwmOOYhe1e8XYW992Msb3g5saLw3spWf0iW0m0hO+d1DWaz4xp.X89K56WB4u+Po1y782VWYR7O9GtuEe9t0bxGopCthueutkyumWY1NyI+cRyLX8X4wys3y+WLXhz9YX89ape9Bj+9ix5f+d3sBX89v+0gV78iWMm7WuFewUlyNgcv2g7+wy6EK1aNc9bJY50Wave9fuZw2eNXNc9J0fUEWaP3kxAP96upzD7e9hvMO8HrdLqp.4u+j53QyIbm3MX8F7tDj+9CnkuYN42y+nFrdz8Ex8u2Mq8+l0h5Y9.eTBib9D0t5ct9taOSHBZFEw2Oe2jhvStdb8ebjalGIz8gACTBf5cOBk1Nhu+B9wpx4P7W4+BchbQ9iJymL9wCP7wRgtQ78avu+56fs8X7kqhbu5izGf+d9p1iP7QP4dQ78+uLo3t9IH93Vc+H2X+pt+KFepJD+W7o8vHt9.7ifll9L9kKxgfliNYRQPy18M2i6Eii35GvOto0qu4CbSYRjCS5VkX7uw8MgXodVDWeA9wfdSeFeLOxgK5SvOZbIDern6lHt9Kvjh2jWCwGuJMEN+82peHfwWeAhOdVMKhqOA+X4w68Y724QNDzbh0jhflA8MKvc8kQb8K3+by07J06aP3miqhbXkdTYF+t0.iuOPwv6i35avu+N6EWNfw2eHxgmTm.+X6igCLXjbqi35+JlT+ddR1.CBO8wSv4u+Vw5Jb+gYP7QjvmiX7AvueMWe+.t+wV37+LlfMspI0m9CdFh+4puFSdIhwO.+Hp9AH93Fzqv4uGJIoF2+4KH99AUxNDw3Kfeek3MUFv8mNBm+9rpD3Ge7u.hOtA9dDi+T2DiMkRFZNfU8e.m+9Yd1Tm6uc8PSim8C37UDiOA9wlJiFZ5iavmfyeeARdCCF9mKFZVfUUAQL9UCd9mEP78veUsv4uGqqcSSLdU3QH908G.UhX7MvOBpuChOdUoJb96udaA+Hn8aP78mTKpCm+3UoK39ykf36gGazHxg87eF7iW0pAw22oZ4EQNeN81EWXV6KuaZbb+aSrC+k.L2XDzL1YFgiWFFS3m2XBWifhcbFDIvzJ18w4mtqVCqGA8txQ2eeG7i3quCqGA05634ChhcXq95v5wRAmiteOJNlveuLLbMMImil4sURrapeRhzvPZ9hbGc++SvOhOeGrdZRLGO+Q6XGdUdOrdDzXtipOlzIlvuKCqmljBxeO7azkwNrUUbqPZ9kGbT8yWfeDeeTqv0XQ8SNd9ltwtLeRs.VOVpu0Q0WoWES3+6f0iEkuB4O1p55XGZrDrdb9niNp9qD3GuIGFEtFKp9vwyO0K1gbJ5GEFirBN4n5y79wT+iov5weJKj+3nHChc9Mx8OAqG20q5n5WK3G6u7Ard7RcCGOe1vXGt81.VOBkYFQ02EtXp+S23v03iZzHSFBfNJ1QMsiCo46ZOhp+KC9olxv5wRkti34+FG6nltv5q6WUuQD9vzIwT+qpv5wshgiLk7XBcSicTSyjPZ9wwiH7ipfepoXR3ZO70trQ77kYwNpoGrdDp9lQD9xs4wT+uWf0iwZFj+XVUD6nlVv5w4SWNhvepA9olRsCWiPA2Ohme8Fn9Ga5zFp08k0qGQ3SymFS8OmAqGOJeFxebTyaicTSCX8XU0KiH7qFfepoP6vTO7WoCi34imE6HP+1gm7imZeeDgusXdL0+85Ngo3Ukuf7GGkZQri.s6DRyWGLhv+ZB9IPYX8H7XkQ772KicDnKrdempF0g722pd0pXp+cMX83UwKf7GGf9N.qz+OWdYHM+dzXyBjd88wT+8zKCo4OaOlmuG7ifN2AqGAU5N1bvCZb+CwT++8v5wq58FaxvasOB0+9h1xv5whxgiMM7mTgqio4Ch6RyDc43wL+AvOdo20M7DdoNarou+VwCOESyOLGVOdo6lwlRHUhMP8u+RyVX83khYP96OzidNllu3Drd7Pa4XleB3eseS2bU3IbS8dH+8aZq2FSyez+pPZ930P9iiBuCp+8OzSg0iOTOC4uOnwuDSym7DrdbQuLl4+.964K0+.VueRh7CiM33sO8ZLM+RCX8HTv6iMnPK46g5eeWwtWGR7m9ZrAwLaeHlluI65PZ96fwL+JvOtqeOrdemz4UFaHNmGio4eN.qGgZpO1fHYEuA0+9doUf0ijhtXrgty9dLMeT6dgz76slv72.+y8PUi6EdBI0jLwPxS7QLM+zRX8HT1kSL3jnS+Dp+8q5EX83E3qmXv0z8qXZ9p.X837+Clv7CA+3TUs5GdB20GMwfcRe4TLM+0f9gD+fzIr9Okf5eOpzsv5wI0KlXp3qDuNHllOaCrdLqtcBy+D7u2uS7IrdbRuEP96GU9UaLM+VSX8HT7cP9iGUkioYQtdPHwe8QH+Q4MpDSy2ULHj3erYByuE7iUUOBqGGpdGj+9l5GpFSy+8FrdDpe+DVeqZwNroZMX83PwuA4uGoXP8XZ9vNCCI9KeB4ONJH3GaJMYX3Ibn1RP9iim2HllebErdrUR4IL+6lwNDT+UX83nj0f7GaueQrCuJZg0iWOaNg4maRn6msfYMwSsvTp+9Mfeb9yumEEaEzJ0ryC58N3Gu+Nvw3qwoT++KCSn4SScgqwg9RRY9+fe798sNF+sSJMePYvON+5cP7wg1tL0TwC5LpUBc+eiiwmuJkleXG3GG0aODebnqqSY8EhRn5iOcL9c+TZ9hofeb92xP7wVcCRMc8mTe.9w5mlNFe2kRyebUbBMeb7nPDoc6nTV+BvOVec0HF+eRJMeRUvON+raTHw+IM0L0WzMNIgp+xGw8GxSo4WdA7iixNGhONzQQJqOR6Dp97gQb+iooz7My.+372ag3isxuEN+8W5+B7i0uGGw8WlmRy+bcmDZ97SP7wl9KRY8W.+X8c0Qb+mUoz7Q0A+376giCI9a2Am+9HkdYBU+2YL2e5gTZ9o8febT89iCWin9Olx56zMgvGlLl6e8TJMe0bvON++TH9XSyMv4uuR5D3GIUrZL2eaaJM+U+qRH9AOAwGa5sKk0OB7ijBdcL2+60TZ9rFfebn+Of3in16gye+NQ10ID9icL2e7XJM+1AvOV9z.hO1z4sTVepdID9TzDt+4Goz7cKA+jn+SBI9selRueh.vOheMbB2e8TJM+2f9ID+jrIgqQP+Ror9WfeDea1Dt+qMklO7BvO8REf3if1kgyeTz7AID92yS39yUSo4GeC7iU8Gf3ift0RY80FlP3ieMg6e2HklubE3mdoESX94W.m+nnlfeDzyjx82MYz7mNWBwOpcJyeuUFqeG3GAM5kx8+ixn4SMiRH9SiSY98IYlonnlfern6lTd9f1Yz7qe.9whhkoL++KyX8AGmPuop0o77Ccyn4auG7SuzkTVefqyL6PQMA+3g96o77E8xn4eGMIg3mEjx5GLHi0eD7iaZ0S44OFlQyG2JMg3u0Ji0WXTloBJpI3GC5kY77Iiyn4m+D7iFGjw5Ojlw5alk3vgRRy34Wxxn4qe.7SuznLVehhLSWTTSvONTwcY77M2jQyeOIOg3GtIi0u31LV+TvONTv9Ld9mYYz74QEID+wOyX8MV.m+nnlferod4Ld9nkYz76m.+312EYr9G2kw5ydCze1W0mjyyOceFMe+ZvO8RuxY8QdLid+U0A+nnlix44qVmQy+mNMg3mVjy5mrIi0+E7iRQsHmm+54LhePxsID+0GyY8U1AmOnnlfeTdrc477YujQ7GJA9wt1uky5urOi0WdFze1CfUJmme6PFwuXC3mdoc4r9LuAmOnnlfebnjvBd9t2yH9G4ySH9wcJX8a9Li0uF7iM06Wvy+8UFwOo8hDh+7jBVemRv4CJpI3GaJNsfmOLHi3uXA+XSqUEr9OkyX8wWB8m8n5OUvyOVIi327L3GA8esf0GpFTehhZB9QP4OJ34KqmQ7eJVkP7yKWv5G0Li0eG7ifZMg3i65lbhezk2kP72iug0WJLmz+7NvOBJb0Mgj98Q4D+oxfe7lt6FV+o3bVe+6SbXQU9MgmvH0Nm3WsC7iW5meCqOUmbR+zvGf9+9KkO.wGWU2bh+0TvOdoY6Mr9UWkyu+.vOdndDhu+PqSubheV2GSH8CNcCquU+bR+0G.+3lRUH9Xo5vbh+VUvO9Palx5e4x42OwZn+u+Gs8zvS9Ec03bhe2KfeT+gdSY8wljS5215In+uuU+3ogz62HKm3+MC7i.72Lk0OKOme+Gfe7mZIDerp5lbhe30aRH8KVOk0WaZNo+6ife7u+Au.wGgZlkS7GqA9woteeJq+17b98q7Lz+2+nZg3i+kxXYNwubO3G0+nwTVetU4j9wwag9+9QUhtMjd+L2mS7OgbfzGo6sr9cOjyu+FvOtUL71vS9xyIqyI9o81kP5mjcKqu2S4j9yOA9w+9CLC7iPkOmS7Wa.9Q8Ut+VV+us476G5En+ueq9Y34CIX8RNwu8.3G0e4vsr9fulS5Wm7Jz+2W0+EDerP8PNw+cI3G0moxsr9gGy42+D3GOJu.hOhZ9dNwOdv9DR+ljYr9hejS5euA7iue5qmERu+puxI9yMA+HqpQyX8GOkyueqCP+e+UkhYgqQk1BxI90uA9Q8eVLi0mzlS5m24Hz+22z3QH9XUekbh+8JvOpOztYr9kUy42eF3GuJ9FDejoe8bhet6MledvLVeyl4D+7sf+N9c85yX94WjS7yMuy7yaMm4mGVvuet2Y94WNm4m2pf3m+96L+7AyY94wED+7K+f4mmNm4mmTP7yu+Cle9syY94cJ32+2GL+76ly7yurf3mO5Sle9l4L+7qJH9469j4mueNyO+5Bhed3WL+7Omy7y6WvuewuX94kmy7yGTP7y+7Kledy4L+bWAwO+pSL+73EL+7QED+7GNw7yuZAyOeRA+9KOw7ycKX94oED+7IkX944KX944ED+7WKw7ymuf4mWTP7yiBX94Orf4mOsfe+nAL+7sKX942VP7y+Jf4mebAyOedAwOumk4mWZAyOeQAwOesk4mWaAyOeUA+9WsL+7vkL+76JH94okY94cVx7yenf3muG7egeRt9KY94OVP7yiqjP56MYIyO+oB986B9QnxoKY94aJH94k.+n9eqVx7y2VP7y6Wk4m+zRle9tBhe9SUY94utj4m+ZA+9iqx7y+XIyOeeAwOOuFyO2tj4merf3merFyOuwRle9aED+710Y94QqX94eTvue55L+7tqX94eVP7yCpy7yGth4mepf3mOrAyOOaEyOuTAwO+4FL+7YqX941Bhe9EMX942uh4mWtf3mWzj4m+7Jled0Bhe9aMY94GVw7yqC6e+Q1gU6ida+6qN7e9q+3+f+0+D9j5+cr8W+q+eekXFSB</PROCESSORSTATEZ>
     </PROCESSOR>
-    <PROCESSOR id="6" bypass="0" bypassSmoothing="0" prop_str_nodeName="MIDI In (OMNI) (1)"
-               prop_int_MaxInputPins="256" prop_int_MaxOutputPins="256" prop_dbl_x="0.16479492187500000000"
+    <PROCESSOR id="6" bypass="0" prop_str_nodeName="MIDI In (OMNI) (1)" prop_int_MaxInputPins="256"
+               prop_int_MaxOutputPins="256" prop_dbl_x="0.16479492187500000000"
                prop_dbl_y="0.03466796875000000000" cmp="1">
       <PLUGIN name="MIDI In (OMNI)" descriptiveName="OMNI" format="Internal"
               category="MIDI IN Processor" manufacturer="Deskew Technologies, LLC"
@@ -5151,9 +5146,9 @@ End
               useDelayedLoading="0" explicitWidgetRefresh="0" b64UserKeywords=""/>
       <PROCESSORSTATEZ>6899.3ocabksbhjjrc9Tpa8prIFxfcy5tMKIyDDRrD.4hPuTFaZAg.I.swCy290EguUcOc+PS4NAd5QD9w8yIKqyir+e+29+q+0e35k0o6fIogoI+H5gYa2tZSvv2N9xaG+yeVxTpls5OI6VwdfxbYk4F0E6UD6pucUwZY8uRMkc0ORcwbEs8FhcwXSkQ8CdPIwwuYWko0zO5ApTUaVkpMzO7Apb829cTYaS8ie.mtAlR+7G8eb6fcGWcdGG9Sy9j9SUq1rT0pkZzrY0RUqE.+.o6ms8vK6NrBS8IG28R3lMeufC35mb7wEO802Vvn8OrmuZytEOd7KZ66ea+02lGt8Wkvua7bwV.YSLYQSIpuVYxlXpBZpsXpJZpiZk0Haho5noP0WqAYSL0DM0R+3R4PKkMJGh92ArMqjqhwxbxJ1pHYqXrJmthsZb9J1pKIrXrAmwhslRJyFsk3bVrEHIsXzxIsXixknRroJbNK1nLIVLUiyXwFkHIhIJMZKlZxoKaqLkDcDSAbxJ1nTHTLUlSUwFkBsDSTFDw4d4ZbhJ1nLHVL0fSTwFkBIroJTFzVLEvIpXixfNhoxbhJ1nLHTLUkSTwFkBsDSTFDIkXM3DUrQYPrT1UhSTwFkBIhIJCZKlJyIpXixfNhopbhJ1nLHTLUmSTwFkBsDSTFDUlAIDnIwFCMIlDnIwFCMIlXnIwj.MI1XnIwj.MI1XnIwj.Mw1pyHShIFXpBaRvkDaLrjXRPkDaLnjXhwjDSBjjXiQjDSBfDaqAiGIlD3HwFiFIlXvnprIALRrwfQhIALRrwfQhIFLRLIfQrslLXjXR.iDaLXjXR.iDaLXjXhAipwlDvHwFCFIlDvHwFCFUS5uwnQJaBbjxHiGorI.RJiLhjxl.IoLxXRJaLnTcwlfJoLxvRhs.AWRYjAlT1XjIkMAZRYjwlT1DvIkQFcRYSfmTFY7IkMFfpgLOgfPoLxPTJaBFkxHCRorwnTJaBLkxHiSorQ4BNcodnOYJSwJMI5jEy1rZ4+6U7+x2404GmkL1e2RZXVWDsQEUh+DC5EY4Ow3CQU3OwkRQ03Ow21hZvepo7KqBhDk.ILARbBj.EHQJPBUfDq.IXxQejUhlUkSRzjQvhrRzrRzrRzrRzrRzrRzJKQqrDsxpsPIZkknISGEUVhVYIZkknUVhVEIZUjnUQhVE0IlDsJRzpHQSFbIphDsJRzpJQqpDspRzpJQqp5BhDspRzpJQqpDMYlhnZRzpIQqlDsZRzpIQql59nDsZRzpIQqlDs5Rzj18Q0knUWhVcIZ0knUWc8WhVcIZ0kn0PhVCIZMjnIchiZHQqgDsFRzZnp1jn0PhVSIZMkn0ThVSIZMknIMIiZJQqoDslphac0sp7tjp9tjp.ujpBujpDujpFujpHujpJujpLujJt+FrhJtZfEMxhFZQisnAWznKZ3EE9RfBfIvpwyTwUgwDn.YBTnLAJXFouf6wiKdX9psKo9f2cb09i6dawCDf+ts65s6iUGNNb6luTFu7w6e32s1B.9ex244eX4t6zl96Q8rw+Qn8e0ca95eXLbylgGeX09ncaOte2lMq1eP6FZ8T7vJVyiy1x2s4smWosL4sCGm83u8nl74K6Wc3vi69MqS95vpOwdbemLsgHt6C7aHFxms4MJ.TSve6q96FwudfobY3ZV4x0qtp1O+w3UaVM6vuGheylNJcue6t8q5rY27Ya9MMgJozHJ6k+tk3ceP4W2suC64Wu5q46lseIqQztWNeXfRG88+49U3Fv9Gu+Wu832eUngeVZmgcGz4WCmD8qv33wISl7KWXZZx3A+4O+a9SCG2II8Wccz2D9As0MPDMA+supa33z+7mMKU5aGxRGD1O46e1a526W86F28W8S.6+JYPXqdIwmeh9104egvznKaEN82blmLdR2gC90fr9sRF+m+z9y+5OdYya2+31e8xr8yddEjx+ZyiGN9CGpA1YgBcdwuB7e1JZb57xc4sWQTyz4E3pr+6TSzsz4kz57mZHJT57RXQAqjHEoCEsB+rUDczgpTQesJh7hty5Rc9vxIxQ4PUn9mpI5Pon7erI+8YbGGJ2jO+sh0xxGqHerp7QI3BfinXjSTJxIBD4DggbhdPNQGHmH+iSj8wIx83DUdbh5NNQTGmHliSDwwIZ23DMabhTMNQhFmnLiSTjwIJw3DAXbhvKNQuEmnyhSzWwIxp3D4TbhJJNQ8DmHZhSDKwIhj3DsQbhlHNQJDmHAhSj9vIJd3DkNbh.GNQXCmnmgSzwvI5W3DYKbhbENQkBmnNgSTkvIhQ3DQHbh1CNQyAmH0fSjXvIRK3DEEbhRBNQ.AmHbfSDLvI5D3D8Abhr.NQN.mnBfSX+6DV+NgruSH46Dt8NEmdmhKuSQg2ont6TL1cJl5NEAcmhXtSQH2o3g6T7ucJZ2NEcamhlsSwt1oXU6TjocJRzNE2YmhyrSwU1onH6TTicJFwNESXmhArSQ70oH798mUwUgzDnfZBTXMAJvl.EZSfBtIPg2Dn.bBTHNAJHm.ElSfBzIPg5DnfcBT3NAJfm.ExSfB5IPg8Dn.eBTnOAJ3mfuwenVCJ.nfuQfX6p3pvfBTfPAJTn.ELTfBGJPADEnPhBTPQAJrn.EXTfBMJPAGEnviBT.RAJDo.EjTfBSJPAJEnPkBTvRAJbof55dmp3pflBTXSAJvo.E5TfBdJPgOEn.nBTHTAJHp.EFUfBjJPgREnfoBT3TAJfp.ERUfBpJPgUEn.qBTnUAJ3pfl54CTCHnvqrJ7JqBuxpvqrJ7JqBuxpvqrJ7JqBuxFnGLQEWEdkUgWYU3UVEdkUgWYU3UVEdkUOOjdfHEdkUORjdlH8PQ5ohziEomKROXjBuxpvqrJ7JaY8nXp3pvqrJ7JqBuxpvqrJ7JqBuxpvqrJ7JqBuxVQOCnJtJ7JqBuxpvqrJ7JqBuxpvqrp4krJ7JqZhIaU8vmp3pvqrJ7JqBuxpvqrJ7JqBuxpvqrJ7JqBuxVSO0qJtJ7JqBuxpvqrJ7JqBuxpvqrJ7JqBuxpvqr00iaqhqBuxpvqrJ7JqBuxpvqrJ7JqBuxpvqrJ7JaC8b9p3pvqrJ7JqBuxpvqrJ7JqBuxpvqrJ7JqBux9MdU.8YMCCEECEdU4uwq9azv+1phugB4prB4prB4prB4prB4p72HWe+z7e9q+niaRTXujerX2lc6+yed2cUp0vNuxO+wyeKCw4G4mm8IxK9m+38yTTaTpTCC8Ouewi2Verc8Mt6peQZ+k6lMt2ktKFZxdrn5l3nfKd7kOtdwjGBCadg69W6jbbY51KFdwt1ucpe210u3wu+Zs1+48WbwV7mxXbqtH87OPnI96UTt5n6Mlc9uXdOiiVerI9vkyd9sUuLJzr6X2Oty757af0edIu1oiIFeRZ0x7D7TlM3zCqMtlM8+.WYhazXx2O2eB9aUL7p4M19tw4Sj2upuIlVUj4o8KNut5R7cl0ald9e6FaFc8mvrPOeabnaHl.iLqo7C7e92Y+hqB4muIl0mM0rYEveoxO8cJ3Bcu4yjsolTXqKuh65wIlQme3J8XdH+7maRCFbNVu.9wfNOzg+n6JLo3hZ01LBM9PHmeSMo3GuE7C6m27TzgsgNbO+0aMo9bp9msM3w66Gg3Ow+GlaR8q4xq6X5+Uuy+6IH93O0BS7si7OgfeHfcf+XUH9XBrxDigpVG97yzxYOGywE2YhOm8eFz8RS2o0p+8gUTKd+6dSLrKk.NxtzrKxeWncKGd6n7874+CWZnaRcaw6uOXhwixiWx2O50xUr9vW1gkt4QS7tu27JFVEVu+525gs38+0l3Imu8m0tq4oyqo7Sia4vKEUVy2uF20jbdiZ1yYs3ymmLwO6udrrKe+6lVN7P81MlX7V0Kv5wq5yZwmeOahqM5bYU.rd+E88Kg72enT6Y99aqqLI9G+C22hOe2ZN4iT0AWw2uW2x42yqLam4j+NoYFrdr734V74+KFLQZ+Lrd+M0OeAxe+QYcveO7VArde3+5PK99wqlS9qWiu3JyYmvN36P9+348hE6MmNeNkL85qM3OevWs36OGLmNekZvphqMH7R4.H+8WUZB9OeQ3lmdDVOlUUf72eRc7n4DtS7FrdCdWBxe+Azx2Lm764eTCVO59B4926l09eyZQ8LefOJgQNehZW8NWe2smIDAMih36muaRQ3IWOt9ONxMyiD59vfAJAP8tGgRaGw2eA+XU4bH9q7egNQtH+Qk4SF+3AH9XoP2H99M32e8cv1dL9xUQtW8Q5CveOeU6QH9HnbuH99+WlTbW+DDebqtejareU2+EiOUEh+K9zdXDWe.9QPSSeF+xE4PPyQmLoHnY69l6w8hwQb8C3G2z5027AtoLIxgIcqRL9239lPrTOKhqu.+XPuoOiOlG4vE8I3GMtDhOVzcSDW+EXRwaxqg3iWklBm+9a0ODv3qu.wGOqlEw0mfer7389L967HGBZNwZRQPyf9lE3t9xHt9E7et4Zdk58MH7ywUQNrROpLie2Zfw2GnX38Qb8M32em8hKGv36OD4vSpSfer8wvAFLRt0Qb8eESpeOOIafAgm93I372eqXcEt+vLH9HR3yQL9.32ulque.2+XKb9eFSvlV0j5S+AOCw+b0WiIuDw3GfeDU+.DebC5U372CkjTi6+7EDe+fJYGhX7EvuuR7lJC39SGgyeeVUB7iO9W.wG2.eOhwepahwlRICMGvp9Ofye+LOapy82tdnowy9Ab9Jhwm.+XSkQCM8wM3Sv4uu.IugAC+yECMKvppfHF+pAO+yBH9d3upV372i00toIFuJ7HD+59CfJQL9F3GA02AwGupTEN+8WusfeDz9MH99SpE0gye7pzEb+4RP78viMZD4vd9OC9wqZ0f366Ts7hHmOmd6hKLq8k2MMNt+sI1g+R.laLBZF6LivwKCiI7yaLgqQPwNNChDXZE6937S2Uqg0ifdW4n6uuC9Q702g0ifZ8c77AQwNrUecX8XofyQ2uGEGS3uWFFtlljyQy71JI1M0OIQZXHMeQtit++I3GwmuCVOMIlim+ncrCuJuGVOBZL2Q0GS5DS32kg0SSRA4uG9M5xXG1pJtUHM+xCNp94KvOhuOpU3Zrn9IGOeS2XWlOoV.qGK025n5qzqhI7+cv5whxWg7GaUccrCMVBVONezQGU+UB7i2jCiBWiEUe334m5E6PNE8iBiQVAmbT8Yd+Xp+wTX83OkExebTjAwN+F49mf0i65UcT8qE7i8W9.VOdotgimOaXrC2da.qGgxLin56BWL0+oab3Z7QMZjICAPGE6nl1wgz7csGQ0+kA+TSYX8XoR2Q77eiicTSWX808qp2HBeX5jXp+UUX83VwvQlRdLgtowNpoYRHM+33QD9QUvO0TLIbsG9ZW1Hd9xrXG0zCVOBUeyHBe417Xp+2Kv5wXMCxeLqJhcTSKX837oKGQ3O0.+TSo1gqQnf6GwyudCT+iMcZC059x50iH7o4Sio9myf0iGkOC4ONp4swNpoArdrp5kQD9UCvO0TncXpG9qzgQ77wyhcDne6vS9wSsuOhv2VLOl5+dcmvT7pxWP9iiRsH1Qf1cBo4qCFQ3eMA+DnLrdDdrxHd96kwNBzEVuuSUi5P96aUuZUL0+tFrd7p3EP9iCPeGfU5+mKuLjleOZrYARu99Xp+d5kgz7msGyy2C9QPm6f0ifJcGaN3AMt+gXp++dX83U8diMY3s1Gg5eeQaYX8XQ4vwlF9Spv0wz7AwcoYhtb7Xl+.3Guz65FdBuTmM1z2eq3gmho4GlCqGuzcyXSIjJwFn92eoYKrd7RwLH+8G5QOGSyWbBVOdnsbLyOA7u1uoatJ7DtodOj+9Ms0aio4O5eUHMe7ZH+wQg2A0+9G5ov5wGpmg72Gz3Who4SdBVOtnWFy7e.+87k5e.q2OIQ9gwFb71mdMlleoArdDJ38wFTnk78P8uuqX2qCI9SeM1fXlsODSy2jccHM+cvXleE3G20uGVuuS57JiMDmyiwz7OGf0iPM0GaPjrh2f5eeuzJv5QRQWL1P2YeOllOpcuPZ98VSX9af+4dnpw8BOgjZRlXH4I9HlleZIrdDJ6xIFbRzoeB0+9U8Brd7B70SL3Z59ULMeU.rdb9+ASX9gfebppV8COg65ilXvNoubJll+ZP+PheP5DV+mRP8uGU5VX83j5ESLU7UhWGDSymsAVOlU2Ng4eB9262I9DVONo2BH+8iJ+pMlleqIrdDJ9NH+wipxwzrHWOHj3u9Hj+n7FUho46JFDR7O1Lg42B9wppGg0iCUuCxeeS8CUio4+dCVOB0ueBquUsXG1TsFrdbn32f72iTLndLMeXmggD+kOg7GGED7iMklLL7DNTaIH+wwyaDSyOtBVO1Jo7Dl+cyXGBp+JrdbTxZP9is2uH1gWEsv5wqmMmv7yMIz8yVvrl3oVXJ0e+FvON+42yhhsBZkZ14A8dG7i2eG3X703Tp++kgIz7ootv03PeIoL+evOd+9VGi+1IklOnL3Gme8NH93PaWlZp3AcF0Jgt+uww3yWkRyOrC7ii5sGhONz00or9BQIT8wmNF+teJMewTvON+aYH9XqtAolt9SpO.+X8SSGiu6Ro4OtJNglONdTHhztcTJqeA3GqutZDi+OIklOoJ3Gme1MJj3+jlZl5K5FmjP0e4i39C4oz7Ku.9wQYmCwGG5nHk0GocBUe9vHt+wzTZ9lYfeb96sP7wV42Bm+9K8eA9w52ii39KySo4ettSBMe9IH9XS+Eor9Kfer9t5Ht+ypTZ9n5feb98vwgD+s6fyeejRuLgp+6Ll6O8PJM+zdvONpd+wgqQT+GSY8c5lP3CSFy8udJkluZN3Gm+eJDero4F372WIcB7ijJVMl6usMkl+p+UID+fmf3iM81kx5GA9QRAuNl6+8ZJMeVCvONz+GP7QT68v4uemH65DB+wNl6OdLkle6.3GKeZ.wGa57VJqOUuDBeJZB2+7iTZ9tkfeRz+IgD+1OSo2OQ.3GwuFNg6udJkl+aP+DheR1jv0HneoTV+KvOhuMaB2+0lRyGdA3mdoBP7QP6xv4OJZ9fDB+64Ib+4poz7iuA9wp9CP7QP2Zor9ZCSH7wulv8uajRyWtB7SuzhIL+7KfyeTTSvOB5YR496lLZ9SmKg3G0Nk4u2Ji0uC7ifF8R49+QYz7olQID+owoL+9jLyTTTSvOVzcSJOeP6LZ90O.+XQwxTl++kYr9fiSn2T05Td9gtYz7s2C9oW5RJqOv0Ylcnnlfe7P+8Td9hdYz7uiljP7yBRY8CFjw5OB9wMs5o77GCyn4iaklP72Zkw5KLJyTAE0D7iA8xLd9jwYz7yeB9QiCxX8GRyX8MyRb3PIoY77KYYz70O.9oWZTFqOQQloKJpI3GGp3tLd9laxn4umjmP7C2jw5WbaFqeJ3GGJXeFO+yrLZ97nhDh+3mYr9FKfyeTTSvO1TubFOezxLZ98Sfeb66hLV+i6xX8YuA5O6q5Sx44mtOilueM3mdoW4r9HOlQu+p5feTTyQ477Uqyn4+SmlP7SKxY8S1jw5+B9QonVjyye8bFwOH41Dh+5i4r9J6fyGTTSvOJO1tbd9rWxH9Ck.+XW62xY8W1mw5KOC5O6AvJkyyucHi3WrA7SuztbVel2fyGTTSvONTRXAOe26YD+i74ID+3NEr9Melw5WC9wl58K34+9Ji3mzdQBwedRAquSI37AE0D7iMEmVvyGFjQ7Wrfero0pBV+mxYr93Kg9ydT8mJ34GqjQ7adF7if9uVv5CUCpOQQMA+Hn7GE77k0yH9OEqRH94kKX8iZlw5uC9QPslP7wccSNwO5x6RH96w2v5KElS5edG3GAEt5lPR+9nbh+TYvOdS2cCq+TbNqu+8INrnJ+lvSXjZmS7q1A9wK8yug0mpSNoeZ3CP+e+kxGf3iqpaNw+ZJ3Guzr8FV+pqx42e.3GOTOBw2en0oWNwOq6iIj9Amtg02peNo+5CfebSoJDerTcXNweqJ3GenMSY8ub476mXMz+2+i1dZ3I+htZbNwu6EvOp+Puor9XSxI8aa8Dz+22pe7zP58ajkS7+lA9Q.9alx5mkmyu+CvO9SsDhOVUcSNwO75MIj9Eqmx5qMMmz+8QvO92+fWf3iPMyxI9i0.+3T2uOk0eadN+9UdF5+6eTsP7w+RYrLm3WtG7i5ezXJqO2pbR+33sP+e+nJQ2FRuel6yI9mPNP5iz8VV+tGx42eC3G2JFda3Ie44j04D+zd6RH8Sxtk026obR+4m.+3e+AlA9QnxmyI9qM.+n9J2eKq+21b98C8Bz+2uU+L77gDrdIm32d.7i5ub3VVevWyI8qSdE5+6q5+BhOVndHm3+tD7i5yT4VV+vi476eB7iGkW.wGQMeOm3GOXeBoeSxLVewOxI8u2.9w2O80yBo2e0W4D+4lfejU0nYr9imx42u0An+u+pRwrv0nRaA4D+52.+n9OKlw5SZyI8y6bD5+6aZ7HDerpuRNw+dE3G0GZ2LV+xp476OC7iWEeChOxzudNwO28FyOOXFquYybhe9VveG+td8YL+7KxI94l2Y94sly7yCK32O26L+7Kmy7yaUP7ye+cle9f4L+73Bhe9kev7ySmy7ySJH942+AyO+14L+7NE76+6Cle9cyY94WVP7yG8IyOeyble9UED+7cex7y2Om4mecAwOO7Kle9myY948K32u3WL+7xyY94CJH94e9EyOu4bletqf3me0Iled7Ble9nBhe9CmX94Wsf4mOofe+kmX94tEL+7zBhe9jRL+77EL+77Bhe9qkX94yWv7yKJH94QAL+7GVv7ymVvuez.le91EL+7aKH94eEv7yOtf4mOuf3m2yx7yKsf4munf3mu1x7yqsf4mupfe+qVled3Rle9cED+7zxL+7NKY94OTP7y2C9uvOIW+kL+7GKH94wURH88lrj4m+TA+9cA+HT4zkL+7MED+7RfeT+uUKY94aKH948qx7yeZIyOeWAwO+opL+7WWx7yesfe+wUY94erj4muuf3mmWi4maWx7yOVP7yOVi4m2XIyO+sBhed65L+7nUL+7OJ32Occled2UL+7OKH94A0Y94CWw7yOUP7yG1f4mmsh4mWpf3m+bCle9rUL+baAwO+hFL+76Ww7yKWP7yKZx7yedEyOuZAwO+slL+7CqX940g8u+H6vp8Qus+8UG9O+0e7ev+5eBeR8+v09q+0+OzFLSjC</PROCESSORSTATEZ>
     </PROCESSOR>
-    <PROCESSOR id="9" bypass="0" bypassSmoothing="0" prop_str_nodeName="MIDI In"
-               prop_dbl_x="0.25634765625000000000" prop_dbl_y="0.04418945312500000000"
-               prop_int_MaxInputPins="256" prop_int_MaxOutputPins="256" cmp="1">
+    <PROCESSOR id="9" bypass="0" prop_str_nodeName="MIDI In" prop_dbl_x="0.25634765625000000000"
+               prop_dbl_y="0.04418945312500000000" prop_int_MaxInputPins="256"
+               prop_int_MaxOutputPins="256" cmp="1">
       <PLUGIN name="MIDI In" descriptiveName="M4" format="Internal" category="MIDI IN Processor"
               manufacturer="Deskew Technologies, LLC" version="1.0" file="424242"
               uid="67932" isInstrument="0" fileTime="0" infoUpdateTime="0"
@@ -5161,8 +5156,8 @@ End
               explicitWidgetRefresh="0" b64UserKeywords=""/>
       <PROCESSORSTATEZ>6863.3ocabk0bhbrz89SY9lWUbKSWrGgsino6FDRrT.8hPuLAaZAg.I.swu9uTT41XesevLYRQ1YUUdx7b5Ibdj8+qW++y+4Oc8x5zcvjzvzjeD8vrsaWsIX3aGe4si+0OKYJUyV8mjcqXOPYtrxbi5h8Jhc02tpXsr9Wolxt5GotXth1dCwtXroxn9AOnj332rqxzZ5G8.UppMqR0F5G9.Ut9a+Nprso9wOfS2.Soe9i9OtcvtiqNuiC+oYe5+Sm8kte11Cur6vJLWmbb2Kga17823.tfIGebwSe8sE7m+eYOe0lcKd73Wz90+09quMOb6uJge234hs.xlXxhlRTesxjMwTEzTawTUzTG0JqQ1DS0QSgpuVCxlXpIZpk9wkxgVJaTND8eCXaVIWEik4jUrUQxVwXUNcEa037UrUWRXwXCNiEaMkTlMZKw4rXKPRZwnkSZwFkKQkXSU3bVrQYRrXpFmwhMJQRDSTZzVL0jSW1VYJI5HlB3jUrQoPnXpLmphMJEZIlnLHhy8x03DUrQYPrXpAmnhMJERXSUnLnsXJfSTwFkAcDSk4DUrQYPnXpJmnhMJEZIlnLHRJwZvIpXixfXorqDmnhMJERDSTFzVLUlSTwFkAcDSU4DUrQYPnXpNmnhMJEZIlnLHpLCRHPShMFZRLIPShMFZRLwPShIAZRrwPShIAZRrwPShIAZhsUmQlDSLvTE1jfKI1XXIwjfJI1XPIwDiIIlDHIwFiHIlD.I1VCFORLIvQhMFMRLwfQUYSBXjXiAiDSBXjXiAiDSLXjXR.iXaMYvHwj.FI1XvHwj.FI1XvHwDCFUiMIfQhMFLRLIfQhMFLplzeiQiT1D3HkQFORYS.jTFYDIkMARRYjwjT1XPo5hMAURYjgkDaABtjxHCLorwHSJaBzjxHiMorIfSJiL5jxl.OoLx3SJaL.UCYdBAgRYjgnT1DLJkQFjRYiQoT1DXJkQFmRYixEbbR8PexXkhUZzyIKlsY0x+2q3+kuyqyO+JYr+tkzzqtHZiJpD+IFzKxxehwGhpvehKkhpwehusE0f+TS4WVEDIJARXBj3DHAJPhTfDp.IVARvji9HqDMqJmjnIifEYknYknYknYknYknYknUVhVYIZkUagRzJKQSlNJprDsxRzJKQqrDsJRzpHQqhDsJpSLIZUjnUQhlL3RTEIZUjnUUhVUIZUknUUhVU0EDIZUknUUhVUIZxLEQ0jnUShVMIZ0jnUShVM08QIZ0jnUShVMIZ0knIs6ipKQqtDs5RzpKQqt55uDs5RzpKQqgDsFRzZHQS5DG0PhVCIZMjn0PUsIQqgDslRzZJQqoDslRzZJQSZRF0ThVSIZMUE25paU4cIU8cIUAdIUEdIUIdIUMdIUQdIUUdIUYdIUb+MXEUb0.KZjEMzhFaQCtnQWzvKJ7k.E.SfUimohqBiIPAxDnPYBTvLReA2iGW7v7UaWR8Au63p8G281hGH.+ca20a2GqNbb31MeoLd4i2+vuasE.7+juyy+xxc2oM8Oi5Yi+qP6+p6170+xX3lMCO9vp8Q61db+tMaVs+f1Mz5o3gUrlGmskuayaOuRaYxaGNN6we6QM4yW1u5vgG28aVm70gUeh839NYZCQb2G32PLjOayaT.nlf+1W82Mp+5iWsY0rC+9O7uYS+k6d+1c6W0Yyt4y17aJAoUFJ6k+ok3cePYU2suC6zWu5q46lseIqLztWNeDfBF88+4dRwo8Od+ud6wu+pPa9rzNC6NnyuFNI5WgwwiSlL4WtvzzjwC9qe9O7mFNtSR5u55nuI7CZqafHZB9GeU2vwo+0OaVpz2NjkNHrex2+r2zu2u52Mt6u5m.1+UxfvV8RhO+D8sqy+BgoQW1Jb5u4LOY7jtCG7qAY8akL9u9o8m+8e9xl2t+ws+5kY6m87JHk+0lGOb7GNT4qy5A57RdE3+rUjxz4E4xauhHZoyKqUY+2olHOoyKj04O0PDhz4EthBVIQwQGJUE9YqnsnC0lh9ZUDUDcmUi57gkSDgxcV6IxZC94fwWbh7RNTUIeBaEqkkOVQ9XU4iRzDbEQXHmHHjSzAxI5+3DYebhbONQkGmntiST0wIh43DQbbh1MNQyFmnUiSjnwIRy3DEYbhRLNQ.FmH7hSDbwI5r3D8UbhrJNQNEmHihSTOwIpl3DwRbhHINQaDmnIhSzBwIRf3DoObhhGNQoCmnvgSD1vIBZ3DcLbh9ENQ1BmHWgSjovIpS3DUIbhXDNQDBmH9fSzbvIZM3DIFbhzBNQQAmnjfSTPvIBG3DACbhNANQe.mnKfSjCvIx.3D1+Ng0uSH66DR9NgbuS3z6Dt7NgBuSQc2onr6TL0cJF5NEwbmhPtSwC2o3e6T7tcJ51NEMamhcsSwp1oXS6TjncJxyNEmYmhqrSQQ1onF6TThcJlvNECXmh3qSQ30oH55T7acJdse+YUbUHMAJnl.EVSfBrIPg1DnfaBT3MAJ.m.EhSfBxIPg4Dn.cBTnNAJXm.EtSfB3IPg7DnfdBTXOAJvm.E5SfB9I3a7GB0WA.E7MBDaWEWEFTfBDJPgBEnfgBT3PAJfn.ERTfBJJPgEEn.iBTnQAJ3n.EdTfBPJPgHEnfjBTXRAJPo.EpTfBVJPgKETW2rTEWEzTfBaJPANEnPmBTvSAJ7o.E.UfBgJPAQEnvnBTfTAJTp.ELUfBmJPATEnPpBTPUAJrp.EXUfBsJPAWEzTOefZ.AEdkUgWYU3UVEdkUgWYU3UVEdkUgWYU3U1.8fIp3pvqrJ7JqBuxpvqrJ7JqBuxpvqr54gzCDovqr5QhzyDoGJROUjdrH8bQ5AiT3UVEdkUgWYKqGESEWEdkUgWYU3UVEdkUgWYU3UVEdkUgWYU3U1J5Y.UwUgWYU3UVEdkUgWYU3UVEdkUMujUgWYUSLYqpG9TEWEdkUgWYU3UVEdkUgWYU3UVEdkUgWYU3U1Z5odUwUgWYU3UVEdkUgWYU3UVEdkUgWYU3UVEdkstdbaUbU3UVEdkUgWYU3UVEdkUgWYU3UVEdkUgWYanmyWEWEdkUgWYU3UVEdkUgWYU3UVEdkUgWYU3U1uwqBnOqYXnnXnvqJqvqJqvqJqvqJqvqJqvqJqvqJqvqJ+Md02OC+we+mcbShB6k7iE61ra+e8y6tqRsF14U94Od9aMFN+f97rOQ5u+7GuelIZiRkZXn+48Kd715isquwcW8KR6ub2rw8tzcwPS1iEU2DGEbwiu7w0Kl7PXXyKb2+ZmjiKS2dwvK109sS861t9EO98Wq09Ou+hK1h+TFia0Eom+ABMweuhxUGcuwry+Ey6Ybz5iMwGtb1yus5kQglcG69wclWmeCr9yK40NcLw3SRqVlmfmxrAmdXsw0ro+G3JSbiFS9949SveqhgWMuw12MNeh79U8MwzphLOsew40UWhuyrdyzy+a2Xynq+Dl.54aiCcCwDXjYMkef+y+N6WbUH+7Mwr9rolMq.9KU9ouSAWn6MelrM0jBac4UbWONwL57CWoGyC4m+bSZvfyw5EvOFz4gN7GcWgIEWTq1lQnwGB47apIE+3sfeX+7lmhNrMzg64udqI0mS0+rsAOde+HD+I9+vbSpeMWdcGS+u5c9eOAwG+oVXhucj+ID7CArC7GqBwGSfUlXLT05vmelVN64XNt3NS74r+yftWZ5NsV8uOrhZw6e2ahgcoDvQ1klcQ96Bsa4vaGkumO+e3RCcSpaKd+8ASLdTd7R99QuVth0G9xNrzMOZh288lWwvpv58W+VOrEu+u1DO47s+r1cMOcdMkeZbKGdonxZ9903tljyaTydNqEe97jI9Y+0ikc46e2zxgGp2twDi2pdAVOdUeVK976YSbsQmKqBf06unueIj+9CkZOy2eackIw+3e39V746VyIejpN3J9985VN+ddkY6Lm72IMyf0ikGO2hO+ewfIR6mg06uo94KP96OJqC96g2Jf06C+WGZw2Od0bxe8Z7EWYN6D1AeGx+GOuWrXu4z4yojoWesA+4C9pEe+4f4z4qTCVUbsAgWJG.4u+pRSv+4KB27ziv5wrpBj+9SpiGMmvch2f0av6RP96OfV9l4jeO+iZv5Q2WH2+d2r1+aVKpm4C7QILx4ST6p2456t8LgHnYTDe+7cSJBO45w0+wQtYdjP2GFLPI.p28HTZ6H99K3GqJmCwek+KzIxE4OpLex3GO.wGKE5Fw2uA+9quC11iwWtJx8pORe.964qZOBwGAk6Ew2++xjh65mf3ia08ibi8q59uX7opP7ewm1Ci35CvOBZZ5y3WtHGBZN5jIEAMa22bOtWLNhqe.+3lVu9lOvMkIQNLoaUhw+F22Dhk5YQb8E3GC5M8Y7w7HGtnOA+nwkP7whtah35u.SJdSdMDe7pzT372eq9g.Fe8EH93Y0rHt9D7ikGu2mwemG4PPyIVSJBZFz2r.20WFw0uf+yMWyqTuuAgeNtJxgU5QkY76VCL99.ECuOhquA+96rWb4.Fe+gHGdRcB7isOFNvfQxsNhq+qXR864IYCLH7zGOAm+9aEqqv8GlAwGQBeNhwG.+90b88C39Gagy+yXB1zplTe5O3YH9mq9ZL4kHF+.7in5Gf3iaPuBm+dnjjZb+muf36GTI6PDiu.98Uh2TY.2e5Hb96ypRfe7w+BH93F36QL9ScSL1TJYn4.V0+Ab96m4YSct+10CMMd1OfyWQL9D3GapLZnoOtAeBN+8EH4MLX3etXnYAVUEDw3WM34eV.w2C+U0Bm+drt1MMw3UgGg3W2e.TIhw2.+Hn9NH93Ukpv4u+5sE7if1uAw2eRsnNb9iWktf6OWBhuGdrQiHG1y+YvOdUqFDeempkWD474zaWbgYsu7toww8uMwN7WBvbiQPyXmYDNdYXLgediIbMBJ1wYPj.SqX2Gme5tZMrdDz6JGc+8cvOhu9NrdDTquimOHJ1gs5qCqGKEbN598n3XB+8xvv0zjbNZl2VIwto9IIRCCo4Kxcz8+OA+H97cv5oIwb77Gsic3U48v5QPi4Np9XRmXB+tLrdZRJH+8vuQWF6vVUwsBo4WdvQ0OeA9Q78QsBWiE0O434a5F6x7I0BX8Xo9VGUekdULg+uCVOVT9Jj+XqpqicnwRv5w4iN5n5uRfe7lbXT3Zrn5CGO+TuXGxoneTXLxJ3jipOy6GS8OlBqG+orP9iihLH142H2+DrdbWupipesfer+xGv5wK0Mb77YCic31aCX8HTlYDUeW3ho9OciCWiOpQiLYH.5nXG0zNNjluq8Hp9uL3mZJCqGKU5Nhm+abriZ5BquteU8FQ3CSmDS8upBqG2JFNxTxiIzMM1QMMSBo4GGOhvOpB9olhIgq8vW6xFwyWlE6nldv5Qn5aFQ3K2lGS8+dAVOFqYP9iYUQriZZAqGmOc4HB+oF3mZJ0NbMBEb+Hd90af5eroSanV2WVudDgOMeZL0+bFrd7n7YH+wQMuM1QMMf0iUUuLhvuZ.9olBsCS8vekNLhmOdVri.8aGdxOdp88QD91h4wT+2q6DlhWU9BxebTpEwNBztSHMecvHB+qI3m.kg0iviUFwyeuL1Qftv58cpZTGxeeq5Uqho920f0iWEu.xeb.56.rR++b4kgz76QiMKP502GS82SuLjl+r8Xd9dvOB5bGrdDTo6XyAOnw8ODS8+2CqGup2arICu09HT+6KZKCqGKJGN1zveREtNllOHtKMSzkiGy7G.+3kdW2vS3k5rwl99aEO7TLM+vbX83ktaFaJgTI1.0+9KMag0iWJlA4u+PO54XZ9hSv5wCskiY9If+09McyUgmvM06g72uosdaLM+Q+qBo4iWC4ONJ7Nn92+POEVO9P8Lj+9fF+RLMexSv5wE8xXl+C3umuT+CX89IIxOL1fi29zqwz7KMf0iPAuO1fBsjuGp+8cE6dcHwe5qwFDyr8gXZ9lrqCo4uCFy7q.+3t98v58cRmWYrg3bdLll+4.rdDpo9XChjU7FT+66kVAVORJ5hwF5N66wz7Qs6ERyu2ZByeC7O2CUMtW3IjTSxDCIOwGwz7SKg0iPYWNwfShN8Sn92upWf0iWfudhAWS2uho4qBf0iy+OXByOD7iSU0pe3IbWezDC1I8kSwz7WC5GR7CRmv5+TBp+8nR2BqGmTuXhohuR75fXZ9rMv5wr51IL+Sv+d+Nwmv5wI8V.4ueT4Wswz7aMg0iPw2A4OdTUNllE45AgD+0Gg7Gk2nRLMeWwfPh+wlIL+VvOVU8Hrdbn5cP96apenZLM+2av5Qn98SX8spE6vlp0f0iCE+Fj+djhA0io4C6LLj3u7Ij+3nfferozjggmvgZKA4ONddiXZ9wUv5wVIkmv7uaF6PP8Wg0iiRVCxer89EwN7pnEVOd8r4DletIgte1Bl0DO0BSo962.9w4O+dVTrUPqTyNOn26fe796.GiuFmR8+uLLglOM0EtFG5KIk4+C9w6225X72Noz7AkA+37q2AwGGZ6xTSEOnynVIz8+MNFe9pTZ9gcfebTu8P7wgttNk0WHJgpO9zw328So4KlB9w4eKCwGa0MH0z0eR8A3GqeZ5X7cWJM+wUwIz7wwiBQj1siRY8K.+X80UiX7+Ioz7IUA+37ytQgD+mzTyTeQ23jDp9KeD2eHOkle4EvONJ6bH93PGEor9HsSn5yGFw8OllRy2LC7iyeuEhO1J+V372eo+KvOV+dbD2eYdJM+y0cRn4yOAwGa5uHk0eA7i02UGw8eVkRyGUG7iyuGNNj3ucGb96iT5kIT8emwb+oGRo4m1C9wQ06ONbMh5+XJquS2DBeXxXt+0Soz7UyA+37+Sg3iMM2.m+9JoSfejTwpwb+ssoz7W8uJg3G7DDero2tTV+HvORJ30wb+uWSo4yZ.9wg9+.hOhZuGN+86DYWmP3O1wb+wioz7aG.+X4SCH9XSm2RY8o5kP3SQS39mejRy2sD7Sh9OIj329YJ89IB.+H90vIb+0Soz7eC5mP7SxlDtFA8Kkx5eA9Q7sYS39u1TZ9vK.+zKU.hOBZWFN+QQyGjP3eOOg6OWMkle7MvOV0e.hOB5VKk0WaXBgO90Dt+ciTZ9xUfe5kVLg4meAb9ihZB9QPOSJ2e2jQye5bID+n1oL+8VYr9cfeDznWJ2+OJilO0LJg3OMNk42mjYlhhZB9whtaR44CZmQyu9A3GKJVlx7+uLi0GbbB8lpVmxyOzMilu8dvO8RWRY8AtNyrCE0D7iG5umxyWzKil+czjDheVPJqevfLV+QvOtoUOkm+XXFMebqzDh+VqLVegQYlJnnlfeLnWlwymLNile9SvOZbPFq+PZFquYVhCGJIMimeIKilu9AvO8RixX8IJxLcQQMA+3PE2kwy2bSFM+8j7Dhe3lLV+hayX8SA+3PA6y34elkQymGUjP7G+Li02XAb9ihZB9wl5ky34iVlQyueB7iaeWjw5ebWFqO6MP+YeUeRNO+z8Yz78qA+zK8Jm0G4wL58WUG7ihZNJmmuZcFM+e5zDheZQNqexlLV+WvOJE0hbd9qmyH9AI2lP7WeLm0WYGb9fhZB9Q4w1kyym8RFwenD3G6Z+VNq+x9LVe4YP+YO.Vobd9sCYD+hMfe5k1ky5y7Fb9fhZB9wgRBK346dOi3ejOOg3G2of0u4yLV+ZvO1TueAO+2WYD+j1KRH9ySJX8cJAmOnnlfero3zBd9vfLh+hE7iMsVUv5+TNi0GeIze1ip+TAO+XkLheyyfeDz+0BVenZP8IJpI3GAk+nfmurdFw+oXUBwOubAqeTyLV+cvOBp0DhOtqaxI9QWdWBweO9FVeovbR+y6.+HnvU2DR52GkS7mJC9wa5taX8mhyY88uOwgEU42DdBiT6bhe0NvOdoe9Mr9TcxI8SCe.5+6uT9.DebUcyI9WSA+3kls2v5WcUN+9C.+3g5QH99CsN8xI9YceLgzO3zMr9V8yI8We.7iaJUg3ikpCyI9aUA+3CsYJq+kKme+Dqg9+9ez1SCO4WzUiyI9cu.9Q8G5Mk0GaRNoeaqmf9+9V8imFRueirbh+2LvOBveyTV+r7b98e.9wepkP7wppaxI9gWuIgzuX8TVeso4j9uOB9w+9G7BDeDpYVNwerF3Gm598or9ayy42uxyP+e+ipEhO9WJik4D+x8feT+iFSY84VkS5GGuE5+6GUI51P58ybeNw+DxARejt2x528PN+9a.+3VwvaCO4KOmrNm3m1aWBoeR1sr9dOkS5O+D3G+6OvLvOBU9bNwesA3G0W49aY8+1lyuenWf9+9s5mgmOjf0K4D+1CfeT+kC2x5C9ZNoecxqP+eeU+WP7wB0C4D+2kfeTelJ2x5GdLme+Sfe7n7BH9Hp464D+3A6SH8aRlw5K9QNo+8FvO99oudVH89q9Jm3O2D7irpFMi0e7TN+9sN.8+8WUJlEtFUZKHm3W+F3G0+YwLVeRaNoedmiP+eeSiGg3iU8UxI92q.+n9P6lw5WVMme+Yfe7p3aP7Ql90yI94t2X94AyX8MalS7y2B96320qOi4meQNwO27NyOu0bledXA+94dm4me4bledqBhe96uy7yGLm4mGWP7yu7Cled5bledRAwO+9OX942Nm4m2ofe+eev7yuaNyO+xBhe9nOY94aly7yupf3mu6Sle994L+7qKH94gew7y+bNyOueA+9E+h4mWdNyOePAwO+yuX94Mmy7ycED+7qNw7yiWv7yGUP7ye3DyO+pEL+7IE76u7DyO2sf4mmVP7ymTh4mmuf4mmWP7yesDyOe9BledQAwOOJf4m+vBle9zB98iFv7y2tf4meaAwO+q.le9wEL+74ED+7dVledoEL+7EED+70VledsEL+7UE76e0x7yCWx7yuqf3mmVl4m2YIyO+gBhe9dv+E9I45uj4m+XAwOOtRBou2jkL+7mJ32uK3GgJmtj4muof3mWB7i5+sZIyOeaAwOueUle9SKY946JH94OUk4m+5Rle9qE76OtJyO+ikL+78ED+77ZL+b6Rle9wBhe9wZL+7FKY94uUP7yaWm4mGsh4m+QA+9oqy7y6th4m+YAwOOnNyOe3Jle9oBhe9vFL+7rUL+7RED+7mav7ymsh4maKH94Wzf4me+Jled4BhedQSle9yqX94UKH94u0j4meXEyOuNr+8mYGVsO5s8uu5ve72+4ef+0+D9j5+8o82+m+ePGTHLE</PROCESSORSTATEZ>
     </PROCESSOR>
-    <PROCESSOR id="4" bypass="0" bypassSmoothing="0" prop_str_nodeName="Pianoteq 8"
-               prop_int_MaxInputPins="256" prop_int_MaxOutputPins="256" prop_dbl_x="0.08813476562500000000"
+    <PROCESSOR id="4" bypass="0" prop_str_nodeName="Pianoteq 8" prop_int_MaxInputPins="256"
+               prop_int_MaxOutputPins="256" prop_dbl_x="0.08813476562500000000"
                prop_dbl_y="0.07934570312500000000" cmp="1">
       <PLUGIN name="Pianoteq 8" format="VST" category="Synth" manufacturer="Modartt"
               version="8.4.0.0" file="/Library/Audio/Plug-Ins/VST/Pianoteq 8.vst"
@@ -5180,8 +5175,8 @@ End
         </BUSOUTPUTS>
       </PROCESSORLAYOUT>
     </PROCESSOR>
-    <PROCESSOR id="5" bypass="0" bypassSmoothing="0" prop_str_nodeName="Blue3"
-               prop_int_MaxInputPins="256" prop_int_MaxOutputPins="256" prop_dbl_x="0.15625000000000000000"
+    <PROCESSOR id="5" bypass="0" prop_str_nodeName="Blue3" prop_int_MaxInputPins="256"
+               prop_int_MaxOutputPins="256" prop_dbl_x="0.15625000000000000000"
                prop_dbl_y="0.06127929687500000000" cmp="1">
       <PLUGIN name="Blue3" format="VST3" category="Instrument" manufacturer="GG Audio"
               version="2.4.0" file="/Library/Audio/Plug-Ins/VST3/Blue3.vst3"
@@ -5197,8 +5192,8 @@ End
         </BUSOUTPUTS>
       </PROCESSORLAYOUT>
     </PROCESSOR>
-    <PROCESSOR id="10" bypass="0" bypassSmoothing="0" prop_str_nodeName="Legend HZ FX"
-               prop_int_MaxInputPins="256" prop_int_MaxOutputPins="256" prop_dbl_x="0.25634765625000000000"
+    <PROCESSOR id="10" bypass="0" prop_str_nodeName="Legend HZ FX" prop_int_MaxInputPins="256"
+               prop_int_MaxOutputPins="256" prop_dbl_x="0.25634765625000000000"
                prop_dbl_y="0.06469726527575403452" cmp="1">
       <PLUGIN name="Legend HZ FX" format="VST3" category="Fx|Synapse Audio"
               manufacturer="Synapse Audio" version="2.0.2.0" file="/Library/Audio/Plug-Ins/VST3/LegendHZFX.vst3"
@@ -5257,10 +5252,10 @@ End
   </RACKSPACE>
   <RACKSPACE name="Rackspace_2" uid="43cf0c8184c84e35b4586d63cef16e2d" bpm="120.0"
              timeNum="4" timeDen="4" resetTimeInfo="0" syncClock="0" maxDeactivationTime="2.5"
-             maxDeactivationTimeIn="0.0" scriptWindowPos="291 166 1248 1026"
+             maxDeactivationTimeIn="0.0" scriptWindowPos="264 66 1248 826"
              usePatchPersist="0" zoomLevel="1.0" viewX="5" viewY="10" activePreset="0">
-    <PROCESSORSTATE_IN handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.00732421875">73.VMjLg.D....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh7hO..</PROCESSORSTATE_IN>
-    <PROCESSORSTATE_OUT handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.257080078125">123.VMjLgHG....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh.xXn8kL8HRLt.iHfzVczU1Wig1WxziHvHBHig1WyziHw3BLh.Ra0QWYeMFZeMSOh.iHu3C.</PROCESSORSTATE_OUT>
+    <PROCESSORSTATE_IN handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.00732421875">23.VMjLg3.....OPwTUGkjSSQUPTUzK9..</PROCESSORSTATE_IN>
+    <PROCESSORSTATE_OUT handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.257080078125">73.VMjLg.D....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh7hO..</PROCESSORSTATE_OUT>
     <RACKVIEW>
       <RACKUNIT size="11" style="0" color="ff4682b4" ver="5.0">
         <WIDGET type="5" style="0" id="202" x="0.820586694604505" y="0.5173116089613035"
@@ -6386,10 +6381,10 @@ End
   </RACKSPACE>
   <RACKSPACE name="Rackspace_3" uid="94cdf84336bf4a9eb626a1699e3400a5" bpm="120.0"
              timeNum="4" timeDen="4" resetTimeInfo="0" syncClock="0" maxDeactivationTime="2.5"
-             maxDeactivationTimeIn="0.0" scriptWindowPos="159 178 1248 1026"
+             maxDeactivationTimeIn="0.0" scriptWindowPos="2004 216 1248 826"
              usePatchPersist="0" zoomLevel="1.0" viewX="5" viewY="10" activePreset="0">
-    <PROCESSORSTATE_IN handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.00732421875">73.VMjLg.D....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh7hO..</PROCESSORSTATE_IN>
-    <PROCESSORSTATE_OUT handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.257080078125">123.VMjLgHG....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh.xXn8kL8HRLt.iHfzVczU1Wig1WxziHvHBHig1WyziHw3BLh.Ra0QWYeMFZeMSOh.iHu3C.</PROCESSORSTATE_OUT>
+    <PROCESSORSTATE_IN handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.00732421875">23.VMjLg3.....OPwTUGkjSSQUPTUzK9..</PROCESSORSTATE_IN>
+    <PROCESSORSTATE_OUT handle="" gpscript="0" osc="0" x="0.1890869140625" y="0.257080078125">73.VMjLg.D....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh7hO..</PROCESSORSTATE_OUT>
     <RACKVIEW>
       <RACKUNIT size="11" style="0" color="ff4682b4" ver="5.0">
         <WIDGET type="5" style="0" id="725" x="0.820586694604505" y="0.5173116089613035"
@@ -7367,21 +7362,85 @@ On WidgetValueChanged (w: Widget, i: Integer, v: Double) From reverb_mod, reverb
 End
 
 
-
 On Deactivate
-    osc_enabled = false
+    Print (&quot;on deactivate triggered, reset ping_time&quot;) 
+    ping_time = 0.0
+    //osc_enabled = false
 End
 
 On Activate
-    osc_enabled = true
+    Print (&quot;on activate triggered, set timers running&quot;)
+    SetTimersRunning (true)
+    //osc_enabled = true
+    //OSC_SendIntegerSpecific (&quot;/ping&quot;, initmode, oscip, oscport)
 End
 
 // Called when you switch variations
 On Variation(oldVariation : integer, newVariation : integer)
-    OSC_SendIntegerSpecific (&quot;/ping&quot;, initmode, oscip, oscport)
+    Print (&quot;on variation triggered, sending ping&quot;)
+    //OSC_SendIntegerSpecific (&quot;/ping&quot;, initmode, oscip, oscport)
+    ping_global ()
 End</SCRIPT_CONTENT>
   </RACKSPACE>
   <SETLISTS activeSetlist="0">
+    <SONG songName="C" songArtist="" overrideTime="0" bpm="120.0" sigNum="4"
+          sigDen="4" rootNote="0" usesMinorKey="0" transpose="0" backingTrack=""
+          uid="a2acfbc29a3740afb87f6780d25da032" locked="1" sendPC="0"
+          pcToSend="0" bankToSend="0" songCordsLyrics="" scriptWindowPos="">
+      <SONG_PART songPartName="Verse" overrideTime="0" bpm="120.0" sigNum="4"
+                 sigDen="4" rackspace="3" rackspaceID="94cdf84336bf4a9eb626a1699e3400a5"
+                 variation="0" midiOut="">
+        <SFPMarkerTimeline_>
+          <XML_Marker_Action ActionName="SAFP - Select Track">
+            <States actionEnabled="MQ==" global="MQ==" handle="TXlTQUZQ" st="MDIgLSBBZnRlciB0aGUgQ29zbWljIFJhaW4ubXAz"
+                    userComment=""/>
+          </XML_Marker_Action>
+        </SFPMarkerTimeline_>
+      </SONG_PART>
+      <SONG_PART songPartName="Intro" overrideTime="0" bpm="120.0" sigNum="4"
+                 sigDen="4" rackspace="2" rackspaceID="43cf0c8184c84e35b4586d63cef16e2d"
+                 variation="0" midiOut="">
+        <SFPMarkerTimeline_/>
+      </SONG_PART>
+      <SONG_PART songPartName="Chorus" overrideTime="0" bpm="120.0" sigNum="4"
+                 sigDen="4" rackspace="0" rackspaceID="05e3efbc5e8c4322ba163d2255c1dc11"
+                 variation="0" midiOut="">
+        <PRESET name="internal">
+          <PARAM widgetId="96" value="1.0" onLoadValue="1.0"/>
+          <PARAM widgetId="97" value="1.0" onLoadValue="1.0"/>
+          <PARAM widgetId="95" value="1.0" onLoadValue="1.0"/>
+          <PARAM widgetId="94" value="1.0" onLoadValue="1.0"/>
+          <PARAM widgetId="93" value="1.0" onLoadValue="1.0"/>
+          <PARAM widgetId="2" value="0.4025490581989288" onLoadValue="0.4025490581989288"/>
+          <PARAM widgetId="6" value="0.3004530966281891" onLoadValue="0.3004530966281891"/>
+          <PARAM widgetId="75" value="0.4881889820098877" onLoadValue="0.4881889820098877"/>
+          <PARAM widgetId="76" value="0.5275590419769287" onLoadValue="0.5275590419769287"/>
+          <PARAM widgetId="77" value="0.4881889820098877" onLoadValue="0.4881889820098877"/>
+          <PARAM widgetId="78" value="1.0" onLoadValue="1.0"/>
+          <PARAM widgetId="79" value="1.0" onLoadValue="1.0"/>
+          <PARAM widgetId="80" value="1.0" onLoadValue="1.0"/>
+          <PARAM widgetId="81" value="0.5196850299835205" onLoadValue="0.5196850299835205"/>
+          <PARAM widgetId="82" value="0.3858267664909363" onLoadValue="0.3858267664909363"/>
+          <PARAM widgetId="83" value="0.4881889820098877" onLoadValue="0.4881889820098877"/>
+          <PARAM widgetId="84" value="0.3112655878067017" onLoadValue="0.3112655878067017"/>
+          <PARAM widgetId="85" value="0.3307087123394012" onLoadValue="0.3307087123394012"/>
+          <PARAM widgetId="86" value="1.0" onLoadValue="1.0"/>
+          <PARAM widgetId="87" value="1.0" onLoadValue="1.0"/>
+          <PARAM widgetId="88" value="1.0" onLoadValue="1.0"/>
+          <PARAM widgetId="89" value="0.5167707800865173" onLoadValue="0.5167707800865173"/>
+          <PARAM widgetId="90" value="0.581250011920929" onLoadValue="0.581250011920929"/>
+          <PARAM widgetId="91" value="0.6126040816307068" onLoadValue="0.6126040816307068"/>
+          <PARAM widgetId="92" value="0.5" onLoadValue="0.5"/>
+          <PARAM widgetId="98" value="1.0" onLoadValue="1.0"/>
+          <PARAM widgetId="99" value="1.0" onLoadValue="1.0"/>
+          <PARAM widgetId="100" value="1.0" onLoadValue="1.0"/>
+          <PARAM widgetId="101" value="1.0" onLoadValue="1.0"/>
+          <PARAM widgetId="109" value="1.0" onLoadValue="1.0"/>
+        </PRESET>
+        <SFPMarkerTimeline_/>
+      </SONG_PART>
+      <SCRIPT_CONTENT></SCRIPT_CONTENT>
+    </SONG>
     <SONG songName="A" songArtist="" overrideTime="0" bpm="120.0" sigNum="4"
           sigDen="4" rootNote="0" usesMinorKey="0" transpose="0" backingTrack=""
           uid="a84383cb225e444f832ed462e2ee2db5" locked="0" sendPC="0"
@@ -7548,64 +7607,6 @@ End</SCRIPT_CONTENT>
       <SONG_PART songPartName="Clean" overrideTime="0" bpm="120.0" sigNum="4"
                  sigDen="4" rackspace="1" rackspaceID="c5e615f2c4a7486c967d987b22865f0b"
                  variation="0" midiOut="">
-        <SFPMarkerTimeline_/>
-      </SONG_PART>
-      <SCRIPT_CONTENT></SCRIPT_CONTENT>
-    </SONG>
-    <SONG songName="C" songArtist="" overrideTime="0" bpm="120.0" sigNum="4"
-          sigDen="4" rootNote="0" usesMinorKey="0" transpose="0" backingTrack=""
-          uid="a2acfbc29a3740afb87f6780d25da032" locked="1" sendPC="0"
-          pcToSend="0" bankToSend="0" songCordsLyrics="" scriptWindowPos="">
-      <SONG_PART songPartName="Intro" overrideTime="0" bpm="120.0" sigNum="4"
-                 sigDen="4" rackspace="2" rackspaceID="43cf0c8184c84e35b4586d63cef16e2d"
-                 variation="0" midiOut="">
-        <SFPMarkerTimeline_/>
-      </SONG_PART>
-      <SONG_PART songPartName="Verse" overrideTime="0" bpm="120.0" sigNum="4"
-                 sigDen="4" rackspace="3" rackspaceID="94cdf84336bf4a9eb626a1699e3400a5"
-                 variation="0" midiOut="">
-        <SFPMarkerTimeline_>
-          <XML_Marker_Action ActionName="SAFP - Select Track">
-            <States actionEnabled="MQ==" global="MQ==" handle="TXlTQUZQ" st="MDIgLSBBZnRlciB0aGUgQ29zbWljIFJhaW4ubXAz"
-                    userComment=""/>
-          </XML_Marker_Action>
-        </SFPMarkerTimeline_>
-      </SONG_PART>
-      <SONG_PART songPartName="Chorus" overrideTime="0" bpm="120.0" sigNum="4"
-                 sigDen="4" rackspace="0" rackspaceID="05e3efbc5e8c4322ba163d2255c1dc11"
-                 variation="0" midiOut="">
-        <PRESET name="internal">
-          <PARAM widgetId="96" value="1.0" onLoadValue="1.0"/>
-          <PARAM widgetId="97" value="1.0" onLoadValue="1.0"/>
-          <PARAM widgetId="95" value="1.0" onLoadValue="1.0"/>
-          <PARAM widgetId="94" value="1.0" onLoadValue="1.0"/>
-          <PARAM widgetId="93" value="1.0" onLoadValue="1.0"/>
-          <PARAM widgetId="2" value="0.4025490581989288" onLoadValue="0.4025490581989288"/>
-          <PARAM widgetId="6" value="0.3004530966281891" onLoadValue="0.3004530966281891"/>
-          <PARAM widgetId="75" value="0.4881889820098877" onLoadValue="0.4881889820098877"/>
-          <PARAM widgetId="76" value="0.5275590419769287" onLoadValue="0.5275590419769287"/>
-          <PARAM widgetId="77" value="0.4881889820098877" onLoadValue="0.4881889820098877"/>
-          <PARAM widgetId="78" value="1.0" onLoadValue="1.0"/>
-          <PARAM widgetId="79" value="1.0" onLoadValue="1.0"/>
-          <PARAM widgetId="80" value="1.0" onLoadValue="1.0"/>
-          <PARAM widgetId="81" value="0.5196850299835205" onLoadValue="0.5196850299835205"/>
-          <PARAM widgetId="82" value="0.3858267664909363" onLoadValue="0.3858267664909363"/>
-          <PARAM widgetId="83" value="0.4881889820098877" onLoadValue="0.4881889820098877"/>
-          <PARAM widgetId="84" value="0.3112655878067017" onLoadValue="0.3112655878067017"/>
-          <PARAM widgetId="85" value="0.3307087123394012" onLoadValue="0.3307087123394012"/>
-          <PARAM widgetId="86" value="1.0" onLoadValue="1.0"/>
-          <PARAM widgetId="87" value="1.0" onLoadValue="1.0"/>
-          <PARAM widgetId="88" value="1.0" onLoadValue="1.0"/>
-          <PARAM widgetId="89" value="0.5167707800865173" onLoadValue="0.5167707800865173"/>
-          <PARAM widgetId="90" value="0.581250011920929" onLoadValue="0.581250011920929"/>
-          <PARAM widgetId="91" value="0.6126040816307068" onLoadValue="0.6126040816307068"/>
-          <PARAM widgetId="92" value="0.5" onLoadValue="0.5"/>
-          <PARAM widgetId="98" value="1.0" onLoadValue="1.0"/>
-          <PARAM widgetId="99" value="1.0" onLoadValue="1.0"/>
-          <PARAM widgetId="100" value="1.0" onLoadValue="1.0"/>
-          <PARAM widgetId="101" value="1.0" onLoadValue="1.0"/>
-          <PARAM widgetId="109" value="1.0" onLoadValue="1.0"/>
-        </PRESET>
         <SFPMarkerTimeline_/>
       </SONG_PART>
       <SCRIPT_CONTENT></SCRIPT_CONTENT>
