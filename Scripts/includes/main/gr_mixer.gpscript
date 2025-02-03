@@ -44,14 +44,20 @@ On WidgetValueChanged(newValue : double) from MainOutResetBtn
     ResetWidgetValue(MainOutFader)
 End
 
-
+Function send_k2_led (device: String, note: String, val: Integer)
+    If MidiOutDeviceExists (device) Then
+        SendNowToMidiOutDevice (device, MakeNoteMessageEx(NoteNameToNoteNumber(note), val, 1))
+    End
+End
 
 On ParameterValueChanged (i: Integer, v: Double) From SAFP
     If i == 12 Then
         If v > 0 Then
-            SendNowToMidiOutDevice (KOUT, MakeNoteMessageEx (NoteNameToNoteNumber ("A#-2"), 127, 1))
+            //SendNowToMidiOutDevice (KOUT, MakeNoteMessageEx (NoteNameToNoteNumber ("A#-2"), 127, 1))
+            send_k2_led (KOUT, "A#-2", 127)
         Else
-            SendNowToMidiOutDevice (KOUT, MakeNoteMessageEx (NoteNameToNoteNumber ("A#-2"), 0, 1))
+            //SendNowToMidiOutDevice (KOUT, MakeNoteMessageEx (NoteNameToNoteNumber ("A#-2"), 0, 1))
+            send_k2_led (KOUT, "A#-2", 0)
         End
     End
 End
