@@ -449,14 +449,21 @@ End
 
 
 On Deactivate
-    osc_enabled = false
+    //Print ("on deactivate triggered, reset ping_time") 
+    ping_time = 0.0
+    //osc_enabled = false
 End
 
 On Activate
-    osc_enabled = true
+    //Print ("on activate triggered, set timers running")
+    SetTimersRunning (true)
+    //osc_enabled = true
+    //OSC_SendIntegerSpecific ("/ping", initmode, oscip, oscport)
 End
 
 // Called when you switch variations
 On Variation(oldVariation : integer, newVariation : integer)
-    OSC_SendIntegerSpecific ("/ping", initmode, oscip, oscport)
+    //Print ("on variation triggered, sending ping")
+    //OSC_SendIntegerSpecific ("/ping", initmode, oscip, oscport)
+    ping_global ()
 End
