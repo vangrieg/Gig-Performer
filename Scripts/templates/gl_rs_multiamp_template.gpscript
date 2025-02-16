@@ -457,8 +457,9 @@ End
 On Activate
     //Print ("on activate triggered, set timers running")
     SetTimersRunning (true)
-    //osc_enabled = true
-    //OSC_SendIntegerSpecific ("/ping", initmode, oscip, oscport)
+    If osc_enabled == false Then
+        OSC_SendIntegerSpecific ("/ping", initmode, oscip, oscport)
+    End
 End
 
 // Called when you switch variations
