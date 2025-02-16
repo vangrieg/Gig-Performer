@@ -8,3 +8,4 @@ temp/
 !*.gpscript
 !Scripts/\*.*
 !Panels/\*.*
+Scripts/includes/osc.gpscript

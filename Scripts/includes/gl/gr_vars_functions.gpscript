@@ -43,7 +43,8 @@
     holdlocal: Boolean [32] //hold changes from global rack widgets temporarily to avoid feedback loop
     holdfader: Boolean = false
     wtime: Double [32] // time a parameter was last modified
-    timeout: Double = 50 // time to reset hold 
+    wstime: Double = 0.0// time when last /ws was received
+    timeout: Double = 200 // time to reset hold 
     
     hellotimeout: Ramp //handshake timer
     
@@ -72,11 +73,19 @@
 
 Initialization //global rackspace initialization 
     Var i: Integer
-    SetWidgetValue (m3, 3.0)
+    //SetWidgetValue (m3, 3.0)
+    //fxselected = -1
+    //reset_xtouch ()
+    //reset_fxcontrols ()
     SetEnvVariable ("mode", IntToString(mode)) //save mode to environment variable
     //Print ("init - set fx 0")
     SetEnvVariable ("fxselected", IntToString(fxselected)) //save fx selected to environment variable
     SetParameter (SA, 23, 1.0) // set system "beat mode" to "always" so that tempo led flash works
+    For i = 0; i < Size (rcontrols); i = i + 1 Do
+        holdremote [i] = true
+        holdlocal [i] = true
+        wtime [i] = TimeSinceStartup ()
+    End
 End
 
 Function osc_out (v1: Integer, v2: Double) // sending 2 argument osc, integer plus double, for setting widget value on a remote rackspace
@@ -248,28 +257,20 @@ Function update_xtouch ()
     End
 End
 
-Function ctrl_update (warr: Widget Array, index: Integer, value: double) // update control widget value, set hold to avoid feedback loop
-    //Print ("global ctrl_update: widget " + index + ", value " + value + ", hold " + holdctrls[index] + ", holdctrls size " + Size (holdctrls))
-    holdctrls [index] = true
-    SetWidgetValue (warr [index], value)
-    holdctrls [index] = false
-    SetWidgetHideOnPresentation (warr[index], false) //show widget if it was hidden
-    If index == rack_out_index Then
-        holdfader = true
-        SetWidgetValue (rackOutput, value)
-        holdfader = false
+Function reset_xtouch () // turn all leds off 
+    Var i: Integer
+    If MidiOutDeviceExists (XTOUT) == True Then
+        For i = 1; i < 9; i = i + 1 Do // set all knob modes to single
+            SendNowToMidiOutDevice (XTOUT, MakeControlChangeMessageEx (i, 0, 1))
+        End
+        For i = 9; i < 17; i = i + 1 Do // set all knob leds off
+            SendNowToMidiOutDevice (XTOUT, MakeControlChangeMessageEx (i, 0, 1))
+        End
+        For i = 0; i < 16; i = i + 1 Do // turn off all buttons
+            SendNowToMidiOutDevice (XTOUT, MakeNoteMessageEx (i, 0, 1))
+        End
     End
 End
-
-Function ctrl_disable (warr: Widget Array, index: Integer) // disable control widget, set hold to avoid feedback loop
-    //Print ("global ctrl_disable: disable widget " + index + ", hold " + holdctrls[index]  + ", holdctrls size " + Size (holdctrls))
-    holdctrls [index] = true
-    SetWidgetValue (warr [index], 0.0) //set widget value to 0
-    holdctrls [index] = false
-    SetWidgetHideOnPresentation (warr[index], true) //hide widget
-End
-
-
 
 Function sync_rcontrols (i: Integer, v: Double)
     If (holdfader == False Or (holdfader == True And i <> rack_out_index)) And (wtime[i] == 0 Or (holdremote[i] == True And mode < 3) Or (holdlocal[i] == True And mode == 3)) Then
@@ -314,3 +315,25 @@ Function sync_fader (i: Integer, v: Double)
         //End
     End
 End
+
+Function ctrl_update (warr: Widget Array, index: Integer, value: double) // update control widget value, set hold to avoid feedback loop
+    //Print ("global ctrl_update: widget " + index + ", value " + value + ", hold " + holdctrls[index] + ", holdctrls size " + Size (holdctrls))
+    holdctrls [index] = true
+    holdremote [index] = true
+    wtime [index] = TimeSinceStartup ()
+    SetWidgetValue (warr [index], value)
+    //holdctrls [index] = false
+    SetWidgetHideOnPresentation (warr[index], false) //show widget if it was hidden
+    //sync_fader (index, value)
+End
+
+Function ctrl_disable (warr: Widget Array, index: Integer) // disable control widget, set hold to avoid feedback loop
+    //Print ("global ctrl_disable: disable widget " + index + ", hold " + holdctrls[index]  + ", holdctrls size " + Size (holdctrls))
+    holdctrls [index] = true
+    holdremote [index] = true
+    wtime [index] = TimeSinceStartup ()
+    SetWidgetValue (warr [index], 0.0) //set widget value to 0
+    //holdctrls [index] = false
+    SetWidgetHideOnPresentation (warr[index], true) //hide widget
+End
+

@@ -1,0 +1,104 @@
+On WidgetValueChanged (sval: double) from gSrcPost
+    If sval > 0 Then
+        MapWidgetToPlugin (lprTrigger, gPostLprC, 0)
+        MapWidgetToPlugin (lprLabel, gPostLprC, 7)
+        MapWidgetToPlugin (lprStop, gPostLprC, 1)
+        MapWidgetToPlugin (lprUndo, gPostLprC, 2)
+        MapWidgetToPlugin (lprOverdub, gPostLprC, 21)
+        MapWidgetToPlugin (lprClear, gPostLprC, 19)
+        MapWidgetToPlugin (lprOpen, gPostLpr, -1)
+        MapWidgetToPlugin (lprLvl, gPostLpr, 70)
+        MapWidgetToPlugin (lprRecording, gPostLprC, 4)
+        MapWidgetToPlugin (lprPlaying, gPostLprC, 5)
+        MapWidgetToPlugin (lprMemory, gPostLprC, 6)
+        
+    End
+End
+
+On WidgetValueChanged (sval: double) from gSrcDI
+    If sval > 0 Then
+        MapWidgetToPlugin (lprTrigger, gDILprC, 0)
+        MapWidgetToPlugin (lprLabel, gDILprC, 7)
+        MapWidgetToPlugin (lprStop, gDILprC, 1)
+        MapWidgetToPlugin (lprUndo, gDILprC, 2)
+        MapWidgetToPlugin (lprOverdub, gDILprC, 21)
+        MapWidgetToPlugin (lprClear, gDILprC, 19)
+        MapWidgetToPlugin (lprOpen, gDILpr, -1)
+        MapWidgetToPlugin (lprLvl, gDILpr, 70)
+        MapWidgetToPlugin (lprRecording, gDILprC, 4)
+        MapWidgetToPlugin (lprPlaying, gDILprC, 5)
+        MapWidgetToPlugin (lprMemory, gDILprC, 6)
+    End
+End
+
+On WidgetValueChanged (sval: double) from vSrcPost
+    If sval > 0 Then
+        MapWidgetToPlugin (lprTrigger, vPostLprC, 0)
+        MapWidgetToPlugin (lprLabel, vPostLprC, 7)
+        MapWidgetToPlugin (lprStop, vPostLprC, 1)
+        MapWidgetToPlugin (lprUndo, vPostLprC, 2)
+        MapWidgetToPlugin (lprOverdub, vPostLprC, 21)
+        MapWidgetToPlugin (lprClear, vPostLprC, 19)
+        MapWidgetToPlugin (lprOpen, vPostLpr, -1)
+        MapWidgetToPlugin (lprLvl, vPostLpr, 70)
+        MapWidgetToPlugin (lprRecording, vPostLprC, 4)
+        MapWidgetToPlugin (lprPlaying, vPostLprC, 5)
+        MapWidgetToPlugin (lprMemory, vPostLprC, 6)
+    End
+End
+
+On WidgetValueChanged (sval: double) from vSrcDI
+    If sval > 0 Then
+        MapWidgetToPlugin (lprTrigger, vDILprC, 0)
+        MapWidgetToPlugin (lprLabel, vDILprC, 7)
+        MapWidgetToPlugin (lprStop, vDILprC, 1)
+        MapWidgetToPlugin (lprUndo, vDILprC, 2)
+        MapWidgetToPlugin (lprOverdub, vDILprC, 21)
+        MapWidgetToPlugin (lprClear, vDILprC, 19)
+        MapWidgetToPlugin (lprOpen, vDILpr, -1)
+        MapWidgetToPlugin (lprLvl, vDILpr, 70)
+        MapWidgetToPlugin (lprRecording, vDILprC, 4)
+        MapWidgetToPlugin (lprPlaying, vDILprC, 5)
+        MapWidgetToPlugin (lprMemory, vDILprC, 6)
+    End
+End
+
+
+
+On WidgetValueChanged (newValue: double) From lprOverdub
+    If newValue == 1.0 and IsBankUp == true Then
+        LEDControl (FSOUT, CCC, 1, FSChan)
+    Else
+        LEDControl (FSOUT, CCC, 0, FSChan)
+    End
+End
+
+On WidgetValueChanged (newValue: double) From lprMemory
+    Select
+        newValue == 1.0 Do
+            LEDControl (FSOUT, CCD, 1, FSChan)
+        newValue == 0.0 Do
+            LEDControl (FSOUT, CCD, 0, FSChan)
+    End
+End
+
+On WidgetValueChanged (newValue: double) From lprRecording
+    Select
+        newValue == 1.0 Do
+            BlinkOn = true
+            blinkLED (FSOUT, BlinkOn, 20, FSChan)
+        newValue == 0.0 Do
+            BlinkOn = false
+            
+    End
+End
+
+On WidgetValueChanged (newValue: double) From lprPlaying
+    Var isRecording: double = GetWidgetValue (lprRecording)
+    Select
+        newValue == 1.0 And isRecording == 0.0 Do
+            LEDControl (FSOUT, CCA, 1, FSChan)
+        newValue == 0.0 Do
+            LEDControl (FSOUT, CCA, 0, FSChan)
+    End
+End

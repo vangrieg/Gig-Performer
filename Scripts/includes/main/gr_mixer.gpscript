@@ -1,0 +1,63 @@
+
+On WidgetValueChanged (v: Double) From PitchKnob
+Var stepValue: Integer
+    res: Double
+    stepValue = Round(v*24-12)
+    res = Scale(stepValue, -12, 12, 0, 1)
+    SetParameter (SAFP, 25, res)
+    If stepValue == 0 Then
+        SetWidgetLabel (PitchKnob, "Pitch")
+    Else
+        SetWidgetLabel (PitchKnob, stepValue)
+    End
+End
+
+On WidgetValueChanged(newValue : double) from Ch1ResetBtn
+    ResetWidgetValue(Ch1Fader)
+End
+
+On WidgetValueChanged(newValue : double) from Ch2ResetBtn
+    ResetWidgetValue(Ch2Fader)
+End
+
+On WidgetValueChanged(newValue : double) from Ch3ResetBtn
+    ResetWidgetValue(Ch3Fader)
+End
+
+On WidgetValueChanged(newValue : double) from Ch4ResetBtn
+    ResetWidgetValue(Ch4Fader)
+End
+
+On WidgetValueChanged(newValue : double) from PlayerResetBtn
+    ResetWidgetValue(SpeedFader)
+    ResetWidgetValue(PitchKnob)
+End
+
+On WidgetValueChanged(newValue : double) from BPMSyncBtn
+    If newValue == 0
+    then
+        ResetWidgetValue(SpeedFader)
+    End
+End
+
+On WidgetValueChanged(newValue : double) from MainOutResetBtn
+    ResetWidgetValue(MainOutFader)
+End
+
+Function send_k2_led (device: String, note: String, val: Integer)
+    If MidiOutDeviceExists (device) Then
+        SendNowToMidiOutDevice (device, MakeNoteMessageEx(NoteNameToNoteNumber(note), val, 1))
+    End
+End
+
+On ParameterValueChanged (i: Integer, v: Double) From SAFP
+    If i == 12 Then
+        If v > 0 Then
+            //SendNowToMidiOutDevice (KOUT, MakeNoteMessageEx (NoteNameToNoteNumber ("A#-2"), 127, 1))
+            send_k2_led (KOUT, "A#-2", 127)
+        Else
+            //SendNowToMidiOutDevice (KOUT, MakeNoteMessageEx (NoteNameToNoteNumber ("A#-2"), 0, 1))
+            send_k2_led (KOUT, "A#-2", 0)
+        End
+    End
+End

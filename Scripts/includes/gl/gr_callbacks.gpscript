@@ -25,17 +25,22 @@ On OSCMessageReceived (m: OSCMessage) Matching "/ws" //bulk update of control wi
         rstring: String = OSC_GetArgAsString(m, 0) //get string with widget states
         rarr: String Array = ParseCSVString (rstring) //parse string to array
         rarrint: Integer Array
+    //holdwvc = true
     StopOneShotRamp (wstimeout)
+    wstime = TimeSinceStartup ()
     For i = 0; i < Size (rarr) - 1; i = i + 2 Do //iterate through array
         //Print ("widget " + rarr[i] + " value " + rarr[i+1])
         ctrl_update (rcontrols, StringToInt(rarr[i]), StringToDouble(rarr [i+1])) //update control widget value
         rarrint <-- StringToInt(rarr[i]) //add widget index to rarrint
+        //sync_fader (StringToInt(rarr[i]), StringToDouble(rarr [i+1]))
     End
     For i = 0; i < Size (rcontrols); i = i + 1 Do //disable unused control widgets
         If IndexOf(rarrint, i) == -1 Then // if control widget is not in rarrint, disable it
             ctrl_disable (rcontrols, i)
         End
     End
+    SetWidgetValue (rackOutput, GetWidgetValue (rcontrols [rack_out_index]))
+    //holdwvc = false
     TriggerOneShotRamp (XTTimeout, 200, 10)
 End
 
@@ -44,22 +49,23 @@ SENDS OSC MESSAGE TO RACKSPACES WHEN CONTROL WIDGET VALUES ARE CHANGING
 <--- UPDATE THIS FOR ACTUAL CONTROLS AVAILABLE kx FOR KNOBS, bx FOR THEIR PRESS ACTION ---> */
 On WidgetValueChanged (w: Widget, i: integer, v: double) from k0, k1, k2, k3, k4, k5, k6, k7, k8, k9, k10, k11, k12, k13, k14, k15, b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15 //control widgets
     
-    If mode == 0 Or mode == 1 Or (mode == 2 And fxselected > -1) And holdwvc == false Then //if mode is amp, eq or fx and fx is selected
+    If (mode == 0 Or mode == 1 Or (mode == 2 And fxselected > -1)) And (holdremote [i] == false And osc_enabled == true) Then //if mode is amp, eq or fx and fx is selected
         //Print ("global wvc rcontrols: w" + i + " value changed, hold " + holdctrls[i] + ", mode " + mode + ", fxselected " + fxselected + ", holdwvc " + holdwvc)
         //Print ("addressing array holdctrls, size " + Size(holdctrls) + ", i " + i)
         sync_remote (i, v)
-        sync_fader (i, v)
+        //sync_fader (i, v)
     Elsif mode == 3 And fxselected > -1 And holdwvc == false Then //if mode is vox and fx is selected
         //Print ("global wvc rcontrols: w" + i + " value changed, hold " + holdctrls[i] + ", mode " + mode + ", fxselected " + fxselected + ", holdwvc " + holdwvc)
         //Print ("addressing array rt, size " + Size (rt) + ", i " + i)
         If IndexOf (rt, i) > -1 Then //if control widget is in rt
             //Print ("addressing array holdctrls, size " + Size (holdctrls) + ", i " + i)
             sync_local (IndexOf(rt, i), v)
-            sync_fader (i, v)
+            //sync_fader (i, v)
             //Print ("calling sync_local for index " + IndexOf(rt, i) + ", value " + v)
         End
     End
     TriggerOneShotRamp (XTTimeout, 200, 10)
+    sync_fader (i, v)
     //update_xtouch()
 End
 
@@ -154,7 +160,7 @@ On WidgetValueChanged (w: widget, index: integer, newValue: double) from m0, m1,
                 End
         End
         If index == 2 Or index == 3 Then // for fx and vox modes, fx buttons act as radio buttons
-            Notify ("Select FX")
+            //Notify ("Select FX")
             radioselect = true //set fx buttons to radio mode
             //Print ("iterating array rcontrols to disable unneeded, size " + Size(rcontrols))
             For i = 0; i < Size (rcontrols); i = i + 1 Do //disable all control widgets
@@ -186,6 +192,7 @@ On OSCMessageReceived (m: OSCMessage) Matching "/ping" //
     chmodeallowed = true //allow mode change, rackspace has support
     holdwvc = false //allow widget value change
     SetWidgetValue (modecontrols [OSC_GetArgAsInteger (m, 0)], 1.0) //set mode based on response
+    OSC_SendIntegerSpecific ("/hello", Size(rcontrols) - 1, oscip, oscport) //send hello message to check osc support
     TriggerOneShotRamp (XTTimeout, 200, 10) // update xtouch after a timeout
 End
 
@@ -214,7 +221,7 @@ On GeneratorEndCycle (time: Integer) From hellotimeout
         //Print ("i " + i)
         ctrl_disable (rcontrols, i)
     End
-    Notify ("Handshake timeout")
+    //Notify ("Handshake timeout")
     //Print ("Handshake timeout")
     
     chmodeallowed = false //disallow mode change
@@ -235,6 +242,10 @@ On TimerTick (ms: Double)
             holdremote[i] = false
             holdlocal[i] = false
             holdfader = false
+            holdwvc = false
         End
+    End
+    If TimeSinceStartup () >= wstime + timeout Then
+        wstime = 0
     End
 End

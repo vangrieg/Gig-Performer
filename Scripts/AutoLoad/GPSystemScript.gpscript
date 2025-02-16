@@ -1,3 +1,25 @@
 Var
     XTOUT: String = "X-TOUCH MINI"
     FSOUT: String = "iRig BlueBoard Bluetooth"
+    KOUT: String = "nanoKONTROL2 CTRL"
+    
+   
+    CCA: Integer = 20 //Footswitch button A
+    CCB: Integer = 21 //Footswitch button B
+    CCC: Integer = 22 //Footswitch button C
+    CCD: Integer = 23 //Footswitch button D
+    
+    FSLEDs: Integer Array = [CCA, CCB, CCC, CCD]
+   
+    FSChan: Integer = 1 //Footswitch MIDI channel
+
+    BankUpCCA: Integer = 115 //CC# for bank up button A
+    BankUpCCB: Integer = 116 //CC# for bank up button B
+    BankUpCCC: Integer = 117 //CC# for bank up button C
+    BankUpCCD: Integer = 118 //CC# for bank up button D
+    
+    BankUpChannel: Integer = 16 //MIDI channel for bank up
+    
+    ControlCC: Integer = 127 //CC# to send to notify racks for bank change
+    
+    IsBankUp: Boolean

@@ -1,13 +1,20 @@
 //DON'T TOUCH THIS
-    ctrls: Widget Array //to hold controls of current device
+Var ctrls: Widget Array //to hold controls of current device
     rt: Integer Array //to hold mapping of current device
 
 
     Include "includes/osc"
     
     osc_enabled: Boolean = false //flag to enable/disable OSC communication
-    
+
+    //ping_sent: Boolean = false //flag to check if ping has been sent to global rackspace
+    ping_time: Double = 0.0 //time to check if ping has been sent to global rackspace
+    ws_time: Double = 0.0 //time to check if widget states have been sent to global rackspace
     maxrt: Integer = 31 // maximum index of rack controls on global rackspace, to offset fx in amp/eq mode
+
+    Initialization 
+        SetTimersRunning (true)
+    End
 
     //////////////////////////////////////////////////
     //                COMMON FUNCTIONS              //
@@ -26,8 +33,9 @@ Var rs: String
         End
         rs = rs + "," + GetWidgetValue (controls_a [i])
     End
-    If osc_enabled == true Then
+    If osc_enabled == true And ws_time == 0.0 Then
         OSC_SendStringSpecific ("/ws", rs, oscip, oscport) //send current mode widget states to global rackspace
+        ws_time = TimeSinceStartup ()
     End
 End
 
@@ -52,7 +60,7 @@ End
 // FX HELPER FUNCTION - SEND INDIVIDUAL WIDGET STATE TO GLOBAL RACKSPACE
 Function osc_out_ws1 (addr: String, v1: Integer, v2: Double) // sending 2 argument osc, integer plus double, to a specific address, when widget value changes
     Var m: OSCMessage
-    If osc_enabled == true Then
+    If osc_enabled == true And ping_time == 0.0 And ws_time == 0.0 Then
         OSC_SetAddress (m, addr)
         OSC_AppendIntArg (m, v1)
         OSC_AppendDoubleArg (m, v2)
@@ -61,15 +69,50 @@ Function osc_out_ws1 (addr: String, v1: Integer, v2: Double) // sending 2 argume
     //Print ("global osc_out: " + addr + " " + OSC_GetArgAsInteger (m, 0) + " " + OSC_GetArgAsDouble (m, 1))
 End
 
+Function ping_global ()
+    If ping_time == 0.0 And osc_enabled == true Then
+        ping_time = TimeSinceStartup ()
+        OSC_SendIntegerSpecific ("/ping", StringToInt(GetEnvVariable("mode")), oscip, oscport)
+    End
+End
+
+On TimerTick (t: Double)
+    If TimeSinceStartup () > ping_time + 500 Then
+        ping_time = 0.0
+    End
+    If TimeSinceStartup () > ws_time + 500 Then
+        ws_time = 0.0
+    End
+End
+
+On OSCMessageReceived (m: OSCMessage) Matching "/startgl"
+    osc_enabled = true
+    ping_time = TimeSinceStartup ()
+    OSC_SendIntegerSpecific ("/ping", initmode, oscip, oscport)
+End
 
 // Called when global rackspace sends handshake message
 On OSCMessageReceived (m: OSCMessage) Matching "/hello" 
     If maxrt == OSC_GetArgAsInteger (m, 0) Then //check if maxrt matches; if not, disable OSC communication, as controls are incompatible
         osc_enabled = true
-        OSC_SendIntegerSpecific ("/ping", initmode, oscip, oscport)
+        //OSC_SendIntegerSpecific ("/ping", initmode, oscip, oscport)
     Else
         osc_enabled = false
         Print ("Control mismatch, OSC disabled")
+    End
+End
+
+// LEAVE THIS
+function hideandshow (action : string , widgetGroup : widget array)
+var index : integer
+    If action == "hide" Then
+        For index=0; index < Size(widgetGroup); index = index +1 Do
+            SetWidgetHideOnPresentation(widgetGroup[index], true)
+        End
+    Else
+        For index=0; index < Size(widgetGroup); index = index +1 Do
+            SetWidgetHideOnPresentation(widgetGroup[index], false)
+        End
     End
 End
 
