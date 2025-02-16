@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<GIGRACK activeRackSpace="2" gbpm="71.52947235107422" gtimeNum="4" gtimeDen="4"
+<GIGRACK activeRackSpace="0" gbpm="71.52947235107422" gtimeNum="4" gtimeDen="4"
          gTranspose="0" version="5.0" scriptWindowPos="414 174 1417 842"
          globalStereoCount="2" globalPanelVisible="1">
-  <SCRIPT_CONTENT>Include &quot;$system$&quot;
-Include &quot;$rig$&quot;
+  <SCRIPT_CONTENT>Var
+    XTOUCH: MidiInDeviceAlias
+    SWITCH: MidiInDeviceAlias
+
+Include &quot;$system$&quot;
+//Include &quot;$rig$&quot;
 Include &quot;includes/osc&quot;
 
 Include &quot;includes/gl/gs_vars_functions&quot;
@@ -455,7 +459,7 @@ End
                 hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
                 captionVisible="1" captionHeight="0.330188679245283" reflectMIDI=""
                 reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.4616796970367432"
+                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.5039370059967041"
                 backPlate="1" backPlateVisible="1" invertMIDI="0" displayRange="2"
                 ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
                 directedOSCAddressPattern="/GVol/SetValue" directedOSCIPAddress="127.0.0.1"
@@ -4259,7 +4263,7 @@ Include &quot;includes/fs/gr_flashtempo&quot;</SCRIPT_CONTENT>
                 hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
                 captionVisible="1" captionHeight="0.25" reflectMIDI="" reflectMIDIOn="0"
                 midiThru="0" midiSource="" midiDevice="" midiData="112" rigId="0"
-                textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.4025490581989288"
+                textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.2831177115440369"
                 backPlate="1" backPlateVisible="1" invertMIDI="0" displayRange="2"
                 ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
                 directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -4303,7 +4307,7 @@ Include &quot;includes/fs/gr_flashtempo&quot;</SCRIPT_CONTENT>
                 hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
                 captionVisible="1" captionHeight="0.330188679245283" reflectMIDI=""
                 reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.4881889820098877"
+                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.3070866167545319"
                 backPlate="1" backPlateVisible="1" invertMIDI="0" displayRange="2"
                 ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
                 directedOSCAddressPattern="/GVol/SetValue" directedOSCIPAddress="127.0.0.1"
@@ -4326,7 +4330,7 @@ Include &quot;includes/fs/gr_flashtempo&quot;</SCRIPT_CONTENT>
                 hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
                 captionVisible="1" captionHeight="0.330188679245283" reflectMIDI=""
                 reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.5275590419769287"
+                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.5275589823722839"
                 backPlate="1" backPlateVisible="1" invertMIDI="0" displayRange="2"
                 ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
                 directedOSCAddressPattern="/GVol/SetValue" directedOSCIPAddress="127.0.0.1"
@@ -4349,7 +4353,7 @@ Include &quot;includes/fs/gr_flashtempo&quot;</SCRIPT_CONTENT>
                 hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
                 captionVisible="1" captionHeight="0.330188679245283" reflectMIDI=""
                 reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.4881889820098877"
+                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.1653543263673782"
                 backPlate="1" backPlateVisible="1" invertMIDI="0" displayRange="2"
                 ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
                 directedOSCAddressPattern="/GVol/SetValue" directedOSCIPAddress="127.0.0.1"
@@ -4372,7 +4376,7 @@ Include &quot;includes/fs/gr_flashtempo&quot;</SCRIPT_CONTENT>
                 hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
                 captionVisible="1" captionHeight="0.4320987654320987" reflectMIDI=""
                 reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="1.0"
+                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.0"
                 backPlate="7" backPlateVisible="1" invertMIDI="0" displayRange="0"
                 ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
                 directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -4441,7 +4445,7 @@ Include &quot;includes/fs/gr_flashtempo&quot;</SCRIPT_CONTENT>
                 hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
                 captionVisible="1" captionHeight="0.330188679245283" reflectMIDI=""
                 reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.5196850299835205"
+                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.5196849703788757"
                 backPlate="1" backPlateVisible="1" invertMIDI="0" displayRange="2"
                 ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
                 directedOSCAddressPattern="/GVol/SetValue" directedOSCIPAddress="127.0.0.1"
@@ -4464,7 +4468,7 @@ Include &quot;includes/fs/gr_flashtempo&quot;</SCRIPT_CONTENT>
                 hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
                 captionVisible="1" captionHeight="0.330188679245283" reflectMIDI=""
                 reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.3858267664909363"
+                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.3858267962932587"
                 backPlate="1" backPlateVisible="1" invertMIDI="0" displayRange="2"
                 ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
                 directedOSCAddressPattern="/GVol/SetValue" directedOSCIPAddress="127.0.0.1"
@@ -4487,7 +4491,7 @@ Include &quot;includes/fs/gr_flashtempo&quot;</SCRIPT_CONTENT>
                 hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
                 captionVisible="1" captionHeight="0.330188679245283" reflectMIDI=""
                 reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.4881889820098877"
+                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.4881890118122101"
                 backPlate="1" backPlateVisible="1" invertMIDI="0" displayRange="2"
                 ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
                 directedOSCAddressPattern="/GVol/SetValue" directedOSCIPAddress="127.0.0.1"
@@ -4554,7 +4558,7 @@ Include &quot;includes/fs/gr_flashtempo&quot;</SCRIPT_CONTENT>
                 hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
                 captionVisible="1" captionHeight="0.4320987654320987" reflectMIDI=""
                 reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="1.0"
+                rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="0.0"
                 backPlate="7" backPlateVisible="1" invertMIDI="0" displayRange="0"
                 ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
                 directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -5151,8 +5155,9 @@ End
 On Activate
     Print (&quot;on activate triggered, set timers running&quot;)
     SetTimersRunning (true)
-    //osc_enabled = true
-    //OSC_SendIntegerSpecific (&quot;/ping&quot;, initmode, oscip, oscport)
+    If osc_enabled == false Then
+        OSC_SendIntegerSpecific (&quot;/ping&quot;, initmode, oscip, oscport)
+    End
 End
 
 // Called when you switch variations
@@ -6331,8 +6336,9 @@ End
 On Activate
     Print (&quot;on activate triggered, set timers running&quot;)
     SetTimersRunning (true)
-    //osc_enabled = true
-    //OSC_SendIntegerSpecific (&quot;/ping&quot;, initmode, oscip, oscport)
+    If osc_enabled == false Then
+        OSC_SendIntegerSpecific (&quot;/ping&quot;, initmode, oscip, oscport)
+    End
 End
 
 // Called when you switch variations
@@ -7340,8 +7346,9 @@ End
 On Activate
     Print (&quot;on activate triggered, set timers running&quot;)
     SetTimersRunning (true)
-    //osc_enabled = true
-    //OSC_SendIntegerSpecific (&quot;/ping&quot;, initmode, oscip, oscport)
+    If osc_enabled == false Then
+        OSC_SendIntegerSpecific (&quot;/ping&quot;, initmode, oscip, oscport)
+    End
 End
 
 // Called when you switch variations
