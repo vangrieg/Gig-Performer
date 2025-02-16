@@ -1,3 +1,3 @@
 Var
     oscip: String = "127.0.0.1"
-    oscport: Integer = OSC_GetGPListeningPort () //set 9010 for debugging, else function
+    oscport: Integer = 9010 //OSC_GetGPListeningPort () //set 9010 for debugging, else function

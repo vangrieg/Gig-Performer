@@ -70,7 +70,7 @@ Function osc_out_ws1 (addr: String, v1: Integer, v2: Double) // sending 2 argume
 End
 
 Function ping_global ()
-    If ping_time == 0.0 Then
+    If ping_time == 0.0 And osc_enabled == true Then
         ping_time = TimeSinceStartup ()
         OSC_SendIntegerSpecific ("/ping", StringToInt(GetEnvVariable("mode")), oscip, oscport)
     End
@@ -83,6 +83,12 @@ On TimerTick (t: Double)
     If TimeSinceStartup () > ws_time + 500 Then
         ws_time = 0.0
     End
+End
+
+On OSCMessageReceived (m: OSCMessage) Matching "/startgl"
+    osc_enabled = true
+    ping_time = TimeSinceStartup ()
+    OSC_SendIntegerSpecific ("/ping", initmode, oscip, oscport)
 End
 
 // Called when global rackspace sends handshake message
