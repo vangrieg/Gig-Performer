@@ -1,82 +1,78 @@
 Include "$system$"
 
-Var
-    playerTrackLbl, playerTrackLbl_1: Widget
-    SAFP, SAFP_1 : PluginBlock //streaming audio players
-    MFP: PluginBlock // MIDI player
-   
-    SWITCH_B: MidiInBlock //Controller device Rig Manager name
-   
-    //SWITCHOUT: String = "iRig BlueBoard Bluetooth" //Controller device LED feedback port
-    
-    //decapOnOff: Widget
-   
-    gSrcPost, gSrcDI, vSrcPost, vSrcDI: Widget //looper source select buttons
-   
-    fsBank: Widget //bank select indicator
-    
-    gPostLpr, gPostLprC, gDILpr, gDILprC, vPostLpr, vPostLprC, vDILpr, vDILprC: PluginBlock //looper blocks
-    
-    lprTrigger, lprStop, lprClear, lprOverdub, lprLabel, lprUndo, lprOpen, lprLvl, lprRecording, lprPlaying, lprMemory: Widget //looper controls
+//////////////        GLOBAL RACKSPACE CONTROLS REFERENCE      //////////////////
+// FX SELECT BUTTONS (VOX ALTERNATIVES AFTER "/")
+// -------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER A ROW 1 FX BUTTON | 0  Detune/Oct/Dbl | 1  Fltr/De-ess | 2  Comp        | 3  Fuzz/Gate   | 4  Boost/EQ   | 5  OD/Sat     | //
+// -------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER A ROW 2 FX BUTTON | 6  Phaser/Flanger | 7  Chorus Pre  | 8  Dly Pre/Rack| 9  Chorus Post | 10 Delay Post | 11 Reverb     | //
+// -------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER B ROW 1 FX BUTTON | 12 Whammy         | 13 Wah         | 14 Comp 2      | 15 Drive       | 16 Drive 2    | 17 Distortion | //
+// -------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER B ROW 2 FX BUTTON | 18 Mod            | 19 Mod 2       | 20 Tremolo     | 21 Space       | 22 Delay 2    | 23 Reverb 2   | //
+// -------------------------------------------------------------------------------------------------------------------------------- //
 
-    Ch1ResetBtn , Ch2ResetBtn, Ch3ResetBtn, Ch4ResetBtn, 
-    Ch1Fader, Ch2Fader, Ch3Fader, Ch4Fader, 
-    PlayerResetBtn, SpeedFader, PitchKnob, BPMSyncBtn,
-    MainOutFader, MainOutResetBtn, 
-    PlayerStopBtn: Widget //widgets for reset functions
+// AMP MODE KNOBS
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER A AMP KNOB TURN    | 0  Gain          | 1  Bass         | 2  Mid          | 3  Treble       | 4  Level       | 5  Master      | 6  Presence    | 7  Depth       | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER B AMP KNOB TURN    | 8  Input         | 9  Gate         | 10 Transpose    | 11 Doubler      | 12 Output      | 13 Low Cut     | 14 Hi Cut      | 15 Room        | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER A AMP KNOB PUSH    | 16 Gain Boost    | 17              | 18 Mid Boost    | 19 Bright       | 20             | 21             | 22             | 23 Depth OnOff | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER B AMP KNOB PUSH    | 24               | 25 Gate         | 26 Transpose    | 27 Doubler      | 28             | 29             | 30             | 31 Room OnOff  | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+
+// EQ MODE KNOBS
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER A EQ KNOB TURN     | 0  Band 1        | 1  Band 2       | 2  Band 3       | 3  Band 4       | 4  Band 5      | 5  Band 6      | 6  Band 7      | 7  Band 8      | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER B EQ KNOB TURN     | 8  Band 9        | 9  Band 10      | 10 Band 11      | 11 Band 12      | 12 Band 13     | 13 Band 14     | 14 Band 15     | 15 Band 16     | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+
+// FX/VOX MODE KNOBS
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER A FX KNOB TURN       | 0  Drive/Thrld   | 1  Tone         | 2  Mix         | 3  Depth/Range | 4  Decay/Fdbk  | 5  Time1/Attack| 6  Time2/Releas| 7  Rate        | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER B FX KNOB TURN       | 8  Input         | 9  Mod1         | 10 Mod2        | 11 Mod3        | 12 Level       | 13 Low cut     | 14 Hi cut      | 15 Size        | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER A FX KNOB PUSH       | 16 OnOff         | 17 Mode1        | 18 Mode2       | 19 Mode3       | 20 Stereo      | 21 Host Sync   | 22             | 23             | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
+// LAYER B FX KNOB PUSH       | 24               | 25 Mod1 OnOff   | 26 Mod2 OnOff  | 27 Mod3 OnOff  | 28             | 29             | 30             | 31             | //
+// ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- //
     
-    //mode1, mode2, mode3, mode4: Widget
-    //modeSelectArray: Widget Array = [mode1, mode2, mode3, mode4]
+Var
+    //////////////////////////////////////////////////
+    //           VOX RACKSPACE DECLARATIONS         //
+    //  <--- UPDATE FOR EACH AVAILABLE DEVICE --->  //
+    //////////////////////////////////////////////////
+    od_on, od_drive, chorus_on, od_level, chorus_mix, chorus_rate, delay_on, delay_mod, delay_mix, delay_time: Widget //Vox FX widgets
     
-    ////// VOX 
     /* EFFECT DECLARATION TEMPLATE
     //device <FX index>
     Vox<FX index>_controls: Widget Array = [<FX widgets here>]
     Vox<FX index>_rt: Integer Array = [<Mappings to global rack controls>]
     */
     
-    ms_detune, ms_mix, ms_delay, ms_on: Widget
-    Vox0_controls: Widget Array = [ms_detune, ms_mix, ms_delay, ms_on]
-    Vox0_rt: Integer Array = [1,2,4,16]
+    //effect 5
+    Vox5_controls: Widget Array = [od_drive, od_on, od_level] //  widgets for this effect
+    Vox5_rt: Integer Array = [0, 16, 12] // control widgets to map these to, see FX/VOX MODE KNOBS table for reference
     
-    deess_thld, deess_on: Widget
-    Vox1_controls: Widget Array = [deess_thld, deess_on]
-    Vox1_rt: Integer Array = [0,16]
+    //effect 9
+    Vox9_controls: Widget Array = [chorus_mix, chorus_rate, chorus_on]
+    Vox9_rt: Integer Array = [2, 7, 16]
+   
+    //effect 10
+    Vox10_controls: Widget Array = [delay_mod, delay_mix, delay_time, delay_on]
+    Vox10_rt: Integer Array = [9, 2, 5, 16]
     
-    comp_thld, comp_on: Widget
-    Vox2_controls: Widget Array = [comp_thld, comp_on]
-    Vox2_rt: Integer Array = [0,16]
+    Vox_buttons: Widget Array = [od_on, chorus_on, delay_on]   // Vox FX on/off buttons
+    Vox_rt: Integer Array = [5, 9, 10] // Vox devices available, mapped to global FX buttons, see see FX/VOX MODE KNOBS table for reference
     
-    gate_thld, gate_on: Widget
-    Vox3_controls: Widget Array = [gate_thld, gate_on]
-    Vox3_rt: Integer Array = [0,16]
-    
-    eq_b1, eq_b2, eq_b3, eq_dr, eq_mf, eq_on: Widget
-    Vox4_controls: Widget Array = [eq_b1, eq_b2, eq_b3, eq_dr, eq_mf, eq_on]
-    Vox4_rt: Integer Array = [0,1,2,3,4,16]
-    
-    sat_mix, sat_on: Widget
-    Vox5_controls: Widget Array = [sat_mix, sat_on]
-    Vox5_rt: Integer Array = [2,16]
-    
-    rack_mix, rack_on: Widget
-    Vox8_controls: Widget Array = [rack_mix, rack_on]
-    Vox8_rt: Integer Array = [2,16]
-    
-    dly_mix, dly_on: Widget
-    Vox10_controls: Widget Array = [dly_mix, dly_on]
-    Vox10_rt: Integer Array = [2,16]
-    
-    reverb_mix, reverb_on: Widget
-    Vox11_controls: Widget Array = [reverb_mix, reverb_on]
-    Vox11_rt: Integer Array = [2,16]
-    
-    
-    Vox_buttons: Widget Array = [ms_on, deess_on, comp_on, gate_on, eq_on, sat_on]   // Vox FX on/off buttons
-    Vox_rt: Integer Array = [0,1,2,3,4,5,8,10,11] // Vox devices available, mapped to global FX buttons, see see FX/VOX MODE KNOBS table for reference
-
-    
-    ////// VOX
+//////////////////////////////////////////////////
+//              GLOBAL FUNCTIONS                //
+//          !!!!! DO NOT TOUCH !!!!!            //
+//////////////////////////////////////////////////
     
 Include "includes/gl/gr_vars_functions"
 
@@ -85,13 +81,6 @@ Include "includes/gl/gr_vars_functions"
 //        MODIFY USING TEMPLATE BELOW           //
 //            FOR ALL VOX EFFECTS               //
 //////////////////////////////////////////////////
-
-/*
-                        TEMPLATE FOR ADDITIONAL VOX EFFECTS
-                        i == <FX index> Do
-                            ctrls = Vox<FX index>_controls
-                            rt = Vox<FX index>_rt
-*/
 
 On WidgetValueChanged (w: widget, i: integer, v: double) from fx0, fx1, fx2, fx3, fx4, fx5, fx6, fx7, fx8, fx9, fx10, fx11, fx12, fx13, fx14, fx15, fx16, fx17, fx18, fx19, fx20, fx21, fx22, fx23 //fx select buttons
     Var j: Integer
@@ -109,33 +98,19 @@ On WidgetValueChanged (w: widget, i: integer, v: double) from fx0, fx1, fx2, fx3
                     osc_cmd ("/fx" + i + "/q")
                 mode == 3 Do //for vox mode, determine proper fx control widgets
                     Select // get available widgets for relevant device
-                        i == 0 Do
-                            ctrls = Vox0_controls
-                            rt = Vox0_rt
-                        i == 1 Do
-                            ctrls = Vox1_controls
-                            rt = Vox1_rt
-                        i == 2 Do
-                            ctrls = Vox2_controls
-                            rt = Vox2_rt
-                        i == 3 Do
-                            ctrls = Vox3_controls
-                            rt = Vox3_rt
-                        i == 4 Do
-                            ctrls = Vox4_controls
-                            rt = Vox4_rt
                         i == 5 Do
                             ctrls = Vox5_controls
                             rt = Vox5_rt
-                        i == 8 Do
-                            ctrls = Vox8_controls
-                            rt = Vox8_rt
+                        i == 9 Do
+                            ctrls = Vox9_controls
+                            rt = Vox9_rt
                         i == 10 Do
                             ctrls = Vox10_controls
                             rt = Vox10_rt
-                        i == 11 Do
-                            ctrls = Vox11_controls
-                            rt = Vox11_rt
+                        //TEMPLATE FOR ADDITIONAL VOX EFFECTS
+                        //i == <FX index> Do
+                            //ctrls = Vox<FX index>_controls
+                            //rt = Vox<FX index>_rt
                     End 
                     //Print ("ctrls size " + Size (ctrls) + ", rt size " + Size (rt))
                     //Print ("iterating array rcontrols, hiding unused widgets, size " + Size(rcontrols))
@@ -192,236 +167,57 @@ Var j: Integer
 End
 */
 
-On WidgetValueChanged (w: Widget, i: Integer, v: Double) From ms_detune, ms_mix, ms_delay, ms_on
-Var j: Integer 
-    If mode == 3 And fxselected == 0 And holdwvc == false  Then //if vox mode and fx0 selected
-        rt = Vox0_rt //get control widgets for this device
-        j = rt [i]
-        sync_rcontrols (j, v)
-    End
-End
 
-On WidgetValueChanged (w: Widget, i: Integer, v: Double) From gate_thld, gate_on
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From od_drive, od_on, od_level //Vox FX0 widgets
 Var j: Integer 
-    If mode == 3 And fxselected == 3 And holdwvc == false  Then //if vox mode and fx3 selected
-        rt = Vox3_rt //get control widgets for this device
-        j = rt [i]
-        sync_rcontrols (j, v)
-    End
-End
-
-On WidgetValueChanged (w: Widget, i: Integer, v: Double) From sat_mix, sat_on
-Var j: Integer 
-    If mode == 3 And fxselected == 5 And holdwvc == false  Then //if vox mode and fx5 selected
+    If mode == 3 And fxselected == 5 And holdwvc == false Then //if vox mode and fx0 selected
         rt = Vox5_rt //get control widgets for this device
-        j = rt [i]
+        j = rt [i] //get control widget index
         sync_rcontrols (j, v)
     End
 End
 
-On WidgetValueChanged (w: Widget, i: Integer, v: Double) From deess_thld, deess_on
+// VOX FX1 CALLBACK TO UPDATE GLOBAL RACKSPACE WIDGETS
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From chorus_mix, chorus_rate, chorus_on
 Var j: Integer 
-    If mode == 3 And fxselected == 1 And holdwvc == false  Then //if vox mode and fx1 selected
-        rt = Vox1_rt //get control widgets for this device
-        j = rt [i]
+    If mode == 3 And fxselected == 9 And holdwvc == false  Then  //if vox mode and fx1 selected
+        rt = Vox9_rt //get control widgets for this device
+        j = rt [i] //get control widget index
         sync_rcontrols (j, v)
     End
 End
 
-On WidgetValueChanged (w: Widget, i: Integer, v: Double) From comp_thld, comp_on
+
+// VOX FX2 CALLBACK TO UPDATE GLOBAL RACKSPACE WIDGETS
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From delay_mod, delay_mix, delay_time, delay_on
 Var j: Integer 
-    If mode == 3 And fxselected == 2 And holdwvc == false  Then //if vox mode and fx2 selected
-        rt = Vox2_rt //get control widgets for this device
+    If mode == 3 And fxselected == 10 And holdwvc == false  Then
+        rt = Vox10_rt
         j = rt [i]
         sync_rcontrols (j, v)
     End
 End
 
-On WidgetValueChanged (w: Widget, i: Integer, v: Double) From eq_b1, eq_b2, eq_b3, eq_dr, eq_mf, eq_on
-Var j: Integer 
-    If mode == 3 And fxselected == 4 And holdwvc == false  Then //if vox mode and fx4 selected
-        rt = Vox4_rt //get control widgets for this device
-        j = rt [i]
-        sync_rcontrols (j, v)
-    End
-End
 
-On WidgetValueChanged (w: Widget, i: Integer, v: Double) From rack_mix, rack_on
-Var j: Integer 
-    If mode == 3 And fxselected == 8 And holdwvc == false  Then //if vox mode and fx8 selected
-        rt = Vox8_rt //get control widgets for this device
-        j = rt [i]
-        sync_rcontrols (j, v)
-    End
-End
+//////////////////////////////////////////////////
+//          SYSTEM EVENT CALLBACKS              //
+//            LEAVE THE INCLUDES                //
+//      ADD YOUR OWN ACTIONS IF NEEDED          //
+//////////////////////////////////////////////////
 
-On WidgetValueChanged (w: Widget, i: Integer, v: Double) From dly_mix, dly_on
-Var j: Integer 
-    If mode == 3 And fxselected == 10 And holdwvc == false  Then //if vox mode and fx10 selected
-        rt = Vox10_rt //get control widgets for this device
-        j = rt [i]
-        sync_rcontrols (j, v)
-    End
-End
-
-On WidgetValueChanged (w: Widget, i: Integer, v: Double) From reverb_mix, reverb_on
-Var j: Integer 
-    If mode == 3 And fxselected == 11 And holdwvc == false  Then //if vox mode and fx11 selected
-        rt = Vox11_rt //get control widgets for this device
-        j = rt [i]
-        sync_rcontrols (j, v)
-    End
-End
-
-    
-Include "includes/main/gr_vars_functions"
-
-Include "includes/main/gr_looper"
-
-Include "includes/main/gr_mixer"
-
-On ControlChangeEvent(m: ControlChangeMessage) Matching 127 from SWITCH_B //resync LEDs when bank is changed
-    Var index: integer = GetCurrentSongPartIndex()
-        overdub: double = GetWidgetValue(lprOverdub)
-        memory: boolean = true
-        recording: boolean
-        playing: boolean
-        ccvalue: integer = GetCCValue (m)
-        newValue: double = GetWidgetValue (fsBank)
-    If
-        GetWidgetValue(lprMemory) == 0.0 Then
-        memory = false
-    Else
-        memory = true
-    End
-    If GetWidgetValue(lprRecording) == 0.0 Then 
-        recording = false
-    Else
-        recording = true
-    End
-    If GetWidgetValue(lprPlaying) == 0.0 Then
-        playing = false
-    Else
-        playing = true
-    End
-    //Print("cc value is " + newValue)
-    If newValue == 0.0 Then
-        IsBankUp = false
-        LEDControlR (FSOUT, FSLEDs, index, FSChan)
-    Else
-        IsBankUp = true
-        //Print("bank up current song part is " + index)
-        If playing == false Then
-            LEDControl (FSOUT, CCA, 0, FSChan)
-        Else
-            LEDControl (FSOUT, CCA, 1, FSChan)
-        End
-        LEDControl (FSOUT, CCB, 0, FSChan)
-        If overdub == 0.0 Then
-            LEDControl (FSOUT, CCC, 0, FSChan)
-        Else
-            LEDControl (FSOUT, CCC, 1, FSChan)
-        End
-        If memory == false Then
-            LEDControl (FSOUT, CCD, 0, FSChan)
-        Else
-            LEDControl (FSOUT, CCD, 1, FSChan)
-        End
-    End
-End
-
-On ControlChangeEvent (c : ControlChangeMessage) Matching 20,21,22,23 From SWITCH_B
-Var 
-    CC : integer = GetCCNumber(c)
-    value: integer = GetCCValue(c)
-    index: integer 
-    //songpart: integer = GetCurrentSongPartIndex () 
-If InSetlistMode() == true Then
-    If  value > 64 Then
-        //Print("CC# is " + CC)
-        Select
-            CC == 20 Do
-                index = 0
-            CC == 21 Do
-                index = 1
-            CC == 22 Do
-                index = 2
-            CC == 23 Do
-                index = 3
-        End
-        //Print("index is " + index)
-        If index <> GetCurrentSongPart() Then
-            SetSongPart(index)
-            LEDControlR (FSOUT, FSLEDs, index, FSChan)
-        End
-    End
-Else
-    Notify("Switch to setlist mode!")
-End    
-
-End
-
-On Song(oldSongIndex : integer, newSongIndex : integer)
-    Var index: integer = GetCurrentSongPartIndex()
-    If InSetlistMode() == true Then
-        If IsBankUp == false Then
-            LEDControlR (FSOUT, FSLEDs, newSongIndex, FSChan)
-        End
-    End
-End
-
-On Songpart(oldPartIndex: Integer, newPartIndex: Integer)
-    If InSetlistMode() == true Then
-        If IsBankUp == false Then
-            LEDControlR (FSOUT, FSLEDs, newPartIndex, FSChan)
-        End
-    End
-End
-
+// Called when you switch to another rackspace, sends a message to current local rackspace to check osc support, sets timeout
 On Rackspace(oldRackspaceIndex : integer, newRackspaceIndex : integer)
     Include "includes/gl/gr_onrackspace"
 End
 
+// Called when a gig file has finished loading, sends a message to current local rackspace to check osc support, sets timeout
 On SystemEvent Matching GigLoaded
-    Var index: Integer
-        now: Double = TimeSinceStartup()
-        done: boolean = false
-        indevexists: boolean = false
-    //Notify ("Gig loaded")
-    If MidiOutDeviceExists (FSOUT) Then
-        SetEnvVariable ("SwitchConnected", "true")
-        //Notify("Footswitch connected")
-        If InSetlistMode() == true Then
-            index = GetCurrentSongPartIndex()
-            //Notify("In setlist mode")
-            While indevexists == false Do
-                If MidiInDeviceExists (FSOUT) == true Then
-                    indevexists = true
-                    Notify ("Footswitch Input Connected")
-                End
-            End
-            LEDControlR (FSOUT, FSLEDs, index, FSChan)
-        Else
-            //Notify("Not in setlist mode, switching")
-            While TimeSinceStartup() < now + 10000 Or done == false Do
-                While InSetlistMode() == false Do
-                    SwitchToSetlistView()
-                End
-                done = true
-            End
-        End
-    Else
-        SetEnvVariable ("SwitchConnected", "false")
-        //Notify("Footswitch disconnected")
-    End
-    check_gp_preset (GetCurrentSongName(), GetGPPresetList (SAFP, 0))
     Include "includes/gl/gr_ongigloaded"
 End
 
+//////////////////////////////////////////////////
+//          FLASHES LED ON THE FOOTSWITCH       //
+//              REMOVE IF NOT NEEDED            //
+//////////////////////////////////////////////////
+
 Include "includes/fs/gr_flashtempo"
-
-
-// Called when a specific osc message is received - this is to change streaming audio player presets based on song name selected
-On OSCMessageReceived(m : OSCMessage) Matching "/GP/Song"
-    check_gp_preset (OSC_GetArgAsString(m, 0), GetGPPresetList (SAFP, 0))
-End
