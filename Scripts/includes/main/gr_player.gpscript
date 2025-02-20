@@ -1,0 +1,69 @@
+On WidgetValueChanged (v: Double) From playerTrackSel
+    Print ("track sel button pressed, value is " + v + " number of tracks is " + AudioStreamer_GetTrackCount (SAFP))
+    //Print ("number of tracks is " + AudioStreamer_GetTrackCount (SAFP))
+    If AudioStreamer_GetTrackCount (SAFP) > 2 Then
+        If v == 1.0 Then
+            AudioStreamer_SwitchToTrack (SAFP, 2)
+        Else
+            AudioStreamer_SwitchToTrack (SAFP, 0)
+        End
+    Else
+        Print ("only 2 tracks available")
+        SetWidgetValue (playerTrackSel, 0.0)
+    End
+End
+
+Var safp_check: Ramp
+
+Function set_safp_preset (song_name: String, preset_list: String Array)
+Var i: Integer
+    counter: Integer = 0
+    //Print ("Size " + Size (preset_list) + ", String is " + song_name)
+    //Add as many declarations here as you need
+    If Size(preset_list) > 0 Then
+        For i = 0; i < Size (preset_list); i = i + 1 Do
+            If preset_list[i] == song_name And counter == 0 Then
+                counter = counter + 1
+            End
+        End
+    End
+    If counter == 0 Then
+        //Print ("check failed")
+        LoadGPPreset (SAFP, "No Track")
+        SetWidgetLabel (playerTrackLbl_1, "No player preset for this song")
+        SetWidgetHideOnPresentation (playerTrackLbl, true)
+        SetWidgetHideOnPresentation (playerTrackLbl_1, false)
+        LoadGPPreset (SAFP_1, "No Track")
+    Else 
+        //Print ("check passed")
+        LoadGPPreset( SAFP, song_name)
+        SetWidgetHideOnPresentation (playerTrackLbl_1, true)
+        SetWidgetHideOnPresentation (playerTrackLbl, false)
+        LoadGPPreset (SAFP_1, song_name)
+        TriggerOneShotRamp (safp_check, 1000, 10)
+    End
+    Print ("Preset set to " + GetActivePreset (SAFP_1))
+End
+/*
+On ParameterValueChanged (pn: Integer, pv: Double) From SAFP_1
+    If pn == 13 And AudioStreamer_GetTrackCount (SAFP_1) < 3 Then
+        LoadGPPreset (SAFP_1, "No Track")
+    End
+End
+*/
+On WidgetValueChanged (v: Double) From PlayerStopBtn
+    If v == 1.0 Then
+        ResetWidgetValue (PlayerStopBtn)
+    End
+End
+
+On GeneratorEndCycle (timeX: Integer) From safp_check
+    If AudioStreamer_GetTrackCount (SAFP_1) < 3 Then
+        LoadGPPreset (SAFP_1, "No Track")
+    Else 
+        AudioStreamer_SwitchToTrack (SAFP_1, 1)
+    End
+    If GetWidgetLabel (playerTrackLbl) != AudioStreamer_GetTrackName (SAFP,  AudioStreamer_GetCurrentTrackNumber (SAFP)) Then
+        SetWidgetLabel (playerTrackLbl, AudioStreamer_GetTrackName (SAFP, AudioStreamer_GetCurrentTrackNumber (SAFP)))
+    End
+End
