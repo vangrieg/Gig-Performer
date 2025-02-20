@@ -18,6 +18,7 @@ Var safp_check: Ramp
 Function set_safp_preset (song_name: String, preset_list: String Array)
 Var i: Integer
     counter: Integer = 0
+    mfp_preset_list: String Array = GetGPPresetList (MFP, 0)
     //Print ("Size " + Size (preset_list) + ", String is " + song_name)
     //Add as many declarations here as you need
     If Size(preset_list) > 0 Then
@@ -43,6 +44,19 @@ Var i: Integer
         TriggerOneShotRamp (safp_check, 1000, 10)
     End
     Print ("Preset set to " + GetActivePreset (SAFP_1))
+    counter = 0
+    If Size(mfp_preset_list) > 0 Then
+        For i = 0; i < Size (mfp_preset_list); i = i + 1 Do
+            If mfp_preset_list[i] == song_name And counter == 0 Then
+                counter = counter + 1
+            End
+        End
+    End
+    If counter == 0 Then
+        LoadGPPreset (MFP, "No Track")
+    Else 
+        LoadGPPreset( MFP, song_name)
+    End
 End
 /*
 On ParameterValueChanged (pn: Integer, pv: Double) From SAFP_1
