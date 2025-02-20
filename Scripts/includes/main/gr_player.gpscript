@@ -66,4 +66,9 @@ On GeneratorEndCycle (timeX: Integer) From safp_check
     If GetWidgetLabel (playerTrackLbl) != AudioStreamer_GetTrackName (SAFP,  AudioStreamer_GetCurrentTrackNumber (SAFP)) Then
         SetWidgetLabel (playerTrackLbl, AudioStreamer_GetTrackName (SAFP, AudioStreamer_GetCurrentTrackNumber (SAFP)))
     End
+    If GetWidgetValue (playerTrackSel) == 1.0 And AudioStreamer_GetTrackCount (SAFP) > 2 Then
+        AudioStreamer_SwitchToTrack (SAFP, 2)
+    Else
+        AudioStreamer_SwitchToTrack (SAFP, 0)
+    End
 End
