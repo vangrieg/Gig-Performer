@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GPP_PRESET MaxInputPins="256" MaxOutputPins="256">
+  <PROCESSORSTATE>102.VMjLgzE....OMkDQIYTRLUDTLU0QI4zTTEDUEAxTkwVYiQWYjM0atcVRtQVY30iHsDiHfLUYrU1XzUFYBElaqkjajUFd8HBLh.xTzElbzMEcuA2T441XT81Qr8lXgwVOh.iHu3C.</PROCESSORSTATE>
+  <PLUGIN name="MIDI File Player" format="Internal" category="Media Player"
+          manufacturer="Deskew Technologies, LLC" version="1.0" file="424261"
+          uid="6793b" isInstrument="0" fileTime="0" infoUpdateTime="0"
+          numInputs="0" numOutputs="1" isShell="0" isEnabled="1" useDelayedLoading="0"
+          explicitWidgetRefresh="0" b64UserKeywords=""/>
+</GPP_PRESET>
