@@ -33,13 +33,6 @@ On WidgetValueChanged(newValue : double) from PlayerResetBtn
     ResetWidgetValue(PitchKnob)
 End
 
-On WidgetValueChanged(newValue : double) from BPMSyncBtn
-    If newValue == 0
-    then
-        ResetWidgetValue(SpeedFader)
-    End
-End
-
 On WidgetValueChanged(newValue : double) from MainOutResetBtn
     ResetWidgetValue(MainOutFader)
 End
