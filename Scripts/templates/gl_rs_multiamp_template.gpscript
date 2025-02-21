@@ -220,7 +220,7 @@ On WidgetValueChanged (v: Double) From <amp selector wdgt>
     End
     select_ampcontrols (amp_mode) // set amp controls
     If GetEnvVariable ("mode") == 0 Then // if in amp mode then
-        osc_out_ws (Amp_controls, Amp_rt) // send out widget states to update global rack and controller
+        ping_global () // send out widget states to update global rack and controller
     End
 End
    
