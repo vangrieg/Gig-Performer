@@ -21,6 +21,8 @@ Var i: Integer
     mfp_preset_list: String Array = GetGPPresetList (MFP, 0)
     //Print ("Size " + Size (preset_list) + ", String is " + song_name)
     //Add as many declarations here as you need
+    SetWidgetValue (PlayerStopBtn, 1.0)
+    ResetWidgetValue (playerMarkerLbl)
     If Size(preset_list) > 0 Then
         For i = 0; i < Size (preset_list); i = i + 1 Do
             If preset_list[i] == song_name And counter == 0 Then
@@ -68,6 +70,7 @@ End
 On WidgetValueChanged (v: Double) From PlayerStopBtn
     If v == 1.0 Then
         ResetWidgetValue (PlayerStopBtn)
+        ResetWidgetValue (playerMarkerLbl)
     End
 End
 
@@ -84,5 +87,21 @@ On GeneratorEndCycle (timeX: Integer) From safp_check
         AudioStreamer_SwitchToTrack (SAFP, 2)
     Else
         AudioStreamer_SwitchToTrack (SAFP, 0)
+    End
+End
+
+On WidgetValueChanged (v: Double) From SetBPMBtn
+    ResetWidgetValue (SpeedFader)
+    If v == 1.0 Then
+        SetWidgetValue (BPMSyncBtn, 0.0)
+        SetWidgetValue (PlayerStopBtn, 1.0)
+    End
+End
+
+On WidgetValueChanged (v: Double) From BPMSyncBtn
+    If v == 1.0 Then
+        SetWidgetValue (SetBPMBtn, 0.0)
+    Else
+        ResetWidgetValue (SpeedFader)
     End
 End
