@@ -1,17 +1,4 @@
 
-On WidgetValueChanged (v: Double) From PitchKnob
-Var stepValue: Integer
-    res: Double
-    stepValue = Round(v*24-12)
-    res = Scale(stepValue, -12, 12, 0, 1)
-    SetParameter (SAFP, 25, res)
-    If stepValue == 0 Then
-        SetWidgetLabel (PitchKnob, "Pitch")
-    Else
-        SetWidgetLabel (PitchKnob, stepValue)
-    End
-End
-
 On WidgetValueChanged(newValue : double) from Ch1ResetBtn
     ResetWidgetValue(Ch1Fader)
 End
