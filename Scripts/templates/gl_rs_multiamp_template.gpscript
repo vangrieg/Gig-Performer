@@ -78,14 +78,22 @@ Var
 
 // If you want to be able to sync widgets to plugin (e.g. to reflect changed presets), add this
 /*
-    <plugin sync widget>: Widget //button to sync widgets to plugin
+    <plugin sync wdgt>, <show plugin wdgt>: Widget //button to sync widgets to plugin and show plugin
     
     <plugin handle>: PluginBlock // this is the main plugin, add GPScript handle
 
 
-On WidgetValueChanged (v: Double) From <plugin sync widget>
+On WidgetValueChanged (v: Double) From <plugin sync wdgt>
     If v > 0.6 Then
         RefreshWidgetsMappedToPlugin( <plugin handle> )
+    End
+End
+
+On WidgetValueChanged (v: Double) From <show plugin wdgt>
+    If v > 0.6 Then
+        SetWidgetHideOnPresentation (<plugin sync wdgt>, false)
+    Else
+        SetWidgetHideOnPresentation (<plugin sync wdgt>, true)
     End
 End
 */
