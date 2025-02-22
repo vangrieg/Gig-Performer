@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GIGPERFORMERDATA>
+  <PROCESSOR id="40" bypass="0" bypassSmoothing="0" prop_str_nodeName="Guitar Post Looper"
+             prop_int_uiLastX="267" prop_int_uiLastY="295" prop_dbl_x="0.06030273437500000000"
+             prop_dbl_y="0.09497070312500000000" prop_int_MaxInputPins="256"
+             prop_int_MaxOutputPins="256" prop_bool_nodeGPScriptEnabled="1"
+             prop_str_nodeHandleName="gPostLpr" cmp="1">
+    <PLUGIN name="TH-U" format="VST" category="Effect" manufacturer="Overloud"
+            version="1.4.25.0" file="/Library/Audio/Plug-Ins/VST/Overloud/TH-U.vst"
+            uid="54482d55" isInstrument="0" fileTime="18ec8c0b018" infoUpdateTime="1952bb676d1"
+            numInputs="2" numOutputs="2" isShell="0" isEnabled="1" useDelayedLoading="0"
+            explicitWidgetRefresh="0" b64UserKeywords=""/>
+    <PROCESSORSTATEZ>621.3ocwUszTaCCDNLSmgeC8lpum5GIPRllDFZFnsSo.SafdTih8lDMXKoJImGbpm509WtqvLAHwlZtz5KZs1uuc+zic0nXwmafem99Qywg8F+wlW0XuW8Zz9mM9u+s+uudTza909MZz+nUYojEf1vkhAdguMvi.hXYBWLaf2UiOsYWuiFR5a.at5Abs7HK3vRHgJmNE8QWMvKX64VuYNkTao2JkY2mg6hFchx8eTvCyjv01BVFYtNFnSXhanBVFLvysCR9.eF4RPOUpy.8FTJM3xWAtyjREnIRQ55sAvSPk2oUnGIVpgmjezlV.1k9g80Ldp+v9FEDyYoTX5TH1ZF1uvf3hz3ioe43uM9ju5QryacOjOgNBCBbgPwznfr3V1irIEhbNe1bZpboGI2.Z5BVZtKwnR72ErL2RSgEPZsPOiYApEWvyeJ7lNYUNk5JDmpqEPMpV8D28fc0P4LRfT15WBAtPgaKYxDnVJxlK.cSkbo6ZSswmkaqW3WdNr7jDtUtUzCaWk9mWAiNUQHispBJUPPUklJGd7KCtDOgck1WyM7IoPs3jvMJ7X1PS.SrlqrXuDrAw8qBR.IpUPaRXTuCeGww2+wkP9EEXaWBd9Ie+rKt3xcqBi96UgVMK9lvJpsNnWudGFDzsamndcOna6Ruk3BPTYA3Yp1PasTHyp2MqejyDV9s0CbrLWfs4D0BLSoPnXWHW+xpqjJ+PvemNiY7DNcBW3d4vf7X4VYFycDSMoRGB2f++hA+RxcLH.CINWqg61hRfUEc5uyCYyDnEE2Ev6vtE+SbF9bNidvYvNNaskS+B43Lbu6MrwefzwLIb</PROCESSORSTATEZ>
+    <PROCESSORLAYOUT>
+      <BUSINPUTS>
+        <PROCESSORBUS index="0" layout="L R"/>
+      </BUSINPUTS>
+      <BUSOUTPUTS>
+        <PROCESSORBUS index="0" layout="L R"/>
+      </BUSOUTPUTS>
+    </PROCESSORLAYOUT>
+  </PROCESSOR>
+  <PROCESSOR id="43" bypass="0" bypassSmoothing="0" prop_str_nodeName="Guitar Post Looper Control"
+             prop_int_uiLastX="693" prop_int_uiLastY="251" prop_dbl_x="0.08984375000000000000"
+             prop_dbl_y="0.04174804687500000000" prop_int_MaxInputPins="256"
+             prop_int_MaxOutputPins="256" prop_str_nodeHandleName="gPostLprC"
+             prop_bool_nodeGPScriptEnabled="1" cmp="1">
+    <PLUGIN name="Scriptlet" format="Internal" category="MIDI Utility" manufacturer="Deskew Technologies, LLC"
+            version="1.0" file="424272" uid="6793c" isInstrument="0" fileTime="0"
+            infoUpdateTime="0" numInputs="0" numOutputs="1" isShell="0" isEnabled="1"
+            useDelayedLoading="0" explicitWidgetRefresh="0" b64UserKeywords=""/>
+    <PROCESSORSTATEZ>3035.3oc6bksaaijEMOquhJ4g.S2JVlU7R5zQAPwVSOBs2fkcFLOIPQU1lvTjpIohmLveMyW5bqERVabyVocFfw.IVp3c+dpasR+0ivu9+76u5Ue5hSt92mb1zqFc0XzWBi8u+5n67hVDRVL9ajnrzguY22ftvKwa4YqWtK7scJ9t2RBzvQ24htj3GmrXvwqmO3hPuuWxfqNCtbFllEupjJrNUXNUWGsHtjp2qS064TcTHwKojr8zIaOYaLH51RR2Wmz84jR8AEBOPmvC3DdJYYbhj6dnNcGl6tdYjRx9vv23pP1G3jcB4ajvRx9Uco8qTxv0DsMxOt6xYQMd6ZlVb4zoFwcMRLtXNcZwbWibi66ksUkfoqQFxcONwFwcWiLj69bR0i7tFoH2CxcckXuqQNx8PNgZQe2OXPHzBMPhFEJSmQZh1BK.oRH1H6Pa4zIGOATsWRD5z3ERFJ1HIQa47uQRVrdN57n274OM8nKmbwUyN57ytZ7YW84ACPGS7C8RHnu4kDDuNEcePzhTT7MnUTgPxHIo8fm0CgPC11C8QzQwQYAQqozdQNIngnc2YeDHtQk7gxtyKC46EgR7htkftIIdIP1tnrXD.lQAQAYAdgA+axBZSf.nJYNnhoqmyYoTAt6ri6AfZ1qMJwkohCz0vdT46Cx+3fT+DfaI4+1+bcb1u8OIovWV38c9W6KZ9pXKMAnoj3G3eCLLCJoFZghh.0rPJjt8.psP+WXb7JRxL2YILb+J.Pi1hKAK0I4OvA7A0X+tJhJkB4jDBEBJ3rdFWCclkYj14tUL5y.uRbxPysh0j796ltMzXqDwJdU.YAHJLzJ1WxpLHyMuVQqXNkVrPMXCMTlmpDqwhPjEpvJZlZkdiZAi7lEcrma7.Eeu.ZpnOEWHjVFS1EX00rA0n8BceOHR3+6IICrUzK9ofdwZnWbaQuXMzKtsnWrN5E2ZzK1F5E2IzK1D8h6.5EafdwsG8h0Qu3+mC8h0Qu3pQu6BnWZLHuz6sgwy8BUva4CVWKRUvmJpIez6Z4j9ukAKBlExF9Vvq1.50JgXdXaVbA2kiu2np8uiUtkg3lAAo9PKXkV.dChxH2x4LmGNDiSs.t8Qzh30yCIlJfNnKmT5m.BmGGCtaDPYVxZRudv3hPL7h3zrbS+inw+KvXi7B+GAKtkjAkVXR7usNxOK.b0TRlPwa4wa4inzrD.l3f.345jnTg8PmqBBHUfryMSVwJzTRHwOi8Q5OBQMTAiIvcKhKHi9SoDK7WqhXJIqYA3JI.1GFGsnWwWRHoqCy.xJXoWOAApADeXUWQjv7.i3qkYv9H8Xk0nPNefO3pa0kIevdLRBN1jA1TF35jgVXvzUATYreP12mcSX.TcIYK+0IIv5Lmk+fROtDLHZfgFhHOXgVdrH3Fjg3d6sP56f8fYVRhJ7DEg.QJ1CHgojJo.eHmFpSojWkIrG2gkSrQKXUjrkOs3wbOLlA0K64hKgSTOTN6n5UwL.I6W+BxcWUKdJ7oyheXqS8tmbFPxojzTuaIaQIuzXbbrhOA2fO1Hq1ho2TgkyCrKSuEZ8TnRoPmrVUpOU5gc.OSkvPKHJs5hNJLIEjZEfuRkfamRJyD40EngignJSCNJYKfXGNnRKcvFu5YAqd+K.rRyInyw6Y4C68WrOn4D92Q7ueVLnpj7B31bmEjz.X5NEihoOXG+68FrM5Hp.So9BHSDSvEdUPJpX9oChKmvExKZAsTbZNkovPEB5BgZROhNhWTjOcPQD4QD5XtYI2LzJ5blVKa7QzYjGT3EZhSjxCdr2iuy1Osu0GaIyflPhYmJ2qCLqhompzpYyfCHE.EMIlqphD6plZiXg.ZLjoY6vghlrX.1rzJ0Ta8od81dPwfopfRV+g7AQs7HNV2xCnhx5C67rTTT9Ps0lqPpr9FpsLH04j03zZrqTbaUpMqybxf5wngxBSsRlp8XccSn25sb0uw9OsJLEzqsZM0ZhfZTLlVwTtaj6.Ur7Ok.ucW2x5CK3.pgUk0YppVXeUpERkLpDQKYQjN4FXEYI0071bVpAW5YFI5PTW3bMGJLlpb0jpORaqqCnsqFC0clt0AWaG9Ljl5xVLW9VgSZY5wBY6y6blOAfZV4lw.+CPiXjjhd.RgBARGvOHB4gDBFsEafd9nQNHt0XuJdEazRaV1Lu2e496oGHky10L8m9Vqk.qOD7UXY0Twv8.z27BWq1MbvfpVvgCmcHLv1kEjQYlpWIce80z6HrD99qUl6qMuajzEoiMZRWHSz70YzYrlm+aJWqrecu.4Z0s4jloRe5IZ47rYO8NrWOlCFnzmPXkh1PlihKrQkkaY25ZG9SdynAwb8pETaSrkJpgnJc2xsBG7VVWp+fPVA.GukjpcA4EaUsGXtWVMzivnKQwhT1ncJJjZScCzJ4rQ5HL4F4spkskRzi97J8wa6dmFiAwcLDXM8RTncr9zYZg0fzgmpchUkuzzCL1ozhS0o49ep0or3oxaXliE7XmJPKsP4MJdTRtMgHMxw+kVbt4Daa.XuTY9Vl0MR6higailxExrozs5jq++ke1LfzeFp9z3XwMNrayxyu5oxzq8CKSIT87kJF+bVX4zUk2jRFy4mvlySc4Zx2.jgZyEoEqOCWA6EGljpSI5QVqKg1.9T9g5+j7HaLWg+vmFnc24YX9EGXW4I.1MWPR.XYATgav7SpWjZKqXV5ztqI02099eoYsUhx6SqV5XPqEvSETZlVrzQ1h4pTq4meyUei+ZuA69xXvl6.1OBS1sqlbSls59C9i.V39jix1O0dJ6Ea3A3K15Va+PCZw7s1t2ovranWoSO1tEHlvEWNy8RgkkGS2Fr4qyxnefIucJljFTP3i858N1wz.+pbtTnsDWXMALgco0b.RXUQfeSG5ttiBwZ811rw70LID66UXdTxoI8TaEEK5Qa6oZsdZnTfEMYrp+VqqF6EaQaVVUWq0Wsc+rnKskRnpGky2Yv1FGJvqklYl59yaefRogGcx25b.gV+pefkr7KU7CZxYStZxnSlLczUSN+LzQiN4juL5n+vBChYTxunyr69oGZI+jvQdYrCjddLzEbI89jS+VpeRvprPRF5g.nqzC8ljeCs8nAndrdOYBgkel57v9I793zaedRbH5l3D1gWFFudA5p+90n2g7CC7uGptbSbdGeJQAQPey07d9RqR.TyDfRUcbp2JlYpcsU6ypTzmWEnO6vyoEBjtN2zRQKiWBIQOXROOvtDao6fnxqneQ+7SVsuXCj4RheX3.+BtPdonuGuFEFbOAbJvbRIzJVPtziVVK76HedLHcGI+Q912keS6DW9Jsl32jeiS2noKIrsqvk49S1yDl51W6nTbzt563VZC3mtMf6qoLGwEvmsvmd02e3hQWN5zwWM9xhtBSs1W37nx6c4WoaKK+.6WfV5k4eGc97Vtq+EWCMauG.h0suuZY.001OjceBMWYuwRvcUGeGTozMQ8sg1zTkGElwn6FI49UrQEpFg74GZra.StwPwUMXi080vHBfM2phtDErdDiFQBCnV6hD5QCEmfeCkAI6hO7E0GjtJ9MZ8iYG3sVF701GRsc4O2Mluu4QxVi.ZeGl2pc7cQks52ntogDBfC1eWmpgIUhRZhY9wUUE2CF7LQMESA0o1PDurrxiX2Df7MssC0XoQCypqrtR1qqVFCc0hBsEk8LPW58rjt1HjJrPGivSGhNrzsY3g+NMTS7gCSdABP5ivipOJUZmRgotFjVyVtmdLh8ZFUSHhs8su.QHoW2oVDfJrxmALBWyDYvMOQl5FftiwqM6.xD4ROcrvC1ZgGb6J7fednlM0P5MT7A+bQM7hOx2dQsWEuFK.8BDndREfd1gJakfvsqDzKPL5ITBxdDpaCzy1WCTqV5YmS.UKcyEU9DLd1aun46TfXaN37kuIE62WiOmmf+zEE5teeMF6fFkd6JK.vxuwk1guU8hUbHGL+hNmrezUa6vTTjeET0it0UBspv6G94K7twlj3On079iXnDMbvmFn82qi7+9cb8zwWN6qitbxnubx3oC97mFH8GkmO+p+KnQznhL</PROCESSORSTATEZ>
+  </PROCESSOR>
+  <PROCESSOR id="54" bypass="0" bypassSmoothing="0" prop_str_nodeName="Vox DI Looper Control"
+             prop_int_uiLastX="1619" prop_int_uiLastY="202" prop_dbl_x="0.24194335937500000000"
+             prop_dbl_y="0.02294921875000000000" prop_int_MaxInputPins="256"
+             prop_int_MaxOutputPins="256" prop_bool_nodeGPScriptEnabled="1"
+             prop_str_nodeHandleName="vDILprC" cmp="1">
+    <PLUGIN name="Scriptlet" format="Internal" category="MIDI Utility" manufacturer="Deskew Technologies, LLC"
+            version="1.0" file="424272" uid="6793c" isInstrument="0" fileTime="0"
+            infoUpdateTime="0" numInputs="0" numOutputs="1" isShell="0" isEnabled="1"
+            useDelayedLoading="0" explicitWidgetRefresh="0" b64UserKeywords=""/>
+    <PROCESSORSTATEZ>3035.3oc6bksaaijEMOquhJ4g.S2JVlU7R5zQAPwVSOBs2fkcFLOIPQU1lvTjpIohmLveMyW5bqERVabyVocFfw.IVp3c+dpasR+0ivu9+76u5Ue5hSt92mb1zqFc0XzWBi8u+5n67hVDRVL9ajnrzguY22ftvKwa4YqWtK7scJ9t2RBzvQ24htj3GmrXvwqmO3hPuuWxfqNCtbFllEupjJrNUXNUWGsHtjp2qS064TcTHwKojr8zIaOYaLH51RR2Wmz84jR8AEBOPmvC3DdJYYbhj6dnNcGl6tdYjRx9vv23pP1G3jcB4ajvRx9Uco8qTxv0DsMxOt6xYQMd6ZlVb4zoFwcMRLtXNcZwbWibi66ksUkfoqQFxcONwFwcWiLj69bR0i7tFoH2CxcckXuqQNx8PNgZQe2OXPHzBMPhFEJSmQZh1BK.oRH1H6Pa4zIGOATsWRD5z3ERFJ1HIQa47uQRVrdN57n274OM8nKmbwUyN57ytZ7YW84ACPGS7C8RHnu4kDDuNEcePzhTT7MnUTgPxHIo8fm0CgPC11C8QzQwQYAQqozdQNIngnc2YeDHtQk7gxtyKC46EgR7htkftIIdIP1tnrXD.lQAQAYAdgA+axBZSf.nJYNnhoqmyYoTAt6ri6AfZ1qMJwkohCz0vdT46Cx+3fT+DfaI4+1+bcb1u8OIovWV38c9W6KZ9pXKMAnoj3G3eCLLCJoFZghh.0rPJjt8.psP+WXb7JRxL2YILb+J.Pi1hKAK0I4OvA7A0X+tJhJkB4jDBEBJ3rdFWCclkYj14tUL5y.uRbxPysh0j796ltMzXqDwJdU.YAHJLzJ1WxpLHyMuVQqXNkVrPMXCMTlmpDqwhPjEpvJZlZkdiZAi7lEcrma7.Eeu.ZpnOEWHjVFS1EX00rA0n8BceOHR3+6IICrUzK9ofdwZnWbaQuXMzKtsnWrN5E2ZzK1F5E2IzK1D8h6.5EafdwsG8h0Qu3+mC8h0Qu3pQu6BnWZLHuz6sgwy8BUva4CVWKRUvmJpIez6Z4j9ukAKBlExF9Vvq1.50JgXdXaVbA2kiu2np8uiUtkg3lAAo9PKXkV.dChxH2x4LmGNDiSs.t8Qzh30yCIlJfNnKmT5m.BmGGCtaDPYVxZRudv3hPL7h3zrbS+inw+KvXi7B+GAKtkjAkVXR7usNxOK.b0TRlPwa4wa4inzrD.l3f.345jnTg8PmqBBHUfryMSVwJzTRHwOi8Q5OBQMTAiIvcKhKHi9SoDK7WqhXJIqYA3JI.1GFGsnWwWRHoqCy.xJXoWOAApADeXUWQjv7.i3qkYv9H8Xk0nPNefO3pa0kIevdLRBN1jA1TF35jgVXvzUATYreP12mcSX.TcIYK+0IIv5Lmk+fROtDLHZfgFhHOXgVdrH3Fjg3d6sP56f8fYVRhJ7DEg.QJ1CHgojJo.eHmFpSojWkIrG2gkSrQKXUjrkOs3wbOLlA0K64hKgSTOTN6n5UwL.I6W+BxcWUKdJ7oyheXqS8tmbFPxojzTuaIaQIuzXbbrhOA2fO1Hq1ho2TgkyCrKSuEZ8TnRoPmrVUpOU5gc.OSkvPKHJs5hNJLIEjZEfuRkfamRJyD40EngignJSCNJYKfXGNnRKcvFu5YAqd+K.rRyInyw6Y4C68WrOn4D92Q7ueVLnpj7B31bmEjz.X5NEihoOXG+68FrM5Hp.So9BHSDSvEdUPJpX9oChKmvExKZAsTbZNkovPEB5BgZROhNhWTjOcPQD4QD5XtYI2LzJ5blVKa7QzYjGT3EZhSjxCdr2iuy1Osu0GaIyflPhYmJ2qCLqhompzpYyfCHE.EMIlqphD6plZiXg.ZLjoY6vghlrX.1rzJ0Ta8od81dPwfopfRV+g7AQs7HNV2xCnhx5C67rTTT9Ps0lqPpr9FpsLH04j03zZrqTbaUpMqybxf5wngxBSsRlp8XccSn25sb0uw9OsJLEzqsZM0ZhfZTLlVwTtaj6.Ur7Ok.ucW2x5CK3.pgUk0YppVXeUpERkLpDQKYQjN4FXEYI0071bVpAW5YFI5PTW3bMGJLlpb0jpORaqqCnsqFC0clt0AWaG9Ljl5xVLW9VgSZY5wBY6y6blOAfZV4lw.+CPiXjjhd.RgBARGvOHB4gDBFsEafd9nQNHt0XuJdEazRaV1Lu2e496oGHky10L8m9Vqk.qOD7UXY0Twv8.z27BWq1MbvfpVvgCmcHLv1kEjQYlpWIce80z6HrD99qUl6qMuajzEoiMZRWHSz70YzYrlm+aJWqrecu.4Z0s4jloRe5IZ47rYO8NrWOlCFnzmPXkh1PlihKrQkkaY25ZG9SdynAwb8pETaSrkJpgnJc2xsBG7VVWp+fPVA.GukjpcA4EaUsGXtWVMzivnKQwhT1ncJJjZScCzJ4rQ5HL4F4spkskRzi97J8wa6dmFiAwcLDXM8RTncr9zYZg0fzgmpchUkuzzCL1ozhS0o49ep0or3oxaXliE7XmJPKsP4MJdTRtMgHMxw+kVbt4Daa.XuTY9Vl0MR6higailxExrozs5jq++ke1LfzeFp9z3XwMNrayxyu5oxzq8CKSIT87kJF+bVX4zUk2jRFy4mvlySc4Zx2.jgZyEoEqOCWA6EGljpSI5QVqKg1.9T9g5+j7HaLWg+vmFnc24YX9EGXW4I.1MWPR.XYATgav7SpWjZKqXV5ztqI02099eoYsUhx6SqV5XPqEvSETZlVrzQ1h4pTq4meyUei+ZuA69xXvl6.1OBS1sqlbSls59C9i.V39jix1O0dJ6Ea3A3K15Va+PCZw7s1t2ovranWoSO1tEHlvEWNy8RgkkGS2Fr4qyxnefIucJljFTP3i858N1wz.+pbtTnsDWXMALgco0b.RXUQfeSG5ttiBwZ811rw70LID66UXdTxoI8TaEEK5Qa6oZsdZnTfEMYrp+VqqF6EaQaVVUWq0Wsc+rnKskRnpGky2Yv1FGJvqklYl59yaefRogGcx25b.gV+pefkr7KU7CZxYStZxnSlLczUSN+LzQiN4juL5n+vBChYTxunyr69oGZI+jvQdYrCjddLzEbI89jS+VpeRvprPRF5g.nqzC8ljeCs8nAndrdOYBgkel57v9I793zaedRbH5l3D1gWFFudA5p+90n2g7CC7uGptbSbdGeJQAQPey07d9RqR.TyDfRUcbp2JlYpcsU6ypTzmWEnO6vyoEBjtN2zRQKiWBIQOXROOvtDao6fnxqneQ+7SVsuXCj4RheX3.+BtPdonuGuFEFbOAbJvbRIzJVPtziVVK76HedLHcGI+Q912keS6DW9Jsl32jeiS2noKIrsqvk49S1yDl51W6nTbzt563VZC3mtMf6qoLGwEvmsvmd02e3hQWN5zwWM9xhtBSs1W37nx6c4WoaKK+.6WfV5k4eGc97Vtq+EWCMauG.h0suuZY.001OjceBMWYuwRvcUGeGTozMQ8sg1zTkGElwn6FI49UrQEpFg74GZra.StwPwUMXi080vHBfM2phtDErdDiFQBCnV6hD5QCEmfeCkAI6hO7E0GjtJ9MZ8iYG3sVF701GRsc4O2Mluu4QxVi.ZeGl2pc7cQks52ntogDBfC1eWmpgIUhRZhY9wUUE2CF7LQMESA0o1PDurrxiX2Df7MssC0XoQCypqrtR1qqVFCc0hBsEk8LPW58rjt1HjJrPGivSGhNrzsY3g+NMTS7gCSdABP5ivipOJUZmRgotFjVyVtmdLh8ZFUSHhs8su.QHoW2oVDfJrxmALBWyDYvMOQl5FftiwqM6.xD4ROcrvC1ZgGb6J7fednlM0P5MT7A+bQM7hOx2dQsWEuFK.8BDndREfd1gJakfvsqDzKPL5ITBxdDpaCzy1WCTqV5YmS.UKcyEU9DLd1aun46TfXaN37kuIE62WiOmmf+zEE5teeMF6fFkd6JK.vxuwk1guU8hUbHGL+hNmrezUa6vTTjeET0it0UBspv6G94K7twlj3On079iXnDMbvmFn82qi7+9cb8zwWN6qitbxnubx3oC97mFH8GkmO+p+KnQznhL</PROCESSORSTATEZ>
+  </PROCESSOR>
+  <PROCESSOR id="53" bypass="0" bypassSmoothing="0" prop_str_nodeName="Vox DI Looper"
+             prop_int_uiLastX="60" prop_int_uiLastY="447" prop_dbl_x="0.25122070312500000000"
+             prop_dbl_y="0.05981445312500000000" prop_int_MaxInputPins="256"
+             prop_int_MaxOutputPins="256" prop_bool_nodeGPScriptEnabled="1"
+             prop_str_nodeHandleName="vDILpr" cmp="1">
+    <PLUGIN name="TH-U" format="VST" category="Effect" manufacturer="Overloud"
+            version="1.4.25.0" file="/Library/Audio/Plug-Ins/VST/Overloud/TH-U.vst"
+            uid="54482d55" isInstrument="0" fileTime="18ec8c0b018" infoUpdateTime="1952bb676d5"
+            numInputs="2" numOutputs="2" isShell="0" isEnabled="1" useDelayedLoading="0"
+            explicitWidgetRefresh="0" b64UserKeywords=""/>
+    <PROCESSORSTATEZ>634.3ocwUErbZCCDkLSmIeC8lpuSskMIjNAHSJCosSSSxzRROpQXu.ZhsjpjLPxo9czq8GsRXFH.1oNWZ8EsV6a28oU6tpeL+yMreW799SsKGL7iMuswAu50V4e13+92g+9t9gu4WG1nQmyVjkhlAJMSv65geafGB3whDFeRWuaGdQyS7NqGpiFL4xM3h7PyXvbHgHFO1pirnqWvt68v58jBkg7nPjsJBK8FYjz8eXvlcRXJSgUZQtJFHin76IbZFz0ykAQefMAcCnFKTYfZMJoBbwq.2kBgDTHAO8gcAvRrLucD1CEKTvVw2JSJ.6BeuNJJK0uWGsDhYzTBLdLDaz85THfbdZ34jub92FN3qdHyznUP9jUANHv4BIUYIjwlxdhLpfjSYSlRREy8P4ZPQlQSycA1xD+8AKxMjTXFjVKzSnFfXrG3oaCuoiVkaRcIhi00BnxxV0HWcv9bnbKRfT5CuDCXboMsjIRfZwHSNGTMkh4txlZiOK2TO2O+JX9fDlQri2wsph+Sqvh1UYPFcQElTgAxp3T4vieYvE1aXWq8cLMaTJTKaRXZo8ZVSR.crhIM1YI1ADqNEn.TXTPKDN7cGeJBGgwKEQXL9XzIgAmhb9z+osU9EMc61Vd0fue40Wey9clg+8NSihFeOth9sVsCaE0F2JJJ7nSBNpcoUNNGDVlCdlNPqrRvEY0qZ6G4Ttg8X8.GKx41Qe7ZAlJkVn1IStYnU2cU9kf+dSKyXILxHF28Zh1ZGM2HxntqchNU3P3V7+Wr3WRriANnQw4JErLEk.KJl9uTCZ8FVIhMKXqqcG9sTheNkgaTFrmxncT5WPGmf6svdM9Ckg5kt.</PROCESSORSTATEZ>
+    <PROCESSORLAYOUT>
+      <BUSINPUTS>
+        <PROCESSORBUS index="0" layout="L R"/>
+      </BUSINPUTS>
+      <BUSOUTPUTS>
+        <PROCESSORBUS index="0" layout="L R"/>
+      </BUSOUTPUTS>
+    </PROCESSORLAYOUT>
+  </PROCESSOR>
+  <PROCESSOR id="46" bypass="0" bypassSmoothing="0" prop_str_nodeName="Guitar DI Looper Control"
+             prop_int_uiLastX="1619" prop_int_uiLastY="202" prop_dbl_x="0.41455078125000000000"
+             prop_dbl_y="0.10522460937500000000" prop_int_MaxInputPins="256"
+             prop_int_MaxOutputPins="256" prop_str_nodeHandleName="gDILprC"
+             prop_bool_nodeGPScriptEnabled="1" cmp="1">
+    <PLUGIN name="Scriptlet" format="Internal" category="MIDI Utility" manufacturer="Deskew Technologies, LLC"
+            version="1.0" file="424272" uid="6793c" isInstrument="0" fileTime="0"
+            infoUpdateTime="0" numInputs="0" numOutputs="1" isShell="0" isEnabled="1"
+            useDelayedLoading="0" explicitWidgetRefresh="0" b64UserKeywords=""/>
+    <PROCESSORSTATEZ>3035.3oc6bksaaijEMOquhJ4g.S2JVlU7R5zQAPwVSOBs2fkcFLOIPQU1lvTjpIohmLveMyW5bqERVabyVocFfw.IVp3c+dpasR+0ivu9+76u5Ue5hSt92mb1zqFc0XzWBi8u+5n67hVDRVL9ajnrzguY22ftvKwa4YqWtK7scJ9t2RBzvQ24htj3GmrXvwqmO3hPuuWxfqNCtbFllEupjJrNUXNUWGsHtjp2qS064TcTHwKojr8zIaOYaLH51RR2Wmz84jR8AEBOPmvC3DdJYYbhj6dnNcGl6tdYjRx9vv23pP1G3jcB4ajvRx9Uco8qTxv0DsMxOt6xYQMd6ZlVb4zoFwcMRLtXNcZwbWibi66ksUkfoqQFxcONwFwcWiLj69bR0i7tFoH2CxcckXuqQNx8PNgZQe2OXPHzBMPhFEJSmQZh1BK.oRH1H6Pa4zIGOATsWRD5z3ERFJ1HIQa47uQRVrdN57n274OM8nKmbwUyN57ytZ7YW84ACPGS7C8RHnu4kDDuNEcePzhTT7MnUTgPxHIo8fm0CgPC11C8QzQwQYAQqozdQNIngnc2YeDHtQk7gxtyKC46EgR7htkftIIdIP1tnrXD.lQAQAYAdgA+axBZSf.nJYNnhoqmyYoTAt6ri6AfZ1qMJwkohCz0vdT46Cx+3fT+DfaI4+1+bcb1u8OIovWV38c9W6KZ9pXKMAnoj3G3eCLLCJoFZghh.0rPJjt8.psP+WXb7JRxL2YILb+J.Pi1hKAK0I4OvA7A0X+tJhJkB4jDBEBJ3rdFWCclkYj14tUL5y.uRbxPysh0j796ltMzXqDwJdU.YAHJLzJ1WxpLHyMuVQqXNkVrPMXCMTlmpDqwhPjEpvJZlZkdiZAi7lEcrma7.Eeu.ZpnOEWHjVFS1EX00rA0n8BceOHR3+6IICrUzK9ofdwZnWbaQuXMzKtsnWrN5E2ZzK1F5E2IzK1D8h6.5EafdwsG8h0Qu3+mC8h0Qu3pQu6BnWZLHuz6sgwy8BUva4CVWKRUvmJpIez6Z4j9ukAKBlExF9Vvq1.50JgXdXaVbA2kiu2np8uiUtkg3lAAo9PKXkV.dChxH2x4LmGNDiSs.t8Qzh30yCIlJfNnKmT5m.BmGGCtaDPYVxZRudv3hPL7h3zrbS+inw+KvXi7B+GAKtkjAkVXR7usNxOK.b0TRlPwa4wa4inzrD.l3f.345jnTg8PmqBBHUfryMSVwJzTRHwOi8Q5OBQMTAiIvcKhKHi9SoDK7WqhXJIqYA3JI.1GFGsnWwWRHoqCy.xJXoWOAApADeXUWQjv7.i3qkYv9H8Xk0nPNefO3pa0kIevdLRBN1jA1TF35jgVXvzUATYreP12mcSX.TcIYK+0IIv5Lmk+fROtDLHZfgFhHOXgVdrH3Fjg3d6sP56f8fYVRhJ7DEg.QJ1CHgojJo.eHmFpSojWkIrG2gkSrQKXUjrkOs3wbOLlA0K64hKgSTOTN6n5UwL.I6W+BxcWUKdJ7oyheXqS8tmbFPxojzTuaIaQIuzXbbrhOA2fO1Hq1ho2TgkyCrKSuEZ8TnRoPmrVUpOU5gc.OSkvPKHJs5hNJLIEjZEfuRkfamRJyD40EngignJSCNJYKfXGNnRKcvFu5YAqd+K.rRyInyw6Y4C68WrOn4D92Q7ueVLnpj7B31bmEjz.X5NEihoOXG+68FrM5Hp.So9BHSDSvEdUPJpX9oChKmvExKZAsTbZNkovPEB5BgZROhNhWTjOcPQD4QD5XtYI2LzJ5blVKa7QzYjGT3EZhSjxCdr2iuy1Osu0GaIyflPhYmJ2qCLqhompzpYyfCHE.EMIlqphD6plZiXg.ZLjoY6vghlrX.1rzJ0Ta8od81dPwfopfRV+g7AQs7HNV2xCnhx5C67rTTT9Ps0lqPpr9FpsLH04j03zZrqTbaUpMqybxf5wngxBSsRlp8XccSn25sb0uw9OsJLEzqsZM0ZhfZTLlVwTtaj6.Ur7Ok.ucW2x5CK3.pgUk0YppVXeUpERkLpDQKYQjN4FXEYI0071bVpAW5YFI5PTW3bMGJLlpb0jpORaqqCnsqFC0clt0AWaG9Ljl5xVLW9VgSZY5wBY6y6blOAfZV4lw.+CPiXjjhd.RgBARGvOHB4gDBFsEafd9nQNHt0XuJdEazRaV1Lu2e496oGHky10L8m9Vqk.qOD7UXY0Twv8.z27BWq1MbvfpVvgCmcHLv1kEjQYlpWIce80z6HrD99qUl6qMuajzEoiMZRWHSz70YzYrlm+aJWqrecu.4Z0s4jloRe5IZ47rYO8NrWOlCFnzmPXkh1PlihKrQkkaY25ZG9SdynAwb8pETaSrkJpgnJc2xsBG7VVWp+fPVA.GukjpcA4EaUsGXtWVMzivnKQwhT1ncJJjZScCzJ4rQ5HL4F4spkskRzi97J8wa6dmFiAwcLDXM8RTncr9zYZg0fzgmpchUkuzzCL1ozhS0o49ep0or3oxaXliE7XmJPKsP4MJdTRtMgHMxw+kVbt4Daa.XuTY9Vl0MR6higailxExrozs5jq++ke1LfzeFp9z3XwMNrayxyu5oxzq8CKSIT87kJF+bVX4zUk2jRFy4mvlySc4Zx2.jgZyEoEqOCWA6EGljpSI5QVqKg1.9T9g5+j7HaLWg+vmFnc24YX9EGXW4I.1MWPR.XYATgav7SpWjZKqXV5ztqI02099eoYsUhx6SqV5XPqEvSETZlVrzQ1h4pTq4meyUei+ZuA69xXvl6.1OBS1sqlbSls59C9i.V39jix1O0dJ6Ea3A3K15Va+PCZw7s1t2ovranWoSO1tEHlvEWNy8RgkkGS2Fr4qyxnefIucJljFTP3i858N1wz.+pbtTnsDWXMALgco0b.RXUQfeSG5ttiBwZ811rw70LID66UXdTxoI8TaEEK5Qa6oZsdZnTfEMYrp+VqqF6EaQaVVUWq0Wsc+rnKskRnpGky2Yv1FGJvqklYl59yaefRogGcx25b.gV+pefkr7KU7CZxYStZxnSlLczUSN+LzQiN4juL5n+vBChYTxunyr69oGZI+jvQdYrCjddLzEbI89jS+VpeRvprPRF5g.nqzC8ljeCs8nAndrdOYBgkel57v9I793zaedRbH5l3D1gWFFudA5p+90n2g7CC7uGptbSbdGeJQAQPey07d9RqR.TyDfRUcbp2JlYpcsU6ypTzmWEnO6vyoEBjtN2zRQKiWBIQOXROOvtDao6fnxqneQ+7SVsuXCj4RheX3.+BtPdonuGuFEFbOAbJvbRIzJVPtziVVK76HedLHcGI+Q912keS6DW9Jsl32jeiS2noKIrsqvk49S1yDl51W6nTbzt563VZC3mtMf6qoLGwEvmsvmd02e3hQWN5zwWM9xhtBSs1W37nx6c4WoaKK+.6WfV5k4eGc97Vtq+EWCMauG.h0suuZY.001OjceBMWYuwRvcUGeGTozMQ8sg1zTkGElwn6FI49UrQEpFg74GZra.StwPwUMXi080vHBfM2phtDErdDiFQBCnV6hD5QCEmfeCkAI6hO7E0GjtJ9MZ8iYG3sVF701GRsc4O2Mluu4QxVi.ZeGl2pc7cQks52ntogDBfC1eWmpgIUhRZhY9wUUE2CF7LQMESA0o1PDurrxiX2Df7MssC0XoQCypqrtR1qqVFCc0hBsEk8LPW58rjt1HjJrPGivSGhNrzsY3g+NMTS7gCSdABP5ivipOJUZmRgotFjVyVtmdLh8ZFUSHhs8su.QHoW2oVDfJrxmALBWyDYvMOQl5FftiwqM6.xD4ROcrvC1ZgGb6J7fednlM0P5MT7A+bQM7hOx2dQsWEuFK.8BDndREfd1gJakfvsqDzKPL5ITBxdDpaCzy1WCTqV5YmS.UKcyEU9DLd1aun46TfXaN37kuIE62WiOmmf+zEE5teeMF6fFkd6JK.vxuwk1guU8hUbHGL+hNmrezUa6vTTjeET0it0UBspv6G94K7twlj3On079iXnDMbvmFn82qi7+9cb8zwWN6qitbxnubx3oC97mFH8GkmO+p+KnQznhL</PROCESSORSTATEZ>
+  </PROCESSOR>
+  <PROCESSOR id="45" bypass="0" bypassSmoothing="0" prop_str_nodeName="Guitar DI Looper"
+             prop_int_uiLastX="221" prop_int_uiLastY="456" prop_dbl_x="0.38378906250000000000"
+             prop_dbl_y="0.13525390625000000000" prop_int_MaxInputPins="256"
+             prop_int_MaxOutputPins="256" prop_bool_nodeGPScriptEnabled="1"
+             prop_str_nodeHandleName="gDILpr" cmp="1">
+    <PLUGIN name="TH-U" format="VST" category="Effect" manufacturer="Overloud"
+            version="1.4.25.0" file="/Library/Audio/Plug-Ins/VST/Overloud/TH-U.vst"
+            uid="54482d55" isInstrument="0" fileTime="18ec8c0b018" infoUpdateTime="1952bb676d6"
+            numInputs="2" numOutputs="2" isShell="0" isEnabled="1" useDelayedLoading="0"
+            explicitWidgetRefresh="0" b64UserKeywords=""/>
+    <PROCESSORSTATEZ>634.3ocwUErbZCCDkLSmIeC8lpuSskMIjNAHSJCosSSSxzRROpQXu.ZhsjpjLPxo9czq8GsRXFH.1oNWZ8EsV6a28oU6tpeL+yMreW799SsKGL7iMuswAu50V4e13+92g+9t9gu4WG1nQmyVjkhlAJMSv65geafGB3whDFeRWuaGdQyS7NqGpiFL4xM3h7PyXvbHgHFO1pirnqWvt68v58jBkg7nPjsJBK8FYjz8eXvlcRXJSgUZQtJFHin76IbZFz0ykAQefMAcCnFKTYfZMJoBbwq.2kBgDTHAO8gcAvRrLucD1CEKTvVw2JSJ.6BeuNJJK0uWGsDhYzTBLdLDaz85THfbdZ34jub92FN3qdHyznUP9jUANHv4BIUYIjwlxdhLpfjSYSlRREy8P4ZPQlQSycA1xD+8AKxMjTXFjVKzSnFfXrG3oaCuoiVkaRcIhi00BnxxV0HWcv9bnbKRfT5CuDCXboMsjIRfZwHSNGTMkh4txlZiOK2TO2O+JX9fDlQri2wsph+Sqvh1UYPFcQElTgAxp3T4vieYvE1aXWq8cLMaTJTKaRXZo8ZVSR.crhIM1YI1ADqNEn.TXTPKDN7cGeJBGgwKEQXL9XzIgAmhb9z+osU9EMc61Vd0fue40Wey9clg+8NSihFeOth9sVsCaE0F2JJJ7nSBNpcoUNNGDVlCdlNPqrRvEY0qZ6G4Ttg8X8.GKx41Qe7ZAlJkVn1IStYnU2cU9kf+dSKyXILxHF28Zh1ZGM2HxntqchNU3P3V7+Wr3WRriANnQw4JErLEk.KJl9uTCZ8FVIhMKXqqcG9sTheNkgaTFrmxncT5WPGmf6svdM9Ckg5kt.</PROCESSORSTATEZ>
+    <PROCESSORLAYOUT>
+      <BUSINPUTS>
+        <PROCESSORBUS index="0" layout="L R"/>
+      </BUSINPUTS>
+      <BUSOUTPUTS>
+        <PROCESSORBUS index="0" layout="L R"/>
+      </BUSOUTPUTS>
+    </PROCESSORLAYOUT>
+  </PROCESSOR>
+  <PROCESSOR id="51" bypass="0" bypassSmoothing="0" prop_str_nodeName="Vox Post Looper"
+             prop_int_uiLastX="111" prop_int_uiLastY="185" prop_dbl_x="0.24267578125000000000"
+             prop_dbl_y="0.21386718750000000000" prop_int_MaxInputPins="256"
+             prop_int_MaxOutputPins="256" prop_str_nodeHandleName="vPostLpr"
+             prop_bool_nodeGPScriptEnabled="1" cmp="1">
+    <PLUGIN name="TH-U" format="VST" category="Effect" manufacturer="Overloud"
+            version="1.4.25.0" file="/Library/Audio/Plug-Ins/VST/Overloud/TH-U.vst"
+            uid="54482d55" isInstrument="0" fileTime="18ec8c0b018" infoUpdateTime="1952bb676d7"
+            numInputs="2" numOutputs="2" isShell="0" isEnabled="1" useDelayedLoading="0"
+            explicitWidgetRefresh="0" b64UserKeywords=""/>
+    <PROCESSORSTATEZ>634.3ocwUErbZCCDkLSmIeC8lpuSskMIjNAHSJCosSSSxzRROpQXu.ZhsjpjLPxo9czq8GsRXFH.1oNWZ8EsV6a28oU6tpeL+yMreW799SsKGL7iMuswAu50V4e13+92g+9t9gu4WG1nQmyVjkhlAJMSv65geafGB3whDFeRWuaGdQyS7NqGpiFL4xM3h7PyXvbHgHFO1pirnqWvt68v58jBkg7nPjsJBK8FYjz8eXvlcRXJSgUZQtJFHin76IbZFz0ykAQefMAcCnFKTYfZMJoBbwq.2kBgDTHAO8gcAvRrLucD1CEKTvVw2JSJ.6BeuNJJK0uWGsDhYzTBLdLDaz85THfbdZ34jub92FN3qdHyznUP9jUANHv4BIUYIjwlxdhLpfjSYSlRREy8P4ZPQlQSycA1xD+8AKxMjTXFjVKzSnFfXrG3oaCuoiVkaRcIhi00BnxxV0HWcv9bnbKRfT5CuDCXboMsjIRfZwHSNGTMkh4txlZiOK2TO2O+JX9fDlQri2wsph+Sqvh1UYPFcQElTgAxp3T4vieYvE1aXWq8cLMaTJTKaRXZo8ZVSR.crhIM1YI1ADqNEn.TXTPKDN7cGeJBGgwKEQXL9XzIgAmhb9z+osU9EMc61Vd0fue40Wey9clg+8NSihFeOth9sVsCaE0F2JJJ7nSBNpcoUNNGDVlCdlNPqrRvEY0qZ6G4Ttg8X8.GKx41Qe7ZAlJkVn1IStYnU2cU9kf+dSKyXILxHF28Zh1ZGM2HxntqchNU3P3V7+Wr3WRriANnQw4JErLEk.KJl9uTCZ8FVIhMKXqqcG9sTheNkgaTFrmxncT5WPGmf6svdM9Ckg5kt.</PROCESSORSTATEZ>
+    <PROCESSORLAYOUT>
+      <BUSINPUTS>
+        <PROCESSORBUS index="0" layout="L R"/>
+      </BUSINPUTS>
+      <BUSOUTPUTS>
+        <PROCESSORBUS index="0" layout="L R"/>
+      </BUSOUTPUTS>
+    </PROCESSORLAYOUT>
+  </PROCESSOR>
+  <PROCESSOR id="52" bypass="0" bypassSmoothing="0" prop_str_nodeName="Vox Post Looper Control"
+             prop_int_uiLastX="1429" prop_int_uiLastY="114" prop_dbl_x="0.28784179687500000000"
+             prop_dbl_y="0.19287109375000000000" prop_int_MaxInputPins="256"
+             prop_int_MaxOutputPins="256" prop_str_nodeHandleName="vPostLprC"
+             prop_bool_nodeGPScriptEnabled="1" cmp="1">
+    <PLUGIN name="Scriptlet" format="Internal" category="MIDI Utility" manufacturer="Deskew Technologies, LLC"
+            version="1.0" file="424272" uid="6793c" isInstrument="0" fileTime="0"
+            infoUpdateTime="0" numInputs="0" numOutputs="1" isShell="0" isEnabled="1"
+            useDelayedLoading="0" explicitWidgetRefresh="0" b64UserKeywords=""/>
+    <PROCESSORSTATEZ>3035.3oc6bksaaijEMOquhJ4g.S2JVlU7R5zQAPwVSOBs2fkcFLOIPQU1lvTjpIohmLveMyW5bqERVabyVocFfw.IVp3c+dpasR+0ivu9+76u5Ue5hSt92mb1zqFc0XzWBi8u+5n67hVDRVL9ajnrzguY22ftvKwa4YqWtK7scJ9t2RBzvQ24htj3GmrXvwqmO3hPuuWxfqNCtbFllEupjJrNUXNUWGsHtjp2qS064TcTHwKojr8zIaOYaLH51RR2Wmz84jR8AEBOPmvC3DdJYYbhj6dnNcGl6tdYjRx9vv23pP1G3jcB4ajvRx9Uco8qTxv0DsMxOt6xYQMd6ZlVb4zoFwcMRLtXNcZwbWibi66ksUkfoqQFxcONwFwcWiLj69bR0i7tFoH2CxcckXuqQNx8PNgZQe2OXPHzBMPhFEJSmQZh1BK.oRH1H6Pa4zIGOATsWRD5z3ERFJ1HIQa47uQRVrdN57n274OM8nKmbwUyN57ytZ7YW84ACPGS7C8RHnu4kDDuNEcePzhTT7MnUTgPxHIo8fm0CgPC11C8QzQwQYAQqozdQNIngnc2YeDHtQk7gxtyKC46EgR7htkftIIdIP1tnrXD.lQAQAYAdgA+axBZSf.nJYNnhoqmyYoTAt6ri6AfZ1qMJwkohCz0vdT46Cx+3fT+DfaI4+1+bcb1u8OIovWV38c9W6KZ9pXKMAnoj3G3eCLLCJoFZghh.0rPJjt8.psP+WXb7JRxL2YILb+J.Pi1hKAK0I4OvA7A0X+tJhJkB4jDBEBJ3rdFWCclkYj14tUL5y.uRbxPysh0j796ltMzXqDwJdU.YAHJLzJ1WxpLHyMuVQqXNkVrPMXCMTlmpDqwhPjEpvJZlZkdiZAi7lEcrma7.Eeu.ZpnOEWHjVFS1EX00rA0n8BceOHR3+6IICrUzK9ofdwZnWbaQuXMzKtsnWrN5E2ZzK1F5E2IzK1D8h6.5EafdwsG8h0Qu3+mC8h0Qu3pQu6BnWZLHuz6sgwy8BUva4CVWKRUvmJpIez6Z4j9ukAKBlExF9Vvq1.50JgXdXaVbA2kiu2np8uiUtkg3lAAo9PKXkV.dChxH2x4LmGNDiSs.t8Qzh30yCIlJfNnKmT5m.BmGGCtaDPYVxZRudv3hPL7h3zrbS+inw+KvXi7B+GAKtkjAkVXR7usNxOK.b0TRlPwa4wa4inzrD.l3f.345jnTg8PmqBBHUfryMSVwJzTRHwOi8Q5OBQMTAiIvcKhKHi9SoDK7WqhXJIqYA3JI.1GFGsnWwWRHoqCy.xJXoWOAApADeXUWQjv7.i3qkYv9H8Xk0nPNefO3pa0kIevdLRBN1jA1TF35jgVXvzUATYreP12mcSX.TcIYK+0IIv5Lmk+fROtDLHZfgFhHOXgVdrH3Fjg3d6sP56f8fYVRhJ7DEg.QJ1CHgojJo.eHmFpSojWkIrG2gkSrQKXUjrkOs3wbOLlA0K64hKgSTOTN6n5UwL.I6W+BxcWUKdJ7oyheXqS8tmbFPxojzTuaIaQIuzXbbrhOA2fO1Hq1ho2TgkyCrKSuEZ8TnRoPmrVUpOU5gc.OSkvPKHJs5hNJLIEjZEfuRkfamRJyD40EngignJSCNJYKfXGNnRKcvFu5YAqd+K.rRyInyw6Y4C68WrOn4D92Q7ueVLnpj7B31bmEjz.X5NEihoOXG+68FrM5Hp.So9BHSDSvEdUPJpX9oChKmvExKZAsTbZNkovPEB5BgZROhNhWTjOcPQD4QD5XtYI2LzJ5blVKa7QzYjGT3EZhSjxCdr2iuy1Osu0GaIyflPhYmJ2qCLqhompzpYyfCHE.EMIlqphD6plZiXg.ZLjoY6vghlrX.1rzJ0Ta8od81dPwfopfRV+g7AQs7HNV2xCnhx5C67rTTT9Ps0lqPpr9FpsLH04j03zZrqTbaUpMqybxf5wngxBSsRlp8XccSn25sb0uw9OsJLEzqsZM0ZhfZTLlVwTtaj6.Ur7Ok.ucW2x5CK3.pgUk0YppVXeUpERkLpDQKYQjN4FXEYI0071bVpAW5YFI5PTW3bMGJLlpb0jpORaqqCnsqFC0clt0AWaG9Ljl5xVLW9VgSZY5wBY6y6blOAfZV4lw.+CPiXjjhd.RgBARGvOHB4gDBFsEafd9nQNHt0XuJdEazRaV1Lu2e496oGHky10L8m9Vqk.qOD7UXY0Twv8.z27BWq1MbvfpVvgCmcHLv1kEjQYlpWIce80z6HrD99qUl6qMuajzEoiMZRWHSz70YzYrlm+aJWqrecu.4Z0s4jloRe5IZ47rYO8NrWOlCFnzmPXkh1PlihKrQkkaY25ZG9SdynAwb8pETaSrkJpgnJc2xsBG7VVWp+fPVA.GukjpcA4EaUsGXtWVMzivnKQwhT1ncJJjZScCzJ4rQ5HL4F4spkskRzi97J8wa6dmFiAwcLDXM8RTncr9zYZg0fzgmpchUkuzzCL1ozhS0o49ep0or3oxaXliE7XmJPKsP4MJdTRtMgHMxw+kVbt4Daa.XuTY9Vl0MR6higailxExrozs5jq++ke1LfzeFp9z3XwMNrayxyu5oxzq8CKSIT87kJF+bVX4zUk2jRFy4mvlySc4Zx2.jgZyEoEqOCWA6EGljpSI5QVqKg1.9T9g5+j7HaLWg+vmFnc24YX9EGXW4I.1MWPR.XYATgav7SpWjZKqXV5ztqI02099eoYsUhx6SqV5XPqEvSETZlVrzQ1h4pTq4meyUei+ZuA69xXvl6.1OBS1sqlbSls59C9i.V39jix1O0dJ6Ea3A3K15Va+PCZw7s1t2ovranWoSO1tEHlvEWNy8RgkkGS2Fr4qyxnefIucJljFTP3i858N1wz.+pbtTnsDWXMALgco0b.RXUQfeSG5ttiBwZ811rw70LID66UXdTxoI8TaEEK5Qa6oZsdZnTfEMYrp+VqqF6EaQaVVUWq0Wsc+rnKskRnpGky2Yv1FGJvqklYl59yaefRogGcx25b.gV+pefkr7KU7CZxYStZxnSlLczUSN+LzQiN4juL5n+vBChYTxunyr69oGZI+jvQdYrCjddLzEbI89jS+VpeRvprPRF5g.nqzC8ljeCs8nAndrdOYBgkel57v9I793zaedRbH5l3D1gWFFudA5p+90n2g7CC7uGptbSbdGeJQAQPey07d9RqR.TyDfRUcbp2JlYpcsU6ypTzmWEnO6vyoEBjtN2zRQKiWBIQOXROOvtDao6fnxqneQ+7SVsuXCj4RheX3.+BtPdonuGuFEFbOAbJvbRIzJVPtziVVK76HedLHcGI+Q912keS6DW9Jsl32jeiS2noKIrsqvk49S1yDl51W6nTbzt563VZC3mtMf6qoLGwEvmsvmd02e3hQWN5zwWM9xhtBSs1W37nx6c4WoaKK+.6WfV5k4eGc97Vtq+EWCMauG.h0suuZY.001OjceBMWYuwRvcUGeGTozMQ8sg1zTkGElwn6FI49UrQEpFg74GZra.StwPwUMXi080vHBfM2phtDErdDiFQBCnV6hD5QCEmfeCkAI6hO7E0GjtJ9MZ8iYG3sVF701GRsc4O2Mluu4QxVi.ZeGl2pc7cQks52ntogDBfC1eWmpgIUhRZhY9wUUE2CF7LQMESA0o1PDurrxiX2Df7MssC0XoQCypqrtR1qqVFCc0hBsEk8LPW58rjt1HjJrPGivSGhNrzsY3g+NMTS7gCSdABP5ivipOJUZmRgotFjVyVtmdLh8ZFUSHhs8su.QHoW2oVDfJrxmALBWyDYvMOQl5FftiwqM6.xD4ROcrvC1ZgGb6J7fednlM0P5MT7A+bQM7hOx2dQsWEuFK.8BDndREfd1gJakfvsqDzKPL5ITBxdDpaCzy1WCTqV5YmS.UKcyEU9DLd1aun46TfXaN37kuIE62WiOmmf+zEE5teeMF6fFkd6JK.vxuwk1guU8hUbHGL+hNmrezUa6vTTjeET0it0UBspv6G94K7twlj3On079iXnDMbvmFn82qi7+9cb8zwWN6qitbxnubx3oC97mFH8GkmO+p+KnQznhL</PROCESSORSTATEZ>
+  </PROCESSOR>
+  <CONNECTION srcID="1" srcChannel="0" dstID="53" dstChannel="0"/>
+  <CONNECTION srcID="10" srcChannel="0" dstID="45" dstChannel="0"/>
+  <CONNECTION srcID="25" srcChannel="0" dstID="51" dstChannel="0"/>
+  <CONNECTION srcID="25" srcChannel="1" dstID="51" dstChannel="1"/>
+  <CONNECTION srcID="40" srcChannel="0" dstID="8" dstChannel="0"/>
+  <CONNECTION srcID="40" srcChannel="1" dstID="8" dstChannel="1"/>
+  <CONNECTION srcID="40" srcChannel="0" dstID="65" dstChannel="0"/>
+  <CONNECTION srcID="40" srcChannel="1" dstID="65" dstChannel="1"/>
+  <CONNECTION srcID="43" srcChannel="4096" dstID="40" dstChannel="4096"/>
+  <CONNECTION srcID="45" srcChannel="0" dstID="4" dstChannel="0"/>
+  <CONNECTION srcID="46" srcChannel="4096" dstID="45" dstChannel="4096"/>
+  <CONNECTION srcID="51" srcChannel="0" dstID="8" dstChannel="2"/>
+  <CONNECTION srcID="51" srcChannel="1" dstID="8" dstChannel="3"/>
+  <CONNECTION srcID="52" srcChannel="4096" dstID="51" dstChannel="4096"/>
+  <CONNECTION srcID="53" srcChannel="0" dstID="27" dstChannel="0"/>
+  <CONNECTION srcID="54" srcChannel="4096" dstID="53" dstChannel="4096"/>
+  <CONNECTION srcID="63" srcChannel="0" dstID="40" dstChannel="0"/>
+  <CONNECTION srcID="63" srcChannel="1" dstID="40" dstChannel="1"/>
+</GIGPERFORMERDATA>
