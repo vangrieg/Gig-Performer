@@ -1,3 +1,5 @@
+Var safp_check: Ramp
+
 On WidgetValueChanged (v: Double) From PitchKnob
 Var stepValue: Integer
     res: Double
@@ -21,19 +23,17 @@ On WidgetValueChanged (v: Double) From playerTrackSel
             AudioStreamer_SwitchToTrack (SAFP, 0)
         End
     Else
-        Print ("only 2 tracks available")
+        //Print ("only 2 tracks available")
         SetWidgetValue (playerTrackSel, 0.0)
     End
+    SetWidgetValue (playerRestartBtn, 1.0)
 End
-
-Var safp_check: Ramp
 
 Function set_safp_preset (song_name: String, preset_list: String Array)
 Var i: Integer
     counter: Integer = 0
     mfp_preset_list: String Array = GetGPPresetList (MFP, 0)
     //Print ("Size " + Size (preset_list) + ", String is " + song_name)
-    //Add as many declarations here as you need
     SetWidgetValue (PlayerStopBtn, 1.0)
     ResetWidgetValue (playerMarkerLbl)
     If Size(preset_list) > 0 Then
@@ -50,6 +50,9 @@ Var i: Integer
         SetWidgetHideOnPresentation (playerTrackLbl, true)
         SetWidgetHideOnPresentation (playerTrackLbl_1, false)
         LoadGPPreset (SAFP_1, "No Track")
+        SetWidgetLabel (cueTrackLbl_1, "No cue track for this song")
+        SetWidgetHideOnPresentation (cueTrackLbl, true)
+        SetWidgetHideOnPresentation (cueTrackLbl_1, false)
     Else 
         //Print ("check passed")
         LoadGPPreset( SAFP, song_name)
@@ -58,7 +61,7 @@ Var i: Integer
         LoadGPPreset (SAFP_1, song_name)
         TriggerOneShotRamp (safp_check, 1000, 10)
     End
-    Print ("Preset set to " + GetActivePreset (SAFP_1))
+    //Print ("Preset set to " + GetActivePreset (SAFP_1))
     counter = 0
     If Size(mfp_preset_list) > 0 Then
         For i = 0; i < Size (mfp_preset_list); i = i + 1 Do
@@ -69,29 +72,37 @@ Var i: Integer
     End
     If counter == 0 Then
         LoadGPPreset (MFP, "No Track")
+        SetWidgetLabel (tmTrackLbl_1, "No tempo map for this song")
+        SetWidgetHideOnPresentation (tmTrackLbl, true)
+        SetWidgetHideOnPresentation (tmTrackLbl_1, false)
     Else 
         LoadGPPreset( MFP, song_name)
+        SetWidgetHideOnPresentation (tmTrackLbl, false)
+        SetWidgetHideOnPresentation (tmTrackLbl_1, true)
     End
 End
-/*
-On ParameterValueChanged (pn: Integer, pv: Double) From SAFP_1
-    If pn == 13 And AudioStreamer_GetTrackCount (SAFP_1) < 3 Then
-        LoadGPPreset (SAFP_1, "No Track")
-    End
-End
-*/
+
 On WidgetValueChanged (v: Double) From PlayerStopBtn
     If v == 1.0 Then
-        ResetWidgetValue (PlayerStopBtn)
+        If GetWidgetValue (playSyncBtn) == 1.0 Then
+            EnablePlayhead(false)
+        End
         ResetWidgetValue (playerMarkerLbl)
+        Sleep (50)
+        ResetWidgetValue (PlayerStopBtn)
     End
 End
 
 On GeneratorEndCycle (timeX: Integer) From safp_check
     If AudioStreamer_GetTrackCount (SAFP_1) < 3 Then
         LoadGPPreset (SAFP_1, "No Track")
+        SetWidgetLabel (cueTrackLbl_1, "No cue track for this song")
+        SetWidgetHideOnPresentation (cueTrackLbl, true)
+        SetWidgetHideOnPresentation (cueTrackLbl_1, false)
     Else 
         AudioStreamer_SwitchToTrack (SAFP_1, 1)
+        SetWidgetHideOnPresentation (cueTrackLbl, false)
+        SetWidgetHideOnPresentation (cueTrackLbl_1, true)
     End
     If GetWidgetLabel (playerTrackLbl) != AudioStreamer_GetTrackName (SAFP,  AudioStreamer_GetCurrentTrackNumber (SAFP)) Then
         SetWidgetLabel (playerTrackLbl, AudioStreamer_GetTrackName (SAFP, AudioStreamer_GetCurrentTrackNumber (SAFP)))
@@ -106,15 +117,46 @@ End
 On WidgetValueChanged (v: Double) From SetBPMBtn
     ResetWidgetValue (SpeedFader)
     If v == 1.0 Then
-        SetWidgetValue (BPMSyncBtn, 0.0)
+        ResetWidgetValue (BPMSyncBtn)
         SetWidgetValue (PlayerStopBtn, 1.0)
+        SetWidgetValue (playSyncBtn, 1.0)
     End
 End
 
 On WidgetValueChanged (v: Double) From BPMSyncBtn
     If v == 1.0 Then
-        SetWidgetValue (SetBPMBtn, 0.0)
+        ResetWidgetValue (SetBPMBtn)
+        SetWidgetValue (auxMuteBtn, 1.0)
     Else
         ResetWidgetValue (SpeedFader)
+    End
+End
+
+On WidgetValueChanged (v: Double) From playSyncBtn
+    If v == 0.0 Then
+        ResetWidgetValue (SetBPMBtn)
+    End
+End
+
+On WidgetValueChanged (v: Double) From playerPlayBtn
+    If v == 1.0 And GetWidgetValue (playSyncBtn) == 1.0 Then
+        EnablePlayhead(true)
+    Elsif v == 0.0 And GetWidgetValue (playSyncBtn) == 1.0 Then
+        EnablePlayhead(false)
+    End
+End
+
+
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From playerNextBtn, playerPrevBtn, playerRevBtn, playerFfBtn, playerLoopBtn
+    If v == 1.0 Then
+        ResetWidgetValue (SetBPMBtn)
+        ResetWidgetValue (playSyncBtn)
+        SetWidgetValue (auxMuteBtn, 1.0)
+    End
+End
+
+On WidgetValueChanged (v: double) From auxMuteBtn
+    If v == 0.0 Then
+        SetWidgetValue (playerRestartBtn, 1.0)
     End
 End
