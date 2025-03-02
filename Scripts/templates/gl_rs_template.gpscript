@@ -374,9 +374,9 @@ On WidgetValueChanged (w: Widget, i: Integer, v: Double) From <insert all effect
             osc_out_ws (FX<FX index>_controls, FX<FX index>_rt)
         End
     End
-    If StringToInt(GetEnvVariable ("mode")) == 2 And StringToInt(GetEnvVariable ("fxselected")) == <FX index> And FX<FX index>_mode == 0 Then //if fx mode is selected and fx10 is selected
+    If StringToInt(GetEnvVariable ("mode")) == 2 And StringToInt(GetEnvVariable ("fxselected")) == <FX index> And FX<FX index>_mode == 1 Then //if fx mode is selected and fx<FX index> is selected and fx mode is 1, process as is
         osc_out_ws1 ("/ws1", FX<FX index>_rt[i], v) //send widget value to global rackspace
-    Elsif StringToInt(GetEnvVariable ("mode")) == 2 And StringToInt(GetEnvVariable ("fxselected")) == <FX index> And FX<FX index>_mode == 1 And i < <1st alt widget index in "From"> And i > <last alt widget index in "From" > Then
+    Elsif StringToInt(GetEnvVariable ("mode")) == 2 And StringToInt(GetEnvVariable ("fxselected")) == <FX index> And FX<FX index>_mode == 0 And i < <1st alt wdgt index in From> Then if alt mode is selected but widget is common for both modes
         osc_out_ws1 ("/ws1", FX<FX index>_rt[i], v) //send widget value to global rackspace
     Elsif StringToInt(GetEnvVariable ("mode")) < 2 And w == dlyp_on Then //if amp/eq mode is selected and fx10 on/off button is pressed
         osc_out_ws1 ("/ws1", maxrt + <FX index> + 1, v) //send on off button state to global rackspace
@@ -386,7 +386,7 @@ End
 //now add processing for the alternative widgets
 On WidgetValueChanged (w: Widget, i: Integer, v: Double) From <insert alternative mode 0 widgets>
     If StringToInt(GetEnvVariable ("mode")) == 2 And StringToInt(GetEnvVariable ("fxselected")) == <FX index> And FX<FX index>_mode == 1 Then
-        osc_out_ws1 ("/ws1", FX<FX index>_rt[i + 2], v) 
+        osc_out_ws1 ("/ws1", FX<FX index>_rt[i + <1st alt wdgt index in From>], v) 
     End
 End
 */
