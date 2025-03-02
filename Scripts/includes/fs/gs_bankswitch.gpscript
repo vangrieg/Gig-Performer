@@ -69,21 +69,12 @@ End
 
 On GeneratorEndCycle (timeX: Integer) from LEDOn //turning LEDs off, sending control message to racks, toggling bank flag 
 
-       //SendNowToMidiOutDevice (SWITCHOUT, MakeControlChangeMessageEx(CCA, 0, FSChan))
-       //SendNowToMidiOutDevice (SWITCHOUT, MakeControlChangeMessageEx(CCB, 0, FSChan))
-       //SendNowToMidiOutDevice (SWITCHOUT, MakeControlChangeMessageEx(CCC, 0, FSChan))
-       //SendNowToMidiOutDevice (SWITCHOUT, MakeControlChangeMessageEx(CCD, 0, FSChan))
-       //InjectMidiEventViaRigManager (SWITCH, MakeControlChangeMessageEx(CCBuffer, 0, ChannelBuffer))
-       If IsBankUp == false Then
-        //InjectMidiEventViaRigManager (SWITCH, MakeControlChangeMessageEx(CCBuffer, 0, FSChan))    
+       If IsBankUp == false Then 
         InjectMidiEvent (FSOUT, MakeControlChangeMessageEx(ControlCC, 127, BankUpChannel)) //sending control message
-            //BlinkFS (500) //blinking LEDs long
             Notify("Footswitch Bank 2")
        Else
-            //InjectMidiEventViaRigManager (SWITCH, MakeControlChangeMessageEx(CCBuffer, 0, BankUpChannel))
             InjectMidiEvent (FSOUT, MakeControlChangeMessageEx(ControlCC, 0, BankUpChannel))
             Notify("Footswitch Bank 1")
-            //BlinkFS (15) //blinking LEDs short
        End
        IsBankUp = !IsBankUp //changing bank flag
 
@@ -95,37 +86,25 @@ On ControlChangeEvent (m: ControlChangeMessage) from SWITCH //intercepting key p
         OldCC: Integer = GetCCNumber(m)
         OldValue: Integer = GetCCValue(m)
         OldChannel: Integer = GetChannel(m)
-        //InLongPress: Boolean
-        //KeyUpHappened: Boolean
-        Print("OldCC " + OldCC + " OldValue " + OldValue + " OldChannel " + OldChannel + " IsBankUp " + IsBankUp )
+        //Print("OldCC " + OldCC + " OldValue " + OldValue + " OldChannel " + OldChannel + " IsBankUp " + IsBankUp )
    
     If OldValue > 64 Then //detecting button down
-        
-        //If LongPressState == LPSover And KeyUpHappened == false Then
-        //    InLongPress = true
-        //Else
-        //    InLongPress = false
-        //End
         
         If IsBankUp == false Then CCBuffer = OldCC
         Else CCBuffer = OldCC + 95 End
         If IsBankUp == false Then ChannelBuffer = OldChannel
         Else ChannelBuffer = BankUpChannel End
-        Print ("key down, CCBuffer " + CCBuffer + " ChannelBuffer " + ChannelBuffer)
+        //Print ("key down, CCBuffer " + CCBuffer + " ChannelBuffer " + ChannelBuffer)
         LongPressState = LPSidle
-        //KeyUpHappened = false
         TriggerOneShotRamp(LongPress, LongTime, 10) //starting timer when the button goes down
         
     Else
         StopOneShotRamp(LongPress)
-        //InLongPress = false
-        //KeyUpHappened = true
-        //LongPressState = LPSidle
     End
-    Print("lps is " + LongPressState)
+    //Print("lps is " + LongPressState)
     //Print("key up happened is " + KeyUpHappened)
     If IsBankUp == true And LongPressState == LPSidle /*And InLongPress == false*/ Then //checking if the upper bank is on to rewrite messages
-        If LongPressState == LPSidle Then Print("lps idle, injecting rewritten message") Else Print ("lps not idle, suppressing rewritten message") End
+        //If LongPressState == LPSidle Then Print("lps idle, injecting rewritten message") Else Print ("lps not idle, suppressing rewritten message") End
         Select
             OldCC == CCA Do
                 InjectMidiEventViaRigManager (SWITCH, MakeControlChangeMessageEx(BankUpCCA, OldValue, BankUpChannel)) //reassigning to new channel and CC#
@@ -138,12 +117,9 @@ On ControlChangeEvent (m: ControlChangeMessage) from SWITCH //intercepting key p
         End
     Else
         If LongPressState == LPSidle /*And InLongPress == false And KeyUpHappened == true*/ Then
-            Print("lps idle and in long press is, injecting original message")
+            //Print("lps idle and in long press is, injecting original message")
             InjectMidiEventViaRigManager (SWITCH, m) //if no reassignment is needed, sending the message as is
             FSTap (OldCC, OldValue)
-            //SendLater (SWITCH, MakeControlChangeMessageEx(BankUpCCD, 0, BankUpChannel), 10)
-        //Else
-            //Print("lps not idle, suppressing original message")
         End
     End
 
@@ -151,10 +127,10 @@ End
 
 
 On GeneratorEndCycle (timeX: Integer) from LongPress //checking the timer, changing state, blinking LEDs to indicate bank change 
-    Print("long cycle end event triggered")
+    //Print("long cycle end event triggered")
     If LongPressState == LPSidle Then
         LongPressState = LPSover //changing state if button is pressed for long enough 
-        Print("changing state to over, long press is " + LongPressState)
+        //Print("changing state to over, long press is " + LongPressState)
         InjectMidiEventViaRigManager (SWITCH, MakeControlChangeMessageEx(CCBuffer, 0, ChannelBuffer)) //emulating key up
         If IsBankUp == false Then
             //InjectMidiEventViaRigManager (SWITCH, MakeControlChangeMessageEx(ControlCC, 127, BankUpChannel)) //sending control message
@@ -169,6 +145,6 @@ On GeneratorEndCycle (timeX: Integer) from LongPress //checking the timer, chang
     Else
         StopOneShotRamp(LongPress)
         LongPressState = LPSidle
-        Print("changing state to idle, long press is " + LongPressState)
+        //Print("changing state to idle, long press is " + LongPressState)
     End
 End
