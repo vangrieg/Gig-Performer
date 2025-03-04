@@ -1,0 +1,54 @@
+Var show_meters: Widget // Widget to show/hide meters
+    WLM: PluginBlock // Waves WLM MidiInBlock
+    gtr_trim, gtr_send, vox_trim, vox_send: Widget // Trim widgets for guitar and vocal
+    SendsMixer, AudioInput: PluginBlock // SendsMixer and AudioInput blocks
+    split_outs, aux_mute: Widget // Split outs and aux mute widgets
+    OutMixer: PluginBlock // OutMixer block
+
+On WidgetValueChanged (v: Double) From show_meters
+    If v == 1.0 Then
+        SetPluginBypassed (WLM, false)
+    Else
+        SetPluginBypassed (WLM, true)
+    End
+End
+
+On WidgetValueChanged (v: Double) From gtr_send
+    If v == 1.0 Then
+        MapWidgetToPlugin (gtr_trim, SendsMixer, 0)
+    Else
+        MapWidgetToPlugin (gtr_trim, AudioInput, 2)
+    End
+End
+
+On WidgetValueChanged (v: Double) From vox_send
+    If v == 1.0 Then
+        MapWidgetToPlugin (vox_trim, SendsMixer, 7)
+    Else
+        MapWidgetToPlugin (vox_trim, AudioInput, 1)
+    End
+End
+
+On WidgetValueChanged (v: Double) From split_outs
+    Select 
+        v == 1.0 And GetWidgetValue (aux_mute) == 0.0 Do
+            LoadGPPreset (OutMixer, "3 outs")
+        v == 1.0 And GetWidgetValue (aux_mute) == 1.0 Do
+            LoadGPPreset (OutMixer, "2 outs")
+        True Do 
+            LoadGPPreset (OutMixer, "single out")
+    End
+End
+
+On WidgetValueChanged (v: Double) From aux_mute
+    Select 
+        v == 1.0 And GetWidgetValue (split_outs) == 0.0 Do
+            LoadGPPreset (OutMixer, "single out")
+        v == 1.0 And GetWidgetValue (split_outs) == 1.0 Do
+            LoadGPPreset (OutMixer, "2 outs")
+        v == 0.0 And GetWidgetValue (split_outs) == 1.0 Do
+            LoadGPPreset (OutMixer, "3 outs")
+        True Do
+            LoadGPPreset (OutMixer, "single out")
+    End
+End
