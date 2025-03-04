@@ -20,6 +20,8 @@ End
 On Song (oldSongIndex: Integer, newSongIndex: Integer)
     // Foostwitch functionality, not needed for X-Touch
     SetBPM (GetSongBPM(newSongIndex))
+    SetTimeSignatureNumerator (GetSongTimeSigNumerator (newSongIndex))
+    SetTimeSignatureDenominator (GetSongTimeSigDenominator (newSongIndex))
     songchanged = True
     //OSC_SendStringSpecific("/GP/Song", GetSongName(newSongIndex), oscip, oscport)
 End

@@ -302,6 +302,8 @@ End
     
 Include "includes/main/gr_vars_functions"
 
+Include "includes/main/gr_allracks"
+
 Include "includes/main/gr_looper"
 
 Include "includes/main/gr_mixer"
