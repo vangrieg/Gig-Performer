@@ -6,6 +6,13 @@ Scripts, rackspaces, panels, overlay templates and other [Gig Performer](https:/
 
 ## Gig files
 
+- [**All Racks GL**](bin/allracksgl_gig.zip) is a real rackspace (albeit with dummy songs) that has all customizations - all rackspaces with GlobalLink scripts, a global rackspace with GlobalLink panel and scripts, media player, 4 instance looper, hardware controller integrations (X-Touch Mini for changing rackspace settings, Nanokontrol 2 as a mixer, iRig Blueboard as a footswitch)
+
+  *Instructions:*
+
+    - Enable OSC in Gig Performer settings. Unzip the contents of the [archive](bin/allracksgl_gig.zip) to your Gig Performer folder (**be careful not to overwrite existing Rig and System scripts if you have them!**). In case looper doesn't work properly, import MIDI mappings from 'Presets/Overloud/TH-U/midi.t3b' file, and the preset from Presets/Overloud/TH-U/Looper only.ovp'.
+    - You need empty presets named No Track in 'Presets/Deskew Technologies LLC/Streaming Audio File Player' and 'Presets/Deskew Technologies LLC/MIDI File Player'. They are provided in the zip archive and are required for the media player scripts to function. The other presets are for demo purposes, if you want to use this media player with your own songs, you should have presets with the same names as your songs (see the examples). For more instructions on using and setting up the media player, see this [GP forum thread](https://community.gigperformer.com/t/global-rackspace-player-controls-for-backing-cue-tracks-plus-tempo-map-discussion/21585/), for the looper see [this one](https://community.gigperformer.com/t/4-instance-th-u-looper-with-overdub-on-off-switch/21555/).
+
 - [**GlobalLinkPoc.gig**](bin/globallink_gig.zip) is a template that controls rackspace widgets from global rackspace. As a small little bonus, this also adds tap tempo capability to a footswitch and blinks a LED with tempo (on iRig BlueBoard Bluetooth)
 
     *Description:*
@@ -24,26 +31,40 @@ Scripts, rackspaces, panels, overlay templates and other [Gig Performer](https:/
       - Add the [Gig script](Scripts/gl_gig.gpscript).
       - Add and adjust rackspace scripts. You can use the scripts in the gig file as examples and modify them, or use the [template](Scripts/templates/gl_rs_template.gpscript) from the Scripts/templates folder. If you have/know how to use tools like Github Copilot, after declaring the widgets it can be a 5 minute affair.
 
+- [**Global Rack Looper.gig**](bin/looper-gig.zip) is a 4 instance global rack looper with overdub mode toggle.
+
+  *Description:*
+
+  - [GP forum link](https://community.gigperformer.com/t/4-instance-th-u-looper-with-overdub-on-off-switch/21555/)
+
+- [**Global Rack Player.gig**](bin/player-gig.zip) is a global rack media player with backing and cue tracks and a tempo map midi player capability.
+
+  *Description:*
+
+  - [GP forum link](https://community.gigperformer.com/t/global-rackspace-player-controls-for-backing-cue-tracks-plus-tempo-map/21590/)
+
 - [**SyncWidgets.gig**](bin/syncwidgets_gig.zip) is a template that programmatically creates widget groups. Check out the [GP forum link](https://community.gigperformer.com/t/assignable-widget-groups-with-a-gig-file-and-examples/20754) to see what this does.
 
 ## Rackspaces
 
-- [NDSP Petrucci X](bin/petrucci_x_rack.zip)
-- [NDSP Cory Wong X](bin/corywong_x_rack.zip)
-- [NDSP Tom Morello](bin/morello_rack.zip)
-<!-- - [Global rackspace]() (coming soon) -->
+- [NDSP Petrucci X](bin/petrucci_x_rack.zip), [GL version](bin/petrucci-x_gl_rack.zip)
+- [NDSP Cory Wong X](bin/corywong_x_rack.zip), [GL version](bin/corywong_x_gl_rack.zip)
+- [NDSP Tom Morello](bin/morello_rack.zip), [GL version](bin/morello_gl_rack.zip)
+- [NDSP Gojira X GL version](bin/gojira_x_gl_rack.zip)
+- [Global rackspace](bin/allracks_gl_global_rack.zip)
 
 ## Panels
 
-- [GlobalLink Panel](bin/globallink_panel.zip). Add this to your Global Rackspace for the GlobalLink scripts to work in your own gig file. Also copy the [required includes](Scripts/includes), add the [Global Rackspace script](Scripts/gl_global_rack.gpscript) and the [Gig Script](Scripts/gl_gig.gpscript).
+- [GlobalLink Panel](bin/globallink_panel.zip). Add this to your Global Rackspace for the GlobalLink scripts to work in your own gig file. Also copy the [required includes](Scripts/includes), add the [Global Rackspace script](Scripts/examples/gl_global_rack.gpscript) and the [Gig Script](Scripts/examples/gl_gig.gpscript).
 
 ## Scripts
 
 - [Includes for GlobalLink](Scripts/includes), required for the GlobalLink script to work.
 - [AutoLoad](Scripts/AutoLoad), required for most scripts to work.
-- [Global rackspace script](Scripts/gl_global_rack.gpscript) saved separately if you want to adapt it for your gig.
-- [Gig script](Scripts/gl_gig.gpscript) saved separately if you want to adapt it for your gig.
+- [Global rackspace script](Scripts/examples/gl_global_rack.gpscript) saved separately if you want to adapt it for your gig.
+- [Gig script](Scripts/examples/gl_gig.gpscript) saved separately if you want to adapt it for your gig.
 - [Rackspace script template](Scripts/templates/gl_rs_template.gpscript) to make configuration of your gig file easier.
+- [Rackspace multiamp script template](Scripts/templates/gl_rs_multiamp_template.gpscript) same but for plugins with multiple amps.
 
 ## Overlay templates for controllers
 

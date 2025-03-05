@@ -30,7 +30,7 @@ This is for the main gig file.
 
 This is for scriptlets.
 
-### root
+### /examples
 
 Global and Gig scripts for reference/customization.
 
