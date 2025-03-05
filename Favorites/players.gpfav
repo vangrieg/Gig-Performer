@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GIGPERFORMERDATA>
+  <PROCESSOR id="14" bypass="0" bypassSmoothing="0" prop_str_nodeName="Backing Track Player"
+             prop_int_uiLastX="1394" prop_int_uiLastY="1404" prop_dbl_x="0.13061523437500000000"
+             prop_dbl_y="0.12915039062500000000" prop_int_MaxInputPins="256"
+             prop_int_MaxOutputPins="256" prop_str_nodeHandleName="SAFP" prop_bool_nodeGPScriptEnabled="1"
+             prop_bool_nodeOSCEnabled="1" cmp="1">
+    <PLUGIN name="Streaming Audio File Player" descriptiveName="Streaming Audio Fie Player"
+            format="Internal" category="Media Player" manufacturer="Deskew Technologies, LLC"
+            version="1.0" file="424362" uid="6793b" isInstrument="0" fileTime="0"
+            infoUpdateTime="0" numInputs="0" numOutputs="1" isShell="0" isEnabled="1"
+            useDelayedLoading="0" explicitWidgetRefresh="0" b64UserKeywords=""/>
+    <PROCESSORSTATEZ>303.3ocaQ1jaBCCDEldSby9FmTfzfDfTKUEoJ9IRPYuIYHwB6LQicfxwp2v53l1Uci8LO8za9F6CKd79utavfoKy1YIPnk0kuIUPlRbCn4S2Sh7yqjFKqtUeDnsmVghBnvqOKHNf03bpPrYVPT.SzZwNgMvmVuft0B9hJzX2cqN22X.Eja+KEmRoBOJTGPUqtyeXxngSRhShRGEMIMMNIfcBUJ75wFcm+dvX1tyMdx7wzHrU6w9X4eX.xv0xyUBopjjkHcCtveEycSo1Z3KkkrLfNgjFH9ZnPJ3O6Ub3wVHobEvdf8dagzVEdUbIfcoGw3P237i+kr0t13nvnjjwiSSG9T5jHGvlF.J51kwNtj17p9ZsfNCzBrs19ypr1KX3ymx8j+6c2ytq9++YF7cKq.IY</PROCESSORSTATEZ>
+    <PROCESSORLAYOUT>
+      <BUSINPUTS/>
+      <BUSOUTPUTS>
+        <PROCESSORBUS index="0" layout="L R"/>
+      </BUSOUTPUTS>
+    </PROCESSORLAYOUT>
+  </PROCESSOR>
+  <PROCESSOR id="37" bypass="1" bypassSmoothing="0" prop_str_nodeName="MIDI File Player"
+             prop_int_uiLastX="1446" prop_int_uiLastY="1400" prop_dbl_x="0.15698242187500000000"
+             prop_dbl_y="0.10278320312500000000" prop_int_MaxInputPins="256"
+             prop_int_MaxOutputPins="256" prop_str_nodeHandleName="MFP" prop_bool_nodeGPScriptEnabled="1"
+             cmp="1">
+    <PLUGIN name="MIDI File Player" format="Internal" category="Media Player"
+            manufacturer="Deskew Technologies, LLC" version="1.0" file="424261"
+            uid="6793b" isInstrument="0" fileTime="0" infoUpdateTime="0"
+            numInputs="0" numOutputs="1" isShell="0" isEnabled="1" useDelayedLoading="0"
+            explicitWidgetRefresh="0" b64UserKeywords=""/>
+    <PROCESSORSTATEZ>90.3o8ByYiTLFFXfAa70SW7zMO8w0.7IT28zufCwwPbUgfSMmTStjTSI37yKcOyKkTqvVkLPI3h5Th4kMRhVRhEURvkjeAAWYdIGR9tmS9IkXNfjQe6X..D19gr</PROCESSORSTATEZ>
+  </PROCESSOR>
+  <PROCESSOR id="60" bypass="1" bypassSmoothing="0" prop_str_nodeName="Cue Track Player"
+             prop_int_uiLastX="1408" prop_int_uiLastY="1440" prop_dbl_x="0.18554687500000000000"
+             prop_dbl_y="0.12866210937500000000" prop_int_MaxInputPins="256"
+             prop_int_MaxOutputPins="256" prop_bool_nodeGPScriptEnabled="1"
+             prop_bool_nodeOSCEnabled="1" prop_str_nodeHandleName="SAFP_1"
+             cmp="1">
+    <PLUGIN name="Streaming Audio File Player" descriptiveName="Streaming Audio Fie Player"
+            format="Internal" category="Media Player" manufacturer="Deskew Technologies, LLC"
+            version="1.0" file="424362" uid="6793b" isInstrument="0" fileTime="0"
+            infoUpdateTime="0" numInputs="0" numOutputs="1" isShell="0" isEnabled="1"
+            useDelayedLoading="0" explicitWidgetRefresh="0" b64UserKeywords=""/>
+    <PROCESSORSTATEZ>164.3ocaNFjCBBCEDkiRs6U.kzfIHaLQ2PTRvv9B7AI9KeRoMJWQOUJcgqb2LuLyjo731Uu877RNmWXzfT0OzcpGgbTNC5zjaZY8ir9ICavpp.801LR1.MN9Ad.mM9MIRznyHsFZAbAdYb.k0.NwcZxTLOT6LS.B0leqrNjy5PpRhkDZUKE1Hh1sWDJBhiB1GGGJ3rVBQ5Y0nZYB+zD++eYuOHA2DwJ</PROCESSORSTATEZ>
+    <PROCESSORLAYOUT>
+      <BUSINPUTS/>
+      <BUSOUTPUTS>
+        <PROCESSORBUS index="0" layout="L R"/>
+      </BUSOUTPUTS>
+    </PROCESSORLAYOUT>
+  </PROCESSOR>
+  <CONNECTION srcID="14" srcChannel="0" dstID="8" dstChannel="4"/>
+  <CONNECTION srcID="14" srcChannel="1" dstID="8" dstChannel="5"/>
+  <CONNECTION srcID="60" srcChannel="0" dstID="8" dstChannel="6"/>
+  <CONNECTION srcID="60" srcChannel="1" dstID="8" dstChannel="7"/>
+</GIGPERFORMERDATA>

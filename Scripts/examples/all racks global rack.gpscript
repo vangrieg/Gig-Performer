@@ -1,0 +1,342 @@
+Include "$system$"
+
+Var
+    playerTrackLbl, playerTrackLbl_1, cueTrackLbl, cueTrackLbl_1, tmTrackLbl, tmTrackLbl_1, playerMarkerLbl, playerTrackSel, playerPlayBtn, playerNextBtn, playerPrevBtn, playerRevBtn, playerFfBtn, playerLoopBtn, playerRestartBtn, playSyncBtn, SetBPMBtn, auxMuteBtn : Widget //player controls
+    SAFP, SAFP_1 : StreamingFilePlayerBlock //PluginBlock //streaming audio players
+    MFP: PluginBlock // MIDI player
+   
+    SWITCH_B: MidiInBlock //Controller device Rig Manager name
+   
+    gSrcPost, gSrcDI, vSrcPost, vSrcDI: Widget //looper source select buttons
+   
+    fsBank: Widget //bank select indicator
+    
+    gPostLpr, gPostLprC, gDILpr, gDILprC, vPostLpr, vPostLprC, vDILpr, vDILprC: PluginBlock //looper blocks
+    
+    lprTrigger, lprStop, lprClear, lprOverdub, lprLabel, lprUndo, lprOpen, lprLvl, lprRecording, lprPlaying, lprMemory: Widget //looper controls
+
+    Ch1ResetBtn , Ch2ResetBtn, Ch3ResetBtn, Ch4ResetBtn, 
+    Ch1Fader, Ch2Fader, Ch3Fader, Ch4Fader, 
+    PlayerResetBtn, SpeedFader, PitchKnob, BPMSyncBtn,
+    MainOutFader, MainOutResetBtn, 
+    PlayerStopBtn: Widget //widgets for reset functions
+    
+    
+    ////// VOX 
+    /* EFFECT DECLARATION TEMPLATE
+    //device <FX index>
+    Vox<FX index>_controls: Widget Array = [<FX widgets here>]
+    Vox<FX index>_rt: Integer Array = [<Mappings to global rack controls>]
+    */
+    
+    ms_detune, ms_mix, ms_delay, ms_on: Widget
+    Vox0_controls: Widget Array = [ms_detune, ms_mix, ms_delay, ms_on]
+    Vox0_rt: Integer Array = [1,2,4,16]
+    
+    deess_thld, deess_range, deess_lookahead, deess_on: Widget
+    Vox1_controls: Widget Array = [deess_thld, deess_range, deess_lookahead, deess_on]
+    Vox1_rt: Integer Array = [0,3,17,16]
+    
+    comp_thld, comp_on: Widget
+    Vox2_controls: Widget Array = [comp_thld, comp_on]
+    Vox2_rt: Integer Array = [0,16]
+    
+    gate_thld, gate_att, gate_rel, gate_lookahead, gate_on: Widget
+    Vox3_controls: Widget Array = [gate_thld, gate_att, gate_rel, gate_lookahead, gate_on]
+    Vox3_rt: Integer Array = [0,5,6,17,16]
+    
+    eq_b1, eq_b2, eq_b3, eq_dr, eq_mf, eq_on: Widget
+    Vox4_controls: Widget Array = [eq_b1, eq_b2, eq_b3, eq_dr, eq_mf, eq_on]
+    Vox4_rt: Integer Array = [0,1,2,3,4,16]
+    
+    sat_mix, sat_on: Widget
+    Vox5_controls: Widget Array = [sat_mix, sat_on]
+    Vox5_rt: Integer Array = [2,16]
+    
+    rack_mix, rack_on: Widget
+    Vox8_controls: Widget Array = [rack_mix, rack_on]
+    Vox8_rt: Integer Array = [2,16]
+    
+    dly_mix, dly_on: Widget
+    Vox10_controls: Widget Array = [dly_mix, dly_on]
+    Vox10_rt: Integer Array = [2,16]
+    
+    reverb_mix, reverb_on: Widget
+    Vox11_controls: Widget Array = [reverb_mix, reverb_on]
+    Vox11_rt: Integer Array = [2,16]
+    
+    dly2_mix, dly2_fdbk, dly2_locut, dly2_hicut, dly2_on: Widget
+    Vox22_controls: Widget Array = [dly2_mix, dly2_fdbk, dly2_locut, dly2_hicut, dly2_on]
+    Vox22_rt: Integer Array = [2,4,13,14,16]
+    
+    room_predly, room_decay, room_locut, room_hicut, room_on: Widget
+    Vox23_controls: Widget Array = [room_predly, room_decay, room_locut, room_hicut, room_on]
+    Vox23_rt: Integer Array = [5,4,13,14,16]
+    
+    
+    Vox_buttons: Widget Array = [ms_on, deess_on, comp_on, gate_on, eq_on, sat_on, rack_on, dly_on, reverb_on, dly2_on, room_on]   // Vox FX on/off buttons
+    Vox_rt: Integer Array = [0,1,2,3,4,5,8,10,11,22,23] // Vox devices available, mapped to global FX buttons, see see FX/VOX MODE KNOBS table for reference
+
+    
+    ////// VOX
+    
+Include "includes/gl/gr_vars_functions"
+
+//////////////////////////////////////////////////
+//          CONTROL WIDGET CALLBACKS            //
+//        MODIFY USING TEMPLATE BELOW           //
+//            FOR ALL VOX EFFECTS               //
+//////////////////////////////////////////////////
+
+/*
+                        TEMPLATE FOR ADDITIONAL VOX EFFECTS
+                        i == <FX index> Do
+                            ctrls = Vox<FX index>_controls
+                            rt = Vox<FX index>_rt
+*/
+
+On WidgetValueChanged (w: widget, i: integer, v: double) from fx0, fx1, fx2, fx3, fx4, fx5, fx6, fx7, fx8, fx9, fx10, fx11, fx12, fx13, fx14, fx15, fx16, fx17, fx18, fx19, fx20, fx21, fx22, fx23 //fx select buttons
+    Var j: Integer
+        k: Integer
+        addr: String 
+    
+    //Print ("global wvc fx: select fx " + i + ",radioselect " + radioselect + ", value " + v + ", mode " + mode)
+    Select 
+        radioselect == true And v == 1.0 And holdwvc == false Do //if radio mode is on and button is pressed
+            //Print ("addressing array via reset_fxcontrols_r, i " + i + ", size " + Size(fxcontrols))
+            reset_fxcontrols_r (i) //set all fx buttons to off except the one chosen
+            //Print ("global wvc fx: current fx selected " + fxselected + ", new fx requested " + i + ", osc query, mode " + mode)
+            Select // for fx and vox modes, need additional query for individual effect buttons to map them to widgets
+                mode == 2 Do //for fx mode, send query to relevant rackspace section to get available controls and map them to widgets
+                    osc_cmd ("/fx" + i + "/q")
+                mode == 3 Do //for vox mode, determine proper fx control widgets
+                    Select // get available widgets for relevant device
+                        i == 0 Do
+                            ctrls = Vox0_controls
+                            rt = Vox0_rt
+                        i == 1 Do
+                            ctrls = Vox1_controls
+                            rt = Vox1_rt
+                        i == 2 Do
+                            ctrls = Vox2_controls
+                            rt = Vox2_rt
+                        i == 3 Do
+                            ctrls = Vox3_controls
+                            rt = Vox3_rt
+                        i == 4 Do
+                            ctrls = Vox4_controls
+                            rt = Vox4_rt
+                        i == 5 Do
+                            ctrls = Vox5_controls
+                            rt = Vox5_rt
+                        i == 8 Do
+                            ctrls = Vox8_controls
+                            rt = Vox8_rt
+                        i == 10 Do
+                            ctrls = Vox10_controls
+                            rt = Vox10_rt
+                        i == 11 Do
+                            ctrls = Vox11_controls
+                            rt = Vox11_rt
+                        i == 22 Do
+                            ctrls = Vox22_controls
+                            rt = Vox22_rt
+                        i == 23 Do
+                            ctrls = Vox23_controls
+                            rt = Vox23_rt
+                    End 
+                    //Print ("ctrls size " + Size (ctrls) + ", rt size " + Size (rt))
+                    //Print ("iterating array rcontrols, hiding unused widgets, size " + Size(rcontrols))
+                    For j = 0; j < Size (rcontrols); j = j + 1 Do //hide unused widgets
+                        //Print ("rcontrol " + j + " rt size " + Size (rt))
+                        If IndexOf(rt, j) == -1 Then // if control widget is not in rt, hide it
+                            //Print ("" + j + " isn't in rt, disabling")
+                            ctrl_disable (rcontrols, j)
+                        Else //set the rest to proper values
+                            //Print ("" + j + " is in rt, setting value")
+                            k = IndexOf (rt, j) //get index of control widget in rt
+                            //Print ("" + j + " is #" + k + "in rt")
+                            ctrl_update (rcontrols, j, GetWidgetValue (ctrls [k])) //set control widget value
+                        End
+                    End
+            End
+        v == 0.0 And holdfx[i] == true and holdwvc == false Do //if radio mode is on and button is up, release hold
+            //Print ("global wvc fx: key " + i + " up, mode " + mode + ", hold true, releasing")
+            holdfx [i] = false
+        True Do
+            //Print ("global wvc fx: default: no special condition, sending osc, mode " + mode)
+            If mode != 3 And wstime == 0.0 Then // for fx mode, send osc message to set fx device
+                osc_out (Size (rcontrols) + i, v)
+            End
+    End
+    TriggerOneShotRamp (XTTimeout, 200, 10)
+End
+
+//////////////////////////////////////////////////
+//                 CALLBACKS                    //
+//          !!!!! DO NOT TOUCH !!!!!            //
+//////////////////////////////////////////////////
+
+Include "includes/gl/gr_callbacks"
+
+
+//////////////////////////////////////////////////
+//               VOX FUNCTIONS                  //
+//  <--- UPDATE FOR AVAILABLE EFFECTS --->      //
+//////////////////////////////////////////////////
+
+// VOX FX0 CALLBACK TO UPDATE GLOBAL RACKSPACE WIDGETS
+
+/*
+// VOX FXx TEMPLATE
+// VOX FXx CALLBACK TO UPDATE GLOBAL RACKSPACE WIDGETS
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From <Vox FXx widgets>
+Var j: Integer 
+    If mode == 3 And fxselected == <FX index> And holdwvc == false  Then //if vox mode and fx<FX index> selected
+        rt = Vox<FX index>_rt //get control widgets for this device
+        j = rt [i]
+        sync_rcontrols (j, v)
+    End
+End
+*/
+
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From ms_detune, ms_mix, ms_delay, ms_on
+Var j: Integer 
+    If mode == 3 And fxselected == 0 And holdwvc == false  Then //if vox mode and fx0 selected
+        rt = Vox0_rt //get control widgets for this device
+        j = rt [i]
+        sync_rcontrols (j, v)
+    End
+End
+
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From gate_thld, gate_on
+Var j: Integer 
+    If mode == 3 And fxselected == 3 And holdwvc == false  Then //if vox mode and fx3 selected
+        rt = Vox3_rt //get control widgets for this device
+        j = rt [i]
+        sync_rcontrols (j, v)
+    End
+End
+
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From sat_mix, sat_on
+Var j: Integer 
+    If mode == 3 And fxselected == 5 And holdwvc == false  Then //if vox mode and fx5 selected
+        rt = Vox5_rt //get control widgets for this device
+        j = rt [i]
+        sync_rcontrols (j, v)
+    End
+End
+
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From deess_thld, deess_on
+Var j: Integer 
+    If mode == 3 And fxselected == 1 And holdwvc == false  Then //if vox mode and fx1 selected
+        rt = Vox1_rt //get control widgets for this device
+        j = rt [i]
+        sync_rcontrols (j, v)
+    End
+End
+
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From comp_thld, comp_on
+Var j: Integer 
+    If mode == 3 And fxselected == 2 And holdwvc == false  Then //if vox mode and fx2 selected
+        rt = Vox2_rt //get control widgets for this device
+        j = rt [i]
+        sync_rcontrols (j, v)
+    End
+End
+
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From eq_b1, eq_b2, eq_b3, eq_dr, eq_mf, eq_on
+Var j: Integer 
+    If mode == 3 And fxselected == 4 And holdwvc == false  Then //if vox mode and fx4 selected
+        rt = Vox4_rt //get control widgets for this device
+        j = rt [i]
+        sync_rcontrols (j, v)
+    End
+End
+
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From rack_mix, rack_on
+Var j: Integer 
+    If mode == 3 And fxselected == 8 And holdwvc == false  Then //if vox mode and fx8 selected
+        rt = Vox8_rt //get control widgets for this device
+        j = rt [i]
+        sync_rcontrols (j, v)
+    End
+End
+
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From dly_mix, dly_on
+Var j: Integer 
+    If mode == 3 And fxselected == 10 And holdwvc == false  Then //if vox mode and fx10 selected
+        rt = Vox10_rt //get control widgets for this device
+        j = rt [i]
+        sync_rcontrols (j, v)
+    End
+End
+
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From reverb_mix, reverb_on
+Var j: Integer 
+    If mode == 3 And fxselected == 11 And holdwvc == false  Then //if vox mode and fx11 selected
+        rt = Vox11_rt //get control widgets for this device
+        j = rt [i]
+        sync_rcontrols (j, v)
+    End
+End
+
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From dly2_mix, dly2_fdbk, dly2_locut, dly2_hicut, dly2_on
+Var j: Integer 
+    If mode == 3 And fxselected == 22 And holdwvc == false  Then //if vox mode and fx22 selected
+        rt = Vox22_rt //get control widgets for this device
+        j = rt [i]
+        sync_rcontrols (j, v)
+    End
+End
+
+On WidgetValueChanged (w: Widget, i: Integer, v: Double) From room_predly, room_decay, room_locut, room_hicut, room_on
+Var j: Integer 
+    If mode == 3 And fxselected == 23 And holdwvc == false  Then //if vox mode and fx23 selected
+        rt = Vox23_rt //get control widgets for this device
+        j = rt [i]
+        sync_rcontrols (j, v)
+    End
+End
+
+    
+Include "includes/main/gr_vars_functions"
+
+Include "includes/main/gr_allracks"
+
+Include "includes/main/gr_looper"
+
+Include "includes/main/gr_mixer"
+
+Include "includes/main/gr_player"
+
+Include "includes/fs/gr_bankswitch"
+
+On Song(oldSongIndex : integer, newSongIndex : integer)
+    Var index: integer = GetCurrentSongPartIndex()
+    If InSetlistMode() == true Then
+        If IsBankUp == false Then
+            LEDControlR (FSOUT, FSLEDs, newSongIndex, FSChan)
+        End
+    End
+    set_safp_preset (GetCurrentSongName(), GetGPPresetList (SAFP, 0))
+End
+
+On Songpart(oldPartIndex: Integer, newPartIndex: Integer)
+    If InSetlistMode() == true Then
+        If IsBankUp == false Then
+            LEDControlR (FSOUT, FSLEDs, newPartIndex, FSChan)
+        End
+    End
+End
+
+On Rackspace(oldRackspaceIndex : integer, newRackspaceIndex : integer)
+    Include "includes/gl/gr_onrackspace"
+End
+
+On SystemEvent Matching GigLoaded
+    set_safp_preset (GetCurrentSongName(), GetGPPresetList (SAFP, 0))
+    Include "includes/gl/gr_ongigloaded"
+End
+
+Include "includes/fs/gr_flashtempo"

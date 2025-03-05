@@ -136,7 +136,7 @@ On MidiEvent (m: MidiMessage) From XTOUCH  // main logic is here
     
     //InjectMidiEvent (XTOUT, m) 
 End
-
+/*
 On ControlChangeEvent (c: ControlChangeMessage) Matching 20, 21, 22, 23 From SWITCH
     If InSetlistMode () == True Then
         Select
@@ -181,3 +181,4 @@ On ControlChangeEvent (c: ControlChangeMessage) Matching 20, 21, 22, 23 From SWI
         End
     End
 End
+*/

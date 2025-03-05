@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GPP_PRESET MaxInputPins="256" MaxOutputPins="256">
+  <PROCESSORSTATE>396.VMjLgLX....OPwTUGkjSSQUPTUDHmEVZtASOh.iK2.CNv.CLv.CMxjSL0LCMzHBHhEFag41XkASOh.iK0HBHy8FauASOh.iKvHBHsUGckASOh.iKvHBHuUGcvUGcvziHvHBHtEVakASOhbTcoQWXxIBHmEVZtESOh.iK2.CNv.CLv.CMxjSL0LCMzHBHhEFag41XkESOh.iK0HBHy8FauESOh.iKvHBHsUGckESOh.iKvHBHuUGcvUGcwziHvHBHtEVakESOhX0a3IBHmEVZtISOh.iK2.CNv.CLv.CMxjSL0LCMzHBHhEFag41XkISOh.iK0HBHy8FauISOh.iKvHBHsUGckISOh.iKvHBHuUGcvUGcxziHxHBHtEVakISOhHTXisVZtcFHTIWXislHfbVXo41L8HBLtbCL3.CLv.CLzHSNwTyLzPiHfHVXrElaiU1L8HBLtTiHfL2ar81L8HBLt.iHfzVczU1L8HBLt.iHf7VczAWczMSOhDiHf3VXsU1L8HRP0gmHu3C.</PROCESSORSTATE>
+  <PROCESSORLAYOUT>
+    <BUSINPUTS>
+      <PROCESSORBUS index="0" layout="L R"/>
+      <PROCESSORBUS index="1" layout="L R"/>
+      <PROCESSORBUS index="2" layout="L R"/>
+      <PROCESSORBUS index="3" layout="L R"/>
+    </BUSINPUTS>
+    <BUSOUTPUTS>
+      <PROCESSORBUS index="0" layout="L R"/>
+      <PROCESSORBUS index="1" layout="L R"/>
+      <PROCESSORBUS index="2" layout="L R"/>
+      <PROCESSORBUS index="3" layout="L R"/>
+    </BUSOUTPUTS>
+  </PROCESSORLAYOUT>
+  <PLUGIN name="Audio Mixer (8ch)" descriptiveName="Audio Mixer" format="Internal"
+          category="Audio Mixer" manufacturer="Deskew Technologies, LLC"
+          version="1.0" file="424210" uid="1092" isInstrument="0" fileTime="0"
+          infoUpdateTime="0" numInputs="8" numOutputs="8" isShell="0" isEnabled="1"
+          useDelayedLoading="0" explicitWidgetRefresh="0" b64UserKeywords=""/>
+</GPP_PRESET>

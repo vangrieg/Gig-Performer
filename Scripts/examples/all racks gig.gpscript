@@ -1,0 +1,48 @@
+Var XTOUCH: MidiInDeviceAlias
+    SWITCH: MidiInDeviceAlias
+
+Include "$system$"
+//Include "$rig$"
+Include "includes/osc"
+
+Include "includes/gl/gs_vars_functions"
+
+// Foostwitch functionality, not needed for X-Touch, blinks LED with tempo
+Include "includes/fs/gs_flashtempo"
+Include "includes/fs/gs_bankswitch"
+
+// Called when you switch to another songpart
+On Songpart(oldSongpartIndex : integer, newSongpartIndex : integer)
+    // Foostwitch functionality, not needed for X-Touch
+    Include "includes/fs/gs_leds_onsongpart"
+End
+
+On Song (oldSongIndex: Integer, newSongIndex: Integer)
+    // Foostwitch functionality, not needed for X-Touch
+    SetBPM (GetSongBPM(newSongIndex))
+    SetTimeSignatureNumerator (GetSongTimeSigNumerator (newSongIndex))
+    SetTimeSignatureDenominator (GetSongTimeSigDenominator (newSongIndex))
+    songchanged = True
+    //OSC_SendStringSpecific("/GP/Song", GetSongName(newSongIndex), oscip, oscport)
+End
+
+On SystemEvent Matching GigLoaded
+    reset_xtouch ()
+    set_xtouch_mode (xtmode)
+End
+
+On DeviceStatusChanged (deviceName: String, connected: Boolean, reserved: Integer)
+    If deviceName == FSOUT Then
+        IsBankUp = false
+    End
+    If deviceName == FSOUT And connected == True Then
+        If InSetlistMode () == True Then
+            InjectMidiEvent (FSOUT, MakeControlChangeMessageEx(ControlCC, 0, BankUpChannel))
+            SetEnvVariable ("SwitchConnected", "true")
+            OSC_SendCommandSpecific ("/SwitchOn", oscip, oscport)
+        End
+    Else
+        SetEnvVariable ("SwitchConnected", "false")
+        OSC_SendCommandSpecific ("/SwitchOff", oscip, oscport)
+    End
+End

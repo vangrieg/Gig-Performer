@@ -3,6 +3,22 @@
 <!-- markdownlint-disable MD024 -->
 # Release Notes
 
+## Version 2.0
+
+- **New Features**
+  - Added new gig file `All Racks` - a real example using all customizations
+  - Added new gig file `Global Rack Player`
+  - Added new gig file `Global Rack Looper`
+  - Added new rackspaces
+
+- **Improvements**
+  - Updated GlobalLink scripts for better performance, more robust mechanism for syncing without feedback loops
+  - Updated overlay template for Nanokontrol
+  - Changed includes structure
+
+- **Fixes**
+  - Multiple major and minor bug fixes
+
 ## Version 1.3
 
 - **New Feature**

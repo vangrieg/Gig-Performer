@@ -1,0 +1,150 @@
+Var 
+    LPSidle: Integer = 0 //status before long press is registered
+    LPSover: Integer = 1 //status after long press is registered
+    LongTime: Integer = 1000 //time to wait to register long press
+
+    LongPress: Ramp //timer for the footswitch
+    LongPressState: Integer = LPSidle //initialization of status
+    CCBuffer: Integer
+    ChannelBuffer: Integer
+    
+    //IsBankUp: Boolean = false //initialization of bank up or down flag
+
+    LEDOn: Ramp //timer for LED blinking
+
+Function BlinkFS (time: Integer) //this function blinks LEDs
+    If GetEnvVariable("SwitchConnected") == "true" Then
+        SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx(CCA, 127, FSChan)) //turning LEDs on
+        SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx(CCB, 127, FSChan))
+        SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx(CCC, 127, FSChan))
+        SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx(CCD, 127, FSChan))
+        TriggerOneShotRamp(LEDOn, time, 10) //starting timer
+    End
+End
+
+Function FSTap (cc: Integer, ccv: Integer)
+If InSetlistMode () == True Then
+        Select
+            cc == 20 And GetCurrentSongPartIndex () == 0 Do
+                If ccv == 127 Then 
+                    Tap ()
+                    OSC_SendCommandSpecific ("/tapon", oscip, oscport)
+                Elsif spchanged == True Then
+                    spchanged = False
+                Else
+                    OSC_SendCommandSpecific ("/tapoff", oscip, oscport)
+                End
+            cc == 21 And GetCurrentSongPartIndex () == 1 Do
+                If ccv == 127 Then 
+                    Tap ()
+                    OSC_SendCommandSpecific ("/tapon", oscip, oscport)
+                Elsif spchanged == True Then
+                    spchanged = False
+                Else
+                    OSC_SendCommandSpecific ("/tapoff", oscip, oscport)
+                End
+            cc == 22 And GetCurrentSongPartIndex () == 2 Do
+                If ccv == 127 Then 
+                    Tap ()
+                    OSC_SendCommandSpecific ("/tapon", oscip, oscport)
+                Elsif spchanged == True Then
+                    spchanged = False
+                Else
+                    OSC_SendCommandSpecific ("/tapoff", oscip, oscport)
+                End
+            cc == 23 And GetCurrentSongPartIndex () == 3 Do
+                If ccv == 127 Then 
+                    Tap ()
+                    OSC_SendCommandSpecific ("/tapon", oscip, oscport)
+                Elsif spchanged == True Then
+                    spchanged = False
+                Else
+                    OSC_SendCommandSpecific ("/tapoff", oscip, oscport)
+                End
+            //True Do
+            //    InjectMidiEvent (FSOUT, c)
+        End
+    End
+End
+
+On GeneratorEndCycle (timeX: Integer) from LEDOn //turning LEDs off, sending control message to racks, toggling bank flag 
+
+       If IsBankUp == false Then 
+        InjectMidiEvent (FSOUT, MakeControlChangeMessageEx(ControlCC, 127, BankUpChannel)) //sending control message
+            Notify("Footswitch Bank 2")
+       Else
+            InjectMidiEvent (FSOUT, MakeControlChangeMessageEx(ControlCC, 0, BankUpChannel))
+            Notify("Footswitch Bank 1")
+       End
+       IsBankUp = !IsBankUp //changing bank flag
+
+End
+
+On ControlChangeEvent (m: ControlChangeMessage) from SWITCH //intercepting key presses
+
+    Var
+        OldCC: Integer = GetCCNumber(m)
+        OldValue: Integer = GetCCValue(m)
+        OldChannel: Integer = GetChannel(m)
+        //Print("OldCC " + OldCC + " OldValue " + OldValue + " OldChannel " + OldChannel + " IsBankUp " + IsBankUp )
+   
+    If OldValue > 64 Then //detecting button down
+        
+        If IsBankUp == false Then CCBuffer = OldCC
+        Else CCBuffer = OldCC + 95 End
+        If IsBankUp == false Then ChannelBuffer = OldChannel
+        Else ChannelBuffer = BankUpChannel End
+        //Print ("key down, CCBuffer " + CCBuffer + " ChannelBuffer " + ChannelBuffer)
+        LongPressState = LPSidle
+        TriggerOneShotRamp(LongPress, LongTime, 10) //starting timer when the button goes down
+        
+    Else
+        StopOneShotRamp(LongPress)
+    End
+    //Print("lps is " + LongPressState)
+    //Print("key up happened is " + KeyUpHappened)
+    If IsBankUp == true And LongPressState == LPSidle /*And InLongPress == false*/ Then //checking if the upper bank is on to rewrite messages
+        //If LongPressState == LPSidle Then Print("lps idle, injecting rewritten message") Else Print ("lps not idle, suppressing rewritten message") End
+        Select
+            OldCC == CCA Do
+                InjectMidiEventViaRigManager (SWITCH, MakeControlChangeMessageEx(BankUpCCA, OldValue, BankUpChannel)) //reassigning to new channel and CC#
+            OldCC == CCB Do
+                InjectMidiEventViaRigManager (SWITCH, MakeControlChangeMessageEx(BankUpCCB, OldValue, BankUpChannel))
+            OldCC == CCC Do
+                InjectMidiEventViaRigManager (SWITCH, MakeControlChangeMessageEx(BankUpCCC, OldValue, BankUpChannel))
+            OldCC == CCD Do
+                InjectMidiEventViaRigManager (SWITCH, MakeControlChangeMessageEx(BankUpCCD, OldValue, BankUpChannel))
+        End
+    Else
+        If LongPressState == LPSidle /*And InLongPress == false And KeyUpHappened == true*/ Then
+            //Print("lps idle and in long press is, injecting original message")
+            InjectMidiEventViaRigManager (SWITCH, m) //if no reassignment is needed, sending the message as is
+            FSTap (OldCC, OldValue)
+        End
+    End
+
+End
+
+
+On GeneratorEndCycle (timeX: Integer) from LongPress //checking the timer, changing state, blinking LEDs to indicate bank change 
+    //Print("long cycle end event triggered")
+    If LongPressState == LPSidle Then
+        LongPressState = LPSover //changing state if button is pressed for long enough 
+        //Print("changing state to over, long press is " + LongPressState)
+        InjectMidiEventViaRigManager (SWITCH, MakeControlChangeMessageEx(CCBuffer, 0, ChannelBuffer)) //emulating key up
+        If IsBankUp == false Then
+            //InjectMidiEventViaRigManager (SWITCH, MakeControlChangeMessageEx(ControlCC, 127, BankUpChannel)) //sending control message
+            BlinkFS (500) //blinking LEDs long
+            //Notify("Footswitch Bank 2")
+        Else
+            //InjectMidiEventViaRigManager (SWITCH, MakeControlChangeMessageEx(ControlCC, 0, BankUpChannel))
+            //Notify("Footswitch Bank 1")
+            BlinkFS (15) //blinking LEDs short
+        End
+        //IsBankUp = !IsBankUp //changing bank flag
+    Else
+        StopOneShotRamp(LongPress)
+        LongPressState = LPSidle
+        //Print("changing state to idle, long press is " + LongPressState)
+    End
+End

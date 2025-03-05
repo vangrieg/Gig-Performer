@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<global_bindings>
+  <binding condition="note;1" target="28600" outputNormalValueUpon0="0.0" outputNormalValueUpon127="1.0"/>
+  <binding condition="note;3" target="28620" outputNormalValueUpon0="0.0" outputNormalValueUpon127="1.0"/>
+  <binding condition="note;4" target="28630" outputNormalValueUpon0="0.0" outputNormalValueUpon127="1.0"/>
+  <binding condition="note;11" target="28700" outputNormalValueUpon0="0.0" outputNormalValueUpon127="1.0"/>
+  <binding condition="note;7" target="28050" outputNormalValueUpon0="0.0" outputNormalValueUpon127="1.0"/>
+  <binding condition="note;8" target="28150" outputNormalValueUpon0="0.0" outputNormalValueUpon127="1.0"/>
+  <binding condition="note;13" target="28720" outputNormalValueUpon0="0.0" outputNormalValueUpon127="1.0"/>
+  <binding condition="note;12" target="28710" outputNormalValueUpon0="0.0" outputNormalValueUpon127="1.0"/>
+  <binding condition="cc;5;expr" target="28640" outputNormalValueUpon0="0.0" outputNormalValueUpon127="1.0"/>
+  <binding condition="cc;15;button127r" target="28740" outputNormalValueUpon0="0.0" outputNormalValueUpon127="1.0"/>
+</global_bindings>

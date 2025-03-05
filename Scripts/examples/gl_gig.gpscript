@@ -1,0 +1,29 @@
+Include "$system$"
+Include "$rig$"
+Include "includes/osc"
+
+Include "includes/gl/gs_vars_functions"
+
+// Foostwitch functionality, not needed for X-Touch, blinks LED with tempo
+Include "includes/fs/gs_flashtempo"
+
+// Called when you switch to another songpart
+On Songpart(oldSongpartIndex : integer, newSongpartIndex : integer)
+    // Foostwitch functionality, not needed for X-Touch
+    Include "includes/fs/gs_leds_onsongpart"
+End
+
+On Song (oldSongIndex: Integer, newSongIndex: Integer)
+    // Foostwitch functionality, not needed for X-Touch
+    SetBPM (GetSongBPM(newSongIndex))
+    songchanged = True
+    OSC_SendStringSpecific("/GP/Song", GetSongName(newSongIndex), "127.0.0.1", OSC_GetGPListeningPort())
+End
+
+On SystemEvent Matching GigLoaded
+    reset_xtouch ()
+    set_xtouch_mode (xtmode)
+    // Foostwitch functionality, not needed for X-Touch
+    set_sp_leds (GetCurrentSongPartIndex())
+End
+
