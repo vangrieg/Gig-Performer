@@ -116,6 +116,17 @@ var index : integer
     End
 End
 
-    //////////////////////////////////////////////////
-    //            END COMMON FUNCTIONS              //
-    //////////////////////////////////////////////////
+Function suppress_global_cab (flag: Boolean)
+    If BindExternalWidget(suppress_cab, "suppress_cab", "GLOBAL RACKSPACE") Then
+        If flag == True Then
+            SetExternalWidgetValue (suppress_cab, 1.0)
+        Else
+            SetExternalWidgetValue (suppress_cab, 0.0)
+        End
+    End
+End
+
+// cab on/off sync with global rackspace
+On OSCMessageReceived(m : OSCMessage) Matching "/gcab"
+    SetWidgetValue (cab_on, OSC_GetArgAsDouble (m, 0))
+End

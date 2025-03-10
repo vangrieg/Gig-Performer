@@ -1,0 +1,12 @@
+//Print ("on activate triggered, set timers running")
+    SetTimersRunning (true)
+    If osc_enabled == false Then
+        OSC_SendIntegerSpecific ("/ping", initmode, oscip, oscport)
+    End
+    If BindExternalWidget (gcab_on, "cab_on", "GLOBAL RACKSPACE") Then
+        If GetExternalWidgetValue (gcab_on) == 1.0 Then
+            SetWidgetValue (cab_on, 0.0)
+        Else
+            SetWidgetValue (cab_on, 1.0)
+        End
+    End

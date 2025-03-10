@@ -1,0 +1,5 @@
+
+    If BindExternalWidget(suppress_cab, "suppress_cab", "GLOBAL RACKSPACE") Then
+        SetExternalWidgetValue (suppress_cab, 0.0)
+    End
+    ping_time = 0.0
