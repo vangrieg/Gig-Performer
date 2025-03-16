@@ -47,7 +47,7 @@ Scripts, rackspaces, panels, overlay templates and other [Gig Performer](https:/
 
 ## Rackspaces
 
-- [NDSP Petrucci X](bin/petrucci_x_rack.zip), [GL version](bin/petrucci-x_gl_rack.zip)
+- [NDSP Petrucci X](bin/petrucci_x_rack.zip), [GL version](bin/petrucci_x_gl_rack.zip)
 - [NDSP Cory Wong X](bin/corywong_x_rack.zip), [GL version](bin/corywong_x_gl_rack.zip)
 - [NDSP Tom Morello](bin/morello_rack.zip), [GL version](bin/morello_gl_rack.zip)
 - [NDSP Gojira X GL version](bin/gojira_x_gl_rack.zip)
