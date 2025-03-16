@@ -3,7 +3,7 @@
 <RACKSPACE name="NDSP - Gojira X GL" uid="13e06b571b754a1e89f997087d20ec6f"
            bpm="120.0" timeNum="4" timeDen="4" resetTimeInfo="0" syncClock="0"
            maxDeactivationTime="2.5" maxDeactivationTimeIn="0.0" scriptWindowPos="191 262 1851 766"
-           usePatchPersist="0" zoomLevel="1.0" viewX="113" viewY="0" activePreset="3"
+           usePatchPersist="0" zoomLevel="1.0" viewX="113" viewY="0" activePreset="4"
            version="5.0" globalStereoCount="2">
   <PROCESSORSTATE_IN handle="" gpscript="0" osc="0" x="0.13671875" y="0.01611328125">73.VMjLg.D....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh7hO..</PROCESSORSTATE_IN>
   <PROCESSORSTATE_OUT handle="" gpscript="0" osc="0" x="0.13623046875" y="0.12158203125">123.VMjLgHG....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh.xXn8kL8HRLt.iHfzVczU1Wig1WxziHvHBHig1WyziHw3BLh.Ra0QWYeMFZeMSOh.iHu3C.</PROCESSORSTATE_OUT>
@@ -40,16 +40,16 @@
     <PROCESSORSTATEZ>8.3o8......D.</PROCESSORSTATEZ>
   </PROCESSOR>
   <PROCESSOR id="12" bypass="0" bypassSmoothing="0" prop_str_nodeName="Archetype Gojira X"
-             prop_int_uiLastX="834" prop_int_uiLastY="161" prop_dbl_x="0.09057617187500000000"
+             prop_int_uiLastX="834" prop_int_uiLastY="139" prop_dbl_x="0.09057617187500000000"
              prop_dbl_y="0.07592773437500000000" prop_int_MaxInputPins="256"
              prop_int_MaxOutputPins="256" prop_str_nodeHandleName="NDSP" prop_bool_nodeGPScriptEnabled="1"
              cmp="1">
     <PLUGIN name="Archetype Gojira X" format="VST3" category="Fx|Fx|Distortion|Dynamics|Reverb"
             manufacturer="Neural DSP" version="1.0.2" file="/Library/Audio/Plug-Ins/VST3/Archetype Gojira X.vst3"
-            uid="e6a8e1d0" isInstrument="0" fileTime="18e9f4c94e0" infoUpdateTime="19560324b87"
+            uid="e6a8e1d0" isInstrument="0" fileTime="18e9f4c94e0" infoUpdateTime="1957f4ceaea"
             numInputs="2" numOutputs="2" isShell="0" isEnabled="1" useDelayedLoading="0"
             explicitWidgetRefresh="0" b64UserKeywords=""/>
-    <PROCESSORSTATEZ>2371.3ocoYs0jhpjDd9arOtOuQvAPhnchXhSDHBJqP2fxUeCnmFwB0caUD3W+lI2r.wS2wY6WztpJyrxu7doiD++7z+3G+3WNarlXjdMN43lKAW98e9KUoSG9OmN96iW9SgoSDXbz2qEWdZNCCya+qObC9TbWDQkO7zzzfoKWqcgIY4GVoAISU7OIv4CqYa4asZxx729Iyr2hEWDpC6QtorLS00uvVIRJ1w6Rji+d1jkkpt.+lsLlUITRN0SijF7esU72X55UZ671NOGuO0c82wjGRt43mX5BzUFrG2Ckslq+m1bvYU7Q5mtblVuypaiet8p.b9k8OuHHy5yOK7Sad39mZOP2VkubV281ln.52NM9PoWK1mnKXknW3s4U9vM5SX1nuahzaE1G7p0Wtvelk3eJFtCh1d4xNAD39jqe3sWzbi1UoCJAES281Kura7yU53WZmFVHzmuWA4bkZuL4zvX1l+WbVDf41DP2tpNO7Lfw2lC2MlY9WAd7IblMhGBIxU5h9EFIMAPG2O0IZGfY4xkdkjzHBks4frRDwTdatMW3woJAnc6rmDhy9wvcUTWI5juKvuYQ41nsB9TNMnPjOn.sSkqA4mGvZtHj0j2Llf3Kh6q2dQzMpLxx6jPs87mYEgrpNatZ53+IhAFtQWf6rw.cjU.tqhrAY1f+k8hHxH26hXt.9XK+byCu6HqDv1yepgGp19o.OIBbdD+8.t.zBeW.4iAniSFA6G6NA1gz3EVwptdmAeEzOB80Z78LvO4P4abHj0N8Q8boqOGvmch6BI.Vlqpr9TjxVIP2Pr5RXg9DvNkaC5n5Au4fObLwEwrUEef12V5b1.9RUqWxHQsNm0QhSvYPFfc2OFzEDiZ4m1TtnNYwTnySIq612V51MlObibRAaFnSxNu+QymaHGBRP+PzOCNeLow+rZMzOZFfsNdBl1dY1UXRcrMM8BkAU4ClmPe9smqvTIsrIyzmncmFCvG6.3e.4Y5v718rjUBI51dkf7A5zxlemNKH1mTs9Z8N4vZscR0Z4ZSnNqhMjCS0wK4b08cEam94d2d25uMpeTMe.egU8yaTrZnuzOyjBIl.u5kiXwxBLWFgK3xC9+CrQf+YRbJ3SprMuSelowag4Dg0Ls7yLWrs1WSRCs+34Wiw9M5dNXqXW1bdeKehYpWrNWMMZazJan4g7Aio6HOvbWwbg4hyBOpefRVq0xg7oYgfrXVrsP08Khe3WgXVEu.dtWcQzGFogklf8utNwJAsZ+lbyEaP+zOqjyNcL+Nd94DtvxF8jy.sw.8TXZJj+n3IxEoG9LXuXdvdJYxyTf4HC1eyBhsUpx4cwpPCk4USEyS50waUm4aJqqlP70K48yc7xrQ7Mv5LNd6F3ujS37OZdv55TmfGiqm0rOuQLju.yqQlRE+rzc6gXn9MTmEx8g0H0yVRSSsNEi4RQrrauZ4oS37rHKB6uWEcVGk4Bo08dxZJW3o1Z3X9Nq57cX9wRcKucpEFGgyPDbVu12Z6m1JVwU9x65wmLs4auBwhWH6sTHJAD.aJiw9BnuKoZz2yxQzAMLu3slbTz7uzZaho86Yn8Wq+diTiLf32neP+PE8pMQoaxa1bRWwVPDoMWiltd2k4f+1GRudyXi+Ylp58cmqx2FrWIs8Lk43m1f6.drsJ+QiueKcqmxEblkRe5Q2H9Fc64nMzNC8b3+k1oJ5eteYGOj+d73A6z862C4RnwiXg59Uv68yysRqSz1GLVl118U20JYp873BGj2c4qtMIWexGPdVKmUYV8riZRPuNPbSfpJw7DzGmAjK8HPy34dGlWnoWSU9fK.1QFjy.qAkC0EuB85.8k6mQJrJayUC22G1O9K1WtPqq+dz1PKac4Hh3A8+58c0toIGg8d1zGIbWODdU.7YsQeSkvxuX+aLewcT+qzgjuPGbetN3yF7osavn7F5C+hImEf8Ogu7OmuU8HA9KvbXU40FteU+RbVmhRC.rAxC0LSzi3+y0Mv23xysqcXV9xw5Qj1NnLn+lMdmE++n+YHVH1zw.3ADa53sW1JHitmll3klyP0CvL8r881yBmygzVCC5QPXI89taNU2e5JNql7rx0yRtDiaangKrOMwPcQhZce4bgEZzzg8dWcGMjdcRU9xl6+84hVwuLYz9A5NKz2Sdry6fcO.44GKWrU.z8yigCz6Q2ahG1eGj+ghOFUy91U6XUYyrFGIKf7KU3U0bJixan9w9tdooooOdLTlc3wP9QgGrKGeFj6x.6+ApwC08pvCpuOSsttLc8kDHmIj6G0GaXtGXN4FbObC1eF9+dWFnS21W0K7c9B8vTzouTzzCiKp6StSd2mG9hWBLK9X5EEuDv7286q+5bmfrg4ysbFLybNLyCTWEhW+p9ygYMp7Mkkkq8EssrzDOT81GYLvrVs9nv5y.ceOYSWMVve2zT0x6hoxqMusRKuVm4i4ajnViXDKn3yW11m.EO8GimN584YM8k.8mqlCVRe3dEiwa0Q4sVeda+sl4nku+LKo02yzTb28uWy6Wa6Mn+5JOac8GVOddXJlWkgJlnUehZzGp0GZuZiuZwEtFbY35rOY8hGV+Q74g6k7i2KZ7eL7jRtcwuneXS7ho4sVb.zKl6wes2Sgl6Y246gyMwQCwsA7faTdz56MfGliyihg7f19M3r2FUdoZCk22bt5VdOxbhq8uMLOACz+utx1+94JJB.+.O7sq93EneYY7MinqutVmCyS1sG+F37Z042kzv5cWAYDiuczTnO61Xyty+MeKktyC5T3hsftDHHlGcDz0yD2JLnAO6Vq8cxv5O7vLXmYcd2vVApIzz2SKe9lyl2xiwdOmLhRTR7vddF4bCdSwyDE+SrVdYi7Fvehy0YOG5izw+hYE+byXlguIqWdiO0dnerXLNbdUeba2S3LNB9GWZpGguCZrJueU+lySzwdSJgZdBPcJgkE5rFR5YUyxxGvB1gKQNqmC3Pw7B8IgRZkejTkegq88UguW1NKiNma6amC8f6eQFqqpPMCbt6DVkfeiumLpmprsxnFWEl894aii0+VLAe2i.78Fjg3lyPOJk093AP+Ya0kUFEeu+6Qj9FC0e+aaVCYQRH3qi+1.lHFxL2fYFnKw57g32kXLVzQvQKaI64V4feANmwbDmE+0eP86m7q+X3utxO9eOLdm1C</PROCESSORSTATEZ>
+    <PROCESSORSTATEZ>2369.3ocoYs0aipjDd9arOtOuRb.LRwizniDFC1rAR.ycdCHSv1M1d2XLF3W+oJtX2fImDs6HMxNc2U00ku5VaWI9+I4e7ie7KWK6YFYWR2czJOJ+2+4uTkNc3+b53uOl+mBymww3puWK83okLLLu9ud2K5CwsIDU93SyyhludiVNyt0uamEsatRvIAt.XMG6.6mmst70exr30TwUw5vdjqJqKT8BpbTRjRc8ySbC1ytacspGvuEqSYUhkjy70HYQ+WGk.KSO+ZG2W2565+gtWvVlxXxU2fcld.c0Q6w8v6VyK3CGN3rJAH8yWuUavY0cvOCuH.me8vyKB2Y64WD+gCOH+YNizsmKWu3lb6PTBvyyGK8R09c5B16zq7sdgO1ReFik91YRuV4bvuUe4h+YwtfSofLH53WJ6FQ.4oT+vqOo4krsQGThplu80mdZ6zmq1Mn1IKtRXHeu.2yEp8JjyhSY69awEIfM2g.51E0kwmAab4RKTGCt.73C3LVhGhIxM5hdNijl.ni6m6lrErYkx090jrDBku4frRBwTNrzgK93bkHzuc1WBsyAofrJpqjbJvC32hjRGzWAeJmEUIxGUg9o5M5vYiXMWEyZxalRP66Bf9Mg4hdI0I19mDZ8m+rnJlU005hoavGnMvvKIGjYiQ5Hq.HqhrQEN.9xYUBYB4tJkKhO0Nnz7vatxJQrCvSc7P0IHC3IQfymDrGrK.sv2EP9X.53rIr8SISfeHKckcppm+Y.qf3HDq0g8LvO4v623PLqS1i54Zu.NfOaE2FS.aYopxlSIJgRftg1p73J8YfepzAzQ0C9KALbJwCsYOW8Nf8X5oy0BvRMqWyHQsNm8QhazY3N.+dPJnKnMpmeZy4RtcWLU57T20c+aOcamBC2cOYfOCzIY22du6SKxgncf8r.wYv4SIc3SXsqqkZvlP7pufoiegSiMoM1lldg5nl7AK2Qe9vyM1TIshYKzmocmFC.ic.vGPdla1798rkUhI5N90nLMagVwx6zYCw9jl0QLa28vZGNqYsRsYTmUwAxgo55u6bi79L6M8y6t+tGuMINpkO.V34g4MpddLV5mERwDSfWCxQrZcElKivEk+.9ejOBvm6Ry.LoRX4M8Yq1UPlw0W5nDWm1pG09UX7p+Q0C1X7cClPamVIjiqr67i08pkRcz7M0cTNvbWobwkhKhOpeHdClmo0mnWqIowa.1ZlUgUeWd1bVLmQVbs3BHtekCD60J+6qzPYeu5pDMDWesUt4vZB34MsCqL6hm7kZ78kleW+HPOnKWLUVC++9cFKoUA2IrlEFa7QGtpBuymTBVR3hq6hK.L+26t.5lBuT.0yRupLByT4mpNbs2W6EdHUIYybtnyTXlLH+XEFizsOVK0BwXNbQ2yquMFyIUqa6uEvg4.crXbJEMM5Dj6eWe8Y56Cvc6LcdqXzdHcFPOAUCxOSeWrQUDHGz715F4ZV5XrVIgK3nIuQpZllDjqGj+HUUh4InNlAfkNBx2P9TYbbNj+Rvcyl.6vOb.ai4pPHu1.YorlRNMlPGtZC4pU5pgQyeKqS5JNBhXLS4v8ln9DTKNnkN4vTc57qz5lqlNgy2lrJFoEwS2nafrrAwauLChCIrKzXoOWK11OWuEWBX6HRPmcGrGm56OBw98zoxFcg0kReFR2iXi66csdjetvMH6K8Ssz+o3xa7v86wiG7S2kuI5W4t8Pto2umY65s7g5226e3FMk0eNt9p1xvKv4yI6sUHJQDHtoIOKs+Y.tYDlZnO94qqg5LPOmCvA+M35g8Yv+LlqXWqdNn2EL+PIDeA97fg8ZsAp0bH9h.XSc3rg9liEzjS5qK.8v8v9y9h8upUYW2mqGzC56FwUEAew9xVZ2lO.s2Xuvp7Q4yg5h5xIDwU5+866oU7ExX0WoCq+BYz4y22E5glk0cRdC8nGgyrT+Y7M4y46Kyg0ArRdRa7v38sIn96DdPvErMGZxmTN0cn942Qa7wm4W6sYamtuYZ+v3YcV5FU7+QuMe335uW1F3ADWJ2NaGcOMs4C6NCUdgbi14etSOA5MDhW6xUlCwZkz6Cwi6a6cRm0tM2VJT69r3pl90aoYWS+yTz3Wg5TGc7ZCny5RRW+5uK8RSdkN4ekraXdaemPeWS0y88yByZFejrB76M7bcYp6aftGMkcfduA8BwzNGAEerwY9ZlMpqurYnNudUn.je4Lpao1Ptto4sdy7xf8XLMCrGaFem2rGi42c6wF8IwWz2A1uKTaHUn0db+6GLZqs5Q+1B9nuJGoyD7+pJcy.Tpyi86qA+Mf6GpSVM3FZ9lpyGeSeong1FWOfl6yBCXFfeS4iojMrGyQ39KOD2.wR1tilWtDvzs8O8PsuGdyBoFLkrrbK90w1VS7PSLcACLmUOtFVeAne6IV2pwC3YSSUa+bSkWtUyskWaJBvZdRTqQLRETB3qaywLfmASwSW8g7rk9Zf9yMy.2zy9f8plh2pSxasg714KlWusNZOeoh8LME2d+6s79k9Z5CWW4yVW+g0SWFmg4pYnhi50mjN8gZ8w9q9Xnd6BWmcY75rex5UOr9i1mGjK4GkKZ6+T1Sp6EhCZiePbXW7ho40d6.nWL2iw5kSgN4714GXm6hiFa2FwCtI4QO1aDOLmlGUi4As+azYuN48koM999p31tYp64Ml2X36K8zlfqiySv3A8XpD9+dthpH.G3iua06OA0pkw2KZ0fYc41iy51uGuEbds1bjRZ36YcAtiT7cilC036iMuc9u4722NOnSwqBAcIRPrL4HnqmIdM1fN64s05eiLrFCOL64YV22LZlgtqmwd9LwrHSgc64wjylCyttK8gYye7bi6IGp0bBpUVLw6+9ANmsyRnNkaPtYC+7JXVfuGKLOR2asA8vkhwgKa5ANbOgy3HfOxuOSTRpJe.AqEtbmNGz0acLTWyuBpEUoyZHoWf8prlOhE7C4ItaVhyftrReVrjV866Zxuv0+1pv2q6lSsPmyq+cygdECxgYNf4Rnl4pzaFqRzuw2RF0SXdyt6n0tJr3syWm1V+awcM89bReUhLD2bFlErtEiGcxzMTWVYR668eKhrWYn92+1g0PF56Cv53uKfIZCYVZvr.zErlN9cIFiU2H3nsijyR6R.Wf86tDsyh+5On9sS90eL9WV4G+ETLDY5I</PROCESSORSTATEZ>
     <PROCESSORLAYOUT>
       <BUSINPUTS>
         <PROCESSORBUS index="0" layout="L R"/>
@@ -102,7 +102,7 @@
               widgetDirectedMaxDoubleValue="1.0" widgetDirectedStringListValue=""
               widgetHandle="ampEQPlate" enableOSC="0" invertOSC="0" groupName=""
               widgetMoveBehavior="0" updateOnLoadGig="0" updateOnActivateRackspace="0"
-              setDefaultDoubleClickResetValue="0.0" bckgColor="87423f3b" outlineColor="7d878787"
+              setDefaultDoubleClickResetValue="0.0" bckgColor="61000000" outlineColor="7d878787"
               outlineRound="10" outlineThick="1">
         <GPSCALE color="ff4682b4" min="0.0" max="100.0" v="2">8008...........flYlYlYlYt+nYlYlYlYl7OzLyLyLyLS+ilYlYlYlY1+.........9OzLyLyLyLi+yYlYlYlYl4+nYlYlYlYl9OMyLyLyLyr+C........7+nYlYlYlYF+OzLyLyLyLy+SyLyLyLyL8+blYlYlYlY+O........3+ilYlYlYlY9+PyLyLyLyr+OMyLyLyLy7+yYlYlYlYl++..........PMyLyLyLy..jlYlYlYlY..clYlYlYlI.PzLyLyLyLC.D........A.0LyLyLyLS.PZlYlYlYlE.zYlYlYlYlA.QyLyLyLyb.P........H.TyLyLyLyLB.oYlYlYlYl.PmYlYlYlYJ.DMyLyLyLyB.A.......v.PMyLyLyLyL.jlYlYlYlYC.clYlYlYl4.PzLyLyLyLO.D........D.clYlYlYlAAPMyLyLyLyP.zLyLyLyLSD.oYlYlYlYFAP........R.zYlYlYlYlD.0LyLyLyLKAPzLyLyLyLS.jlYlYlYl4D.A.......PAPmYlYlYlYT.TyLyLyLyLE.QyLyLyLyTAPZlYlYlYlU.D.......fE.clYlYlYlYAPMyLyLyLyV.DMyLyLyLyE.oYlYlYlYdAP........X.zYlYlYlYFF.0LyLyLyLiAPzLyLyLyLY.jlYlYlYlYF.A.......nAPmYlYlYlYZ.TyLyLyLyrF.QyLyLyLyrAPZlYlYlYla.D........G.clYlYlYlwAPMyLyLyLyb.DMyLyLyLSG.oYlYlYlY1AP........d.zYlYlYlYlG.0LyLyLyL6APzLyLyLyLe.jlYlYlYl4G.A........BPyLyLyLyLf.zYlYlYlYFH.oYlYlYlYBBPMyLyLyLyf.D.......PH.MyLyLyLyDBPmYlYlYlYg.jlYlYlYlYH.0LyLyLyLGBP........h.zLyLyLyLiH.clYlYlYlIBPZlYlYlYlh.TyLyLyLyrH.A.......LBPzLyLyLyLi.zYlYlYlY1H.oYlYlYlYNBPMyLyLyLyi.D........I.QyLyLyLyPBPmYlYlYlYj.jlYlYlYlII.0LyLyLyLSBP........k.DMyLyLyLSI.clYlYlYlUBPZlYlYlYlk.TyLyLyLybI.A.......XBPzLyLyLyLl.zYlYlYlYlI.oYlYlYlYZBPMyLyLyLyl.D.......vI.QyLyLyLybBPmYlYlYlYm.jlYlYlYl4I.0LyLyLyLeBP........n.DMyLyLyLCJ.clYlYlYlgBPZlYlYlYln.TyLyLyLyLJ.A.......jBPzLyLyLyLo.zYlYlYlYVJ.oYlYlYlYlBPMyLyLyLyo.D.......fJ.QyLyLyLynBPmYlYlYlYp.jlYlYlYloJ.0LyLyLyLqBP........q.DMyLyLyLyJ.clYlYlYlsBPZlYlYlYlq.TyLyLyLy7J.A.......vBPzLyLyLyLr.zYlYlYlYFK.oYlYlYlYxBPMyLyLyLyr.D.......PK.QyLyLyLyzBPmYlYlYlYs.jlYlYlYlYK.0LyLyLyL2BP........t.DMyLyLyLiK.clYlYlYl4BPZlYlYlYlt.TyLyLyLyrK.A.......7BPzLyLyLyLu.zYlYlYlY1K.oYlYlYlY9BPMyLyLyLyu.D........L.oYlYlYlY.CPyLyLyLyLv.TyLyLyLyDL.clYlYlYlACP.......fv.jlYlYlYlIL.MyLyLyLyBCPMyLyLyLyv.zYlYlYlYNL.A.......DCPZlYlYlYFw.zLyLyLyLSL.0LyLyLyLECPmYlYlYlYw.D.......XL.oYlYlYlYFCPyLyLyLyrw.TyLyLyLybL.clYlYlYlGCP........x.jlYlYlYlgL.MyLyLyLyHCPMyLyLyLSx.zYlYlYlYlL.A.......JCPZlYlYlYlx.zLyLyLyLqL.0LyLyLyLKCPmYlYlYl4x.D.......vL.oYlYlYlYLCPzLyLyLyLy.TyLyLyLyzL.clYlYlYlMCP.......fy.jlYlYlYl4L.QyLyLyLyNCPMyLyLyLyy.zYlYlYlY9L.A.......PCPZlYlYlYFz.DMyLyLyLCM.0LyLyLyLQCPmYlYlYlYz.D.......HM.oYlYlYlYRCPzLyLyLyrz.TyLyLyLyLM.clYlYlYlSCP........0.jlYlYlYlQM.QyLyLyLyTCPMyLyLyLS0.zYlYlYlYVM.A.......VCPZlYlYlYl0.DMyLyLyLaM.0LyLyLyLWCPmYlYlYl40.D.......fM.oYlYlYlYXCPzLyLyLyL1.TyLyLyLyjM.clYlYlYlYCP.......f1.jlYlYlYloM.QyLyLyLyZCPMyLyLyLy1.zYlYlYlYtM.A.......bCPZlYlYlYF2.DMyLyLyLyM.0LyLyLyLcCPmYlYlYlY2.D.......3M.oYlYlYlYdCPzLyLyLyr2.TyLyLyLy7M.clYlYlYleCP........3.jlYlYlYlAN.QyLyLyLyfCPMyLyLyLS3.zYlYlYlYFN.A.......hCPZlYlYlYl3.DMyLyLyLKN.0LyLyLyLiCPmYlYlYl43.D.......PN.oYlYlYlYjCPzLyLyLyL4.TyLyLyLyTN.clYlYlYlkCP.......f4.jlYlYlYlYN.QyLyLyLylCPMyLyLyLy4.zYlYlYlYdN.A.......nCPZlYlYlYF5.DMyLyLyLiN.0LyLyLyLoCPmYlYlYlY5.D.......nN.oYlYlYlYpCPzLyLyLyr5.TyLyLyLyrN.clYlYlYlqCP........6.jlYlYlYlwN.QyLyLyLyrCPMyLyLyLS6.zYlYlYlY1N.A.......tCPZlYlYlYl6.DMyLyLyL6N.0LyLyLyLuCPmYlYlYl46.D........O.oYlYlYlYvCPzLyLyLyL7.TyLyLyLyDO.clYlYlYlwCP.......f7.jlYlYlYlIO.QyLyLyLyxCPMyLyLyLy7.zYlYlYlYNO.A.......zCPZlYlYlYF8.DMyLyLyLSO.0LyLyLyL0CPmYlYlYlY8.D.......XO.oYlYlYlY1CPzLyLyLyr8.TyLyLyLybO.clYlYlYl2CP........9.jlYlYlYlgO.QyLyLyLy3CPMyLyLyLS9.zYlYlYlYlO.A.......5CPZlYlYlYl9.DMyLyLyLqO.0LyLyLyL6CPmYlYlYl49.D.......vO.oYlYlYlY7CPzLyLyLyL+.TyLyLyLyzO.clYlYlYl8CP.......f+.jlYlYlYl4O.QyLyLyLy9CPMyLyLyLy+.zYlYlYlY9O.A........DPMyLyLyLC.AjlYlYlYlAP.clYlYlYl.DPyLyLyLyL.AD.......DP.0LyLyLyLADPZlYlYlYV.AzYlYlYlYFP.MyLyLyLyADP.......f.ATyLyLyLyHP.oYlYlYlYBDPmYlYlYlo.AzLyLyLyLKP.A.......CDPMyLyLyLy.AjlYlYlYlMP.clYlYlYlCDPyLyLyLy7.AD.......PP.0LyLyLyLDDPZlYlYlYFAAzYlYlYlYRP.MyLyLyLyDDP.......PAATyLyLyLyTP.oYlYlYlYEDPmYlYlYlYAAzLyLyLyLWP.A.......FDPMyLyLyLiAAjlYlYlYlYP.clYlYlYlFDPyLyLyLyrAAD.......bP.0LyLyLyLGDPZlYlYlY1AAzYlYlYlYdP.MyLyLyLyGDP........BATyLyLyLyfP.oYlYlYlYHDPmYlYlYlIBAzLyLyLyLiP.A.......IDPMyLyLyLSBAjlYlYlYlkP.clYlYlYlIDPyLyLyLybBAD.......nP.0LyLyLyLJDPZlYlYlYlBAzYlYlYlYpP.MyLyLyLyJDP.......vBATyLyLyLyrP.oYlYlYlYKDPmYlYlYl4BAzLyLyLyLuP.A.......LDPMyLyLyLCCAjlYlYlYlwP.clYlYlYlLDPzLyLyLyLCAD.......zP.0LyLyLyLMDPZlYlYlYVCAzYlYlYlY1P.QyLyLyLyMDP.......fCATyLyLyLy3P.oYlYlYlYNDPmYlYlYloCADMyLyLyL6P.A.......ODPMyLyLyLyCAjlYlYlYl8P.clYlYlYlODPzLyLyLy7CAD........Q.0LyLyLyLPDPZlYlYlYFDAzYlYlYlYBQ.QyLyLyLyPDP.......PDATyLyLyLyDQ.oYlYlYlYQDPmYlYlYlYDADMyLyLyLGQ.A.......RDPMyLyLyLiDAjlYlYlYlIQ.clYlYlYlRDPzLyLyLyrDAD.......LQ.0LyLyLyLSDPZlYlYlY1DAzYlYlYlYNQ.QyLyLyLySDP........EATyLyLyLyPQ.oYlYlYlYTDPmYlYlYlIEADMyLyLyLSQ.A.......UDPMyLyLyLSEAjlYlYlYlUQ.clYlYlYlUDPzLyLyLybEAD.......XQ.0LyLyLyLVDPZlYlYlYlEAzYlYlYlYZQ.QyLyLyLyVDP.......vEATyLyLyLybQ.oYlYlYlYWDPmYlYlYl4EADMyLyLyLeQ.A.......XDPMyLyLyLCFAjlYlYlYlgQ.clYlYlYlXDPzLyLyLyLFAD.......jQ.0LyLyLyLYDPZlYlYlYVFAzYlYlYlYlQ.QyLyLyLyYDP.......fFATyLyLyLynQ.oYlYlYlYZDPmYlYlYloFADMyLyLyLqQ.A.......aDPMyLyLyLyFAjlYlYlYlsQ.clYlYlYlaDPzLyLyLy7FAD.......vQ.0LyLyLyLbDPZlYlYlYFGAzYlYlYlYxQ.QyLyLyLybDP.......PGATyLyLyLyzQ.oYlYlYlYcDPmYlYlYlYGADMyLyLyL2Q.A.......dDPMyLyLyLiGAjlYlYlYl4Q.clYlYlYldDPzLyLyLyrGAD.......7Q.0LyLyLyLeDPZlYlYlY1GAzYlYlYlY9Q.QyLyLyLyeDP........HATyLyLyLy.R.oYlYlYlYfDPmYlYlYlIHADMyLyLyLCR.A.......gDPMyLyLyLSHAjlYlYlYlER.clYlYlYlgDPzLyLyLybHAD.......HR.0LyLyLyLhDPZlYlYlYlHAzYlYlYlYJR.QyLyLyLyhDP.......vHATyLyLyLyLR.oYlYlYlYiDPmYlYlYl4HADMyLyLyLOR.A.......jDPMyLyLyLCIAjlYlYlYlQR.clYlYlYljDPzLyLyLyLIAD.......TR.0LyLyLyLkDPZlYlYlYVIAzYlYlYlYVR.QyLyLyLykDP.......fIATyLyLyLyXR.oYlYlYlYlDPmYlYlYloIADMyLyLyLaR.A.......mDPMyLyLyLyIAjlYlYlYlcR.clYlYlYlmDPzLyLyLy7IAD.......fR.0LyLyLyLnDPZlYlYlYFJAzYlYlYlYhR.QyLyLyLynDP.......PJATyLyLyLyjR.oYlYlYlYoDPmYlYlYlYJADMyLyLyLmR.A.......pDPMyLyLyLiJAjlYlYlYloR.clYlYlYlpDPzLyLyLyrJAD.......rR.0LyLyLyLqDPZlYlYlY1JAzYlYlYlYtR.QyLyLyLyqDP........KATyLyLyLyvR.oYlYlYlYrDPmYlYlYlIKADMyLyLyLyR.A.......sDPMyLyLyLSKAjlYlYlYl0R.clYlYlYlsDPzLyLyLybKAD.......3R.0LyLyLyLtDPZlYlYlYlKAzYlYlYlY5R.QyLyLyLytDP.......vKATyLyLyLy7R.oYlYlYlYuDPmYlYlYl4KADMyLyLyL+R.A.......vDPMyLyLyLCLAjlYlYlYlAS.clYlYlYlvDPzLyLyLyLLAD.......DS.0LyLyLyLwDPZlYlYlYVLAzYlYlYlYFS.QyLyLyLywDP.......fLATyLyLyLyHS.oYlYlYlYxDPmYlYlYloLADMyLyLyLKS.A.......yDPMyLyLyLyLAjlYlYlYlMS.clYlYlYlyDPzLyLyLy7LAD.......PS.0LyLyLyLzDPZlYlYlYFMAzYlYlYlYRS.QyLyLyLyzDP.......PMATyLyLyLyTS.oYlYlYlY0DPmYlYlYlYMADMyLyLyLWS.A.......1DPMyLyLyLiMAjlYlYlYlYS.clYlYlYl1DPzLyLyLyrMAD.......bS.0LyLyLyL2DPZlYlYlY1MAzYlYlYlYdS.QyLyLyLy2DP........NATyLyLyLyfS.oYlYlYlY3DPmYlYlYlINADMyLyLyLiS.A.......4DPMyLyLyLSNAjlYlYlYlkS.clYlYlYl4DPzLyLyLybNAD.......nS.0LyLyLyL5DPZlYlYlYlNAzYlYlYlYpS.QyLyLyLy5DP.......vNATyLyLyLyrS.oYlYlYlY6DPmYlYlYl4NADMyLyLyLuS.A.......7DPMyLyLyLCOAjlYlYlYlwS.clYlYlYl7DPzLyLyLyLOAD.......zS.0LyLyLyL8DPZlYlYlYVOAzYlYlYlY1S.QyLyLyLy8DP.......fOATyLyLyLy3S.oYlYlYlY9DPmYlYlYloOADMyLyLyL6S.A.......+DPMyLyLyLyOAjlYlYlYl8S.clYlYlYl+DPzLyLyLy7OAD........T.clYlYlYF.EPMyLyLyLCPAzLyLyLyLAT.oYlYlYlY.EP.......HPAzYlYlYlYBT.0LyLyLyr.EPyLyLyLyLPAjlYlYlYlCT.A.......AEPmYlYlYlQPATyLyLyLyDT.MyLyLyLSAEPZlYlYlYVPAD.......FT.clYlYlYlAEPMyLyLyLaPAzLyLyLyLGT.oYlYlYl4AEP.......fPAzYlYlYlYHT.0LyLyLyLBEPyLyLyLyjPAjlYlYlYlIT.A......fBEPmYlYlYloPATyLyLyLyJT.MyLyLyLyBEPZlYlYlYtPAD.......LT.clYlYlYFCEPMyLyLyLyPAzLyLyLyLMT.oYlYlYlYCEP.......3PAzYlYlYlYNT.0LyLyLyrCEPyLyLyLy7PAjlYlYlYlOT.A.......DEPmYlYlYlAQATyLyLyLyPT.MyLyLyLSDEPZlYlYlYFQAD.......RT.clYlYlYlDEPMyLyLyLKQAzLyLyLyLST.oYlYlYl4DEP.......PQAzYlYlYlYTT.0LyLyLyLEEPyLyLyLyTQAjlYlYlYlUT.A......fEEPmYlYlYlYQATyLyLyLyVT.MyLyLyLyEEPZlYlYlYdQAD.......XT.clYlYlYFFEPMyLyLyLiQAzLyLyLyLYT.oYlYlYlYFEP.......nQAzYlYlYlYZT.0LyLyLyrFEPyLyLyLyrQAjlYlYlYlaT.A.......GEPmYlYlYlwQATyLyLyLybT.MyLyLyLSGEPZlYlYlY1QAD.......dT.clYlYlYlGEPMyLyLyL6QAzLyLyLyLeT.oYlYlYl4GEP........RAzYlYlYlYfT.0LyLyLyLHEPyLyLyLyDRAjlYlYlYlgT.A......fHEPmYlYlYlIRATyLyLyLyhT.MyLyLyLyHEPZlYlYlYNRAD.......jT.clYlYlYFIEPMyLyLyLSRAzLyLyLyLkT.oYlYlYlYIEP.......XRAzYlYlYlYlT.0LyLyLyrIEPyLyLyLybRAjlYlYlYlmT.A.......JEPmYlYlYlgRATyLyLyLynT.MyLyLyLSJEPZlYlYlYlRAD.......pT.clYlYlYlJEPMyLyLyLqRAzLyLyLyLqT.oYlYlYl4JEP.......vRAzYlYlYlYrT.0LyLyLyLKEPyLyLyLyzRAjlYlYlYlsT.A......fKEPmYlYlYl4RATyLyLyLytT.MyLyLyLyKEPZlYlYlY9RAD.......vT.clYlYlYFLEPMyLyLyLCSAzLyLyLyLwT.oYlYlYlYLEP.......HSAzYlYlYlYxT.0LyLyLyrLEPzLyLyLyLSAjlYlYlYlyT.A.......MEPmYlYlYlQSATyLyLyLyzT.QyLyLyLSMEPZlYlYlYVSAD.......1T.clYlYlYlMEPMyLyLyLaSADMyLyLyL2T.oYlYlYl4MEP.......fSAzYlYlYlY3T.0LyLyLyLNEPzLyLyLyjSAjlYlYlYl4T.A......fNEPmYlYlYloSATyLyLyLy5T.QyLyLyLyNEPZlYlYlYtSAD.......7T.clYlYlYFOEPMyLyLyLySADMyLyLyL8T.oYlYlYlYOEP.......3SAzYlYlYlY9T.0LyLyLyrOEPzLyLyLy7SAjlYlYlYl+T.A.......PEPmYlYlYlATATyLyLyLy.U.QyLyLyLSPEPZlYlYlYFTAD.......BU.clYlYlYlPEPMyLyLyLKTADMyLyLyLCU.oYlYlYl4PEP.......PTAzYlYlYlYDU.0LyLyLyLQEPzLyLyLyTTAjlYlYlYlEU.A......fQEPmYlYlYlYTATyLyLyLyFU.QyLyLyLyQEPZlYlYlYdTAD.......HU.clYlYlYFREPMyLyLyLiTADMyLyLyLIU.oYlYlYlYREP.......nTAzYlYlYlYJU.0LyLyLyrREPzLyLyLyrTAjlYlYlYlKU.A.......SEPmYlYlYlwTATyLyLyLyLU.QyLyLyLSSEPZlYlYlY1TAD.......NU.clYlYlYlSEPMyLyLyL6TADMyLyLyLOU.oYlYlYl4SEP........UAzYlYlYlYPU.0LyLyLyLTEPzLyLyLyDUAjlYlYlYlQU.A......fTEPmYlYlYlIUATyLyLyLyRU.QyLyLyLyTEPZlYlYlYNUAD.......TU.clYlYlYFUEPMyLyLyLSUADMyLyLyLUU.oYlYlYlYUEP.......XUAzYlYlYlYVU.0LyLyLyrUEPzLyLyLybUAjlYlYlYlWU.A.......VEPmYlYlYlgUATyLyLyLyXU.QyLyLyLSVEPZlYlYlYlUAD.......ZU.clYlYlYlVEPMyLyLyLqUADMyLyLyLaU.oYlYlYl4VEP.......vUAzYlYlYlYbU.0LyLyLyLWEPzLyLyLyzUAjlYlYlYlcU.A......fWEPmYlYlYl4UATyLyLyLydU.QyLyLyLyWEPZlYlYlY9UAD.......fU.clYlYlYFXEPMyLyLyLCVADMyLyLyLgU.oYlYlYlYXEP.......HVAzYlYlYlYhU.0LyLyLyrXEPzLyLyLyLVAjlYlYlYliU.A.......YEPmYlYlYlQVATyLyLyLyjU.QyLyLyLSYEPZlYlYlYVVAD.......lU.clYlYlYlYEPMyLyLyLaVADMyLyLyLmU.oYlYlYl4YEP.......fVAzYlYlYlYnU.0LyLyLyLZEPzLyLyLyjVAjlYlYlYloU.A......fZEPmYlYlYloVATyLyLyLypU.QyLyLyLyZEPZlYlYlYtVAD.......rU.clYlYlYFaEPMyLyLyLyVADMyLyLyLsU.oYlYlYlYaEP.......3VAzYlYlYlYtU.0LyLyLyraEPzLyLyLy7VAjlYlYlYluU.A.......bEPmYlYlYlAWATyLyLyLyvU.QyLyLyLSbEPZlYlYlYFWAD.......xU.clYlYlYlbEPMyLyLyLKWADMyLyLyLyU.oYlYlYl4bEP.......PWAzYlYlYlYzU.0LyLyLyLcEPzLyLyLyTWAjlYlYlYl0U.A......fcEPmYlYlYlYWATyLyLyLy1U.QyLyLyLycEPZlYlYlYdWAD.......3U.clYlYlYFdEPMyLyLyLiWADMyLyLyL4U.oYlYlYlYdEP.......nWAzYlYlYlY5U.0LyLyLyrdEPzLyLyLyrWAjlYlYlYl6U.A.......eEPmYlYlYlwWATyLyLyLy7U.QyLyLyLSeEPZlYlYlY1WAD.......9U.clYlYlYleEPMyLyLyL6WADMyLyLyL+U.oYlYlYl4eEP........XAzYlYlYlY.V.0LyLyLyLfEPzLyLyLyDXAjlYlYlYlAV.A......ffEPmYlYlYlIXATyLyLyLyBV.QyLyLyLyfEPZlYlYlYNXAD.......DV.clYlYlYFgEPMyLyLyLSXADMyLyLyLEV.oYlYlYlYgEP.......XXAzYlYlYlYFV.0LyLyLyrgEPzLyLyLybXAjlYlYlYlGV.A.......hEPmYlYlYlgXATyLyLyLyHV.QyLyLyLShEPZlYlYlYlXAD.......JV.clYlYlYlhEPMyLyLyLqXADMyLyLyLKV.oYlYlYl4hEP.......vXAzYlYlYlYLV.0LyLyLyLiEPzLyLyLyzXAjlYlYlYlMV.A......fiEPmYlYlYl4XATyLyLyLyNV.QyLyLyLyiEPZlYlYlY9XAD.......PV.A<UserCurves/>
         </GPSCALE>
@@ -146,7 +146,7 @@
               widgetDirectedMaxDoubleValue="1.0" widgetDirectedStringListValue="T2ZmCk9u"
               widgetHandle="ampMainPlate" enableOSC="0" invertOSC="0" groupName=""
               widgetMoveBehavior="0" updateOnLoadGig="0" updateOnActivateRackspace="0"
-              setDefaultDoubleClickResetValue="0.0" bckgColor="8b635d57" outlineColor="8f858585"
+              setDefaultDoubleClickResetValue="0.0" bckgColor="66131313" outlineColor="8f858585"
               outlineRound="10" outlineThick="1">
         <GPSCALE color="ff4682b4" min="0.0" max="100.0" v="2">8008...........flYlYlYlYt+nYlYlYlYl7OzLyLyLyLS+ilYlYlYlY1+.........9OzLyLyLyLi+yYlYlYlYl4+nYlYlYlYl9OMyLyLyLyr+C........7+nYlYlYlYF+OzLyLyLyLy+SyLyLyLyL8+blYlYlYlY+O........3+ilYlYlYlY9+PyLyLyLyr+OMyLyLyLy7+yYlYlYlYl++..........PMyLyLyLy..jlYlYlYlY..clYlYlYlI.PzLyLyLyLC.D........A.0LyLyLyLS.PZlYlYlYlE.zYlYlYlYlA.QyLyLyLyb.P........H.TyLyLyLyLB.oYlYlYlYl.PmYlYlYlYJ.DMyLyLyLyB.A.......v.PMyLyLyLyL.jlYlYlYlYC.clYlYlYl4.PzLyLyLyLO.D........D.clYlYlYlAAPMyLyLyLyP.zLyLyLyLSD.oYlYlYlYFAP........R.zYlYlYlYlD.0LyLyLyLKAPzLyLyLyLS.jlYlYlYl4D.A.......PAPmYlYlYlYT.TyLyLyLyLE.QyLyLyLyTAPZlYlYlYlU.D.......fE.clYlYlYlYAPMyLyLyLyV.DMyLyLyLyE.oYlYlYlYdAP........X.zYlYlYlYFF.0LyLyLyLiAPzLyLyLyLY.jlYlYlYlYF.A.......nAPmYlYlYlYZ.TyLyLyLyrF.QyLyLyLyrAPZlYlYlYla.D........G.clYlYlYlwAPMyLyLyLyb.DMyLyLyLSG.oYlYlYlY1AP........d.zYlYlYlYlG.0LyLyLyL6APzLyLyLyLe.jlYlYlYl4G.A........BPyLyLyLyLf.zYlYlYlYFH.oYlYlYlYBBPMyLyLyLyf.D.......PH.MyLyLyLyDBPmYlYlYlYg.jlYlYlYlYH.0LyLyLyLGBP........h.zLyLyLyLiH.clYlYlYlIBPZlYlYlYlh.TyLyLyLyrH.A.......LBPzLyLyLyLi.zYlYlYlY1H.oYlYlYlYNBPMyLyLyLyi.D........I.QyLyLyLyPBPmYlYlYlYj.jlYlYlYlII.0LyLyLyLSBP........k.DMyLyLyLSI.clYlYlYlUBPZlYlYlYlk.TyLyLyLybI.A.......XBPzLyLyLyLl.zYlYlYlYlI.oYlYlYlYZBPMyLyLyLyl.D.......vI.QyLyLyLybBPmYlYlYlYm.jlYlYlYl4I.0LyLyLyLeBP........n.DMyLyLyLCJ.clYlYlYlgBPZlYlYlYln.TyLyLyLyLJ.A.......jBPzLyLyLyLo.zYlYlYlYVJ.oYlYlYlYlBPMyLyLyLyo.D.......fJ.QyLyLyLynBPmYlYlYlYp.jlYlYlYloJ.0LyLyLyLqBP........q.DMyLyLyLyJ.clYlYlYlsBPZlYlYlYlq.TyLyLyLy7J.A.......vBPzLyLyLyLr.zYlYlYlYFK.oYlYlYlYxBPMyLyLyLyr.D.......PK.QyLyLyLyzBPmYlYlYlYs.jlYlYlYlYK.0LyLyLyL2BP........t.DMyLyLyLiK.clYlYlYl4BPZlYlYlYlt.TyLyLyLyrK.A.......7BPzLyLyLyLu.zYlYlYlY1K.oYlYlYlY9BPMyLyLyLyu.D........L.oYlYlYlY.CPyLyLyLyLv.TyLyLyLyDL.clYlYlYlACP.......fv.jlYlYlYlIL.MyLyLyLyBCPMyLyLyLyv.zYlYlYlYNL.A.......DCPZlYlYlYFw.zLyLyLyLSL.0LyLyLyLECPmYlYlYlYw.D.......XL.oYlYlYlYFCPyLyLyLyrw.TyLyLyLybL.clYlYlYlGCP........x.jlYlYlYlgL.MyLyLyLyHCPMyLyLyLSx.zYlYlYlYlL.A.......JCPZlYlYlYlx.zLyLyLyLqL.0LyLyLyLKCPmYlYlYl4x.D.......vL.oYlYlYlYLCPzLyLyLyLy.TyLyLyLyzL.clYlYlYlMCP.......fy.jlYlYlYl4L.QyLyLyLyNCPMyLyLyLyy.zYlYlYlY9L.A.......PCPZlYlYlYFz.DMyLyLyLCM.0LyLyLyLQCPmYlYlYlYz.D.......HM.oYlYlYlYRCPzLyLyLyrz.TyLyLyLyLM.clYlYlYlSCP........0.jlYlYlYlQM.QyLyLyLyTCPMyLyLyLS0.zYlYlYlYVM.A.......VCPZlYlYlYl0.DMyLyLyLaM.0LyLyLyLWCPmYlYlYl40.D.......fM.oYlYlYlYXCPzLyLyLyL1.TyLyLyLyjM.clYlYlYlYCP.......f1.jlYlYlYloM.QyLyLyLyZCPMyLyLyLy1.zYlYlYlYtM.A.......bCPZlYlYlYF2.DMyLyLyLyM.0LyLyLyLcCPmYlYlYlY2.D.......3M.oYlYlYlYdCPzLyLyLyr2.TyLyLyLy7M.clYlYlYleCP........3.jlYlYlYlAN.QyLyLyLyfCPMyLyLyLS3.zYlYlYlYFN.A.......hCPZlYlYlYl3.DMyLyLyLKN.0LyLyLyLiCPmYlYlYl43.D.......PN.oYlYlYlYjCPzLyLyLyL4.TyLyLyLyTN.clYlYlYlkCP.......f4.jlYlYlYlYN.QyLyLyLylCPMyLyLyLy4.zYlYlYlYdN.A.......nCPZlYlYlYF5.DMyLyLyLiN.0LyLyLyLoCPmYlYlYlY5.D.......nN.oYlYlYlYpCPzLyLyLyr5.TyLyLyLyrN.clYlYlYlqCP........6.jlYlYlYlwN.QyLyLyLyrCPMyLyLyLS6.zYlYlYlY1N.A.......tCPZlYlYlYl6.DMyLyLyL6N.0LyLyLyLuCPmYlYlYl46.D........O.oYlYlYlYvCPzLyLyLyL7.TyLyLyLyDO.clYlYlYlwCP.......f7.jlYlYlYlIO.QyLyLyLyxCPMyLyLyLy7.zYlYlYlYNO.A.......zCPZlYlYlYF8.DMyLyLyLSO.0LyLyLyL0CPmYlYlYlY8.D.......XO.oYlYlYlY1CPzLyLyLyr8.TyLyLyLybO.clYlYlYl2CP........9.jlYlYlYlgO.QyLyLyLy3CPMyLyLyLS9.zYlYlYlYlO.A.......5CPZlYlYlYl9.DMyLyLyLqO.0LyLyLyL6CPmYlYlYl49.D.......vO.oYlYlYlY7CPzLyLyLyL+.TyLyLyLyzO.clYlYlYl8CP.......f+.jlYlYlYl4O.QyLyLyLy9CPMyLyLyLy+.zYlYlYlY9O.A........DPMyLyLyLC.AjlYlYlYlAP.clYlYlYl.DPyLyLyLyL.AD.......DP.0LyLyLyLADPZlYlYlYV.AzYlYlYlYFP.MyLyLyLyADP.......f.ATyLyLyLyHP.oYlYlYlYBDPmYlYlYlo.AzLyLyLyLKP.A.......CDPMyLyLyLy.AjlYlYlYlMP.clYlYlYlCDPyLyLyLy7.AD.......PP.0LyLyLyLDDPZlYlYlYFAAzYlYlYlYRP.MyLyLyLyDDP.......PAATyLyLyLyTP.oYlYlYlYEDPmYlYlYlYAAzLyLyLyLWP.A.......FDPMyLyLyLiAAjlYlYlYlYP.clYlYlYlFDPyLyLyLyrAAD.......bP.0LyLyLyLGDPZlYlYlY1AAzYlYlYlYdP.MyLyLyLyGDP........BATyLyLyLyfP.oYlYlYlYHDPmYlYlYlIBAzLyLyLyLiP.A.......IDPMyLyLyLSBAjlYlYlYlkP.clYlYlYlIDPyLyLyLybBAD.......nP.0LyLyLyLJDPZlYlYlYlBAzYlYlYlYpP.MyLyLyLyJDP.......vBATyLyLyLyrP.oYlYlYlYKDPmYlYlYl4BAzLyLyLyLuP.A.......LDPMyLyLyLCCAjlYlYlYlwP.clYlYlYlLDPzLyLyLyLCAD.......zP.0LyLyLyLMDPZlYlYlYVCAzYlYlYlY1P.QyLyLyLyMDP.......fCATyLyLyLy3P.oYlYlYlYNDPmYlYlYloCADMyLyLyL6P.A.......ODPMyLyLyLyCAjlYlYlYl8P.clYlYlYlODPzLyLyLy7CAD........Q.0LyLyLyLPDPZlYlYlYFDAzYlYlYlYBQ.QyLyLyLyPDP.......PDATyLyLyLyDQ.oYlYlYlYQDPmYlYlYlYDADMyLyLyLGQ.A.......RDPMyLyLyLiDAjlYlYlYlIQ.clYlYlYlRDPzLyLyLyrDAD.......LQ.0LyLyLyLSDPZlYlYlY1DAzYlYlYlYNQ.QyLyLyLySDP........EATyLyLyLyPQ.oYlYlYlYTDPmYlYlYlIEADMyLyLyLSQ.A.......UDPMyLyLyLSEAjlYlYlYlUQ.clYlYlYlUDPzLyLyLybEAD.......XQ.0LyLyLyLVDPZlYlYlYlEAzYlYlYlYZQ.QyLyLyLyVDP.......vEATyLyLyLybQ.oYlYlYlYWDPmYlYlYl4EADMyLyLyLeQ.A.......XDPMyLyLyLCFAjlYlYlYlgQ.clYlYlYlXDPzLyLyLyLFAD.......jQ.0LyLyLyLYDPZlYlYlYVFAzYlYlYlYlQ.QyLyLyLyYDP.......fFATyLyLyLynQ.oYlYlYlYZDPmYlYlYloFADMyLyLyLqQ.A.......aDPMyLyLyLyFAjlYlYlYlsQ.clYlYlYlaDPzLyLyLy7FAD.......vQ.0LyLyLyLbDPZlYlYlYFGAzYlYlYlYxQ.QyLyLyLybDP.......PGATyLyLyLyzQ.oYlYlYlYcDPmYlYlYlYGADMyLyLyL2Q.A.......dDPMyLyLyLiGAjlYlYlYl4Q.clYlYlYldDPzLyLyLyrGAD.......7Q.0LyLyLyLeDPZlYlYlY1GAzYlYlYlY9Q.QyLyLyLyeDP........HATyLyLyLy.R.oYlYlYlYfDPmYlYlYlIHADMyLyLyLCR.A.......gDPMyLyLyLSHAjlYlYlYlER.clYlYlYlgDPzLyLyLybHAD.......HR.0LyLyLyLhDPZlYlYlYlHAzYlYlYlYJR.QyLyLyLyhDP.......vHATyLyLyLyLR.oYlYlYlYiDPmYlYlYl4HADMyLyLyLOR.A.......jDPMyLyLyLCIAjlYlYlYlQR.clYlYlYljDPzLyLyLyLIAD.......TR.0LyLyLyLkDPZlYlYlYVIAzYlYlYlYVR.QyLyLyLykDP.......fIATyLyLyLyXR.oYlYlYlYlDPmYlYlYloIADMyLyLyLaR.A.......mDPMyLyLyLyIAjlYlYlYlcR.clYlYlYlmDPzLyLyLy7IAD.......fR.0LyLyLyLnDPZlYlYlYFJAzYlYlYlYhR.QyLyLyLynDP.......PJATyLyLyLyjR.oYlYlYlYoDPmYlYlYlYJADMyLyLyLmR.A.......pDPMyLyLyLiJAjlYlYlYloR.clYlYlYlpDPzLyLyLyrJAD.......rR.0LyLyLyLqDPZlYlYlY1JAzYlYlYlYtR.QyLyLyLyqDP........KATyLyLyLyvR.oYlYlYlYrDPmYlYlYlIKADMyLyLyLyR.A.......sDPMyLyLyLSKAjlYlYlYl0R.clYlYlYlsDPzLyLyLybKAD.......3R.0LyLyLyLtDPZlYlYlYlKAzYlYlYlY5R.QyLyLyLytDP.......vKATyLyLyLy7R.oYlYlYlYuDPmYlYlYl4KADMyLyLyL+R.A.......vDPMyLyLyLCLAjlYlYlYlAS.clYlYlYlvDPzLyLyLyLLAD.......DS.0LyLyLyLwDPZlYlYlYVLAzYlYlYlYFS.QyLyLyLywDP.......fLATyLyLyLyHS.oYlYlYlYxDPmYlYlYloLADMyLyLyLKS.A.......yDPMyLyLyLyLAjlYlYlYlMS.clYlYlYlyDPzLyLyLy7LAD.......PS.0LyLyLyLzDPZlYlYlYFMAzYlYlYlYRS.QyLyLyLyzDP.......PMATyLyLyLyTS.oYlYlYlY0DPmYlYlYlYMADMyLyLyLWS.A.......1DPMyLyLyLiMAjlYlYlYlYS.clYlYlYl1DPzLyLyLyrMAD.......bS.0LyLyLyL2DPZlYlYlY1MAzYlYlYlYdS.QyLyLyLy2DP........NATyLyLyLyfS.oYlYlYlY3DPmYlYlYlINADMyLyLyLiS.A.......4DPMyLyLyLSNAjlYlYlYlkS.clYlYlYl4DPzLyLyLybNAD.......nS.0LyLyLyL5DPZlYlYlYlNAzYlYlYlYpS.QyLyLyLy5DP.......vNATyLyLyLyrS.oYlYlYlY6DPmYlYlYl4NADMyLyLyLuS.A.......7DPMyLyLyLCOAjlYlYlYlwS.clYlYlYl7DPzLyLyLyLOAD.......zS.0LyLyLyL8DPZlYlYlYVOAzYlYlYlY1S.QyLyLyLy8DP.......fOATyLyLyLy3S.oYlYlYlY9DPmYlYlYloOADMyLyLyL6S.A.......+DPMyLyLyLyOAjlYlYlYl8S.clYlYlYl+DPzLyLyLy7OAD........T.clYlYlYF.EPMyLyLyLCPAzLyLyLyLAT.oYlYlYlY.EP.......HPAzYlYlYlYBT.0LyLyLyr.EPyLyLyLyLPAjlYlYlYlCT.A.......AEPmYlYlYlQPATyLyLyLyDT.MyLyLyLSAEPZlYlYlYVPAD.......FT.clYlYlYlAEPMyLyLyLaPAzLyLyLyLGT.oYlYlYl4AEP.......fPAzYlYlYlYHT.0LyLyLyLBEPyLyLyLyjPAjlYlYlYlIT.A......fBEPmYlYlYloPATyLyLyLyJT.MyLyLyLyBEPZlYlYlYtPAD.......LT.clYlYlYFCEPMyLyLyLyPAzLyLyLyLMT.oYlYlYlYCEP.......3PAzYlYlYlYNT.0LyLyLyrCEPyLyLyLy7PAjlYlYlYlOT.A.......DEPmYlYlYlAQATyLyLyLyPT.MyLyLyLSDEPZlYlYlYFQAD.......RT.clYlYlYlDEPMyLyLyLKQAzLyLyLyLST.oYlYlYl4DEP.......PQAzYlYlYlYTT.0LyLyLyLEEPyLyLyLyTQAjlYlYlYlUT.A......fEEPmYlYlYlYQATyLyLyLyVT.MyLyLyLyEEPZlYlYlYdQAD.......XT.clYlYlYFFEPMyLyLyLiQAzLyLyLyLYT.oYlYlYlYFEP.......nQAzYlYlYlYZT.0LyLyLyrFEPyLyLyLyrQAjlYlYlYlaT.A.......GEPmYlYlYlwQATyLyLyLybT.MyLyLyLSGEPZlYlYlY1QAD.......dT.clYlYlYlGEPMyLyLyL6QAzLyLyLyLeT.oYlYlYl4GEP........RAzYlYlYlYfT.0LyLyLyLHEPyLyLyLyDRAjlYlYlYlgT.A......fHEPmYlYlYlIRATyLyLyLyhT.MyLyLyLyHEPZlYlYlYNRAD.......jT.clYlYlYFIEPMyLyLyLSRAzLyLyLyLkT.oYlYlYlYIEP.......XRAzYlYlYlYlT.0LyLyLyrIEPyLyLyLybRAjlYlYlYlmT.A.......JEPmYlYlYlgRATyLyLyLynT.MyLyLyLSJEPZlYlYlYlRAD.......pT.clYlYlYlJEPMyLyLyLqRAzLyLyLyLqT.oYlYlYl4JEP.......vRAzYlYlYlYrT.0LyLyLyLKEPyLyLyLyzRAjlYlYlYlsT.A......fKEPmYlYlYl4RATyLyLyLytT.MyLyLyLyKEPZlYlYlY9RAD.......vT.clYlYlYFLEPMyLyLyLCSAzLyLyLyLwT.oYlYlYlYLEP.......HSAzYlYlYlYxT.0LyLyLyrLEPzLyLyLyLSAjlYlYlYlyT.A.......MEPmYlYlYlQSATyLyLyLyzT.QyLyLyLSMEPZlYlYlYVSAD.......1T.clYlYlYlMEPMyLyLyLaSADMyLyLyL2T.oYlYlYl4MEP.......fSAzYlYlYlY3T.0LyLyLyLNEPzLyLyLyjSAjlYlYlYl4T.A......fNEPmYlYlYloSATyLyLyLy5T.QyLyLyLyNEPZlYlYlYtSAD.......7T.clYlYlYFOEPMyLyLyLySADMyLyLyL8T.oYlYlYlYOEP.......3SAzYlYlYlY9T.0LyLyLyrOEPzLyLyLy7SAjlYlYlYl+T.A.......PEPmYlYlYlATATyLyLyLy.U.QyLyLyLSPEPZlYlYlYFTAD.......BU.clYlYlYlPEPMyLyLyLKTADMyLyLyLCU.oYlYlYl4PEP.......PTAzYlYlYlYDU.0LyLyLyLQEPzLyLyLyTTAjlYlYlYlEU.A......fQEPmYlYlYlYTATyLyLyLyFU.QyLyLyLyQEPZlYlYlYdTAD.......HU.clYlYlYFREPMyLyLyLiTADMyLyLyLIU.oYlYlYlYREP.......nTAzYlYlYlYJU.0LyLyLyrREPzLyLyLyrTAjlYlYlYlKU.A.......SEPmYlYlYlwTATyLyLyLyLU.QyLyLyLSSEPZlYlYlY1TAD.......NU.clYlYlYlSEPMyLyLyL6TADMyLyLyLOU.oYlYlYl4SEP........UAzYlYlYlYPU.0LyLyLyLTEPzLyLyLyDUAjlYlYlYlQU.A......fTEPmYlYlYlIUATyLyLyLyRU.QyLyLyLyTEPZlYlYlYNUAD.......TU.clYlYlYFUEPMyLyLyLSUADMyLyLyLUU.oYlYlYlYUEP.......XUAzYlYlYlYVU.0LyLyLyrUEPzLyLyLybUAjlYlYlYlWU.A.......VEPmYlYlYlgUATyLyLyLyXU.QyLyLyLSVEPZlYlYlYlUAD.......ZU.clYlYlYlVEPMyLyLyLqUADMyLyLyLaU.oYlYlYl4VEP.......vUAzYlYlYlYbU.0LyLyLyLWEPzLyLyLyzUAjlYlYlYlcU.A......fWEPmYlYlYl4UATyLyLyLydU.QyLyLyLyWEPZlYlYlY9UAD.......fU.clYlYlYFXEPMyLyLyLCVADMyLyLyLgU.oYlYlYlYXEP.......HVAzYlYlYlYhU.0LyLyLyrXEPzLyLyLyLVAjlYlYlYliU.A.......YEPmYlYlYlQVATyLyLyLyjU.QyLyLyLSYEPZlYlYlYVVAD.......lU.clYlYlYlYEPMyLyLyLaVADMyLyLyLmU.oYlYlYl4YEP.......fVAzYlYlYlYnU.0LyLyLyLZEPzLyLyLyjVAjlYlYlYloU.A......fZEPmYlYlYloVATyLyLyLypU.QyLyLyLyZEPZlYlYlYtVAD.......rU.clYlYlYFaEPMyLyLyLyVADMyLyLyLsU.oYlYlYlYaEP.......3VAzYlYlYlYtU.0LyLyLyraEPzLyLyLy7VAjlYlYlYluU.A.......bEPmYlYlYlAWATyLyLyLyvU.QyLyLyLSbEPZlYlYlYFWAD.......xU.clYlYlYlbEPMyLyLyLKWADMyLyLyLyU.oYlYlYl4bEP.......PWAzYlYlYlYzU.0LyLyLyLcEPzLyLyLyTWAjlYlYlYl0U.A......fcEPmYlYlYlYWATyLyLyLy1U.QyLyLyLycEPZlYlYlYdWAD.......3U.clYlYlYFdEPMyLyLyLiWADMyLyLyL4U.oYlYlYlYdEP.......nWAzYlYlYlY5U.0LyLyLyrdEPzLyLyLyrWAjlYlYlYl6U.A.......eEPmYlYlYlwWATyLyLyLy7U.QyLyLyLSeEPZlYlYlY1WAD.......9U.clYlYlYleEPMyLyLyL6WADMyLyLyL+U.oYlYlYl4eEP........XAzYlYlYlY.V.0LyLyLyLfEPzLyLyLyDXAjlYlYlYlAV.A......ffEPmYlYlYlIXATyLyLyLyBV.QyLyLyLyfEPZlYlYlYNXAD.......DV.clYlYlYFgEPMyLyLyLSXADMyLyLyLEV.oYlYlYlYgEP.......XXAzYlYlYlYFV.0LyLyLyrgEPzLyLyLybXAjlYlYlYlGV.A.......hEPmYlYlYlgXATyLyLyLyHV.QyLyLyLShEPZlYlYlYlXAD.......JV.clYlYlYlhEPMyLyLyLqXADMyLyLyLKV.oYlYlYl4hEP.......vXAzYlYlYlYLV.0LyLyLyLiEPzLyLyLyzXAjlYlYlYlMV.A......fiEPmYlYlYl4XATyLyLyLyNV.QyLyLyLyiEPZlYlYlY9XAD.......PV.A<UserCurves/>
         </GPSCALE>
@@ -200,7 +200,7 @@
       <WIDGET type="0" style="18" id="24372" x="0.9737310774710597" y="0.6108247422680413"
               width="0.03472840605520926" height="0.2010309278350516" sendScaledValueChangedOnly="0"
               caption="LPF" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3018867924528302" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="95" widgetValue="1.0"
@@ -222,7 +222,7 @@
       <WIDGET type="2" style="5" id="24403" x="0.9363517060367454" y="0.6211340206185567"
               width="0.03543307086614173" height="0.7061855670103093" sendScaledValueChangedOnly="0"
               caption="HOT Amp EQ 16 kHz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="117" widgetValue="0.5"
@@ -266,7 +266,7 @@
       <WIDGET type="2" style="5" id="24402" x="0.8991688538932633" y="0.6211340206185567"
               width="0.03543307086614173" height="0.7061855670103093" sendScaledValueChangedOnly="0"
               caption="HOT Amp EQ 8 kHz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="116" widgetValue="0.5"
@@ -310,7 +310,7 @@
       <WIDGET type="2" style="5" id="24401" x="0.8615485564304461" y="0.6211340206185567"
               width="0.03543307086614173" height="0.7061855670103093" sendScaledValueChangedOnly="0"
               caption="HOT Amp EQ 4 kHz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="115" widgetValue="0.5"
@@ -354,7 +354,7 @@
       <WIDGET type="2" style="5" id="24400" x="0.823928258967629" y="0.6211340206185567"
               width="0.03543307086614173" height="0.7061855670103093" sendScaledValueChangedOnly="0"
               caption="HOT Amp EQ 2 kHz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="114" widgetValue="0.5"
@@ -398,7 +398,7 @@
       <WIDGET type="2" style="5" id="24399" x="0.7863079615048119" y="0.6211340206185567"
               width="0.03543307086614173" height="0.7061855670103093" sendScaledValueChangedOnly="0"
               caption="HOT Amp EQ 1 kHz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="113" widgetValue="0.5"
@@ -442,7 +442,7 @@
       <WIDGET type="2" style="5" id="24398" x="0.7482502187226596" y="0.6211340206185567"
               width="0.03543307086614173" height="0.7061855670103093" sendScaledValueChangedOnly="0"
               caption="HOT Amp EQ 500 Hz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="112" widgetValue="0.4839999973773956"
@@ -486,7 +486,7 @@
       <WIDGET type="2" style="5" id="24397" x="0.7115048118985127" y="0.6211340206185567"
               width="0.03543307086614173" height="0.7061855670103093" sendScaledValueChangedOnly="0"
               caption="HOT Amp EQ 250 Hz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="111" widgetValue="0.5"
@@ -530,7 +530,7 @@
       <WIDGET type="2" style="5" id="24396" x="0.6735159817351598" y="0.6216931216931217"
               width="0.03561643835616438" height="0.7037037037037037" sendScaledValueChangedOnly="0"
               caption="HOT Amp EQ 125 Hz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="110" widgetValue="0.5"
@@ -574,7 +574,7 @@
       <WIDGET type="2" style="5" id="24395" x="0.6363846509477578" y="0.6198910081743869"
               width="0.03559870550161812" height="0.7057220708446866" sendScaledValueChangedOnly="0"
               caption="HOT Amp EQ 65 Hz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="109" widgetValue="0.5"
@@ -640,7 +640,7 @@
       <WIDGET type="0" style="18" id="24371" x="0.5983971504897596" y="0.6108247422680413"
               width="0.03739982190560998" height="0.2010309278350516" sendScaledValueChangedOnly="0"
               caption="HPF" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3018867924528302" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="94" widgetValue="0.0"
@@ -685,7 +685,7 @@
       <WIDGET type="3" style="18" id="24406" x="0.5986439195100612" y="0.2693298969072165"
               width="0.02230971128608924" height="0.1881443298969072" sendScaledValueChangedOnly="0"
               caption="" captionIncludesAttribute="0" hideTemporaryValueDisplay="1"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.4324324324324325" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="255"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="84" widgetValue="1.0"
@@ -730,7 +730,7 @@
       <WIDGET type="0" style="18" id="24259" x="0.3691631992602866" y="0.7479564032697548"
               width="0.04299583911234397" height="0.2043596730245232" sendScaledValueChangedOnly="0"
               caption="MASTER" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3111111111111111" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="53" widgetValue="0.6729999780654907"
@@ -774,7 +774,7 @@
       <WIDGET type="0" style="18" id="24260" x="0.4565418400369857" y="0.7479564032697548"
               width="0.04299583911234397" height="0.2043596730245232" sendScaledValueChangedOnly="0"
               caption="PRESENCE" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3111111111111111" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="54" widgetValue="0.6919999718666077"
@@ -818,7 +818,7 @@
       <WIDGET type="0" style="18" id="24261" x="0.5429958391123439" y="0.7479564032697548"
               width="0.04299583911234397" height="0.2043596730245232" sendScaledValueChangedOnly="0"
               caption="DEPTH" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3111111111111111" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="55" widgetValue="0.5"
@@ -862,7 +862,7 @@
       <WIDGET type="0" style="18" id="24262" x="0.5429958391123439" y="0.4400544959128065"
               width="0.04299583911234397" height="0.2043596730245232" sendScaledValueChangedOnly="0"
               caption="OUTPUT" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3111111111111111" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="56" widgetValue="0.4090000092983246"
@@ -906,7 +906,7 @@
       <WIDGET type="0" style="18" id="24258" x="0.4995376791493296" y="0.4400544959128065"
               width="0.04299583911234397" height="0.2043596730245232" sendScaledValueChangedOnly="0"
               caption="TREBLE" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3111111111111111" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="52" widgetValue="0.6669999957084656"
@@ -950,7 +950,7 @@
       <WIDGET type="0" style="18" id="24257" x="0.4565418400369857" y="0.4400544959128065"
               width="0.04299583911234397" height="0.2043596730245232" sendScaledValueChangedOnly="0"
               caption="MID" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3111111111111111" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="51" widgetValue="0.6549999713897705"
@@ -994,7 +994,7 @@
       <WIDGET type="0" style="18" id="24255" x="0.412621359223301" y="0.4400544959128065"
               width="0.04299583911234397" height="0.2043596730245232" sendScaledValueChangedOnly="0"
               caption="BASS" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3111111111111111" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="50" widgetValue="0.4880000054836273"
@@ -1038,7 +1038,7 @@
       <WIDGET type="0" style="18" id="24256" x="0.3691631992602866" y="0.4400544959128065"
               width="0.04299583911234397" height="0.2043596730245232" sendScaledValueChangedOnly="0"
               caption="GAIN" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3111111111111111" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="49" widgetValue="0.7200000286102295"
@@ -1083,7 +1083,7 @@
       <WIDGET type="4" style="0" id="22629" x="0.4967637540453074" y="0.07493188010899182"
               width="0.1382339343504392" height="0.09536784741144415" sendScaledValueChangedOnly="0"
               caption="DRIVEN DELUXE" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="1" overrideName="1"
+              hideInPresentationView="1" widgetIgnoresMouse="1" overrideName="1"
               captionVisible="0" captionHeight="0.4242424242424243" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="12032"
               rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="1.0"
@@ -1234,7 +1234,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.2777777777777778" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="4" widgetValue="0.3037209510803223"
+              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="4" widgetValue="0.2919999957084656"
               backPlate="1" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -1366,7 +1366,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3111111111111111" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="34" widgetValue="0.0"
+              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="34" widgetValue="1.0"
               backPlate="1" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -1388,7 +1388,7 @@
               hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3111111111111111" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="58" widgetValue="0.0"
+              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="58" widgetValue="1.0"
               backPlate="1" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -1430,7 +1430,7 @@
       <WIDGET type="0" style="5" id="24238" x="0.412621359223301" y="0.4400544959128065"
               width="0.04299583911234397" height="0.2043596730245232" sendScaledValueChangedOnly="0"
               caption="BASS" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3111111111111111" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="37" widgetValue="0.5"
@@ -1452,7 +1452,7 @@
       <WIDGET type="0" style="5" id="24239" x="0.4565418400369857" y="0.4400544959128065"
               width="0.04299583911234397" height="0.2043596730245232" sendScaledValueChangedOnly="0"
               caption="MID" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3111111111111111" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="38" widgetValue="0.5189999938011169"
@@ -1474,7 +1474,7 @@
       <WIDGET type="0" style="5" id="24240" x="0.4995376791493296" y="0.4400544959128065"
               width="0.04299583911234397" height="0.2043596730245232" sendScaledValueChangedOnly="0"
               caption="TREBLE" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3111111111111111" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="39" widgetValue="0.7710000276565552"
@@ -1496,10 +1496,10 @@
       <WIDGET type="0" style="5" id="24241" x="0.5429577464788733" y="0.44"
               width="0.04366197183098591" height="0.208" sendScaledValueChangedOnly="0"
               caption="OUTPUT" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3111111111111111" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="40" widgetValue="0.6338845491409302"
+              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="40" widgetValue="0.4000000059604645"
               backPlate="0" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -1518,7 +1518,7 @@
       <WIDGET type="3" style="2" id="24271" x="0.3691631992602866" y="0.7479564032697548"
               width="0.04299583911234397" height="0.2043596730245232" sendScaledValueChangedOnly="0"
               caption="BRIGHT" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3111111111111111" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="119"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="35" widgetValue="0.0"
@@ -1541,7 +1541,7 @@
       <WIDGET type="0" style="5" id="24237" x="0.3691631992602866" y="0.4400544959128065"
               width="0.04299583911234397" height="0.2043596730245232" sendScaledValueChangedOnly="0"
               caption="GAIN" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3111111111111111" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="36" widgetValue="0.6290000081062317"
@@ -1563,7 +1563,7 @@
       <WIDGET type="4" style="0" id="22785" x="0.4967637540453074" y="0.07493188010899182"
               width="0.1382339343504392" height="0.09536784741144415" sendScaledValueChangedOnly="0"
               caption="5150 - RED" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="1" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="1" overrideName="1"
               captionVisible="0" captionHeight="0.4242424242424243" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="12032"
               rigId="0" textColor="ff0f0f0f" nodeId="0" paramIndex="-1" widgetValue="1.0"
@@ -1631,7 +1631,7 @@
       <WIDGET type="4" style="0" id="24449" x="0.5566037735849056" y="0.9228855721393034"
               width="0.03087478559176672" height="0.154228855721393" sendScaledValueChangedOnly="0"
               caption="A" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="1" overrideName="1"
+              hideInPresentationView="1" widgetIgnoresMouse="1" overrideName="1"
               captionVisible="0" captionHeight="0.3448275862068966" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="1.0"
@@ -1699,7 +1699,7 @@
       <WIDGET type="3" style="4" id="24408" x="0.5986277873070326" y="0.2686567164179104"
               width="0.02229845626072041" height="0.1890547263681592" sendScaledValueChangedOnly="0"
               caption="" captionIncludesAttribute="0" hideTemporaryValueDisplay="1"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.4324324324324325" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="255"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="108" widgetValue="1.0"
@@ -1921,7 +1921,7 @@
       <WIDGET type="0" style="18" id="24404" x="0.5983971504897596" y="0.6108247422680413"
               width="0.03739982190560998" height="0.2010309278350516" sendScaledValueChangedOnly="0"
               caption="HPF" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3018867924528302" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="118" widgetValue="0.0"
@@ -1943,7 +1943,7 @@
       <WIDGET type="2" style="9" id="24367" x="0.823928258967629" y="0.6211340206185567"
               width="0.03543307086614173" height="0.7061855670103093" sendScaledValueChangedOnly="0"
               caption="CLN Amp EQ 2 kHz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="90" widgetValue="0.5"
@@ -1965,7 +1965,7 @@
       <WIDGET type="2" style="9" id="24368" x="0.8615485564304461" y="0.6211340206185567"
               width="0.03543307086614173" height="0.7061855670103093" sendScaledValueChangedOnly="0"
               caption="CLN Amp EQ 4 kHz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="91" widgetValue="0.5"
@@ -1987,7 +1987,7 @@
       <WIDGET type="2" style="9" id="24369" x="0.8991688538932633" y="0.6211340206185567"
               width="0.03543307086614173" height="0.7061855670103093" sendScaledValueChangedOnly="0"
               caption="CLN Amp EQ 8 kHz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="92" widgetValue="0.5"
@@ -2009,7 +2009,7 @@
       <WIDGET type="2" style="9" id="24370" x="0.9363517060367454" y="0.6211340206185567"
               width="0.03543307086614173" height="0.7061855670103093" sendScaledValueChangedOnly="0"
               caption="CLN Amp EQ 16 kHz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="93" widgetValue="0.5"
@@ -2031,7 +2031,7 @@
       <WIDGET type="2" style="9" id="24362" x="0.6363846509477578" y="0.6198910081743869"
               width="0.03559870550161812" height="0.7057220708446866" sendScaledValueChangedOnly="0"
               caption="CLN Amp EQ 65 Hz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="85" widgetValue="0.5"
@@ -2053,7 +2053,7 @@
       <WIDGET type="2" style="9" id="24363" x="0.6735159817351598" y="0.6216931216931217"
               width="0.03561643835616438" height="0.7037037037037037" sendScaledValueChangedOnly="0"
               caption="CLN Amp EQ 125 Hz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="86" widgetValue="0.5"
@@ -2075,7 +2075,7 @@
       <WIDGET type="2" style="9" id="24364" x="0.7115048118985127" y="0.6211340206185567"
               width="0.03543307086614173" height="0.7061855670103093" sendScaledValueChangedOnly="0"
               caption="CLN Amp EQ 250 Hz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="87" widgetValue="0.5"
@@ -2097,7 +2097,7 @@
       <WIDGET type="2" style="9" id="24365" x="0.7482502187226596" y="0.6211340206185567"
               width="0.03543307086614173" height="0.7061855670103093" sendScaledValueChangedOnly="0"
               caption="CLN Amp EQ 500 Hz" captionIncludesAttribute="1" hideTemporaryValueDisplay="1"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="88" widgetValue="0.5"
@@ -2119,7 +2119,7 @@
       <WIDGET type="2" style="9" id="24366" x="0.7863079615048119" y="0.6211340206185567"
               width="0.03543307086614173" height="0.7061855670103093" sendScaledValueChangedOnly="0"
               caption="CLN Amp EQ 1 kHz" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.1185185185185185" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="89" widgetValue="0.5"
@@ -2141,7 +2141,7 @@
       <WIDGET type="0" style="18" id="24405" x="0.9737310774710597" y="0.6108247422680413"
               width="0.03472840605520926" height="0.2010309278350516" sendScaledValueChangedOnly="0"
               caption="LPF" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3018867924528302" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="119" widgetValue="1.0"
@@ -2186,7 +2186,7 @@
       <WIDGET type="4" style="0" id="24917" x="0.55550621669627" y="0.9201030927835051"
               width="0.02930728241563055" height="0.1494845360824742" sendScaledValueChangedOnly="0"
               caption="C" captionIncludesAttribute="0" hideTemporaryValueDisplay="0"
-              hideInPresentationView="1" widgetIgnoresMouse="1" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="1" overrideName="1"
               captionVisible="0" captionHeight="0.3448275862068966" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="0" paramIndex="-1" widgetValue="1.0"
@@ -2403,7 +2403,7 @@
               widgetDirectedMaxDoubleValue="1.0" widgetDirectedStringListValue="T2ZmCk9u"
               widgetHandle="cabPlate" enableOSC="0" invertOSC="0" groupName=""
               widgetMoveBehavior="0" updateOnLoadGig="0" updateOnActivateRackspace="0"
-              setDefaultDoubleClickResetValue="0.0" bckgColor="87423f3b" outlineColor="51f5f5f5"
+              setDefaultDoubleClickResetValue="0.0" bckgColor="61000000" outlineColor="51f5f5f5"
               outlineRound="10" outlineThick="1">
         <GPSCALE color="ff4682b4" min="0.0" max="100.0" v="2">8008...........flYlYlYlYt+nYlYlYlYl7OzLyLyLyLS+ilYlYlYlY1+.........9OzLyLyLyLi+yYlYlYlYl4+nYlYlYlYl9OMyLyLyLyr+C........7+nYlYlYlYF+OzLyLyLyLy+SyLyLyLyL8+blYlYlYlY+O........3+ilYlYlYlY9+PyLyLyLyr+OMyLyLyLy7+yYlYlYlYl++..........PMyLyLyLy..jlYlYlYlY..clYlYlYlI.PzLyLyLyLC.D........A.0LyLyLyLS.PZlYlYlYlE.zYlYlYlYlA.QyLyLyLyb.P........H.TyLyLyLyLB.oYlYlYlYl.PmYlYlYlYJ.DMyLyLyLyB.A.......v.PMyLyLyLyL.jlYlYlYlYC.clYlYlYl4.PzLyLyLyLO.D........D.clYlYlYlAAPMyLyLyLyP.zLyLyLyLSD.oYlYlYlYFAP........R.zYlYlYlYlD.0LyLyLyLKAPzLyLyLyLS.jlYlYlYl4D.A.......PAPmYlYlYlYT.TyLyLyLyLE.QyLyLyLyTAPZlYlYlYlU.D.......fE.clYlYlYlYAPMyLyLyLyV.DMyLyLyLyE.oYlYlYlYdAP........X.zYlYlYlYFF.0LyLyLyLiAPzLyLyLyLY.jlYlYlYlYF.A.......nAPmYlYlYlYZ.TyLyLyLyrF.QyLyLyLyrAPZlYlYlYla.D........G.clYlYlYlwAPMyLyLyLyb.DMyLyLyLSG.oYlYlYlY1AP........d.zYlYlYlYlG.0LyLyLyL6APzLyLyLyLe.jlYlYlYl4G.A........BPyLyLyLyLf.zYlYlYlYFH.oYlYlYlYBBPMyLyLyLyf.D.......PH.MyLyLyLyDBPmYlYlYlYg.jlYlYlYlYH.0LyLyLyLGBP........h.zLyLyLyLiH.clYlYlYlIBPZlYlYlYlh.TyLyLyLyrH.A.......LBPzLyLyLyLi.zYlYlYlY1H.oYlYlYlYNBPMyLyLyLyi.D........I.QyLyLyLyPBPmYlYlYlYj.jlYlYlYlII.0LyLyLyLSBP........k.DMyLyLyLSI.clYlYlYlUBPZlYlYlYlk.TyLyLyLybI.A.......XBPzLyLyLyLl.zYlYlYlYlI.oYlYlYlYZBPMyLyLyLyl.D.......vI.QyLyLyLybBPmYlYlYlYm.jlYlYlYl4I.0LyLyLyLeBP........n.DMyLyLyLCJ.clYlYlYlgBPZlYlYlYln.TyLyLyLyLJ.A.......jBPzLyLyLyLo.zYlYlYlYVJ.oYlYlYlYlBPMyLyLyLyo.D.......fJ.QyLyLyLynBPmYlYlYlYp.jlYlYlYloJ.0LyLyLyLqBP........q.DMyLyLyLyJ.clYlYlYlsBPZlYlYlYlq.TyLyLyLy7J.A.......vBPzLyLyLyLr.zYlYlYlYFK.oYlYlYlYxBPMyLyLyLyr.D.......PK.QyLyLyLyzBPmYlYlYlYs.jlYlYlYlYK.0LyLyLyL2BP........t.DMyLyLyLiK.clYlYlYl4BPZlYlYlYlt.TyLyLyLyrK.A.......7BPzLyLyLyLu.zYlYlYlY1K.oYlYlYlY9BPMyLyLyLyu.D........L.oYlYlYlY.CPyLyLyLyLv.TyLyLyLyDL.clYlYlYlACP.......fv.jlYlYlYlIL.MyLyLyLyBCPMyLyLyLyv.zYlYlYlYNL.A.......DCPZlYlYlYFw.zLyLyLyLSL.0LyLyLyLECPmYlYlYlYw.D.......XL.oYlYlYlYFCPyLyLyLyrw.TyLyLyLybL.clYlYlYlGCP........x.jlYlYlYlgL.MyLyLyLyHCPMyLyLyLSx.zYlYlYlYlL.A.......JCPZlYlYlYlx.zLyLyLyLqL.0LyLyLyLKCPmYlYlYl4x.D.......vL.oYlYlYlYLCPzLyLyLyLy.TyLyLyLyzL.clYlYlYlMCP.......fy.jlYlYlYl4L.QyLyLyLyNCPMyLyLyLyy.zYlYlYlY9L.A.......PCPZlYlYlYFz.DMyLyLyLCM.0LyLyLyLQCPmYlYlYlYz.D.......HM.oYlYlYlYRCPzLyLyLyrz.TyLyLyLyLM.clYlYlYlSCP........0.jlYlYlYlQM.QyLyLyLyTCPMyLyLyLS0.zYlYlYlYVM.A.......VCPZlYlYlYl0.DMyLyLyLaM.0LyLyLyLWCPmYlYlYl40.D.......fM.oYlYlYlYXCPzLyLyLyL1.TyLyLyLyjM.clYlYlYlYCP.......f1.jlYlYlYloM.QyLyLyLyZCPMyLyLyLy1.zYlYlYlYtM.A.......bCPZlYlYlYF2.DMyLyLyLyM.0LyLyLyLcCPmYlYlYlY2.D.......3M.oYlYlYlYdCPzLyLyLyr2.TyLyLyLy7M.clYlYlYleCP........3.jlYlYlYlAN.QyLyLyLyfCPMyLyLyLS3.zYlYlYlYFN.A.......hCPZlYlYlYl3.DMyLyLyLKN.0LyLyLyLiCPmYlYlYl43.D.......PN.oYlYlYlYjCPzLyLyLyL4.TyLyLyLyTN.clYlYlYlkCP.......f4.jlYlYlYlYN.QyLyLyLylCPMyLyLyLy4.zYlYlYlYdN.A.......nCPZlYlYlYF5.DMyLyLyLiN.0LyLyLyLoCPmYlYlYlY5.D.......nN.oYlYlYlYpCPzLyLyLyr5.TyLyLyLyrN.clYlYlYlqCP........6.jlYlYlYlwN.QyLyLyLyrCPMyLyLyLS6.zYlYlYlY1N.A.......tCPZlYlYlYl6.DMyLyLyL6N.0LyLyLyLuCPmYlYlYl46.D........O.oYlYlYlYvCPzLyLyLyL7.TyLyLyLyDO.clYlYlYlwCP.......f7.jlYlYlYlIO.QyLyLyLyxCPMyLyLyLy7.zYlYlYlYNO.A.......zCPZlYlYlYF8.DMyLyLyLSO.0LyLyLyL0CPmYlYlYlY8.D.......XO.oYlYlYlY1CPzLyLyLyr8.TyLyLyLybO.clYlYlYl2CP........9.jlYlYlYlgO.QyLyLyLy3CPMyLyLyLS9.zYlYlYlYlO.A.......5CPZlYlYlYl9.DMyLyLyLqO.0LyLyLyL6CPmYlYlYl49.D.......vO.oYlYlYlY7CPzLyLyLyL+.TyLyLyLyzO.clYlYlYl8CP.......f+.jlYlYlYl4O.QyLyLyLy9CPMyLyLyLy+.zYlYlYlY9O.A........DPMyLyLyLC.AjlYlYlYlAP.clYlYlYl.DPyLyLyLyL.AD.......DP.0LyLyLyLADPZlYlYlYV.AzYlYlYlYFP.MyLyLyLyADP.......f.ATyLyLyLyHP.oYlYlYlYBDPmYlYlYlo.AzLyLyLyLKP.A.......CDPMyLyLyLy.AjlYlYlYlMP.clYlYlYlCDPyLyLyLy7.AD.......PP.0LyLyLyLDDPZlYlYlYFAAzYlYlYlYRP.MyLyLyLyDDP.......PAATyLyLyLyTP.oYlYlYlYEDPmYlYlYlYAAzLyLyLyLWP.A.......FDPMyLyLyLiAAjlYlYlYlYP.clYlYlYlFDPyLyLyLyrAAD.......bP.0LyLyLyLGDPZlYlYlY1AAzYlYlYlYdP.MyLyLyLyGDP........BATyLyLyLyfP.oYlYlYlYHDPmYlYlYlIBAzLyLyLyLiP.A.......IDPMyLyLyLSBAjlYlYlYlkP.clYlYlYlIDPyLyLyLybBAD.......nP.0LyLyLyLJDPZlYlYlYlBAzYlYlYlYpP.MyLyLyLyJDP.......vBATyLyLyLyrP.oYlYlYlYKDPmYlYlYl4BAzLyLyLyLuP.A.......LDPMyLyLyLCCAjlYlYlYlwP.clYlYlYlLDPzLyLyLyLCAD.......zP.0LyLyLyLMDPZlYlYlYVCAzYlYlYlY1P.QyLyLyLyMDP.......fCATyLyLyLy3P.oYlYlYlYNDPmYlYlYloCADMyLyLyL6P.A.......ODPMyLyLyLyCAjlYlYlYl8P.clYlYlYlODPzLyLyLy7CAD........Q.0LyLyLyLPDPZlYlYlYFDAzYlYlYlYBQ.QyLyLyLyPDP.......PDATyLyLyLyDQ.oYlYlYlYQDPmYlYlYlYDADMyLyLyLGQ.A.......RDPMyLyLyLiDAjlYlYlYlIQ.clYlYlYlRDPzLyLyLyrDAD.......LQ.0LyLyLyLSDPZlYlYlY1DAzYlYlYlYNQ.QyLyLyLySDP........EATyLyLyLyPQ.oYlYlYlYTDPmYlYlYlIEADMyLyLyLSQ.A.......UDPMyLyLyLSEAjlYlYlYlUQ.clYlYlYlUDPzLyLyLybEAD.......XQ.0LyLyLyLVDPZlYlYlYlEAzYlYlYlYZQ.QyLyLyLyVDP.......vEATyLyLyLybQ.oYlYlYlYWDPmYlYlYl4EADMyLyLyLeQ.A.......XDPMyLyLyLCFAjlYlYlYlgQ.clYlYlYlXDPzLyLyLyLFAD.......jQ.0LyLyLyLYDPZlYlYlYVFAzYlYlYlYlQ.QyLyLyLyYDP.......fFATyLyLyLynQ.oYlYlYlYZDPmYlYlYloFADMyLyLyLqQ.A.......aDPMyLyLyLyFAjlYlYlYlsQ.clYlYlYlaDPzLyLyLy7FAD.......vQ.0LyLyLyLbDPZlYlYlYFGAzYlYlYlYxQ.QyLyLyLybDP.......PGATyLyLyLyzQ.oYlYlYlYcDPmYlYlYlYGADMyLyLyL2Q.A.......dDPMyLyLyLiGAjlYlYlYl4Q.clYlYlYldDPzLyLyLyrGAD.......7Q.0LyLyLyLeDPZlYlYlY1GAzYlYlYlY9Q.QyLyLyLyeDP........HATyLyLyLy.R.oYlYlYlYfDPmYlYlYlIHADMyLyLyLCR.A.......gDPMyLyLyLSHAjlYlYlYlER.clYlYlYlgDPzLyLyLybHAD.......HR.0LyLyLyLhDPZlYlYlYlHAzYlYlYlYJR.QyLyLyLyhDP.......vHATyLyLyLyLR.oYlYlYlYiDPmYlYlYl4HADMyLyLyLOR.A.......jDPMyLyLyLCIAjlYlYlYlQR.clYlYlYljDPzLyLyLyLIAD.......TR.0LyLyLyLkDPZlYlYlYVIAzYlYlYlYVR.QyLyLyLykDP.......fIATyLyLyLyXR.oYlYlYlYlDPmYlYlYloIADMyLyLyLaR.A.......mDPMyLyLyLyIAjlYlYlYlcR.clYlYlYlmDPzLyLyLy7IAD.......fR.0LyLyLyLnDPZlYlYlYFJAzYlYlYlYhR.QyLyLyLynDP.......PJATyLyLyLyjR.oYlYlYlYoDPmYlYlYlYJADMyLyLyLmR.A.......pDPMyLyLyLiJAjlYlYlYloR.clYlYlYlpDPzLyLyLyrJAD.......rR.0LyLyLyLqDPZlYlYlY1JAzYlYlYlYtR.QyLyLyLyqDP........KATyLyLyLyvR.oYlYlYlYrDPmYlYlYlIKADMyLyLyLyR.A.......sDPMyLyLyLSKAjlYlYlYl0R.clYlYlYlsDPzLyLyLybKAD.......3R.0LyLyLyLtDPZlYlYlYlKAzYlYlYlY5R.QyLyLyLytDP.......vKATyLyLyLy7R.oYlYlYlYuDPmYlYlYl4KADMyLyLyL+R.A.......vDPMyLyLyLCLAjlYlYlYlAS.clYlYlYlvDPzLyLyLyLLAD.......DS.0LyLyLyLwDPZlYlYlYVLAzYlYlYlYFS.QyLyLyLywDP.......fLATyLyLyLyHS.oYlYlYlYxDPmYlYlYloLADMyLyLyLKS.A.......yDPMyLyLyLyLAjlYlYlYlMS.clYlYlYlyDPzLyLyLy7LAD.......PS.0LyLyLyLzDPZlYlYlYFMAzYlYlYlYRS.QyLyLyLyzDP.......PMATyLyLyLyTS.oYlYlYlY0DPmYlYlYlYMADMyLyLyLWS.A.......1DPMyLyLyLiMAjlYlYlYlYS.clYlYlYl1DPzLyLyLyrMAD.......bS.0LyLyLyL2DPZlYlYlY1MAzYlYlYlYdS.QyLyLyLy2DP........NATyLyLyLyfS.oYlYlYlY3DPmYlYlYlINADMyLyLyLiS.A.......4DPMyLyLyLSNAjlYlYlYlkS.clYlYlYl4DPzLyLyLybNAD.......nS.0LyLyLyL5DPZlYlYlYlNAzYlYlYlYpS.QyLyLyLy5DP.......vNATyLyLyLyrS.oYlYlYlY6DPmYlYlYl4NADMyLyLyLuS.A.......7DPMyLyLyLCOAjlYlYlYlwS.clYlYlYl7DPzLyLyLyLOAD.......zS.0LyLyLyL8DPZlYlYlYVOAzYlYlYlY1S.QyLyLyLy8DP.......fOATyLyLyLy3S.oYlYlYlY9DPmYlYlYloOADMyLyLyL6S.A.......+DPMyLyLyLyOAjlYlYlYl8S.clYlYlYl+DPzLyLyLy7OAD........T.clYlYlYF.EPMyLyLyLCPAzLyLyLyLAT.oYlYlYlY.EP.......HPAzYlYlYlYBT.0LyLyLyr.EPyLyLyLyLPAjlYlYlYlCT.A.......AEPmYlYlYlQPATyLyLyLyDT.MyLyLyLSAEPZlYlYlYVPAD.......FT.clYlYlYlAEPMyLyLyLaPAzLyLyLyLGT.oYlYlYl4AEP.......fPAzYlYlYlYHT.0LyLyLyLBEPyLyLyLyjPAjlYlYlYlIT.A......fBEPmYlYlYloPATyLyLyLyJT.MyLyLyLyBEPZlYlYlYtPAD.......LT.clYlYlYFCEPMyLyLyLyPAzLyLyLyLMT.oYlYlYlYCEP.......3PAzYlYlYlYNT.0LyLyLyrCEPyLyLyLy7PAjlYlYlYlOT.A.......DEPmYlYlYlAQATyLyLyLyPT.MyLyLyLSDEPZlYlYlYFQAD.......RT.clYlYlYlDEPMyLyLyLKQAzLyLyLyLST.oYlYlYl4DEP.......PQAzYlYlYlYTT.0LyLyLyLEEPyLyLyLyTQAjlYlYlYlUT.A......fEEPmYlYlYlYQATyLyLyLyVT.MyLyLyLyEEPZlYlYlYdQAD.......XT.clYlYlYFFEPMyLyLyLiQAzLyLyLyLYT.oYlYlYlYFEP.......nQAzYlYlYlYZT.0LyLyLyrFEPyLyLyLyrQAjlYlYlYlaT.A.......GEPmYlYlYlwQATyLyLyLybT.MyLyLyLSGEPZlYlYlY1QAD.......dT.clYlYlYlGEPMyLyLyL6QAzLyLyLyLeT.oYlYlYl4GEP........RAzYlYlYlYfT.0LyLyLyLHEPyLyLyLyDRAjlYlYlYlgT.A......fHEPmYlYlYlIRATyLyLyLyhT.MyLyLyLyHEPZlYlYlYNRAD.......jT.clYlYlYFIEPMyLyLyLSRAzLyLyLyLkT.oYlYlYlYIEP.......XRAzYlYlYlYlT.0LyLyLyrIEPyLyLyLybRAjlYlYlYlmT.A.......JEPmYlYlYlgRATyLyLyLynT.MyLyLyLSJEPZlYlYlYlRAD.......pT.clYlYlYlJEPMyLyLyLqRAzLyLyLyLqT.oYlYlYl4JEP.......vRAzYlYlYlYrT.0LyLyLyLKEPyLyLyLyzRAjlYlYlYlsT.A......fKEPmYlYlYl4RATyLyLyLytT.MyLyLyLyKEPZlYlYlY9RAD.......vT.clYlYlYFLEPMyLyLyLCSAzLyLyLyLwT.oYlYlYlYLEP.......HSAzYlYlYlYxT.0LyLyLyrLEPzLyLyLyLSAjlYlYlYlyT.A.......MEPmYlYlYlQSATyLyLyLyzT.QyLyLyLSMEPZlYlYlYVSAD.......1T.clYlYlYlMEPMyLyLyLaSADMyLyLyL2T.oYlYlYl4MEP.......fSAzYlYlYlY3T.0LyLyLyLNEPzLyLyLyjSAjlYlYlYl4T.A......fNEPmYlYlYloSATyLyLyLy5T.QyLyLyLyNEPZlYlYlYtSAD.......7T.clYlYlYFOEPMyLyLyLySADMyLyLyL8T.oYlYlYlYOEP.......3SAzYlYlYlY9T.0LyLyLyrOEPzLyLyLy7SAjlYlYlYl+T.A.......PEPmYlYlYlATATyLyLyLy.U.QyLyLyLSPEPZlYlYlYFTAD.......BU.clYlYlYlPEPMyLyLyLKTADMyLyLyLCU.oYlYlYl4PEP.......PTAzYlYlYlYDU.0LyLyLyLQEPzLyLyLyTTAjlYlYlYlEU.A......fQEPmYlYlYlYTATyLyLyLyFU.QyLyLyLyQEPZlYlYlYdTAD.......HU.clYlYlYFREPMyLyLyLiTADMyLyLyLIU.oYlYlYlYREP.......nTAzYlYlYlYJU.0LyLyLyrREPzLyLyLyrTAjlYlYlYlKU.A.......SEPmYlYlYlwTATyLyLyLyLU.QyLyLyLSSEPZlYlYlY1TAD.......NU.clYlYlYlSEPMyLyLyL6TADMyLyLyLOU.oYlYlYl4SEP........UAzYlYlYlYPU.0LyLyLyLTEPzLyLyLyDUAjlYlYlYlQU.A......fTEPmYlYlYlIUATyLyLyLyRU.QyLyLyLyTEPZlYlYlYNUAD.......TU.clYlYlYFUEPMyLyLyLSUADMyLyLyLUU.oYlYlYlYUEP.......XUAzYlYlYlYVU.0LyLyLyrUEPzLyLyLybUAjlYlYlYlWU.A.......VEPmYlYlYlgUATyLyLyLyXU.QyLyLyLSVEPZlYlYlYlUAD.......ZU.clYlYlYlVEPMyLyLyLqUADMyLyLyLaU.oYlYlYl4VEP.......vUAzYlYlYlYbU.0LyLyLyLWEPzLyLyLyzUAjlYlYlYlcU.A......fWEPmYlYlYl4UATyLyLyLydU.QyLyLyLyWEPZlYlYlY9UAD.......fU.clYlYlYFXEPMyLyLyLCVADMyLyLyLgU.oYlYlYlYXEP.......HVAzYlYlYlYhU.0LyLyLyrXEPzLyLyLyLVAjlYlYlYliU.A.......YEPmYlYlYlQVATyLyLyLyjU.QyLyLyLSYEPZlYlYlYVVAD.......lU.clYlYlYlYEPMyLyLyLaVADMyLyLyLmU.oYlYlYl4YEP.......fVAzYlYlYlYnU.0LyLyLyLZEPzLyLyLyjVAjlYlYlYloU.A......fZEPmYlYlYloVATyLyLyLypU.QyLyLyLyZEPZlYlYlYtVAD.......rU.clYlYlYFaEPMyLyLyLyVADMyLyLyLsU.oYlYlYlYaEP.......3VAzYlYlYlYtU.0LyLyLyraEPzLyLyLy7VAjlYlYlYluU.A.......bEPmYlYlYlAWATyLyLyLyvU.QyLyLyLSbEPZlYlYlYFWAD.......xU.clYlYlYlbEPMyLyLyLKWADMyLyLyLyU.oYlYlYl4bEP.......PWAzYlYlYlYzU.0LyLyLyLcEPzLyLyLyTWAjlYlYlYl0U.A......fcEPmYlYlYlYWATyLyLyLy1U.QyLyLyLycEPZlYlYlYdWAD.......3U.clYlYlYFdEPMyLyLyLiWADMyLyLyL4U.oYlYlYlYdEP.......nWAzYlYlYlY5U.0LyLyLyrdEPzLyLyLyrWAjlYlYlYl6U.A.......eEPmYlYlYlwWATyLyLyLy7U.QyLyLyLSeEPZlYlYlY1WAD.......9U.clYlYlYleEPMyLyLyL6WADMyLyLyL+U.oYlYlYl4eEP........XAzYlYlYlY.V.0LyLyLyLfEPzLyLyLyDXAjlYlYlYlAV.A......ffEPmYlYlYlIXATyLyLyLyBV.QyLyLyLyfEPZlYlYlYNXAD.......DV.clYlYlYFgEPMyLyLyLSXADMyLyLyLEV.oYlYlYlYgEP.......XXAzYlYlYlYFV.0LyLyLyrgEPzLyLyLybXAjlYlYlYlGV.A.......hEPmYlYlYlgXATyLyLyLyHV.QyLyLyLShEPZlYlYlYlXAD.......JV.clYlYlYlhEPMyLyLyLqXADMyLyLyLKV.oYlYlYl4hEP.......vXAzYlYlYlYLV.0LyLyLyLiEPzLyLyLyzXAjlYlYlYlMV.A......fiEPmYlYlYl4XATyLyLyLyNV.QyLyLyLyiEPZlYlYlY9XAD.......PV.A<UserCurves/>
         </GPSCALE>
@@ -2425,7 +2425,7 @@
               widgetDirectedMaxDoubleValue="1.0" widgetDirectedStringListValue="T2ZmCk9u"
               widgetHandle="cabBack" enableOSC="0" invertOSC="0" groupName=""
               widgetMoveBehavior="0" updateOnLoadGig="0" updateOnActivateRackspace="0"
-              setDefaultDoubleClickResetValue="0.0" bckgColor="8b635d57" outlineColor="3ff5f5f5"
+              setDefaultDoubleClickResetValue="0.0" bckgColor="61000000" outlineColor="3ff5f5f5"
               outlineRound="5" outlineThick="1">
         <GPSCALE color="ff4682b4" min="0.0" max="100.0" v="2">8008...........flYlYlYlYt+nYlYlYlYl7OzLyLyLyLS+ilYlYlYlY1+.........9OzLyLyLyLi+yYlYlYlYl4+nYlYlYlYl9OMyLyLyLyr+C........7+nYlYlYlYF+OzLyLyLyLy+SyLyLyLyL8+blYlYlYlY+O........3+ilYlYlYlY9+PyLyLyLyr+OMyLyLyLy7+yYlYlYlYl++..........PMyLyLyLy..jlYlYlYlY..clYlYlYlI.PzLyLyLyLC.D........A.0LyLyLyLS.PZlYlYlYlE.zYlYlYlYlA.QyLyLyLyb.P........H.TyLyLyLyLB.oYlYlYlYl.PmYlYlYlYJ.DMyLyLyLyB.A.......v.PMyLyLyLyL.jlYlYlYlYC.clYlYlYl4.PzLyLyLyLO.D........D.clYlYlYlAAPMyLyLyLyP.zLyLyLyLSD.oYlYlYlYFAP........R.zYlYlYlYlD.0LyLyLyLKAPzLyLyLyLS.jlYlYlYl4D.A.......PAPmYlYlYlYT.TyLyLyLyLE.QyLyLyLyTAPZlYlYlYlU.D.......fE.clYlYlYlYAPMyLyLyLyV.DMyLyLyLyE.oYlYlYlYdAP........X.zYlYlYlYFF.0LyLyLyLiAPzLyLyLyLY.jlYlYlYlYF.A.......nAPmYlYlYlYZ.TyLyLyLyrF.QyLyLyLyrAPZlYlYlYla.D........G.clYlYlYlwAPMyLyLyLyb.DMyLyLyLSG.oYlYlYlY1AP........d.zYlYlYlYlG.0LyLyLyL6APzLyLyLyLe.jlYlYlYl4G.A........BPyLyLyLyLf.zYlYlYlYFH.oYlYlYlYBBPMyLyLyLyf.D.......PH.MyLyLyLyDBPmYlYlYlYg.jlYlYlYlYH.0LyLyLyLGBP........h.zLyLyLyLiH.clYlYlYlIBPZlYlYlYlh.TyLyLyLyrH.A.......LBPzLyLyLyLi.zYlYlYlY1H.oYlYlYlYNBPMyLyLyLyi.D........I.QyLyLyLyPBPmYlYlYlYj.jlYlYlYlII.0LyLyLyLSBP........k.DMyLyLyLSI.clYlYlYlUBPZlYlYlYlk.TyLyLyLybI.A.......XBPzLyLyLyLl.zYlYlYlYlI.oYlYlYlYZBPMyLyLyLyl.D.......vI.QyLyLyLybBPmYlYlYlYm.jlYlYlYl4I.0LyLyLyLeBP........n.DMyLyLyLCJ.clYlYlYlgBPZlYlYlYln.TyLyLyLyLJ.A.......jBPzLyLyLyLo.zYlYlYlYVJ.oYlYlYlYlBPMyLyLyLyo.D.......fJ.QyLyLyLynBPmYlYlYlYp.jlYlYlYloJ.0LyLyLyLqBP........q.DMyLyLyLyJ.clYlYlYlsBPZlYlYlYlq.TyLyLyLy7J.A.......vBPzLyLyLyLr.zYlYlYlYFK.oYlYlYlYxBPMyLyLyLyr.D.......PK.QyLyLyLyzBPmYlYlYlYs.jlYlYlYlYK.0LyLyLyL2BP........t.DMyLyLyLiK.clYlYlYl4BPZlYlYlYlt.TyLyLyLyrK.A.......7BPzLyLyLyLu.zYlYlYlY1K.oYlYlYlY9BPMyLyLyLyu.D........L.oYlYlYlY.CPyLyLyLyLv.TyLyLyLyDL.clYlYlYlACP.......fv.jlYlYlYlIL.MyLyLyLyBCPMyLyLyLyv.zYlYlYlYNL.A.......DCPZlYlYlYFw.zLyLyLyLSL.0LyLyLyLECPmYlYlYlYw.D.......XL.oYlYlYlYFCPyLyLyLyrw.TyLyLyLybL.clYlYlYlGCP........x.jlYlYlYlgL.MyLyLyLyHCPMyLyLyLSx.zYlYlYlYlL.A.......JCPZlYlYlYlx.zLyLyLyLqL.0LyLyLyLKCPmYlYlYl4x.D.......vL.oYlYlYlYLCPzLyLyLyLy.TyLyLyLyzL.clYlYlYlMCP.......fy.jlYlYlYl4L.QyLyLyLyNCPMyLyLyLyy.zYlYlYlY9L.A.......PCPZlYlYlYFz.DMyLyLyLCM.0LyLyLyLQCPmYlYlYlYz.D.......HM.oYlYlYlYRCPzLyLyLyrz.TyLyLyLyLM.clYlYlYlSCP........0.jlYlYlYlQM.QyLyLyLyTCPMyLyLyLS0.zYlYlYlYVM.A.......VCPZlYlYlYl0.DMyLyLyLaM.0LyLyLyLWCPmYlYlYl40.D.......fM.oYlYlYlYXCPzLyLyLyL1.TyLyLyLyjM.clYlYlYlYCP.......f1.jlYlYlYloM.QyLyLyLyZCPMyLyLyLy1.zYlYlYlYtM.A.......bCPZlYlYlYF2.DMyLyLyLyM.0LyLyLyLcCPmYlYlYlY2.D.......3M.oYlYlYlYdCPzLyLyLyr2.TyLyLyLy7M.clYlYlYleCP........3.jlYlYlYlAN.QyLyLyLyfCPMyLyLyLS3.zYlYlYlYFN.A.......hCPZlYlYlYl3.DMyLyLyLKN.0LyLyLyLiCPmYlYlYl43.D.......PN.oYlYlYlYjCPzLyLyLyL4.TyLyLyLyTN.clYlYlYlkCP.......f4.jlYlYlYlYN.QyLyLyLylCPMyLyLyLy4.zYlYlYlYdN.A.......nCPZlYlYlYF5.DMyLyLyLiN.0LyLyLyLoCPmYlYlYlY5.D.......nN.oYlYlYlYpCPzLyLyLyr5.TyLyLyLyrN.clYlYlYlqCP........6.jlYlYlYlwN.QyLyLyLyrCPMyLyLyLS6.zYlYlYlY1N.A.......tCPZlYlYlYl6.DMyLyLyL6N.0LyLyLyLuCPmYlYlYl46.D........O.oYlYlYlYvCPzLyLyLyL7.TyLyLyLyDO.clYlYlYlwCP.......f7.jlYlYlYlIO.QyLyLyLyxCPMyLyLyLy7.zYlYlYlYNO.A.......zCPZlYlYlYF8.DMyLyLyLSO.0LyLyLyL0CPmYlYlYlY8.D.......XO.oYlYlYlY1CPzLyLyLyr8.TyLyLyLybO.clYlYlYl2CP........9.jlYlYlYlgO.QyLyLyLy3CPMyLyLyLS9.zYlYlYlYlO.A.......5CPZlYlYlYl9.DMyLyLyLqO.0LyLyLyL6CPmYlYlYl49.D.......vO.oYlYlYlY7CPzLyLyLyL+.TyLyLyLyzO.clYlYlYl8CP.......f+.jlYlYlYl4O.QyLyLyLy9CPMyLyLyLy+.zYlYlYlY9O.A........DPMyLyLyLC.AjlYlYlYlAP.clYlYlYl.DPyLyLyLyL.AD.......DP.0LyLyLyLADPZlYlYlYV.AzYlYlYlYFP.MyLyLyLyADP.......f.ATyLyLyLyHP.oYlYlYlYBDPmYlYlYlo.AzLyLyLyLKP.A.......CDPMyLyLyLy.AjlYlYlYlMP.clYlYlYlCDPyLyLyLy7.AD.......PP.0LyLyLyLDDPZlYlYlYFAAzYlYlYlYRP.MyLyLyLyDDP.......PAATyLyLyLyTP.oYlYlYlYEDPmYlYlYlYAAzLyLyLyLWP.A.......FDPMyLyLyLiAAjlYlYlYlYP.clYlYlYlFDPyLyLyLyrAAD.......bP.0LyLyLyLGDPZlYlYlY1AAzYlYlYlYdP.MyLyLyLyGDP........BATyLyLyLyfP.oYlYlYlYHDPmYlYlYlIBAzLyLyLyLiP.A.......IDPMyLyLyLSBAjlYlYlYlkP.clYlYlYlIDPyLyLyLybBAD.......nP.0LyLyLyLJDPZlYlYlYlBAzYlYlYlYpP.MyLyLyLyJDP.......vBATyLyLyLyrP.oYlYlYlYKDPmYlYlYl4BAzLyLyLyLuP.A.......LDPMyLyLyLCCAjlYlYlYlwP.clYlYlYlLDPzLyLyLyLCAD.......zP.0LyLyLyLMDPZlYlYlYVCAzYlYlYlY1P.QyLyLyLyMDP.......fCATyLyLyLy3P.oYlYlYlYNDPmYlYlYloCADMyLyLyL6P.A.......ODPMyLyLyLyCAjlYlYlYl8P.clYlYlYlODPzLyLyLy7CAD........Q.0LyLyLyLPDPZlYlYlYFDAzYlYlYlYBQ.QyLyLyLyPDP.......PDATyLyLyLyDQ.oYlYlYlYQDPmYlYlYlYDADMyLyLyLGQ.A.......RDPMyLyLyLiDAjlYlYlYlIQ.clYlYlYlRDPzLyLyLyrDAD.......LQ.0LyLyLyLSDPZlYlYlY1DAzYlYlYlYNQ.QyLyLyLySDP........EATyLyLyLyPQ.oYlYlYlYTDPmYlYlYlIEADMyLyLyLSQ.A.......UDPMyLyLyLSEAjlYlYlYlUQ.clYlYlYlUDPzLyLyLybEAD.......XQ.0LyLyLyLVDPZlYlYlYlEAzYlYlYlYZQ.QyLyLyLyVDP.......vEATyLyLyLybQ.oYlYlYlYWDPmYlYlYl4EADMyLyLyLeQ.A.......XDPMyLyLyLCFAjlYlYlYlgQ.clYlYlYlXDPzLyLyLyLFAD.......jQ.0LyLyLyLYDPZlYlYlYVFAzYlYlYlYlQ.QyLyLyLyYDP.......fFATyLyLyLynQ.oYlYlYlYZDPmYlYlYloFADMyLyLyLqQ.A.......aDPMyLyLyLyFAjlYlYlYlsQ.clYlYlYlaDPzLyLyLy7FAD.......vQ.0LyLyLyLbDPZlYlYlYFGAzYlYlYlYxQ.QyLyLyLybDP.......PGATyLyLyLyzQ.oYlYlYlYcDPmYlYlYlYGADMyLyLyL2Q.A.......dDPMyLyLyLiGAjlYlYlYl4Q.clYlYlYldDPzLyLyLyrGAD.......7Q.0LyLyLyLeDPZlYlYlY1GAzYlYlYlY9Q.QyLyLyLyeDP........HATyLyLyLy.R.oYlYlYlYfDPmYlYlYlIHADMyLyLyLCR.A.......gDPMyLyLyLSHAjlYlYlYlER.clYlYlYlgDPzLyLyLybHAD.......HR.0LyLyLyLhDPZlYlYlYlHAzYlYlYlYJR.QyLyLyLyhDP.......vHATyLyLyLyLR.oYlYlYlYiDPmYlYlYl4HADMyLyLyLOR.A.......jDPMyLyLyLCIAjlYlYlYlQR.clYlYlYljDPzLyLyLyLIAD.......TR.0LyLyLyLkDPZlYlYlYVIAzYlYlYlYVR.QyLyLyLykDP.......fIATyLyLyLyXR.oYlYlYlYlDPmYlYlYloIADMyLyLyLaR.A.......mDPMyLyLyLyIAjlYlYlYlcR.clYlYlYlmDPzLyLyLy7IAD.......fR.0LyLyLyLnDPZlYlYlYFJAzYlYlYlYhR.QyLyLyLynDP.......PJATyLyLyLyjR.oYlYlYlYoDPmYlYlYlYJADMyLyLyLmR.A.......pDPMyLyLyLiJAjlYlYlYloR.clYlYlYlpDPzLyLyLyrJAD.......rR.0LyLyLyLqDPZlYlYlY1JAzYlYlYlYtR.QyLyLyLyqDP........KATyLyLyLyvR.oYlYlYlYrDPmYlYlYlIKADMyLyLyLyR.A.......sDPMyLyLyLSKAjlYlYlYl0R.clYlYlYlsDPzLyLyLybKAD.......3R.0LyLyLyLtDPZlYlYlYlKAzYlYlYlY5R.QyLyLyLytDP.......vKATyLyLyLy7R.oYlYlYlYuDPmYlYlYl4KADMyLyLyL+R.A.......vDPMyLyLyLCLAjlYlYlYlAS.clYlYlYlvDPzLyLyLyLLAD.......DS.0LyLyLyLwDPZlYlYlYVLAzYlYlYlYFS.QyLyLyLywDP.......fLATyLyLyLyHS.oYlYlYlYxDPmYlYlYloLADMyLyLyLKS.A.......yDPMyLyLyLyLAjlYlYlYlMS.clYlYlYlyDPzLyLyLy7LAD.......PS.0LyLyLyLzDPZlYlYlYFMAzYlYlYlYRS.QyLyLyLyzDP.......PMATyLyLyLyTS.oYlYlYlY0DPmYlYlYlYMADMyLyLyLWS.A.......1DPMyLyLyLiMAjlYlYlYlYS.clYlYlYl1DPzLyLyLyrMAD.......bS.0LyLyLyL2DPZlYlYlY1MAzYlYlYlYdS.QyLyLyLy2DP........NATyLyLyLyfS.oYlYlYlY3DPmYlYlYlINADMyLyLyLiS.A.......4DPMyLyLyLSNAjlYlYlYlkS.clYlYlYl4DPzLyLyLybNAD.......nS.0LyLyLyL5DPZlYlYlYlNAzYlYlYlYpS.QyLyLyLy5DP.......vNATyLyLyLyrS.oYlYlYlY6DPmYlYlYl4NADMyLyLyLuS.A.......7DPMyLyLyLCOAjlYlYlYlwS.clYlYlYl7DPzLyLyLyLOAD.......zS.0LyLyLyL8DPZlYlYlYVOAzYlYlYlY1S.QyLyLyLy8DP.......fOATyLyLyLy3S.oYlYlYlY9DPmYlYlYloOADMyLyLyL6S.A.......+DPMyLyLyLyOAjlYlYlYl8S.clYlYlYl+DPzLyLyLy7OAD........T.clYlYlYF.EPMyLyLyLCPAzLyLyLyLAT.oYlYlYlY.EP.......HPAzYlYlYlYBT.0LyLyLyr.EPyLyLyLyLPAjlYlYlYlCT.A.......AEPmYlYlYlQPATyLyLyLyDT.MyLyLyLSAEPZlYlYlYVPAD.......FT.clYlYlYlAEPMyLyLyLaPAzLyLyLyLGT.oYlYlYl4AEP.......fPAzYlYlYlYHT.0LyLyLyLBEPyLyLyLyjPAjlYlYlYlIT.A......fBEPmYlYlYloPATyLyLyLyJT.MyLyLyLyBEPZlYlYlYtPAD.......LT.clYlYlYFCEPMyLyLyLyPAzLyLyLyLMT.oYlYlYlYCEP.......3PAzYlYlYlYNT.0LyLyLyrCEPyLyLyLy7PAjlYlYlYlOT.A.......DEPmYlYlYlAQATyLyLyLyPT.MyLyLyLSDEPZlYlYlYFQAD.......RT.clYlYlYlDEPMyLyLyLKQAzLyLyLyLST.oYlYlYl4DEP.......PQAzYlYlYlYTT.0LyLyLyLEEPyLyLyLyTQAjlYlYlYlUT.A......fEEPmYlYlYlYQATyLyLyLyVT.MyLyLyLyEEPZlYlYlYdQAD.......XT.clYlYlYFFEPMyLyLyLiQAzLyLyLyLYT.oYlYlYlYFEP.......nQAzYlYlYlYZT.0LyLyLyrFEPyLyLyLyrQAjlYlYlYlaT.A.......GEPmYlYlYlwQATyLyLyLybT.MyLyLyLSGEPZlYlYlY1QAD.......dT.clYlYlYlGEPMyLyLyL6QAzLyLyLyLeT.oYlYlYl4GEP........RAzYlYlYlYfT.0LyLyLyLHEPyLyLyLyDRAjlYlYlYlgT.A......fHEPmYlYlYlIRATyLyLyLyhT.MyLyLyLyHEPZlYlYlYNRAD.......jT.clYlYlYFIEPMyLyLyLSRAzLyLyLyLkT.oYlYlYlYIEP.......XRAzYlYlYlYlT.0LyLyLyrIEPyLyLyLybRAjlYlYlYlmT.A.......JEPmYlYlYlgRATyLyLyLynT.MyLyLyLSJEPZlYlYlYlRAD.......pT.clYlYlYlJEPMyLyLyLqRAzLyLyLyLqT.oYlYlYl4JEP.......vRAzYlYlYlYrT.0LyLyLyLKEPyLyLyLyzRAjlYlYlYlsT.A......fKEPmYlYlYl4RATyLyLyLytT.MyLyLyLyKEPZlYlYlY9RAD.......vT.clYlYlYFLEPMyLyLyLCSAzLyLyLyLwT.oYlYlYlYLEP.......HSAzYlYlYlYxT.0LyLyLyrLEPzLyLyLyLSAjlYlYlYlyT.A.......MEPmYlYlYlQSATyLyLyLyzT.QyLyLyLSMEPZlYlYlYVSAD.......1T.clYlYlYlMEPMyLyLyLaSADMyLyLyL2T.oYlYlYl4MEP.......fSAzYlYlYlY3T.0LyLyLyLNEPzLyLyLyjSAjlYlYlYl4T.A......fNEPmYlYlYloSATyLyLyLy5T.QyLyLyLyNEPZlYlYlYtSAD.......7T.clYlYlYFOEPMyLyLyLySADMyLyLyL8T.oYlYlYlYOEP.......3SAzYlYlYlY9T.0LyLyLyrOEPzLyLyLy7SAjlYlYlYl+T.A.......PEPmYlYlYlATATyLyLyLy.U.QyLyLyLSPEPZlYlYlYFTAD.......BU.clYlYlYlPEPMyLyLyLKTADMyLyLyLCU.oYlYlYl4PEP.......PTAzYlYlYlYDU.0LyLyLyLQEPzLyLyLyTTAjlYlYlYlEU.A......fQEPmYlYlYlYTATyLyLyLyFU.QyLyLyLyQEPZlYlYlYdTAD.......HU.clYlYlYFREPMyLyLyLiTADMyLyLyLIU.oYlYlYlYREP.......nTAzYlYlYlYJU.0LyLyLyrREPzLyLyLyrTAjlYlYlYlKU.A.......SEPmYlYlYlwTATyLyLyLyLU.QyLyLyLSSEPZlYlYlY1TAD.......NU.clYlYlYlSEPMyLyLyL6TADMyLyLyLOU.oYlYlYl4SEP........UAzYlYlYlYPU.0LyLyLyLTEPzLyLyLyDUAjlYlYlYlQU.A......fTEPmYlYlYlIUATyLyLyLyRU.QyLyLyLyTEPZlYlYlYNUAD.......TU.clYlYlYFUEPMyLyLyLSUADMyLyLyLUU.oYlYlYlYUEP.......XUAzYlYlYlYVU.0LyLyLyrUEPzLyLyLybUAjlYlYlYlWU.A.......VEPmYlYlYlgUATyLyLyLyXU.QyLyLyLSVEPZlYlYlYlUAD.......ZU.clYlYlYlVEPMyLyLyLqUADMyLyLyLaU.oYlYlYl4VEP.......vUAzYlYlYlYbU.0LyLyLyLWEPzLyLyLyzUAjlYlYlYlcU.A......fWEPmYlYlYl4UATyLyLyLydU.QyLyLyLyWEPZlYlYlY9UAD.......fU.clYlYlYFXEPMyLyLyLCVADMyLyLyLgU.oYlYlYlYXEP.......HVAzYlYlYlYhU.0LyLyLyrXEPzLyLyLyLVAjlYlYlYliU.A.......YEPmYlYlYlQVATyLyLyLyjU.QyLyLyLSYEPZlYlYlYVVAD.......lU.clYlYlYlYEPMyLyLyLaVADMyLyLyLmU.oYlYlYl4YEP.......fVAzYlYlYlYnU.0LyLyLyLZEPzLyLyLyjVAjlYlYlYloU.A......fZEPmYlYlYloVATyLyLyLypU.QyLyLyLyZEPZlYlYlYtVAD.......rU.clYlYlYFaEPMyLyLyLyVADMyLyLyLsU.oYlYlYlYaEP.......3VAzYlYlYlYtU.0LyLyLyraEPzLyLyLy7VAjlYlYlYluU.A.......bEPmYlYlYlAWATyLyLyLyvU.QyLyLyLSbEPZlYlYlYFWAD.......xU.clYlYlYlbEPMyLyLyLKWADMyLyLyLyU.oYlYlYl4bEP.......PWAzYlYlYlYzU.0LyLyLyLcEPzLyLyLyTWAjlYlYlYl0U.A......fcEPmYlYlYlYWATyLyLyLy1U.QyLyLyLycEPZlYlYlYdWAD.......3U.clYlYlYFdEPMyLyLyLiWADMyLyLyL4U.oYlYlYlYdEP.......nWAzYlYlYlY5U.0LyLyLyrdEPzLyLyLyrWAjlYlYlYl6U.A.......eEPmYlYlYlwWATyLyLyLy7U.QyLyLyLSeEPZlYlYlY1WAD.......9U.clYlYlYleEPMyLyLyL6WADMyLyLyL+U.oYlYlYl4eEP........XAzYlYlYlY.V.0LyLyLyLfEPzLyLyLyDXAjlYlYlYlAV.A......ffEPmYlYlYlIXATyLyLyLyBV.QyLyLyLyfEPZlYlYlYNXAD.......DV.clYlYlYFgEPMyLyLyLSXADMyLyLyLEV.oYlYlYlYgEP.......XXAzYlYlYlYFV.0LyLyLyrgEPzLyLyLybXAjlYlYlYlGV.A.......hEPmYlYlYlgXATyLyLyLyHV.QyLyLyLShEPZlYlYlYlXAD.......JV.clYlYlYlhEPMyLyLyLqXADMyLyLyLKV.oYlYlYl4hEP.......vXAzYlYlYlYLV.0LyLyLyLiEPzLyLyLyzXAjlYlYlYlMV.A......fiEPmYlYlYl4XATyLyLyLyNV.QyLyLyLyiEPZlYlYlY9XAD.......PV.A<UserCurves/>
         </GPSCALE>
@@ -3012,7 +3012,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3191489361702128" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="29" widgetValue="0.7068855166435242"
+              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="29" widgetValue="0.4670000076293945"
               backPlate="0" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -3056,7 +3056,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3191489361702128" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="31" widgetValue="0.07513207942247391"
+              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="31" widgetValue="0.2099999934434891"
               backPlate="0" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -3100,7 +3100,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.303030303030303" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="27" widgetValue="1.0"
+              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="27" widgetValue="0.0"
               backPlate="7" backPlateVisible="1" invertMIDI="0" displayRange="0"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -3146,18 +3146,18 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3571428571428572" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="57" widgetValue="1.0"
+              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="57" widgetValue="0.0"
               backPlate="7" backPlateVisible="1" invertMIDI="0" displayRange="0"
-              ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
+              ignoresVariations="1" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
               directedOSCTargetName="" widgetDirectedOSCType="0" widgetDirectedMinIntValue="0"
               widgetDirectedMaxIntValue="127" widgetDirectedMinDoubleValue="0.0"
               widgetDirectedMaxDoubleValue="1.0" widgetDirectedStringListValue="T2ZmCk9u"
-              widgetHandle="" enableOSC="0" invertOSC="0" groupName="" widgetMoveBehavior="0"
-              updateOnLoadGig="0" updateOnActivateRackspace="0" setDefaultDoubleClickResetValue="0.0"
-              bckgColor="ff3c3c3c" outlineColor="ff808080" outlineRound="4"
-              outlineThick="2" btnMomToLatch="0" btnPadLike="0" btnRadioGroupIndex="0"
-              btnRespondsToButtonOff="1">
+              widgetHandle="cab_on" enableOSC="0" invertOSC="0" groupName=""
+              widgetMoveBehavior="0" updateOnLoadGig="0" updateOnActivateRackspace="0"
+              setDefaultDoubleClickResetValue="0.0" bckgColor="ff3c3c3c" outlineColor="ff808080"
+              outlineRound="4" outlineThick="2" btnMomToLatch="0" btnPadLike="0"
+              btnRadioGroupIndex="0" btnRespondsToButtonOff="1">
         <GPSCALE color="ff8b0000" min="0.0" max="100.0" v="2">8008...........flYlYlYlYt+nYlYlYlYl7OzLyLyLyLS+ilYlYlYlY1+.........9OzLyLyLyLi+yYlYlYlYl4+nYlYlYlYl9OMyLyLyLyr+C........7+nYlYlYlYF+OzLyLyLyLy+SyLyLyLyL8+blYlYlYlY+O........3+ilYlYlYlY9+PyLyLyLyr+OMyLyLyLy7+yYlYlYlYl++..........PMyLyLyLy..jlYlYlYlY..clYlYlYlI.PzLyLyLyLC.D........A.0LyLyLyLS.PZlYlYlYlE.zYlYlYlYlA.QyLyLyLyb.P........H.TyLyLyLyLB.oYlYlYlYl.PmYlYlYlYJ.DMyLyLyLyB.A.......v.PMyLyLyLyL.jlYlYlYlYC.clYlYlYl4.PzLyLyLyLO.D........D.clYlYlYlAAPMyLyLyLyP.zLyLyLyLSD.oYlYlYlYFAP........R.zYlYlYlYlD.0LyLyLyLKAPzLyLyLyLS.jlYlYlYl4D.A.......PAPmYlYlYlYT.TyLyLyLyLE.QyLyLyLyTAPZlYlYlYlU.D.......fE.clYlYlYlYAPMyLyLyLyV.DMyLyLyLyE.oYlYlYlYdAP........X.zYlYlYlYFF.0LyLyLyLiAPzLyLyLyLY.jlYlYlYlYF.A.......nAPmYlYlYlYZ.TyLyLyLyrF.QyLyLyLyrAPZlYlYlYla.D........G.clYlYlYlwAPMyLyLyLyb.DMyLyLyLSG.oYlYlYlY1AP........d.zYlYlYlYlG.0LyLyLyL6APzLyLyLyLe.jlYlYlYl4G.A........BPyLyLyLyLf.zYlYlYlYFH.oYlYlYlYBBPMyLyLyLyf.D.......PH.MyLyLyLyDBPmYlYlYlYg.jlYlYlYlYH.0LyLyLyLGBP........h.zLyLyLyLiH.clYlYlYlIBPZlYlYlYlh.TyLyLyLyrH.A.......LBPzLyLyLyLi.zYlYlYlY1H.oYlYlYlYNBPMyLyLyLyi.D........I.QyLyLyLyPBPmYlYlYlYj.jlYlYlYlII.0LyLyLyLSBP........k.DMyLyLyLSI.clYlYlYlUBPZlYlYlYlk.TyLyLyLybI.A.......XBPzLyLyLyLl.zYlYlYlYlI.oYlYlYlYZBPMyLyLyLyl.D.......vI.QyLyLyLybBPmYlYlYlYm.jlYlYlYl4I.0LyLyLyLeBP........n.DMyLyLyLCJ.clYlYlYlgBPZlYlYlYln.TyLyLyLyLJ.A.......jBPzLyLyLyLo.zYlYlYlYVJ.oYlYlYlYlBPMyLyLyLyo.D.......fJ.QyLyLyLynBPmYlYlYlYp.jlYlYlYloJ.0LyLyLyLqBP........q.DMyLyLyLyJ.clYlYlYlsBPZlYlYlYlq.TyLyLyLy7J.A.......vBPzLyLyLyLr.zYlYlYlYFK.oYlYlYlYxBPMyLyLyLyr.D.......PK.QyLyLyLyzBPmYlYlYlYs.jlYlYlYlYK.0LyLyLyL2BP........t.DMyLyLyLiK.clYlYlYl4BPZlYlYlYlt.TyLyLyLyrK.A.......7BPzLyLyLyLu.zYlYlYlY1K.oYlYlYlY9BPMyLyLyLyu.D........L.oYlYlYlY.CPyLyLyLyLv.TyLyLyLyDL.clYlYlYlACP.......fv.jlYlYlYlIL.MyLyLyLyBCPMyLyLyLyv.zYlYlYlYNL.A.......DCPZlYlYlYFw.zLyLyLyLSL.0LyLyLyLECPmYlYlYlYw.D.......XL.oYlYlYlYFCPyLyLyLyrw.TyLyLyLybL.clYlYlYlGCP........x.jlYlYlYlgL.MyLyLyLyHCPMyLyLyLSx.zYlYlYlYlL.A.......JCPZlYlYlYlx.zLyLyLyLqL.0LyLyLyLKCPmYlYlYl4x.D.......vL.oYlYlYlYLCPzLyLyLyLy.TyLyLyLyzL.clYlYlYlMCP.......fy.jlYlYlYl4L.QyLyLyLyNCPMyLyLyLyy.zYlYlYlY9L.A.......PCPZlYlYlYFz.DMyLyLyLCM.0LyLyLyLQCPmYlYlYlYz.D.......HM.oYlYlYlYRCPzLyLyLyrz.TyLyLyLyLM.clYlYlYlSCP........0.jlYlYlYlQM.QyLyLyLyTCPMyLyLyLS0.zYlYlYlYVM.A.......VCPZlYlYlYl0.DMyLyLyLaM.0LyLyLyLWCPmYlYlYl40.D.......fM.oYlYlYlYXCPzLyLyLyL1.TyLyLyLyjM.clYlYlYlYCP.......f1.jlYlYlYloM.QyLyLyLyZCPMyLyLyLy1.zYlYlYlYtM.A.......bCPZlYlYlYF2.DMyLyLyLyM.0LyLyLyLcCPmYlYlYlY2.D.......3M.oYlYlYlYdCPzLyLyLyr2.TyLyLyLy7M.clYlYlYleCP........3.jlYlYlYlAN.QyLyLyLyfCPMyLyLyLS3.zYlYlYlYFN.A.......hCPZlYlYlYl3.DMyLyLyLKN.0LyLyLyLiCPmYlYlYl43.D.......PN.oYlYlYlYjCPzLyLyLyL4.TyLyLyLyTN.clYlYlYlkCP.......f4.jlYlYlYlYN.QyLyLyLylCPMyLyLyLy4.zYlYlYlYdN.A.......nCPZlYlYlYF5.DMyLyLyLiN.0LyLyLyLoCPmYlYlYlY5.D.......nN.oYlYlYlYpCPzLyLyLyr5.TyLyLyLyrN.clYlYlYlqCP........6.jlYlYlYlwN.QyLyLyLyrCPMyLyLyLS6.zYlYlYlY1N.A.......tCPZlYlYlYl6.DMyLyLyL6N.0LyLyLyLuCPmYlYlYl46.D........O.oYlYlYlYvCPzLyLyLyL7.TyLyLyLyDO.clYlYlYlwCP.......f7.jlYlYlYlIO.QyLyLyLyxCPMyLyLyLy7.zYlYlYlYNO.A.......zCPZlYlYlYF8.DMyLyLyLSO.0LyLyLyL0CPmYlYlYlY8.D.......XO.oYlYlYlY1CPzLyLyLyr8.TyLyLyLybO.clYlYlYl2CP........9.jlYlYlYlgO.QyLyLyLy3CPMyLyLyLS9.zYlYlYlYlO.A.......5CPZlYlYlYl9.DMyLyLyLqO.0LyLyLyL6CPmYlYlYl49.D.......vO.oYlYlYlY7CPzLyLyLyL+.TyLyLyLyzO.clYlYlYl8CP.......f+.jlYlYlYl4O.QyLyLyLy9CPMyLyLyLy+.zYlYlYlY9O.A........DPMyLyLyLC.AjlYlYlYlAP.clYlYlYl.DPyLyLyLyL.AD.......DP.0LyLyLyLADPZlYlYlYV.AzYlYlYlYFP.MyLyLyLyADP.......f.ATyLyLyLyHP.oYlYlYlYBDPmYlYlYlo.AzLyLyLyLKP.A.......CDPMyLyLyLy.AjlYlYlYlMP.clYlYlYlCDPyLyLyLy7.AD.......PP.0LyLyLyLDDPZlYlYlYFAAzYlYlYlYRP.MyLyLyLyDDP.......PAATyLyLyLyTP.oYlYlYlYEDPmYlYlYlYAAzLyLyLyLWP.A.......FDPMyLyLyLiAAjlYlYlYlYP.clYlYlYlFDPyLyLyLyrAAD.......bP.0LyLyLyLGDPZlYlYlY1AAzYlYlYlYdP.MyLyLyLyGDP........BATyLyLyLyfP.oYlYlYlYHDPmYlYlYlIBAzLyLyLyLiP.A.......IDPMyLyLyLSBAjlYlYlYlkP.clYlYlYlIDPyLyLyLybBAD.......nP.0LyLyLyLJDPZlYlYlYlBAzYlYlYlYpP.MyLyLyLyJDP.......vBATyLyLyLyrP.oYlYlYlYKDPmYlYlYl4BAzLyLyLyLuP.A.......LDPMyLyLyLCCAjlYlYlYlwP.clYlYlYlLDPzLyLyLyLCAD.......zP.0LyLyLyLMDPZlYlYlYVCAzYlYlYlY1P.QyLyLyLyMDP.......fCATyLyLyLy3P.oYlYlYlYNDPmYlYlYloCADMyLyLyL6P.A.......ODPMyLyLyLyCAjlYlYlYl8P.clYlYlYlODPzLyLyLy7CAD........Q.0LyLyLyLPDPZlYlYlYFDAzYlYlYlYBQ.QyLyLyLyPDP.......PDATyLyLyLyDQ.oYlYlYlYQDPmYlYlYlYDADMyLyLyLGQ.A.......RDPMyLyLyLiDAjlYlYlYlIQ.clYlYlYlRDPzLyLyLyrDAD.......LQ.0LyLyLyLSDPZlYlYlY1DAzYlYlYlYNQ.QyLyLyLySDP........EATyLyLyLyPQ.oYlYlYlYTDPmYlYlYlIEADMyLyLyLSQ.A.......UDPMyLyLyLSEAjlYlYlYlUQ.clYlYlYlUDPzLyLyLybEAD.......XQ.0LyLyLyLVDPZlYlYlYlEAzYlYlYlYZQ.QyLyLyLyVDP.......vEATyLyLyLybQ.oYlYlYlYWDPmYlYlYl4EADMyLyLyLeQ.A.......XDPMyLyLyLCFAjlYlYlYlgQ.clYlYlYlXDPzLyLyLyLFAD.......jQ.0LyLyLyLYDPZlYlYlYVFAzYlYlYlYlQ.QyLyLyLyYDP.......fFATyLyLyLynQ.oYlYlYlYZDPmYlYlYloFADMyLyLyLqQ.A.......aDPMyLyLyLyFAjlYlYlYlsQ.clYlYlYlaDPzLyLyLy7FAD.......vQ.0LyLyLyLbDPZlYlYlYFGAzYlYlYlYxQ.QyLyLyLybDP.......PGATyLyLyLyzQ.oYlYlYlYcDPmYlYlYlYGADMyLyLyL2Q.A.......dDPMyLyLyLiGAjlYlYlYl4Q.clYlYlYldDPzLyLyLyrGAD.......7Q.0LyLyLyLeDPZlYlYlY1GAzYlYlYlY9Q.QyLyLyLyeDP........HATyLyLyLy.R.oYlYlYlYfDPmYlYlYlIHADMyLyLyLCR.A.......gDPMyLyLyLSHAjlYlYlYlER.clYlYlYlgDPzLyLyLybHAD.......HR.0LyLyLyLhDPZlYlYlYlHAzYlYlYlYJR.QyLyLyLyhDP.......vHATyLyLyLyLR.oYlYlYlYiDPmYlYlYl4HADMyLyLyLOR.A.......jDPMyLyLyLCIAjlYlYlYlQR.clYlYlYljDPzLyLyLyLIAD.......TR.0LyLyLyLkDPZlYlYlYVIAzYlYlYlYVR.QyLyLyLykDP.......fIATyLyLyLyXR.oYlYlYlYlDPmYlYlYloIADMyLyLyLaR.A.......mDPMyLyLyLyIAjlYlYlYlcR.clYlYlYlmDPzLyLyLy7IAD.......fR.0LyLyLyLnDPZlYlYlYFJAzYlYlYlYhR.QyLyLyLynDP.......PJATyLyLyLyjR.oYlYlYlYoDPmYlYlYlYJADMyLyLyLmR.A.......pDPMyLyLyLiJAjlYlYlYloR.clYlYlYlpDPzLyLyLyrJAD.......rR.0LyLyLyLqDPZlYlYlY1JAzYlYlYlYtR.QyLyLyLyqDP........KATyLyLyLyvR.oYlYlYlYrDPmYlYlYlIKADMyLyLyLyR.A.......sDPMyLyLyLSKAjlYlYlYl0R.clYlYlYlsDPzLyLyLybKAD.......3R.0LyLyLyLtDPZlYlYlYlKAzYlYlYlY5R.QyLyLyLytDP.......vKATyLyLyLy7R.oYlYlYlYuDPmYlYlYl4KADMyLyLyL+R.A.......vDPMyLyLyLCLAjlYlYlYlAS.clYlYlYlvDPzLyLyLyLLAD.......DS.0LyLyLyLwDPZlYlYlYVLAzYlYlYlYFS.QyLyLyLywDP.......fLATyLyLyLyHS.oYlYlYlYxDPmYlYlYloLADMyLyLyLKS.A.......yDPMyLyLyLyLAjlYlYlYlMS.clYlYlYlyDPzLyLyLy7LAD.......PS.0LyLyLyLzDPZlYlYlYFMAzYlYlYlYRS.QyLyLyLyzDP.......PMATyLyLyLyTS.oYlYlYlY0DPmYlYlYlYMADMyLyLyLWS.A.......1DPMyLyLyLiMAjlYlYlYlYS.clYlYlYl1DPzLyLyLyrMAD.......bS.0LyLyLyL2DPZlYlYlY1MAzYlYlYlYdS.QyLyLyLy2DP........NATyLyLyLyfS.oYlYlYlY3DPmYlYlYlINADMyLyLyLiS.A.......4DPMyLyLyLSNAjlYlYlYlkS.clYlYlYl4DPzLyLyLybNAD.......nS.0LyLyLyL5DPZlYlYlYlNAzYlYlYlYpS.QyLyLyLy5DP.......vNATyLyLyLyrS.oYlYlYlY6DPmYlYlYl4NADMyLyLyLuS.A.......7DPMyLyLyLCOAjlYlYlYlwS.clYlYlYl7DPzLyLyLyLOAD.......zS.0LyLyLyL8DPZlYlYlYVOAzYlYlYlY1S.QyLyLyLy8DP.......fOATyLyLyLy3S.oYlYlYlY9DPmYlYlYloOADMyLyLyL6S.A.......+DPMyLyLyLyOAjlYlYlYl8S.clYlYlYl+DPzLyLyLy7OAD........T.clYlYlYF.EPMyLyLyLCPAzLyLyLyLAT.oYlYlYlY.EP.......HPAzYlYlYlYBT.0LyLyLyr.EPyLyLyLyLPAjlYlYlYlCT.A.......AEPmYlYlYlQPATyLyLyLyDT.MyLyLyLSAEPZlYlYlYVPAD.......FT.clYlYlYlAEPMyLyLyLaPAzLyLyLyLGT.oYlYlYl4AEP.......fPAzYlYlYlYHT.0LyLyLyLBEPyLyLyLyjPAjlYlYlYlIT.A......fBEPmYlYlYloPATyLyLyLyJT.MyLyLyLyBEPZlYlYlYtPAD.......LT.clYlYlYFCEPMyLyLyLyPAzLyLyLyLMT.oYlYlYlYCEP.......3PAzYlYlYlYNT.0LyLyLyrCEPyLyLyLy7PAjlYlYlYlOT.A.......DEPmYlYlYlAQATyLyLyLyPT.MyLyLyLSDEPZlYlYlYFQAD.......RT.clYlYlYlDEPMyLyLyLKQAzLyLyLyLST.oYlYlYl4DEP.......PQAzYlYlYlYTT.0LyLyLyLEEPyLyLyLyTQAjlYlYlYlUT.A......fEEPmYlYlYlYQATyLyLyLyVT.MyLyLyLyEEPZlYlYlYdQAD.......XT.clYlYlYFFEPMyLyLyLiQAzLyLyLyLYT.oYlYlYlYFEP.......nQAzYlYlYlYZT.0LyLyLyrFEPyLyLyLyrQAjlYlYlYlaT.A.......GEPmYlYlYlwQATyLyLyLybT.MyLyLyLSGEPZlYlYlY1QAD.......dT.clYlYlYlGEPMyLyLyL6QAzLyLyLyLeT.oYlYlYl4GEP........RAzYlYlYlYfT.0LyLyLyLHEPyLyLyLyDRAjlYlYlYlgT.A......fHEPmYlYlYlIRATyLyLyLyhT.MyLyLyLyHEPZlYlYlYNRAD.......jT.clYlYlYFIEPMyLyLyLSRAzLyLyLyLkT.oYlYlYlYIEP.......XRAzYlYlYlYlT.0LyLyLyrIEPyLyLyLybRAjlYlYlYlmT.A.......JEPmYlYlYlgRATyLyLyLynT.MyLyLyLSJEPZlYlYlYlRAD.......pT.clYlYlYlJEPMyLyLyLqRAzLyLyLyLqT.oYlYlYl4JEP.......vRAzYlYlYlYrT.0LyLyLyLKEPyLyLyLyzRAjlYlYlYlsT.A......fKEPmYlYlYl4RATyLyLyLytT.MyLyLyLyKEPZlYlYlY9RAD.......vT.clYlYlYFLEPMyLyLyLCSAzLyLyLyLwT.oYlYlYlYLEP.......HSAzYlYlYlYxT.0LyLyLyrLEPzLyLyLyLSAjlYlYlYlyT.A.......MEPmYlYlYlQSATyLyLyLyzT.QyLyLyLSMEPZlYlYlYVSAD.......1T.clYlYlYlMEPMyLyLyLaSADMyLyLyL2T.oYlYlYl4MEP.......fSAzYlYlYlY3T.0LyLyLyLNEPzLyLyLyjSAjlYlYlYl4T.A......fNEPmYlYlYloSATyLyLyLy5T.QyLyLyLyNEPZlYlYlYtSAD.......7T.clYlYlYFOEPMyLyLyLySADMyLyLyL8T.oYlYlYlYOEP.......3SAzYlYlYlY9T.0LyLyLyrOEPzLyLyLy7SAjlYlYlYl+T.A.......PEPmYlYlYlATATyLyLyLy.U.QyLyLyLSPEPZlYlYlYFTAD.......BU.clYlYlYlPEPMyLyLyLKTADMyLyLyLCU.oYlYlYl4PEP.......PTAzYlYlYlYDU.0LyLyLyLQEPzLyLyLyTTAjlYlYlYlEU.A......fQEPmYlYlYlYTATyLyLyLyFU.QyLyLyLyQEPZlYlYlYdTAD.......HU.clYlYlYFREPMyLyLyLiTADMyLyLyLIU.oYlYlYlYREP.......nTAzYlYlYlYJU.0LyLyLyrREPzLyLyLyrTAjlYlYlYlKU.A.......SEPmYlYlYlwTATyLyLyLyLU.QyLyLyLSSEPZlYlYlY1TAD.......NU.clYlYlYlSEPMyLyLyL6TADMyLyLyLOU.oYlYlYl4SEP........UAzYlYlYlYPU.0LyLyLyLTEPzLyLyLyDUAjlYlYlYlQU.A......fTEPmYlYlYlIUATyLyLyLyRU.QyLyLyLyTEPZlYlYlYNUAD.......TU.clYlYlYFUEPMyLyLyLSUADMyLyLyLUU.oYlYlYlYUEP.......XUAzYlYlYlYVU.0LyLyLyrUEPzLyLyLybUAjlYlYlYlWU.A.......VEPmYlYlYlgUATyLyLyLyXU.QyLyLyLSVEPZlYlYlYlUAD.......ZU.clYlYlYlVEPMyLyLyLqUADMyLyLyLaU.oYlYlYl4VEP.......vUAzYlYlYlYbU.0LyLyLyLWEPzLyLyLyzUAjlYlYlYlcU.A......fWEPmYlYlYl4UATyLyLyLydU.QyLyLyLyWEPZlYlYlY9UAD.......fU.clYlYlYFXEPMyLyLyLCVADMyLyLyLgU.oYlYlYlYXEP.......HVAzYlYlYlYhU.0LyLyLyrXEPzLyLyLyLVAjlYlYlYliU.A.......YEPmYlYlYlQVATyLyLyLyjU.QyLyLyLSYEPZlYlYlYVVAD.......lU.clYlYlYlYEPMyLyLyLaVADMyLyLyLmU.oYlYlYl4YEP.......fVAzYlYlYlYnU.0LyLyLyLZEPzLyLyLyjVAjlYlYlYloU.A......fZEPmYlYlYloVATyLyLyLypU.QyLyLyLyZEPZlYlYlYtVAD.......rU.clYlYlYFaEPMyLyLyLyVADMyLyLyLsU.oYlYlYlYaEP.......3VAzYlYlYlYtU.0LyLyLyraEPzLyLyLy7VAjlYlYlYluU.A.......bEPmYlYlYlAWATyLyLyLyvU.QyLyLyLSbEPZlYlYlYFWAD.......xU.clYlYlYlbEPMyLyLyLKWADMyLyLyLyU.oYlYlYl4bEP.......PWAzYlYlYlYzU.0LyLyLyLcEPzLyLyLyTWAjlYlYlYl0U.A......fcEPmYlYlYlYWATyLyLyLy1U.QyLyLyLycEPZlYlYlYdWAD.......3U.clYlYlYFdEPMyLyLyLiWADMyLyLyL4U.oYlYlYlYdEP.......nWAzYlYlYlY5U.0LyLyLyrdEPzLyLyLyrWAjlYlYlYl6U.A.......eEPmYlYlYlwWATyLyLyLy7U.QyLyLyLSeEPZlYlYlY1WAD.......9U.clYlYlYleEPMyLyLyL6WADMyLyLyL+U.oYlYlYl4eEP........XAzYlYlYlY.V.0LyLyLyLfEPzLyLyLyDXAjlYlYlYlAV.A......ffEPmYlYlYlIXATyLyLyLyBV.QyLyLyLyfEPZlYlYlYNXAD.......DV.clYlYlYFgEPMyLyLyLSXADMyLyLyLEV.oYlYlYlYgEP.......XXAzYlYlYlYFV.0LyLyLyrgEPzLyLyLybXAjlYlYlYlGV.A.......hEPmYlYlYlgXATyLyLyLyHV.QyLyLyLShEPZlYlYlYlXAD.......JV.clYlYlYlhEPMyLyLyLqXADMyLyLyLKV.oYlYlYl4hEP.......vXAzYlYlYlYLV.0LyLyLyLiEPzLyLyLyzXAjlYlYlYlMV.A......fiEPmYlYlYl4XATyLyLyLyNV.QyLyLyLyiEPZlYlYlY9XAD.......PV.A<UserCurves/>
         </GPSCALE>
         <FONTPROPERTIES FontName="&lt;Sans-Serif&gt;" FontHeight="15" Bold="0" Italic="0"
@@ -3280,7 +3280,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.303030303030303" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="25" widgetValue="1.0"
+              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="25" widgetValue="0.0"
               backPlate="7" backPlateVisible="1" invertMIDI="0" displayRange="0"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -3391,7 +3391,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3191489361702128" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="26" widgetValue="0.1316302567720413"
+              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="26" widgetValue="0.4959999918937683"
               backPlate="0" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -3899,7 +3899,7 @@
       <WIDGET type="0" style="18" id="24809" x="0.8079734219269104" y="0.4961538461538462"
               width="0.03853820598006644" height="0.1307692307692308" sendScaledValueChangedOnly="0"
               caption="DLY Note" captionIncludesAttribute="1" hideTemporaryValueDisplay="0"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.3142857142857143" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="126" widgetValue="0.6000000238418579"
@@ -3921,7 +3921,7 @@
       <WIDGET type="0" style="18" id="24802" x="0.8079734219269104" y="0.4961538461538462"
               width="0.03853820598006644" height="0.1307692307692308" sendScaledValueChangedOnly="0"
               caption="DLY Time" captionIncludesAttribute="1" hideTemporaryValueDisplay="1"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="0"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.3142857142857143" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="12" paramIndex="125" widgetValue="0.2960000038146973"
@@ -4036,7 +4036,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="1" overrideName="0"
               captionVisible="0" captionHeight="0.4782608695652174" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="13" paramIndex="3" widgetValue="0.15399169921875"
+              rigId="0" textColor="ffffffff" nodeId="13" paramIndex="3" widgetValue="0.308990478515625"
               backPlate="10" backPlateVisible="0" invertMIDI="0" displayRange="0"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -4124,7 +4124,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.48" reflectMIDI="" reflectMIDIOn="0"
               midiThru="0" midiSource="" midiDevice="" midiData="0" rigId="0"
-              textColor="ffffffff" nodeId="12" paramIndex="130" widgetValue="1.0"
+              textColor="ffffffff" nodeId="12" paramIndex="130" widgetValue="0.0"
               backPlate="11" backPlateVisible="0" invertMIDI="0" displayRange="1"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -4143,7 +4143,7 @@
       <WIDGET type="2" style="0" id="25094" x="0.4975169300225734" y="0.5158450704225352"
               width="0.1173814898419865" height="0.0880281690140845" sendScaledValueChangedOnly="0"
               caption="CLN Amp Cab Mic L Type" captionIncludesAttribute="1"
-              hideTemporaryValueDisplay="0" hideInPresentationView="0" widgetIgnoresMouse="0"
+              hideTemporaryValueDisplay="0" hideInPresentationView="1" widgetIgnoresMouse="0"
               overrideName="0" captionVisible="1" captionHeight="0.4901960784313725"
               reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
               midiData="0" rigId="0" textColor="ffffffff" nodeId="12" paramIndex="60"
@@ -4388,7 +4388,7 @@
       <WIDGET type="2" style="0" id="25128" x="0.628668171557562" y="0.5123239436619719"
               width="0.1169300225733634" height="0.0880281690140845" sendScaledValueChangedOnly="0"
               caption="CLN Amp Cab Mic R Type" captionIncludesAttribute="1"
-              hideTemporaryValueDisplay="0" hideInPresentationView="0" widgetIgnoresMouse="0"
+              hideTemporaryValueDisplay="0" hideInPresentationView="1" widgetIgnoresMouse="0"
               overrideName="0" captionVisible="1" captionHeight="0.4901960784313725"
               reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
               midiData="0" rigId="0" textColor="ffffffff" nodeId="12" paramIndex="72"
@@ -4503,7 +4503,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3188405797101449" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="77" widgetValue="0.5"
+              rigId="0" textColor="ffffffff" nodeId="12" paramIndex="77" widgetValue="0.07699999958276749"
               backPlate="1" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -4679,7 +4679,7 @@
       <WIDGET type="2" style="0" id="25145" x="0.4975169300225734" y="0.5158450704225352"
               width="0.1173814898419865" height="0.0880281690140845" sendScaledValueChangedOnly="0"
               caption="HOT Amp Cab Mic L Type" captionIncludesAttribute="1"
-              hideTemporaryValueDisplay="0" hideInPresentationView="1" widgetIgnoresMouse="0"
+              hideTemporaryValueDisplay="0" hideInPresentationView="0" widgetIgnoresMouse="0"
               overrideName="0" captionVisible="1" captionHeight="0.4901960784313725"
               reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
               midiData="0" rigId="0" textColor="ffffffff" nodeId="12" paramIndex="62"
@@ -4702,7 +4702,7 @@
       <WIDGET type="2" style="0" id="25146" x="0.628668171557562" y="0.5123239436619719"
               width="0.1169300225733634" height="0.0880281690140845" sendScaledValueChangedOnly="0"
               caption="HOT Amp Cab Mic R Type" captionIncludesAttribute="1"
-              hideTemporaryValueDisplay="0" hideInPresentationView="1" widgetIgnoresMouse="0"
+              hideTemporaryValueDisplay="0" hideInPresentationView="0" widgetIgnoresMouse="0"
               overrideName="0" captionVisible="1" captionHeight="0.4901960784313725"
               reflectMIDI="" reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice=""
               midiData="0" rigId="0" textColor="ffffffff" nodeId="12" paramIndex="74"
@@ -4883,7 +4883,7 @@
     <PARAM widgetId="24159" value="1.0" onLoadValue="1.0"/>
     <PARAM widgetId="24048" value="0.0" onLoadValue="0.0"/>
     <PARAM widgetId="24013" value="1.0" onLoadValue="0.0"/>
-    <PARAM widgetId="24176" value="1.0" onLoadValue="0.0"/>
+    <PARAM widgetId="24176" value="1.0" onLoadValue="1.0"/>
     <PARAM widgetId="24177" value="1.0" onLoadValue="1.0"/>
     <PARAM widgetId="24179" value="1.0" onLoadValue="1.0"/>
     <PARAM widgetId="24026" value="0.0" onLoadValue="0.0"/>
@@ -5554,7 +5554,7 @@
     <PARAM widgetId="24789" value="0.0" onLoadValue="0.0"/>
     <PARAM widgetId="24791" value="0.0" onLoadValue="0.0"/>
     <PARAM widgetId="24927" value="1.0" onLoadValue="1.0"/>
-    <PARAM widgetId="24925" value="0.15399169921875" onLoadValue="0.135009765625"/>
+    <PARAM widgetId="24925" value="0.14599609375" onLoadValue="0.135009765625"/>
     <PARAM widgetId="24799" value="1.0" onLoadValue="1.0"/>
     <PARAM widgetId="24798" value="1.0" onLoadValue="1.0"/>
     <PARAM widgetId="24795" value="1.0" onLoadValue="1.0"/>
@@ -5725,7 +5725,7 @@
     <PARAM widgetId="24159" value="1.0" onLoadValue="1.0"/>
     <PARAM widgetId="24048" value="0.0" onLoadValue="0.0"/>
     <PARAM widgetId="24013" value="1.0" onLoadValue="1.0"/>
-    <PARAM widgetId="24176" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="24176" value="0.0" onLoadValue="1.0"/>
     <PARAM widgetId="24177" value="1.0" onLoadValue="1.0"/>
     <PARAM widgetId="24179" value="1.0" onLoadValue="1.0"/>
     <PARAM widgetId="24026" value="0.0" onLoadValue="0.0"/>
@@ -5765,7 +5765,7 @@
     <PARAM widgetId="24789" value="0.0" onLoadValue="0.0"/>
     <PARAM widgetId="24791" value="0.0" onLoadValue="0.0"/>
     <PARAM widgetId="24927" value="1.0" onLoadValue="1.0"/>
-    <PARAM widgetId="24925" value="0.14599609375" onLoadValue="0.135009765625"/>
+    <PARAM widgetId="24925" value="0.308990478515625" onLoadValue="0.135009765625"/>
     <PARAM widgetId="24799" value="1.0" onLoadValue="1.0"/>
     <PARAM widgetId="24798" value="1.0" onLoadValue="1.0"/>
     <PARAM widgetId="24795" value="1.0" onLoadValue="1.0"/>
@@ -5947,6 +5947,13 @@ ampInput, ampGate, ampTranspose, ampDoubler, ampOutput, ampGateOn, ampDoublerOn:
     
     NDSP: PluginBlock // this is the main plugin, add GPScript handle
     
+    gcab_on: ExternalWidget
+    cab_on: Widget
+    suppress_cab: ExternalWidget
+    
+
+Include &quot;includes/gl/rs_vars_functions&quot;
+    
 On WidgetValueChanged (v: Double) From plugin_sync
     If v &gt; 0.6 Then
         RefreshWidgetsMappedToPlugin( NDSP )
@@ -5996,10 +6003,6 @@ Initialization // set amp mode
     FX10_mode = ScaleRange (GetWidgetValue (dlyTimeSelect), 0, 1) //assuming it's a simple on/off toggle
     select_FX10_controls (FX10_mode)
 End
-
-Include &quot;includes/gl/rs_vars_functions&quot;
-    
-
 
 
 On WidgetValueChanged (kval : double) from ampSelector
@@ -6314,24 +6317,18 @@ On WidgetValueChanged (w: Widget, i: Integer, v: Double) From distDist, distFilt
     End
 End
 
+
 On Deactivate
-    //Print (&quot;on deactivate triggered, reset ping_time&quot;) 
-    ping_time = 0.0
-    //osc_enabled = false
+    Include &quot;includes/gl/rs_ondeactivate&quot;
 End
 
 On Activate
-    //Print (&quot;on activate triggered, set timers running&quot;)
-    SetTimersRunning (true)
-    If osc_enabled == false Then
-        OSC_SendIntegerSpecific (&quot;/ping&quot;, initmode, oscip, oscport)
-    End
+    Include &quot;includes/gl/rs_onactivate&quot;
 End
 
 // Called when you switch variations
 On Variation(oldVariation : integer, newVariation : integer)
-    //Print (&quot;on variation triggered, sending ping&quot;)
-    //OSC_SendIntegerSpecific (&quot;/ping&quot;, initmode, oscip, oscport)
-    ping_global ()
-End</SCRIPT_CONTENT>
+    Include &quot;includes/gl/rs_onvariation&quot;
+End
+</SCRIPT_CONTENT>
 </RACKSPACE>

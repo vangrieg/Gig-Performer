@@ -2,22 +2,22 @@
 
 <RACKSPACE name="NDSP Morello GL" uid="a8fa285209d446e0a3c51d35157a5178"
            bpm="120.0" timeNum="4" timeDen="4" resetTimeInfo="0" syncClock="0"
-           maxDeactivationTime="2.5" maxDeactivationTimeIn="0.0" scriptWindowPos="83 165 1811 1001"
-           usePatchPersist="0" zoomLevel="1.0" viewX="0" viewY="3" activePreset="0"
+           maxDeactivationTime="2.5" maxDeactivationTimeIn="0.0" scriptWindowPos="203 203 1811 1001"
+           usePatchPersist="0" zoomLevel="1.0" viewX="0" viewY="3" activePreset="6"
            version="5.0" globalStereoCount="2">
   <PROCESSORSTATE_IN handle="" gpscript="0" osc="0" x="0.311279296875" y="0.018310546875">73.VMjLg.D....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh7hO..</PROCESSORSTATE_IN>
   <PROCESSORSTATE_OUT handle="" gpscript="0" osc="0" x="0.3154296875" y="0.146728515625">123.VMjLgHG....OPwTUGkjSSQUPTUDHig1WvziHw3BLh.Ra0QWYeMFZeASOh.iHfLFZeESOhDiKvHBHsUGck80Xn8UL8HBLh.xXn8kL8HRLt.iHfzVczU1Wig1WxziHvHBHig1WyziHw3BLh.Ra0QWYeMFZeMSOh.iHu3C.</PROCESSORSTATE_OUT>
   <PROCESSOR id="4" bypass="0" bypassSmoothing="0" prop_str_nodeName="Archetype Tom Morello"
-             prop_int_uiLastX="451" prop_int_uiLastY="421" prop_dbl_x="0.20410156250000000000"
+             prop_int_uiLastX="1176" prop_int_uiLastY="383" prop_dbl_x="0.20410156250000000000"
              prop_dbl_y="0.08422851562500000000" prop_int_MaxInputPins="256"
              prop_int_MaxOutputPins="256" prop_bool_nodeGPScriptEnabled="1"
              prop_str_nodeHandleName="TM" cmp="1">
     <PLUGIN name="Archetype Tom Morello" format="VST3" category="Fx|Distortion|Dynamics|Reverb"
             manufacturer="Neural DSP" version="1.0.0" file="/Library/Audio/Plug-Ins/VST3/Archetype Tom Morello.vst3"
-            uid="e6a32a21" isInstrument="0" fileTime="188337b4e38" infoUpdateTime="1955fddbd09"
+            uid="e6a32a21" isInstrument="0" fileTime="188337b4e38" infoUpdateTime="1957f4c5d53"
             numInputs="2" numOutputs="2" isShell="0" isEnabled="1" useDelayedLoading="0"
             explicitWidgetRefresh="0" b64UserKeywords=""/>
-    <PROCESSORSTATEZ>1187.3ockYtsaihDDFddN161qiTOfOnvHEMRXNmXxzDZNdGPBDLN16Ziw.Oc6i11NNY1MIcEkhahh0GE+U8WcQi5PsI+4+7Ge6aWE5ylRWenpdieaV6C+7JGssO8Wa27vl1eNWR4RRaPXQugY1Cdx4cJFEGjji1qrNu4nY1AUJwlFkrWcRFQmtPm7xUqAsyIJYHvr3VivrF0l7CpVD0kdpLkvrRaizYdVo6U68jZLKpbrHuxSMLK17J+t.0CcrzGchh6albiZfUxVE4anuvNn7neSvS4UGMs0cMXGzWkWWElL1Xk2ntH3fjos6qZUQ7+eWU38iUbMkyJ15weNyVb+9il+VOAM5dTmIYc7b0Ilr9wB83UynsOFYlr0aRVuaP57.ShJiRzdN4eJuwMJYLIHo2MJ8vLSVuhYNQuS0Pu9ltoKVRVFkrKPNdLvLw+zeajyZ4w2Pm9bD5UBKFaVm8zy+14RppsMS0If5x+sEqLS3wiXvehxbuQ5zyeEQ80xe7bMB0XESURmeezzU76QiQWRhih2EDk7FuhZzQHAz6LX9D8RxVOdrnT0i5hi84a4swVmG6dRYQ0wvhlS0I5uQu7BB4c5lvqCCBzxlNoG3PuWKKopBh8l70I8eL1TUCaskch0xoKg7GQx+0y0y7CXh+RP8KN9KA0OHeOR9Aj7iH4kD3ugq1OChW9i7wU+sEH+jOx20WENGheFJ+xGxuldA.+Qj7B7qRZYfLDOX+lpX9Qj4qDR8KiL9SPF+oHiOf+FHt9TC3ukWCwKve2j.Muhy2iJeqQNOoFo+VC4uf7xH4mfjeJRdbqeGv89BN+Qj78H4GPxOho+gh78KTjy+oBm+S4Y0HDuj30KsP7.8aN7sCIjGU+FmeJRdw8ak9h0iOt2WS8g5erEN+gBNeFL9xnp+9HqmfymcfpOnV+Rqws9kVCT+g7qZj8+fyaW7Q+huGd1Wee1FLpaGvd96tPSLuNRdaj5YIRdpXd64.5ggjOFIeNR9Rj46puNuFqzU32ncd6Iu86hXTUYhl3uoibwuDy6uDW7qQxOHlu0fBneA4Ka5buKgzuKt7sVL+lE.5YPLOEhW6VQ5O02Bf2W.udq7klh40E4ueR8QuFW+ftn5+74dd+.fWT8erJbEndv0OqKpd9Y52+VT0GaQ0S504J.4qsn0KzGtfAEew0+xeA3u1hWub2jqExKoqgZ83.C27gAlOx3Wije.q9cww6iju1EW8AX9PoFEP+h6ms0A38EyWJd9yPLR+MFo+FC4u+.H9h82M7WvAneWbwG27et9QF+Aj7Pyq.0ON9bMb0+bej7H827Aj7HW+lKxeCucbgBj9w0Ojizeyg7WP8iyeEt+gcVF2y4GCSW0HGs2vLu6zYA3d57SH46Bljrclbz4y3fRhYkYmOCD4nUtV4O3MIauRP1AmnjcGkyHDqLohvzVklrJovSeyggwmcNIp+2yPNXc9vKmMgEitrkTeSGWg0FqiGZByF36lUUuKtxQNeqDOmrKS1dLL44yvwP6z9ZUIwgo6BLYUdVo8D928vH.Wk2E3x7nNQo78KWz3whGMLu56+uCj5pu+9iq5a+KX6z0gN</PROCESSORSTATEZ>
+    <PROCESSORSTATEZ>1201.3ockYtsaipCEFtOGyc6qijGfjY1TopQxgCAZfVSvbJ2AYBYHPCsMIb58a+dscZlNGZrq5hapB5K+7uV+1N1kPMk+4+9zUWcSnOcLo53lhc9GROr9a2XqU+vi06Vu6v29hz0xnCAgq5LLSW6Im0nZr5njbzd0prxVyziXBxhDkrGqjhzIS0QmuxqMIM1QI8AlqtyHLsDWlcDOCgodXmR4kk3EjbGlVSBSxGlZ4qdRKTVWfbVo2L5FuYKI1JoML8WEzL2orJtynJah5BhjW3xipSomYUxNNllHYGE+LdpmOVZN1VIdG64NAGkjSjR2iW3ej4kmakSO91O2PW9TfoEF2QGTqX9bw7bGozmUqlOVxLEgdHqzMJYHHXg9q0v1bbfkai09i2qmEmrszb0QaEZccTBqGfwNuzB9Ys7PPosRVMS6WqmYThyATw7FTCqGFlT3Ekr0M3zeWdbhIqGQP3SJXojJwt2gUmu2KW544DisTrjNBaQVtkomFE4fhY0evKO+ekAmuBHKLn9ruGp1ioiCA2hxWsoMbUI66ZS9MHRCQw1ADW18mt0joEBan6+w0lvz1RCIyFqHEv971ykwqWu025r9P+kdIeZzHC127MdoAYvS6a6cJFM+BsMn4NMnOtWdgWGHuEPdGt75Zrt5k7MB8eyHM97f7eCe+K4ZePj9N.8CAHOkCukwgJQ7wb302aUHhOCne1Bqe1JHuxEneqNPdd40TbXhHdGQ9m+3sVBv5kBz+w.0OCn94.0WP9Rw76OcBx2GEzO63ju4UIU1B7emEr5syAV81ALe6n.4AlucY.4Aluc.m+1i.xCb81dKf7.y2dBjwOHWX+9HiGz5+Ldd9ws2wWDOk+7kIWKfWv3ssrsCwkOCX8lCjWv3swB7SqNL8Es2pbtq+v3ovxKdqO+d8+Vf8SQqOKJuZ2BS+Nfim6zgkWvVukwKX9nEm7RiRb+v6ylRvRHMA6Kez8748AxW3.yO8.40.Vu9.4K.x2Cs+eGP+eGjynIy+LZm2dxectHB1HVicVAt7+6HA7s.46.x2ykuZ4kmq6L+.e8GKReIf9ge+L+VQ9Qgu91h3GeIe78eoesH9IWxSFurOkOuOu7kbal5.+50GXd4yq+SV4+iuJhmS+eWRUxih3gMd1mW+7c440O27zrV99of67k5FouJhm27EUUeg5yu+ecL+7sf+7EqUOwkm5KZ9N+9iiuKn0GX7s.0uCn98.4G.5GIf5KCjWv5C2wMuX7BFOuPD+D977Wuxo.X9V.LeK3kumleIIReN4aiSgQtH+CZ8eFuDv5kS9ZYb36B0WAneFCjeBH9dQ4qP9Vf7c.46AxO.Ju54kuwSHyGDwKCTeEf9GzuGw3gku72+v188SFgHo0dgKWKEF2fO8t.jyN8+Bugw9PYU5Zunu2b57E4d32+8zfxdNPIodhbzgWdeLDTDkP5bMWVdVCKpZXZ9vPZWfY5ypl+9YjDkz49y2MQFA2NdpyA1YsPNgw+fc+8tyPr5.UXTE2WFldZerUklrmQP7vlPmSe1.kmT2FlPLLWsyV6z4d9qyO8mW2FHQLvkY0IQwCAlda7hhu4y+wak5lO+12Y0U+OCiBXP.</PROCESSORSTATEZ>
     <PROCESSORLAYOUT>
       <BUSINPUTS>
         <PROCESSORBUS index="0" layout="L R"/>
@@ -254,7 +254,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3431372549019608" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="4" widgetValue="1.0"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="4" widgetValue="0.0"
               backPlate="4" backPlateVisible="0" invertMIDI="0" displayRange="0"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -342,7 +342,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3642857074737549" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="1" widgetValue="0.5049999952316284"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="1" widgetValue="0.4880000054836273"
               backPlate="0" backPlateVisible="1" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -583,10 +583,10 @@
       <WIDGET type="0" style="5" id="41098" x="0.2980412916887242" y="0.4236760124610592"
               width="0.04976177871889889" height="0.2866043613707165" sendScaledValueChangedOnly="0"
               caption="Gain[nl][value]" captionIncludesAttribute="0" hideTemporaryValueDisplay="1"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3695652173913043" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="1"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="11" widgetValue="1.0"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="11" widgetValue="0.9419999718666077"
               backPlate="0" backPlateVisible="1" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -605,7 +605,7 @@
       <WIDGET type="0" style="5" id="41100" x="0.3440974060349391" y="0.4236760124610592"
               width="0.04976177871889889" height="0.2866043613707165" sendScaledValueChangedOnly="0"
               caption="Bass[nl][value]" captionIncludesAttribute="0" hideTemporaryValueDisplay="1"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3695652186870575" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="4" paramIndex="12" widgetValue="1.0"
@@ -627,7 +627,7 @@
       <WIDGET type="0" style="5" id="41102" x="0.390153520381154" y="0.4236760124610592"
               width="0.04976177871889889" height="0.2866043613707165" sendScaledValueChangedOnly="0"
               caption="Mid[nl][value]" captionIncludesAttribute="0" hideTemporaryValueDisplay="1"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3695652186870575" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="4" paramIndex="13" widgetValue="1.0"
@@ -649,10 +649,10 @@
       <WIDGET type="0" style="5" id="41104" x="0.436209634727369" y="0.4236760124610592"
               width="0.04976177871889889" height="0.2866043613707165" sendScaledValueChangedOnly="0"
               caption="Treble[nl][value]" captionIncludesAttribute="0" hideTemporaryValueDisplay="1"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3695652186870575" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="1"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="14" widgetValue="0.7139999866485596"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="14" widgetValue="0.7099999785423279"
               backPlate="0" backPlateVisible="1" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -674,7 +674,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3695652186870575" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="1"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="16" widgetValue="0.7940000295639038"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="16" widgetValue="1.0"
               backPlate="0" backPlateVisible="1" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -696,7 +696,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3695652186870575" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="17" widgetValue="0.7350000143051147"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="17" widgetValue="0.7260000109672546"
               backPlate="0" backPlateVisible="1" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -737,7 +737,7 @@
       <WIDGET type="0" style="18" id="41112" x="0.2980412916887242" y="0.426791277258567"
               width="0.04976177871889889" height="0.2866043613707165" sendScaledValueChangedOnly="0"
               caption="Bass[nl][value]" captionIncludesAttribute="0" hideTemporaryValueDisplay="1"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3695652186870575" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="1"
               rigId="0" textColor="ffffffff" nodeId="4" paramIndex="19" widgetValue="0.5"
@@ -759,7 +759,7 @@
       <WIDGET type="0" style="18" id="41114" x="0.390153520381154" y="0.426791277258567"
               width="0.04976177871889889" height="0.2866043613707165" sendScaledValueChangedOnly="0"
               caption="Treble[nl][value]" captionIncludesAttribute="0" hideTemporaryValueDisplay="1"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3695652186870575" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
               rigId="0" textColor="ffffffff" nodeId="4" paramIndex="20" widgetValue="0.5"
@@ -781,7 +781,7 @@
       <WIDGET type="0" style="18" id="41116" x="0.4822657490735839" y="0.426791277258567"
               width="0.04976177871889889" height="0.2866043613707165" sendScaledValueChangedOnly="0"
               caption="Volume[nl][value]" captionIncludesAttribute="0" hideTemporaryValueDisplay="1"
-              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3695652186870575" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="1"
               rigId="0" textColor="ffffffff" nodeId="4" paramIndex="21" widgetValue="0.3959999978542328"
@@ -806,7 +806,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.2941176470588235" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="24000"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="10" widgetValue="0.0"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="10" widgetValue="1.0"
               backPlate="7" backPlateVisible="1" invertMIDI="0" displayRange="0"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -826,10 +826,10 @@
       <WIDGET type="0" style="5" id="41120" x="0.4822657490735839" y="0.4236760124610592"
               width="0.04976177871889889" height="0.2866043613707165" sendScaledValueChangedOnly="0"
               caption="Volume[nl][value]" captionIncludesAttribute="0" hideTemporaryValueDisplay="1"
-              hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
+              hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3695652186870575" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="1"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="15" widgetValue="0.6399999856948853"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="15" widgetValue="0.5979999899864197"
               backPlate="0" backPlateVisible="1" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -895,7 +895,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3230769230769231" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="56" widgetValue="0.0"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="56" widgetValue="0.5"
               backPlate="1" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="1" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -961,7 +961,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3230769230769231" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="20608"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="57" widgetValue="1.0"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="57" widgetValue="0.0"
               backPlate="7" backPlateVisible="1" invertMIDI="0" displayRange="0"
               ignoresVariations="1" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -1073,7 +1073,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3230769230769231" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="65" widgetValue="0.0"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="65" widgetValue="0.5"
               backPlate="1" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="1" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -1139,7 +1139,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.3230769230769231" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="66" widgetValue="1.0"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="66" widgetValue="0.0"
               backPlate="7" backPlateVisible="1" invertMIDI="0" displayRange="0"
               ignoresVariations="1" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -1453,18 +1453,18 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.25" reflectMIDI="" reflectMIDIOn="0"
               midiThru="0" midiSource="" midiDevice="" midiData="0" rigId="0"
-              textColor="ffffffff" nodeId="4" paramIndex="48" widgetValue="1.0"
+              textColor="ffffffff" nodeId="4" paramIndex="48" widgetValue="0.0"
               backPlate="7" backPlateVisible="1" invertMIDI="0" displayRange="0"
-              ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
+              ignoresVariations="1" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
               directedOSCTargetName="" widgetDirectedOSCType="0" widgetDirectedMinIntValue="0"
               widgetDirectedMaxIntValue="127" widgetDirectedMinDoubleValue="0.0"
               widgetDirectedMaxDoubleValue="1.0" widgetDirectedStringListValue="T2ZmCk9u"
-              widgetHandle="" enableOSC="0" invertOSC="0" groupName="" widgetMoveBehavior="0"
-              updateOnLoadGig="0" updateOnActivateRackspace="0" setDefaultDoubleClickResetValue="0.0"
-              bckgColor="ff3c3c3c" outlineColor="ff808080" outlineRound="4"
-              outlineThick="2" btnMomToLatch="0" btnPadLike="0" btnRadioGroupIndex="0"
-              btnRespondsToButtonOff="1">
+              widgetHandle="cab_on" enableOSC="0" invertOSC="0" groupName=""
+              widgetMoveBehavior="0" updateOnLoadGig="0" updateOnActivateRackspace="0"
+              setDefaultDoubleClickResetValue="0.0" bckgColor="ff3c3c3c" outlineColor="ff808080"
+              outlineRound="4" outlineThick="2" btnMomToLatch="0" btnPadLike="0"
+              btnRadioGroupIndex="0" btnRespondsToButtonOff="1">
         <GPSCALE color="ff4682b4" min="0.0" max="100.0" v="2">8008...........flYlYlYlYt+nYlYlYlYl7OzLyLyLyLS+ilYlYlYlY1+.........9OzLyLyLyLi+yYlYlYlYl4+nYlYlYlYl9OMyLyLyLyr+C........7+nYlYlYlYF+OzLyLyLyLy+SyLyLyLyL8+blYlYlYlY+O........3+ilYlYlYlY9+PyLyLyLyr+OMyLyLyLy7+yYlYlYlYl++..........PMyLyLyLy..jlYlYlYlY..clYlYlYlI.PzLyLyLyLC.D........A.0LyLyLyLS.PZlYlYlYlE.zYlYlYlYlA.QyLyLyLyb.P........H.TyLyLyLyLB.oYlYlYlYl.PmYlYlYlYJ.DMyLyLyLyB.A.......v.PMyLyLyLyL.jlYlYlYlYC.clYlYlYl4.PzLyLyLyLO.D........D.clYlYlYlAAPMyLyLyLyP.zLyLyLyLSD.oYlYlYlYFAP........R.zYlYlYlYlD.0LyLyLyLKAPzLyLyLyLS.jlYlYlYl4D.A.......PAPmYlYlYlYT.TyLyLyLyLE.QyLyLyLyTAPZlYlYlYlU.D.......fE.clYlYlYlYAPMyLyLyLyV.DMyLyLyLyE.oYlYlYlYdAP........X.zYlYlYlYFF.0LyLyLyLiAPzLyLyLyLY.jlYlYlYlYF.A.......nAPmYlYlYlYZ.TyLyLyLyrF.QyLyLyLyrAPZlYlYlYla.D........G.clYlYlYlwAPMyLyLyLyb.DMyLyLyLSG.oYlYlYlY1AP........d.zYlYlYlYlG.0LyLyLyL6APzLyLyLyLe.jlYlYlYl4G.A........BPyLyLyLyLf.zYlYlYlYFH.oYlYlYlYBBPMyLyLyLyf.D.......PH.MyLyLyLyDBPmYlYlYlYg.jlYlYlYlYH.0LyLyLyLGBP........h.zLyLyLyLiH.clYlYlYlIBPZlYlYlYlh.TyLyLyLyrH.A.......LBPzLyLyLyLi.zYlYlYlY1H.oYlYlYlYNBPMyLyLyLyi.D........I.QyLyLyLyPBPmYlYlYlYj.jlYlYlYlII.0LyLyLyLSBP........k.DMyLyLyLSI.clYlYlYlUBPZlYlYlYlk.TyLyLyLybI.A.......XBPzLyLyLyLl.zYlYlYlYlI.oYlYlYlYZBPMyLyLyLyl.D.......vI.QyLyLyLybBPmYlYlYlYm.jlYlYlYl4I.0LyLyLyLeBP........n.DMyLyLyLCJ.clYlYlYlgBPZlYlYlYln.TyLyLyLyLJ.A.......jBPzLyLyLyLo.zYlYlYlYVJ.oYlYlYlYlBPMyLyLyLyo.D.......fJ.QyLyLyLynBPmYlYlYlYp.jlYlYlYloJ.0LyLyLyLqBP........q.DMyLyLyLyJ.clYlYlYlsBPZlYlYlYlq.TyLyLyLy7J.A.......vBPzLyLyLyLr.zYlYlYlYFK.oYlYlYlYxBPMyLyLyLyr.D.......PK.QyLyLyLyzBPmYlYlYlYs.jlYlYlYlYK.0LyLyLyL2BP........t.DMyLyLyLiK.clYlYlYl4BPZlYlYlYlt.TyLyLyLyrK.A.......7BPzLyLyLyLu.zYlYlYlY1K.oYlYlYlY9BPMyLyLyLyu.D........L.oYlYlYlY.CPyLyLyLyLv.TyLyLyLyDL.clYlYlYlACP.......fv.jlYlYlYlIL.MyLyLyLyBCPMyLyLyLyv.zYlYlYlYNL.A.......DCPZlYlYlYFw.zLyLyLyLSL.0LyLyLyLECPmYlYlYlYw.D.......XL.oYlYlYlYFCPyLyLyLyrw.TyLyLyLybL.clYlYlYlGCP........x.jlYlYlYlgL.MyLyLyLyHCPMyLyLyLSx.zYlYlYlYlL.A.......JCPZlYlYlYlx.zLyLyLyLqL.0LyLyLyLKCPmYlYlYl4x.D.......vL.oYlYlYlYLCPzLyLyLyLy.TyLyLyLyzL.clYlYlYlMCP.......fy.jlYlYlYl4L.QyLyLyLyNCPMyLyLyLyy.zYlYlYlY9L.A.......PCPZlYlYlYFz.DMyLyLyLCM.0LyLyLyLQCPmYlYlYlYz.D.......HM.oYlYlYlYRCPzLyLyLyrz.TyLyLyLyLM.clYlYlYlSCP........0.jlYlYlYlQM.QyLyLyLyTCPMyLyLyLS0.zYlYlYlYVM.A.......VCPZlYlYlYl0.DMyLyLyLaM.0LyLyLyLWCPmYlYlYl40.D.......fM.oYlYlYlYXCPzLyLyLyL1.TyLyLyLyjM.clYlYlYlYCP.......f1.jlYlYlYloM.QyLyLyLyZCPMyLyLyLy1.zYlYlYlYtM.A.......bCPZlYlYlYF2.DMyLyLyLyM.0LyLyLyLcCPmYlYlYlY2.D.......3M.oYlYlYlYdCPzLyLyLyr2.TyLyLyLy7M.clYlYlYleCP........3.jlYlYlYlAN.QyLyLyLyfCPMyLyLyLS3.zYlYlYlYFN.A.......hCPZlYlYlYl3.DMyLyLyLKN.0LyLyLyLiCPmYlYlYl43.D.......PN.oYlYlYlYjCPzLyLyLyL4.TyLyLyLyTN.clYlYlYlkCP.......f4.jlYlYlYlYN.QyLyLyLylCPMyLyLyLy4.zYlYlYlYdN.A.......nCPZlYlYlYF5.DMyLyLyLiN.0LyLyLyLoCPmYlYlYlY5.D.......nN.oYlYlYlYpCPzLyLyLyr5.TyLyLyLyrN.clYlYlYlqCP........6.jlYlYlYlwN.QyLyLyLyrCPMyLyLyLS6.zYlYlYlY1N.A.......tCPZlYlYlYl6.DMyLyLyL6N.0LyLyLyLuCPmYlYlYl46.D........O.oYlYlYlYvCPzLyLyLyL7.TyLyLyLyDO.clYlYlYlwCP.......f7.jlYlYlYlIO.QyLyLyLyxCPMyLyLyLy7.zYlYlYlYNO.A.......zCPZlYlYlYF8.DMyLyLyLSO.0LyLyLyL0CPmYlYlYlY8.D.......XO.oYlYlYlY1CPzLyLyLyr8.TyLyLyLybO.clYlYlYl2CP........9.jlYlYlYlgO.QyLyLyLy3CPMyLyLyLS9.zYlYlYlYlO.A.......5CPZlYlYlYl9.DMyLyLyLqO.0LyLyLyL6CPmYlYlYl49.D.......vO.oYlYlYlY7CPzLyLyLyL+.TyLyLyLyzO.clYlYlYl8CP.......f+.jlYlYlYl4O.QyLyLyLy9CPMyLyLyLy+.zYlYlYlY9O.A........DPMyLyLyLC.AjlYlYlYlAP.clYlYlYl.DPyLyLyLyL.AD.......DP.0LyLyLyLADPZlYlYlYV.AzYlYlYlYFP.MyLyLyLyADP.......f.ATyLyLyLyHP.oYlYlYlYBDPmYlYlYlo.AzLyLyLyLKP.A.......CDPMyLyLyLy.AjlYlYlYlMP.clYlYlYlCDPyLyLyLy7.AD.......PP.0LyLyLyLDDPZlYlYlYFAAzYlYlYlYRP.MyLyLyLyDDP.......PAATyLyLyLyTP.oYlYlYlYEDPmYlYlYlYAAzLyLyLyLWP.A.......FDPMyLyLyLiAAjlYlYlYlYP.clYlYlYlFDPyLyLyLyrAAD.......bP.0LyLyLyLGDPZlYlYlY1AAzYlYlYlYdP.MyLyLyLyGDP........BATyLyLyLyfP.oYlYlYlYHDPmYlYlYlIBAzLyLyLyLiP.A.......IDPMyLyLyLSBAjlYlYlYlkP.clYlYlYlIDPyLyLyLybBAD.......nP.0LyLyLyLJDPZlYlYlYlBAzYlYlYlYpP.MyLyLyLyJDP.......vBATyLyLyLyrP.oYlYlYlYKDPmYlYlYl4BAzLyLyLyLuP.A.......LDPMyLyLyLCCAjlYlYlYlwP.clYlYlYlLDPzLyLyLyLCAD.......zP.0LyLyLyLMDPZlYlYlYVCAzYlYlYlY1P.QyLyLyLyMDP.......fCATyLyLyLy3P.oYlYlYlYNDPmYlYlYloCADMyLyLyL6P.A.......ODPMyLyLyLyCAjlYlYlYl8P.clYlYlYlODPzLyLyLy7CAD........Q.0LyLyLyLPDPZlYlYlYFDAzYlYlYlYBQ.QyLyLyLyPDP.......PDATyLyLyLyDQ.oYlYlYlYQDPmYlYlYlYDADMyLyLyLGQ.A.......RDPMyLyLyLiDAjlYlYlYlIQ.clYlYlYlRDPzLyLyLyrDAD.......LQ.0LyLyLyLSDPZlYlYlY1DAzYlYlYlYNQ.QyLyLyLySDP........EATyLyLyLyPQ.oYlYlYlYTDPmYlYlYlIEADMyLyLyLSQ.A.......UDPMyLyLyLSEAjlYlYlYlUQ.clYlYlYlUDPzLyLyLybEAD.......XQ.0LyLyLyLVDPZlYlYlYlEAzYlYlYlYZQ.QyLyLyLyVDP.......vEATyLyLyLybQ.oYlYlYlYWDPmYlYlYl4EADMyLyLyLeQ.A.......XDPMyLyLyLCFAjlYlYlYlgQ.clYlYlYlXDPzLyLyLyLFAD.......jQ.0LyLyLyLYDPZlYlYlYVFAzYlYlYlYlQ.QyLyLyLyYDP.......fFATyLyLyLynQ.oYlYlYlYZDPmYlYlYloFADMyLyLyLqQ.A.......aDPMyLyLyLyFAjlYlYlYlsQ.clYlYlYlaDPzLyLyLy7FAD.......vQ.0LyLyLyLbDPZlYlYlYFGAzYlYlYlYxQ.QyLyLyLybDP.......PGATyLyLyLyzQ.oYlYlYlYcDPmYlYlYlYGADMyLyLyL2Q.A.......dDPMyLyLyLiGAjlYlYlYl4Q.clYlYlYldDPzLyLyLyrGAD.......7Q.0LyLyLyLeDPZlYlYlY1GAzYlYlYlY9Q.QyLyLyLyeDP........HATyLyLyLy.R.oYlYlYlYfDPmYlYlYlIHADMyLyLyLCR.A.......gDPMyLyLyLSHAjlYlYlYlER.clYlYlYlgDPzLyLyLybHAD.......HR.0LyLyLyLhDPZlYlYlYlHAzYlYlYlYJR.QyLyLyLyhDP.......vHATyLyLyLyLR.oYlYlYlYiDPmYlYlYl4HADMyLyLyLOR.A.......jDPMyLyLyLCIAjlYlYlYlQR.clYlYlYljDPzLyLyLyLIAD.......TR.0LyLyLyLkDPZlYlYlYVIAzYlYlYlYVR.QyLyLyLykDP.......fIATyLyLyLyXR.oYlYlYlYlDPmYlYlYloIADMyLyLyLaR.A.......mDPMyLyLyLyIAjlYlYlYlcR.clYlYlYlmDPzLyLyLy7IAD.......fR.0LyLyLyLnDPZlYlYlYFJAzYlYlYlYhR.QyLyLyLynDP.......PJATyLyLyLyjR.oYlYlYlYoDPmYlYlYlYJADMyLyLyLmR.A.......pDPMyLyLyLiJAjlYlYlYloR.clYlYlYlpDPzLyLyLyrJAD.......rR.0LyLyLyLqDPZlYlYlY1JAzYlYlYlYtR.QyLyLyLyqDP........KATyLyLyLyvR.oYlYlYlYrDPmYlYlYlIKADMyLyLyLyR.A.......sDPMyLyLyLSKAjlYlYlYl0R.clYlYlYlsDPzLyLyLybKAD.......3R.0LyLyLyLtDPZlYlYlYlKAzYlYlYlY5R.QyLyLyLytDP.......vKATyLyLyLy7R.oYlYlYlYuDPmYlYlYl4KADMyLyLyL+R.A.......vDPMyLyLyLCLAjlYlYlYlAS.clYlYlYlvDPzLyLyLyLLAD.......DS.0LyLyLyLwDPZlYlYlYVLAzYlYlYlYFS.QyLyLyLywDP.......fLATyLyLyLyHS.oYlYlYlYxDPmYlYlYloLADMyLyLyLKS.A.......yDPMyLyLyLyLAjlYlYlYlMS.clYlYlYlyDPzLyLyLy7LAD.......PS.0LyLyLyLzDPZlYlYlYFMAzYlYlYlYRS.QyLyLyLyzDP.......PMATyLyLyLyTS.oYlYlYlY0DPmYlYlYlYMADMyLyLyLWS.A.......1DPMyLyLyLiMAjlYlYlYlYS.clYlYlYl1DPzLyLyLyrMAD.......bS.0LyLyLyL2DPZlYlYlY1MAzYlYlYlYdS.QyLyLyLy2DP........NATyLyLyLyfS.oYlYlYlY3DPmYlYlYlINADMyLyLyLiS.A.......4DPMyLyLyLSNAjlYlYlYlkS.clYlYlYl4DPzLyLyLybNAD.......nS.0LyLyLyL5DPZlYlYlYlNAzYlYlYlYpS.QyLyLyLy5DP.......vNATyLyLyLyrS.oYlYlYlY6DPmYlYlYl4NADMyLyLyLuS.A.......7DPMyLyLyLCOAjlYlYlYlwS.clYlYlYl7DPzLyLyLyLOAD.......zS.0LyLyLyL8DPZlYlYlYVOAzYlYlYlY1S.QyLyLyLy8DP.......fOATyLyLyLy3S.oYlYlYlY9DPmYlYlYloOADMyLyLyL6S.A.......+DPMyLyLyLyOAjlYlYlYl8S.clYlYlYl+DPzLyLyLy7OAD........T.clYlYlYF.EPMyLyLyLCPAzLyLyLyLAT.oYlYlYlY.EP.......HPAzYlYlYlYBT.0LyLyLyr.EPyLyLyLyLPAjlYlYlYlCT.A.......AEPmYlYlYlQPATyLyLyLyDT.MyLyLyLSAEPZlYlYlYVPAD.......FT.clYlYlYlAEPMyLyLyLaPAzLyLyLyLGT.oYlYlYl4AEP.......fPAzYlYlYlYHT.0LyLyLyLBEPyLyLyLyjPAjlYlYlYlIT.A......fBEPmYlYlYloPATyLyLyLyJT.MyLyLyLyBEPZlYlYlYtPAD.......LT.clYlYlYFCEPMyLyLyLyPAzLyLyLyLMT.oYlYlYlYCEP.......3PAzYlYlYlYNT.0LyLyLyrCEPyLyLyLy7PAjlYlYlYlOT.A.......DEPmYlYlYlAQATyLyLyLyPT.MyLyLyLSDEPZlYlYlYFQAD.......RT.clYlYlYlDEPMyLyLyLKQAzLyLyLyLST.oYlYlYl4DEP.......PQAzYlYlYlYTT.0LyLyLyLEEPyLyLyLyTQAjlYlYlYlUT.A......fEEPmYlYlYlYQATyLyLyLyVT.MyLyLyLyEEPZlYlYlYdQAD.......XT.clYlYlYFFEPMyLyLyLiQAzLyLyLyLYT.oYlYlYlYFEP.......nQAzYlYlYlYZT.0LyLyLyrFEPyLyLyLyrQAjlYlYlYlaT.A.......GEPmYlYlYlwQATyLyLyLybT.MyLyLyLSGEPZlYlYlY1QAD.......dT.clYlYlYlGEPMyLyLyL6QAzLyLyLyLeT.oYlYlYl4GEP........RAzYlYlYlYfT.0LyLyLyLHEPyLyLyLyDRAjlYlYlYlgT.A......fHEPmYlYlYlIRATyLyLyLyhT.MyLyLyLyHEPZlYlYlYNRAD.......jT.clYlYlYFIEPMyLyLyLSRAzLyLyLyLkT.oYlYlYlYIEP.......XRAzYlYlYlYlT.0LyLyLyrIEPyLyLyLybRAjlYlYlYlmT.A.......JEPmYlYlYlgRATyLyLyLynT.MyLyLyLSJEPZlYlYlYlRAD.......pT.clYlYlYlJEPMyLyLyLqRAzLyLyLyLqT.oYlYlYl4JEP.......vRAzYlYlYlYrT.0LyLyLyLKEPyLyLyLyzRAjlYlYlYlsT.A......fKEPmYlYlYl4RATyLyLyLytT.MyLyLyLyKEPZlYlYlY9RAD.......vT.clYlYlYFLEPMyLyLyLCSAzLyLyLyLwT.oYlYlYlYLEP.......HSAzYlYlYlYxT.0LyLyLyrLEPzLyLyLyLSAjlYlYlYlyT.A.......MEPmYlYlYlQSATyLyLyLyzT.QyLyLyLSMEPZlYlYlYVSAD.......1T.clYlYlYlMEPMyLyLyLaSADMyLyLyL2T.oYlYlYl4MEP.......fSAzYlYlYlY3T.0LyLyLyLNEPzLyLyLyjSAjlYlYlYl4T.A......fNEPmYlYlYloSATyLyLyLy5T.QyLyLyLyNEPZlYlYlYtSAD.......7T.clYlYlYFOEPMyLyLyLySADMyLyLyL8T.oYlYlYlYOEP.......3SAzYlYlYlY9T.0LyLyLyrOEPzLyLyLy7SAjlYlYlYl+T.A.......PEPmYlYlYlATATyLyLyLy.U.QyLyLyLSPEPZlYlYlYFTAD.......BU.clYlYlYlPEPMyLyLyLKTADMyLyLyLCU.oYlYlYl4PEP.......PTAzYlYlYlYDU.0LyLyLyLQEPzLyLyLyTTAjlYlYlYlEU.A......fQEPmYlYlYlYTATyLyLyLyFU.QyLyLyLyQEPZlYlYlYdTAD.......HU.clYlYlYFREPMyLyLyLiTADMyLyLyLIU.oYlYlYlYREP.......nTAzYlYlYlYJU.0LyLyLyrREPzLyLyLyrTAjlYlYlYlKU.A.......SEPmYlYlYlwTATyLyLyLyLU.QyLyLyLSSEPZlYlYlY1TAD.......NU.clYlYlYlSEPMyLyLyL6TADMyLyLyLOU.oYlYlYl4SEP........UAzYlYlYlYPU.0LyLyLyLTEPzLyLyLyDUAjlYlYlYlQU.A......fTEPmYlYlYlIUATyLyLyLyRU.QyLyLyLyTEPZlYlYlYNUAD.......TU.clYlYlYFUEPMyLyLyLSUADMyLyLyLUU.oYlYlYlYUEP.......XUAzYlYlYlYVU.0LyLyLyrUEPzLyLyLybUAjlYlYlYlWU.A.......VEPmYlYlYlgUATyLyLyLyXU.QyLyLyLSVEPZlYlYlYlUAD.......ZU.clYlYlYlVEPMyLyLyLqUADMyLyLyLaU.oYlYlYl4VEP.......vUAzYlYlYlYbU.0LyLyLyLWEPzLyLyLyzUAjlYlYlYlcU.A......fWEPmYlYlYl4UATyLyLyLydU.QyLyLyLyWEPZlYlYlY9UAD.......fU.clYlYlYFXEPMyLyLyLCVADMyLyLyLgU.oYlYlYlYXEP.......HVAzYlYlYlYhU.0LyLyLyrXEPzLyLyLyLVAjlYlYlYliU.A.......YEPmYlYlYlQVATyLyLyLyjU.QyLyLyLSYEPZlYlYlYVVAD.......lU.clYlYlYlYEPMyLyLyLaVADMyLyLyLmU.oYlYlYl4YEP.......fVAzYlYlYlYnU.0LyLyLyLZEPzLyLyLyjVAjlYlYlYloU.A......fZEPmYlYlYloVATyLyLyLypU.QyLyLyLyZEPZlYlYlYtVAD.......rU.clYlYlYFaEPMyLyLyLyVADMyLyLyLsU.oYlYlYlYaEP.......3VAzYlYlYlYtU.0LyLyLyraEPzLyLyLy7VAjlYlYlYluU.A.......bEPmYlYlYlAWATyLyLyLyvU.QyLyLyLSbEPZlYlYlYFWAD.......xU.clYlYlYlbEPMyLyLyLKWADMyLyLyLyU.oYlYlYl4bEP.......PWAzYlYlYlYzU.0LyLyLyLcEPzLyLyLyTWAjlYlYlYl0U.A......fcEPmYlYlYlYWATyLyLyLy1U.QyLyLyLycEPZlYlYlYdWAD.......3U.clYlYlYFdEPMyLyLyLiWADMyLyLyL4U.oYlYlYlYdEP.......nWAzYlYlYlY5U.0LyLyLyrdEPzLyLyLyrWAjlYlYlYl6U.A.......eEPmYlYlYlwWATyLyLyLy7U.QyLyLyLSeEPZlYlYlY1WAD.......9U.clYlYlYleEPMyLyLyL6WADMyLyLyL+U.oYlYlYl4eEP........XAzYlYlYlY.V.0LyLyLyLfEPzLyLyLyDXAjlYlYlYlAV.A......ffEPmYlYlYlIXATyLyLyLyBV.QyLyLyLyfEPZlYlYlYNXAD.......DV.clYlYlYFgEPMyLyLyLSXADMyLyLyLEV.oYlYlYlYgEP.......XXAzYlYlYlYFV.0LyLyLyrgEPzLyLyLybXAjlYlYlYlGV.A.......hEPmYlYlYlgXATyLyLyLyHV.QyLyLyLShEPZlYlYlYlXAD.......JV.clYlYlYlhEPMyLyLyLqXADMyLyLyLKV.oYlYlYl4hEP.......vXAzYlYlYlYLV.0LyLyLyLiEPzLyLyLyzXAjlYlYlYlMV.A......fiEPmYlYlYl4XATyLyLyLyNV.QyLyLyLyiEPZlYlYlY9XAD.......PV.A<UserCurves/>
         </GPSCALE>
         <FONTPROPERTIES FontName="&lt;Sans-Serif&gt;" FontHeight="12" Bold="0" Italic="0"
@@ -1678,7 +1678,7 @@
               captionVisible="1" captionHeight="0.04926108374384237" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="EV-1-WL Bluetooth : Controller 11, Channel 1"
               midiDevice="EV-1-WL Bluetooth" midiData="2992" rigId="5" textColor="ffffffff"
-              nodeId="4" paramIndex="8" widgetValue="0.0" backPlate="7" backPlateVisible="1"
+              nodeId="4" paramIndex="8" widgetValue="1.0" backPlate="7" backPlateVisible="1"
               invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
               relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
               directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -1701,7 +1701,7 @@
               captionVisible="1" captionHeight="0.04926108374384237" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="EV-1-WL Bluetooth : Controller 11, Channel 1"
               midiDevice="EV-1-WL Bluetooth" midiData="2992" rigId="5" textColor="ffffffff"
-              nodeId="4" paramIndex="27" widgetValue="0.0" backPlate="7" backPlateVisible="1"
+              nodeId="4" paramIndex="27" widgetValue="1.0" backPlate="7" backPlateVisible="1"
               invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
               relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
               directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -1724,7 +1724,7 @@
               captionVisible="1" captionHeight="0.04926108374384237" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="EV-1-WL Bluetooth : Controller 11, Channel 1"
               midiDevice="EV-1-WL Bluetooth" midiData="2992" rigId="5" textColor="ffffffff"
-              nodeId="4" paramIndex="24" widgetValue="0.0" backPlate="7" backPlateVisible="1"
+              nodeId="4" paramIndex="24" widgetValue="1.0" backPlate="7" backPlateVisible="1"
               invertMIDI="0" displayRange="2" ignoresVariations="0" followHardware="0"
               relativeMode="0" enableDirectedOSC="0" directedOSCAddressPattern=""
               directedOSCIPAddress="" directedOSCPort="9001" directedOSCTargetName=""
@@ -1746,7 +1746,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.1609756097560976" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="38" widgetValue="0.5"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="38" widgetValue="0.5600000023841858"
               backPlate="11" backPlateVisible="1" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -1946,7 +1946,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.4125" reflectMIDI="" reflectMIDIOn="0"
               midiThru="0" midiSource="" midiDevice="" midiData="1" rigId="0"
-              textColor="ffffffff" nodeId="4" paramIndex="7" widgetValue="1.0"
+              textColor="ffffffff" nodeId="4" paramIndex="7" widgetValue="0.0"
               backPlate="4" backPlateVisible="0" invertMIDI="0" displayRange="0"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -1969,7 +1969,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.4285714285714285" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="25" widgetValue="0.0"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="25" widgetValue="1.0"
               backPlate="7" backPlateVisible="1" invertMIDI="0" displayRange="0"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -2081,7 +2081,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.4133333333333333" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="1"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="30" widgetValue="0.75"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="30" widgetValue="1.0"
               backPlate="1" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -2149,7 +2149,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.382716049382716" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="1"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="34" widgetValue="0.5"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="34" widgetValue="0.3199999928474426"
               backPlate="1" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -2171,7 +2171,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.382716049382716" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="1"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="35" widgetValue="0.5"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="35" widgetValue="0.4979999959468842"
               backPlate="1" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -2238,7 +2238,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.4285714285714285" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="46" widgetValue="0.0"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="46" widgetValue="1.0"
               backPlate="7" backPlateVisible="1" invertMIDI="0" displayRange="0"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -2283,7 +2283,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.4285714285714285" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="78" widgetValue="0.0"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="78" widgetValue="1.0"
               backPlate="7" backPlateVisible="1" invertMIDI="0" displayRange="0"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -2352,7 +2352,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.382716049382716" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="1"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="81" widgetValue="0.1599999964237213"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="81" widgetValue="0.5"
               backPlate="1" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -2374,7 +2374,7 @@
               hideInPresentationView="1" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.382716049382716" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="1"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="85" widgetValue="0.4180000126361847"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="85" widgetValue="0.5770000219345093"
               backPlate="1" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -2418,7 +2418,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.382716049382716" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="1"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="87" widgetValue="0.1599999964237213"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="87" widgetValue="0.3100000023841858"
               backPlate="1" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -2440,7 +2440,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.382716049382716" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="1"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="90" widgetValue="0.1959999948740005"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="90" widgetValue="0.05000000074505806"
               backPlate="1" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -2462,7 +2462,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="1"
               captionVisible="1" captionHeight="0.382716049382716" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="1"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="89" widgetValue="0.6349999904632568"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="89" widgetValue="0.9419999718666077"
               backPlate="1" backPlateVisible="0" invertMIDI="0" displayRange="2"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -2528,7 +2528,7 @@
               hideInPresentationView="0" widgetIgnoresMouse="0" overrideName="0"
               captionVisible="1" captionHeight="0.4285714285714285" reflectMIDI=""
               reflectMIDIOn="0" midiThru="0" midiSource="" midiDevice="" midiData="0"
-              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="92" widgetValue="1.0"
+              rigId="0" textColor="ffffffff" nodeId="4" paramIndex="92" widgetValue="0.0"
               backPlate="7" backPlateVisible="1" invertMIDI="0" displayRange="0"
               ignoresVariations="0" followHardware="0" relativeMode="0" enableDirectedOSC="0"
               directedOSCAddressPattern="" directedOSCIPAddress="" directedOSCPort="9001"
@@ -3663,18 +3663,18 @@
     <PARAM widgetId="41120" value="0.5979999899864197" onLoadValue="0.5979999899864197"/>
     <PARAM widgetId="41122" value="0.800000011920929" onLoadValue="0.800000011920929"/>
     <PARAM widgetId="41124" value="0.300000011920929" onLoadValue="0.300000011920929"/>
-    <PARAM widgetId="41126" value="0.0" onLoadValue="0.5"/>
+    <PARAM widgetId="41126" value="0.5" onLoadValue="0.5"/>
     <PARAM widgetId="41128" value="0.5279999971389771" onLoadValue="0.5279999971389771"/>
     <PARAM widgetId="41130" value="0.1000000014901161" onLoadValue="0.1000000014901161"/>
-    <PARAM widgetId="41132" value="1.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41132" value="0.0" onLoadValue="0.0"/>
     <PARAM widgetId="41134" value="0.5" onLoadValue="0.5"/>
     <PARAM widgetId="41136" value="1.0" onLoadValue="1.0"/>
     <PARAM widgetId="41138" value="0.800000011920929" onLoadValue="0.800000011920929"/>
     <PARAM widgetId="41140" value="0.1000000014901161" onLoadValue="0.1000000014901161"/>
-    <PARAM widgetId="41142" value="0.0" onLoadValue="0.5"/>
+    <PARAM widgetId="41142" value="0.5" onLoadValue="0.5"/>
     <PARAM widgetId="41144" value="0.5279999971389771" onLoadValue="0.5279999971389771"/>
     <PARAM widgetId="41146" value="0.0" onLoadValue="0.0"/>
-    <PARAM widgetId="41148" value="1.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41148" value="0.0" onLoadValue="0.0"/>
     <PARAM widgetId="41150" value="0.5" onLoadValue="0.5"/>
     <PARAM widgetId="41152" value="1.0" onLoadValue="1.0"/>
     <PARAM widgetId="41154" value="1.0" onLoadValue="1.0"/>
@@ -3757,6 +3757,137 @@
     <PARAM widgetId="41308" value="1.0" onLoadValue="1.0"/>
     <PARAM widgetId="41310" value="1.0" onLoadValue="1.0"/>
   </PRESET>
+  <PRESET name="Stone solo">
+    <PARAM widgetId="41054" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41056" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41058" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41060" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41062" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41064" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41066" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41068" value="0.1669999957084656" onLoadValue="0.1669999957084656"/>
+    <PARAM widgetId="41070" value="0.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41072" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41074" value="0.1759999990463257" onLoadValue="0.1759999990463257"/>
+    <PARAM widgetId="41076" value="0.4880000054836273" onLoadValue="0.5"/>
+    <PARAM widgetId="41078" value="0.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41080" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41082" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41084" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41086" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41088" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41090" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41092" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41094" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41096" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41098" value="0.9419999718666077" onLoadValue="0.9419999718666077"/>
+    <PARAM widgetId="41100" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41102" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41104" value="0.7099999785423279" onLoadValue="0.7099999785423279"/>
+    <PARAM widgetId="41106" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41108" value="0.7260000109672546" onLoadValue="0.7260000109672546"/>
+    <PARAM widgetId="41110" value="0.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41112" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41114" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41116" value="0.3959999978542328" onLoadValue="0.3959999978542328"/>
+    <PARAM widgetId="41118" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41120" value="0.5979999899864197" onLoadValue="0.5979999899864197"/>
+    <PARAM widgetId="41122" value="0.800000011920929" onLoadValue="0.800000011920929"/>
+    <PARAM widgetId="41124" value="0.300000011920929" onLoadValue="0.300000011920929"/>
+    <PARAM widgetId="41126" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41128" value="0.5279999971389771" onLoadValue="0.5279999971389771"/>
+    <PARAM widgetId="41130" value="0.1000000014901161" onLoadValue="0.1000000014901161"/>
+    <PARAM widgetId="41132" value="0.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41134" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41136" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41138" value="0.800000011920929" onLoadValue="0.800000011920929"/>
+    <PARAM widgetId="41140" value="0.1000000014901161" onLoadValue="0.1000000014901161"/>
+    <PARAM widgetId="41142" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41144" value="0.5279999971389771" onLoadValue="0.5279999971389771"/>
+    <PARAM widgetId="41146" value="0.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41148" value="0.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41150" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41152" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41154" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41156" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41158" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41160" value="0.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41162" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41164" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41166" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41168" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41170" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41172" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41174" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41176" value="0.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41178" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41180" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41182" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41184" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41186" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41188" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41190" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41192" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41194" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41196" value="1.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41198" value="1.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41200" value="1.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41202" value="0.5600000023841858" onLoadValue="0.5699999928474426"/>
+    <PARAM widgetId="41204" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41206" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41208" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41210" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41212" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41214" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41216" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41218" value="0.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41220" value="0.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41222" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41224" value="0.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41226" value="0.5600000023841858" onLoadValue="0.5600000023841858"/>
+    <PARAM widgetId="41228" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41230" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41232" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41234" value="0.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41236" value="0.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41238" value="0.3199999928474426" onLoadValue="0.3199999928474426"/>
+    <PARAM widgetId="41240" value="0.4979999959468842" onLoadValue="0.4979999959468842"/>
+    <PARAM widgetId="41242" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41244" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41246" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41248" value="0.261000007390976" onLoadValue="0.261000007390976"/>
+    <PARAM widgetId="41250" value="1.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41252" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41254" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41256" value="0.5" onLoadValue="0.1599999964237213"/>
+    <PARAM widgetId="41258" value="0.5770000219345093" onLoadValue="0.4180000126361847"/>
+    <PARAM widgetId="41260" value="0.3199999928474426" onLoadValue="0.3199999928474426"/>
+    <PARAM widgetId="41262" value="0.3100000023841858" onLoadValue="0.1599999964237213"/>
+    <PARAM widgetId="41264" value="0.05000000074505806" onLoadValue="0.1959999948740005"/>
+    <PARAM widgetId="41266" value="0.9419999718666077" onLoadValue="0.6349999904632568"/>
+    <PARAM widgetId="41268" value="0.6499999761581421" onLoadValue="0.6499999761581421"/>
+    <PARAM widgetId="41270" value="0.5" onLoadValue="0.5"/>
+    <PARAM widgetId="41272" value="0.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41274" value="0.3129999935626984" onLoadValue="0.3129999935626984"/>
+    <PARAM widgetId="41276" value="0.1679999977350235" onLoadValue="0.1669999957084656"/>
+    <PARAM widgetId="41278" value="0.1599999964237213" onLoadValue="0.1599999964237213"/>
+    <PARAM widgetId="41280" value="0.1659999936819077" onLoadValue="0.1659999936819077"/>
+    <PARAM widgetId="41282" value="0.06400000303983688" onLoadValue="0.06400000303983688"/>
+    <PARAM widgetId="41284" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41286" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41288" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41290" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41292" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41294" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41296" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41298" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41300" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41302" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41304" value="0.0" onLoadValue="0.0"/>
+    <PARAM widgetId="41306" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41308" value="1.0" onLoadValue="1.0"/>
+    <PARAM widgetId="41310" value="1.0" onLoadValue="1.0"/>
+  </PRESET>
   <SCRIPT_CONTENT>Var
     amp_b_gain, amp_b_bass, amp_b_mid, amp_b_treble, amp_b_vol :Widget
     amp_b_widgets: Widget Array = [amp_b_gain, amp_b_bass, amp_b_mid, amp_b_treble, amp_b_vol]
@@ -3775,6 +3906,10 @@
     dlyDawWidgets: Widget Array = [dlyDawL, dlyDawR]
     
     TM: PluginBlock
+    
+    gcab_on: ExternalWidget
+    cab_on: Widget
+    suppress_cab: ExternalWidget
 
 
 On WidgetValueChanged (v: Double) From plugin_sync
@@ -4284,25 +4419,18 @@ End
     //////////////////////////////////////////////////
 
 
+
 On Deactivate
-    Print (&quot;on deactivate triggered, reset ping_time&quot;) 
-    ping_time = 0.0
-    //osc_enabled = false
+    Include &quot;includes/gl/rs_ondeactivate&quot;
 End
 
 On Activate
-    Print (&quot;on activate triggered, set timers running&quot;)
-    SetTimersRunning (true)
-    If osc_enabled == false Then
-        ping_time = TimeSinceStartup ()
-        OSC_SendIntegerSpecific (&quot;/ping&quot;, initmode, oscip, oscport)
-    End
+    Include &quot;includes/gl/rs_onactivate&quot;
 End
 
 // Called when you switch variations
 On Variation(oldVariation : integer, newVariation : integer)
-    Print (&quot;on variation triggered, sending ping&quot;)
-    //OSC_SendIntegerSpecific (&quot;/ping&quot;, initmode, oscip, oscport)
-    ping_global ()
-End</SCRIPT_CONTENT>
+    Include &quot;includes/gl/rs_onvariation&quot;
+End
+</SCRIPT_CONTENT>
 </RACKSPACE>

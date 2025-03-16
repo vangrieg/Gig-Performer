@@ -249,3 +249,12 @@ On TimerTick (ms: Double)
         wstime = 0
     End
 End
+
+// cab on/off sync with global rackspace
+On WidgetValueChanged (v: Double) From cab_on
+    If GetWidgetValue (cab_on) == 1.0 Then
+        OSC_SendDoubleSpecific("/gcab", 0.0, oscip, oscport)
+    Else
+        OSC_SendDoubleSpecific("/gcab", 1.0, oscip, oscport)
+    End
+End

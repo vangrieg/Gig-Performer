@@ -47,7 +47,7 @@ Scripts, rackspaces, panels, overlay templates and other [Gig Performer](https:/
 
 ## Rackspaces
 
-- [NDSP Petrucci X](bin/petrucci_x_rack.zip), [GL version](bin/petrucci-x_gl_rack.zip)
+- [NDSP Petrucci X](bin/petrucci_x_rack.zip), [GL version](bin/petrucci_x_gl_rack.zip)
 - [NDSP Cory Wong X](bin/corywong_x_rack.zip), [GL version](bin/corywong_x_gl_rack.zip)
 - [NDSP Tom Morello](bin/morello_rack.zip), [GL version](bin/morello_gl_rack.zip)
 - [NDSP Gojira X GL version](bin/gojira_x_gl_rack.zip)
@@ -89,6 +89,8 @@ There are editable Photoshop files, printable pdfs, and image files for referenc
 
 ### Release Notes
 
+- [v2.1](RELEASE_NOTES.md#version-21)
+- [v2.01](RELEASE_NOTES.md#version-201)
 - [v2.0](RELEASE_NOTES.md#version-20)
 - [v1.3](RELEASE_NOTES.md#version-13)
 - [v1.2](RELEASE_NOTES.md#version-12)

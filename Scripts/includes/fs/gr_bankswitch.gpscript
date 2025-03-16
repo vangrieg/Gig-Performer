@@ -76,5 +76,16 @@ On ControlChangeEvent (c : ControlChangeMessage) Matching 20,21,22,23 From SWITC
     Else
         Notify("Switch to setlist mode!")
     End    
+End
 
+On OSCMessageReceived (msg: OSCMessage) Matching "/looperTrigger"
+    If InSetlistMode() == true And GetWidgetValue (lprRecording) == 0.0 And GetWidgetValue (lprOverdub) == 0.0 And GetWidgetValue (lprMemory) == 1.0 Then
+        If GetWidgetValue (lprPlaying) == 0.0 Then
+            SetWidgetValue (lprTrigger, 1.0)
+            ResetWidgetValue (lprStop)
+        Else
+            SetWidgetValue (lprStop, 1.0)
+            ResetWidgetValue (lprTrigger)
+        End
+    End
 End

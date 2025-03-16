@@ -149,6 +149,13 @@ Var
     amp_mode: Integer
     
     <amp selector wdgt>: Widget // your amp selector widget here
+
+    NDSP: PluginBlock // your main plugin here
+    gcab_on: ExternalWidget // global cab on/off widget here
+    cab_on: Widget // local cab on/off widget here
+/* IF ONE OF THE AMPS IS ACOUSTIC, USE THIS
+    suppress_cab: ExternalWidget // global suppress cab widget here, to bypass global cabsim in case an amp is acoustic
+*/
     
 
 /*  if and effect has ALTERNATIVE MODES, add this variable to capture, repeat for other effects that have this 
@@ -177,6 +184,9 @@ On WidgetValueChanged (v: Double) From <show plugin wdgt>
 End
 */
 
+// LEAVE THIS UNTOUCHED
+Include "includes/gl/rs_vars_functions"
+
 /* for effects with ALTERNATIVE MODES, need this function, repeat for each such effect
 Function select_FX<FX index>_controls (dm: Integer)
     Select
@@ -190,6 +200,15 @@ End
 
 // this will set amp controls according to the amp selector widget value
 Function select_ampcontrols (am: Integer) 
+/* IF ONE OF THE AMPS IS ACOUSTIC, USE THIS CODE
+    If BindExternalWidget(suppress_cab, "suppress_cab", "GLOBAL RACKSPACE") Then
+        If am == <acoustic amp index> Then
+            SetExternalWidgetValue (suppress_cab, 1.0)
+        Else
+            SetExternalWidgetValue (suppress_cab, 0.0)
+        End
+    End
+*/
     Select
         am == 0 Do
             Amp_controls = Amp0_controls
@@ -214,10 +233,6 @@ Initialization // set amp mode
     select_FX<FX index>_controls (FX<FX index>_mode)
 */
 End
-
-
-// LEAVE THIS UNTOUCHED
-Include "includes/gl/rs_vars_functions"
 
 // MODIFY FOR ACTUAL AMP SELECTOR WIDGET
 On WidgetValueChanged (v: Double) From <amp selector wdgt>
@@ -478,22 +493,14 @@ End
 
 
 On Deactivate
-    //Print ("on deactivate triggered, reset ping_time") 
-    ping_time = 0.0
-    //osc_enabled = false
+    Include "includes/gl/rs_ondeactivate"
 End
 
 On Activate
-    //Print ("on activate triggered, set timers running")
-    SetTimersRunning (true)
-    If osc_enabled == false Then
-        OSC_SendIntegerSpecific ("/ping", initmode, oscip, oscport)
-    End
+    Include "includes/gl/rs_onactivate"
 End
 
 // Called when you switch variations
 On Variation(oldVariation : integer, newVariation : integer)
-    //Print ("on variation triggered, sending ping")
-    //OSC_SendIntegerSpecific ("/ping", initmode, oscip, oscport)
-    ping_global ()
+    Include "includes/gl/rs_onvariation"
 End

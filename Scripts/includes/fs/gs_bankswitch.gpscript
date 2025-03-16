@@ -7,13 +7,15 @@ Var
     LongPressState: Integer = LPSidle //initialization of status
     CCBuffer: Integer
     ChannelBuffer: Integer
+
+    looperCounter: Integer = 0 //counter for looper
     
     //IsBankUp: Boolean = false //initialization of bank up or down flag
 
     LEDOn: Ramp //timer for LED blinking
 
 Function BlinkFS (time: Integer) //this function blinks LEDs
-    If GetEnvVariable("SwitchConnected") == "true" Then
+    If MidiOutDeviceExists (FSOUT) == True Then
         SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx(CCA, 127, FSChan)) //turning LEDs on
         SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx(CCB, 127, FSChan))
         SendNowToMidiOutDevice (FSOUT, MakeControlChangeMessageEx(CCC, 127, FSChan))
@@ -23,43 +25,47 @@ Function BlinkFS (time: Integer) //this function blinks LEDs
 End
 
 Function FSTap (cc: Integer, ccv: Integer)
+If InSetlistMode () == True And looperCounter > 0 And IsBankUp == False And ccv == 127 And cc > 19 And cc < 24 Then
+    OSC_SendCommandSpecific ("/looperTrigger", oscip, oscport)
+    looperCounter = looperCounter - 1
+End
 If InSetlistMode () == True Then
         Select
             cc == 20 And GetCurrentSongPartIndex () == 0 Do
                 If ccv == 127 Then 
                     Tap ()
-                    OSC_SendCommandSpecific ("/tapon", oscip, oscport)
+                    //OSC_SendCommandSpecific ("/tapon", oscip, oscport)
                 Elsif spchanged == True Then
                     spchanged = False
                 Else
-                    OSC_SendCommandSpecific ("/tapoff", oscip, oscport)
+                    //OSC_SendCommandSpecific ("/tapoff", oscip, oscport)
                 End
             cc == 21 And GetCurrentSongPartIndex () == 1 Do
                 If ccv == 127 Then 
                     Tap ()
-                    OSC_SendCommandSpecific ("/tapon", oscip, oscport)
+                    //OSC_SendCommandSpecific ("/tapon", oscip, oscport)
                 Elsif spchanged == True Then
                     spchanged = False
                 Else
-                    OSC_SendCommandSpecific ("/tapoff", oscip, oscport)
+                    //OSC_SendCommandSpecific ("/tapoff", oscip, oscport)
                 End
             cc == 22 And GetCurrentSongPartIndex () == 2 Do
                 If ccv == 127 Then 
                     Tap ()
-                    OSC_SendCommandSpecific ("/tapon", oscip, oscport)
+                    //OSC_SendCommandSpecific ("/tapon", oscip, oscport)
                 Elsif spchanged == True Then
                     spchanged = False
                 Else
-                    OSC_SendCommandSpecific ("/tapoff", oscip, oscport)
+                    //OSC_SendCommandSpecific ("/tapoff", oscip, oscport)
                 End
             cc == 23 And GetCurrentSongPartIndex () == 3 Do
                 If ccv == 127 Then 
                     Tap ()
-                    OSC_SendCommandSpecific ("/tapon", oscip, oscport)
+                    //OSC_SendCommandSpecific ("/tapon", oscip, oscport)
                 Elsif spchanged == True Then
                     spchanged = False
                 Else
-                    OSC_SendCommandSpecific ("/tapoff", oscip, oscport)
+                    //OSC_SendCommandSpecific ("/tapoff", oscip, oscport)
                 End
             //True Do
             //    InjectMidiEvent (FSOUT, c)
@@ -135,11 +141,13 @@ On GeneratorEndCycle (timeX: Integer) from LongPress //checking the timer, chang
         If IsBankUp == false Then
             //InjectMidiEventViaRigManager (SWITCH, MakeControlChangeMessageEx(ControlCC, 127, BankUpChannel)) //sending control message
             BlinkFS (500) //blinking LEDs long
+            looperCounter = 0
             //Notify("Footswitch Bank 2")
         Else
             //InjectMidiEventViaRigManager (SWITCH, MakeControlChangeMessageEx(ControlCC, 0, BankUpChannel))
             //Notify("Footswitch Bank 1")
             BlinkFS (15) //blinking LEDs short
+            looperCounter = 2 // setting looper counter to 2 to send trigger messages to looper
         End
         //IsBankUp = !IsBankUp //changing bank flag
     Else
