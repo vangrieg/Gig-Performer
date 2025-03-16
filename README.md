@@ -89,6 +89,8 @@ There are editable Photoshop files, printable pdfs, and image files for referenc
 
 ### Release Notes
 
+- [v2.1](RELEASE_NOTES.md#version-21)
+- [v2.01](RELEASE_NOTES.md#version-201)
 - [v2.0](RELEASE_NOTES.md#version-20)
 - [v1.3](RELEASE_NOTES.md#version-13)
 - [v1.2](RELEASE_NOTES.md#version-12)

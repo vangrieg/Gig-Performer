@@ -3,6 +3,24 @@
 <!-- markdownlint-disable MD024 -->
 # Release Notes
 
+## Version 2.1
+
+- **New Features**
+  - Added global cab control functionality
+  - Added global send controls for guitar and vox
+  - Added looper control by Song Part footswitch button presses in lower bank mode
+
+- **Improvements**
+  - Added persistent media player mode controls
+
+- **Fixes**
+  - Renamed binaries for consistency
+
+## Version 2.01
+
+- **Fixes**
+  - Fixed wrong sequence of controls in petrucci gl
+
 ## Version 2.0
 
 - **New Features**
